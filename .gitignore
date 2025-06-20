@@ -1,0 +1,6 @@
+# content files
+sermon_tables/
+predigt_verbessert.txt
+
+# database connection
+db_connection.py
