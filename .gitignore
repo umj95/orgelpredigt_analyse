@@ -2,5 +2,8 @@
 sermon_tables/
 predigt_verbessert.txt
 
+# cache
+__pycache__
+
 # database connection
 db_connection.py
