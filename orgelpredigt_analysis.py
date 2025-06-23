@@ -244,7 +244,7 @@ class Musikwerk:
                     #self.verlag = data["e10verlag"]
                 else:
                     print(f"Query executed for {self.id}, but no data found.")
-                    self.komponit = "no_composer"
+                    self.komponist = "no_composer"
                     self.titel = "no_title"
                     self.kurztitel = ""
                     self.gattung = ""
@@ -299,22 +299,30 @@ class Sermon:
         return f"{self.autor.nachname}, {self.autor.vorname}: {self.kurztitel}"
     
     def get_sermon_info(self):
-        self.cursor.execute(f"SELECT e00autor, e00kurztitel, e00volltitel, e00verlagsort, e00verleger, e00jahr, e00umfang, e00konfession, e00bibelstelle, e00sonntag, e00einweihungsort FROM e00_orgelpredigten WHERE e00id = '{self.id}'")
-
-        desc = self.cursor.description
-        column_names = [col[0] for col in desc]
-        sermon_info = [dict(zip(column_names, row)) for row in self.cursor.fetchall()][0]
-        self.kurztitel = sermon_info["e00kurztitel"]
-        self.volltitel = sermon_info["e00volltitel"]
-        self.erscheinungsjahr = sermon_info["e00jahr"]
-        self.umfang = sermon_info["e00umfang"]
-        self.konfession = sermon_info["e00konfession"]
-        self.bibelstelle = sermon_info["e00bibelstelle"]
-        self.sonntag = sermon_info["e00sonntag"]
-        self.einweihungsort = Place(sermon_info["e00einweihungsort"])
-        self.verlagsort = Place(sermon_info["e00verlagsort"])
-        self.autor = Person(sermon_info["e00autor"])
-        self.verleger = Person(sermon_info["e00verleger"])
+        try:
+            self.cursor.execute(f"SELECT e00autor, e00kurztitel, e00volltitel, e00verlagsort, e00verleger, e00jahr, e00umfang, e00konfession, e00bibelstelle, e00sonntag, e00einweihungsort FROM e00_orgelpredigten WHERE e00id = '{self.id}'")
+            column_names = [col[0] for col in self.cursor.description]
+            results = self.cursor.fetchall()
+            if results:
+                sermon_info = [dict(zip(column_names, row)) for row in results][0]
+                self.kurztitel = sermon_info["e00kurztitel"]
+                self.volltitel = sermon_info["e00volltitel"]
+                self.erscheinungsjahr = sermon_info["e00jahr"]
+                self.umfang = sermon_info["e00umfang"]
+                self.konfession = sermon_info["e00konfession"]
+                self.bibelstelle = sermon_info["e00bibelstelle"]
+                self.sonntag = sermon_info["e00sonntag"]
+                self.einweihungsort = Place(sermon_info["e00einweihungsort"])
+                self.verlagsort = Place(sermon_info["e00verlagsort"])
+                self.autor = Person(sermon_info["e00autor"])
+                self.verleger = Person(sermon_info["e00verleger"])
+            else: 
+                print(f"Query executed for {self.id}, but no data found.")
+        except Error as e:
+            print(f"Database error occurred for {self.id}:", e)
+        except Exception as e:
+            print(f"Unexpected error for {self.id}:", e)
+            
 
     def get_sermon_table(self):
         df = pd.read_csv(f'sermon_tables/{self.id}.tsv', sep='\t')
@@ -327,17 +335,18 @@ class Sermon:
         quoted_source_ids = []
         quoted_sources = []
         quoted_bible = []
+        quoted_bible_verse = []
         quoted_music = []
         quoted_orgelpredigt = []
         source_id = re.compile(r"E[01][0-9]{5}")
 
-        unique_refs = [list(x) for x in set(tuple(x) for x in self.reference)]
+        unique_refs = set([x for xs in self.reference for x in xs])
         for i in unique_refs:
             if i:
-                if re.match(source_id, i[0]):
-                    quoted_source_ids.append(i[0])
+                if re.match(source_id, i):
+                    quoted_source_ids.append(i)
                 else:
-                    quoted_bible.append(i[0])
+                    quoted_bible.append(i)
         
         for i in quoted_source_ids:
             hits = self.all_references.count(i)
@@ -349,8 +358,12 @@ class Sermon:
                 quoted_sources.append({"item": Source(i), "word_share": hits})
             elif i.startswith("E10"):
                 quoted_music.append({"item": Musikwerk(i), "word_share": hits})
+        
+        for i in quoted_bible:
+            hits = self.all_references.count(i)
+            quoted_bible_verse.append({"item": i, "word_share": hits})
 
-        self.bibelzitate = quoted_bible
+        self.bibelzitate = quoted_bible_verse
         self.literaturzitate = quoted_sources
         self.orgelpredigtzitate = quoted_orgelpredigt
         self.musikzitate = quoted_music

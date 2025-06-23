@@ -5,6 +5,8 @@ from collections import Counter
 
 import plotly.express as px
 
+import matplotlib.pyplot as plt
+
 import plotly.graph_objects as go
 import pandas as pd
 
@@ -12,6 +14,23 @@ import folium
 import json
 import re
 import os
+
+color_map = {
+        'orgelpredigt': 'rgb(135, 44, 162)',
+        'musikwerk': 'rgb(192, 54, 157)',
+        'literatur': 'rgb(234, 79, 136)',
+        'quelle': 'rgb(250, 120, 118)',
+        'bibel': 'rgb(246, 169, 122)',
+        'nan': 'rgb(237, 217, 163)',
+        'text': 'rgb(237, 217, 163)'
+    }
+
+def is_id(value):
+    pattern = re.compile(r'E[01][0-9]{5}')
+    if re.match(pattern, value):
+        return True
+    else:
+        return False
 
 #########################
 ##### CHOOSE SERMON #####
@@ -79,7 +98,7 @@ sermon_locations = {
 }
 
 # create folium Map
-map = folium.Map(location=[50.8, 8.7], zoom_start=4)
+map = folium.Map(location=[50.8, 8.7], zoom_start=5)
 
 # Add markers
 for place, coord_str in author_network.items():
@@ -96,15 +115,6 @@ for place, coord_str in sermon_locations.items():
 ##### QUOTATION PLOTS #####
 ###########################
 
-color_map = {
-    'bibel': 'tomato',
-    'nan': 'steelblue',
-    'quelle': 'limegreen',
-    'literatur': 'teal',
-    'musikwerk': 'lawngreen',
-    'orgelpredigt': 'indigo'
-}
-
 ##### quotation share pie chart
 occurrences = {i:sermon.word_types.count(i) for i in set(sermon.word_types)}
 
@@ -120,22 +130,91 @@ for label, number in occurrences.items():
 
 colors = [color_map.get(label, 'gray') for label in labels]
 
-text_types_piechart = px.pie(values=data, names=labels, title='Anteile der Zitate am Gesamttext')
+text_types_piechart = px.pie(values=data, 
+                             names=labels, 
+                             title='Anteile der Zitate am Gesamttext', 
+                             color=labels,
+                             color_discrete_map=color_map)
 
 ##### list of quotations
-literaturliste = ""
+def generate_normalized_gradient(rgb, n):
+    """
+    Generate a list of `n` normalized RGB gradient values
+    that fade from black to the input `rgb` color.
+
+    Parameters:
+        rgb (tuple): A tuple of 3 integers (R, G, B), each 0-255.
+        n (int): Number of gradient steps.
+
+    Returns:
+        list of tuples: Each tuple contains normalized (R, G, B) values.
+    """
+    rgb = rgb[4:-1]
+    rgb = tuple(int(x) for x in rgb.split(", "))
+    if not (isinstance(rgb, tuple) and len(rgb) == 3 and all(0 <= val <= 255 for val in rgb)):
+        raise ValueError("RGB must be a tuple of three integers between 0 and 255.")
+    if n <= 0:
+        raise ValueError("Number of gradient steps must be positive.")
+    
+    gradient = []
+    for i in range(n):
+        ratio = i / (n - 1) if n > 1 else 1
+        r = (rgb[0] * ratio) / 255
+        g = (rgb[1] * ratio) / 255
+        b = (rgb[2] * ratio) / 255
+        gradient.append((r, g, b))
+    
+    return gradient
+
 lit_labels = []
 lit_data = []
+lit_titel = []
+lit_wordshare = []
+lit_wordfraction = []
+orgel_labels = []
+orgel_data = []
+orgel_titel = []
+orgel_wordshare = []
+orgel_wordfraction = []
+musik_labels = []
+musik_data = []
+musik_titel = []
+musik_wordshare = []
+musik_wordfraction = []
 for quelle in sermon.literaturzitate:
-    literaturliste += f"**Werk:** {str(quelle["item"])} **Anteil am Gesamttext:** {quelle["word_share"]/len(sermon.words)}\n\n"
+    lit_titel.append(str(quelle["item"]))
+    lit_wordshare.append(quelle["word_share"])
+    lit_wordfraction.append(float("{:.4f}".format((quelle["word_share"]/len(sermon.words))*100)))
     lit_labels.append(str(quelle["item"]))
     lit_data.append(quelle["word_share"])
 for predigt in sermon.orgelpredigtzitate:
-    literaturliste += f"**Werk:** {str(predigt["item"])} **Anteil am Gesamttext:** {predigt["word_share"]/len(sermon.words)}\n\n"
-    lit_labels.append(str(predigt["item"]))
-    lit_data.append(predigt["word_share"])
+    orgel_titel.append(str(predigt["item"]))
+    orgel_wordshare.append(predigt["word_share"])
+    orgel_wordfraction.append(float("{:.4f}".format((predigt["word_share"]/len(sermon.words))*100)))
+    orgel_labels.append(str(predigt["item"]))
+    orgel_data.append(predigt["word_share"])
+for musik in sermon.musikzitate:
+    musik_titel.append(str(musik["item"]))
+    musik_wordshare.append(musik["word_share"])
+    musik_wordfraction.append(float("{:.4f}".format((musik["word_share"]/len(sermon.words))*100)))
+    musik_labels.append(str(musik["item"]))
+    musik_data.append(musik["word_share"])
 
-quotations_piechart = px.pie(values=lit_data, names=lit_labels, title='Verwendete Zitate')
+
+labels = []
+values = []
+colors = []
+for item, broad_color in zip([[lit_labels, lit_data], [orgel_labels, orgel_data], [musik_labels, musik_data]], ['quelle', 'orgelpredigt', 'musikwerk']):
+    print(item[0])
+    #for x,y  in item[0], item[1]:
+    labels += item[0]
+    values += item[1]
+    colors += generate_normalized_gradient(color_map[broad_color], len(labels))
+
+quotations_piechart = go.Figure(go.Pie(values=values, 
+                             labels=labels, 
+                             marker=dict(colors=colors),
+                             title='Verwendete Zitate'))
 
 quotations_piechart.update_layout(
     width=700,
@@ -148,28 +227,44 @@ quotations_piechart.update_layout(
     )
 )
 
+# create dataframe for table view
+literatur = pd.DataFrame(
+    {'Titel': lit_titel + orgel_titel + musik_titel,
+     'Länge': lit_wordshare + orgel_wordshare + musik_wordshare,
+     '% Anteil': lit_wordfraction + orgel_wordshare + musik_wordshare
+    }).sort_values(by=['% Anteil'], ascending=False)
+literatur['Titel'] = literatur['Titel'].apply(lambda x: ' '.join(x.split()[:20]))
+literatur.style.hide()
+
 ##### quotation distribution over sermon in 100-Word-Chunks
 overhang = len(sermon.words) % 100 
 chunked_types=[]
 for i in range(0,len(sermon.words),100):
-    types = sermon.word_types[i:i+100]
-    chunked_types.append(types)
+    types = ["text" if isinstance(x, float) else x for x in sermon.word_types[i:i+100]]
+    reference = [" ".join(ref) for ref in sermon.reference[i:i+100]]
+    concat = [",".join(zipped) for zipped in list(zip(types, reference))]
+    chunked_types.append(concat)
 
-last_types = sermon.word_types[-overhang:]
-chunked_types.append(last_types)
+last_types = ["" if isinstance(x, float) else x for x in sermon.word_types[-overhang:]]
+last_refs = [" ".join(ref) for ref in sermon.reference[-overhang:]]
+last_concat = [",".join(zipped) for zipped in list(zip(last_types, last_refs))]
+chunked_types.append(last_concat)
 
 quote_distribution_chunked = go.Figure(layout=dict(barmode='stack'))
 
-x = [{"text": 95, "bible": 5}, {"text": 85, "bible": 6, "quelle": 9}, {"text": 100}, {"text": 77, "quelle": 10, "bibel": 3, "musikwerk": 10}]
 for row, nr in zip(chunked_types, range(1, len(chunked_types))):
     item = dict(Counter(row))
     bar_title = f"Wörter 1 bis 100" if nr == 1 else f"Wörter {nr * 100} bis {(nr * 100) +100}"
     for key, val in item.items():
+        color, ref = key.split(',')
+        name = f'{str(ref).strip()}' if is_id(ref) else str(key).replace(',', ' ').strip()
+        url=f'https://orgelpredigt.ur.de/{str(ref).strip()}' if is_id(ref) else ""
         quote_distribution_chunked.add_trace(go.Bar(
-            name=str(key).strip(), 
+            name=name, 
             x=[bar_title], 
             y=[val],
-            marker_color=color_map.get(str(key).strip(), 'gray')
+            hovertemplate=f'<b>{name}</b><br>Value: {val} Words<br>Link: <a href="{url}">{ref}</a><extra></extra>',
+            marker_color=color_map.get(str(color).strip(), 'gray')
             ))
 
 quote_distribution_chunked.update_layout(barmode='stack')
@@ -181,12 +276,14 @@ quote_distribution_chunked.update_layout(barmode='stack')
 st.set_page_config(
     page_title="Orgelpredigt_Analyse",
     page_icon=None,
-    layout="centered",
+    layout="wide",
     initial_sidebar_state="auto",
     menu_items=None,
 )
 
 st.title(f"{str(sermon)} – Analyse")
+
+col1, col2 = st.columns(2, gap="small", vertical_alignment="top", border=False)
 
 with st.sidebar:
     st.header("Information zur Predigt")
@@ -209,18 +306,20 @@ with st.sidebar:
     st.markdown(f"**Funktionen:** {sermon.autor.funktionen}")
 
 
-##### Geographischer Überblick
+with col1:
+    ##### Geographischer Überblick
+    st.header("Geographischer Überblick zu Predigt und Biographie des Autors")
+    st.components.v1.html(folium.Figure().add_child(map).render(), height=500)
+    st.header("Zitate")
+    st.plotly_chart(text_types_piechart)
 
-st.header("Geographischer Überblick zu Predigt und Biographie des Autors")
-st.components.v1.html(folium.Figure().add_child(map).render(), height=500)
+with col2:
+    st.header("Verteilung von Zitaten im Text")
+    st.plotly_chart(quote_distribution_chunked)
+
+    ##### Überblick Zitate
+    st.plotly_chart(quotations_piechart)
+
+st.table(literatur)
 
 
-##### Überblick Zitate
-
-st.header("Zitate")
-st.plotly_chart(text_types_piechart)
-st.plotly_chart(quotations_piechart)
-st.markdown(literaturliste)
-
-st.header("Verteilung von Zitaten im Text")
-st.plotly_chart(quote_distribution_chunked)
