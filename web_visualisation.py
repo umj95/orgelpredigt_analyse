@@ -184,19 +184,19 @@ musik_wordfraction = []
 for quelle in sermon.literaturzitate:
     lit_titel.append(str(quelle["item"]))
     lit_wordshare.append(quelle["word_share"])
-    lit_wordfraction.append(float("{:.4f}".format((quelle["word_share"]/len(sermon.words))*100)))
+    lit_wordfraction.append(float(f"{(quelle["word_share"]/len(sermon.words)*100):.2f}"))
     lit_labels.append(str(quelle["item"]))
     lit_data.append(quelle["word_share"])
 for predigt in sermon.orgelpredigtzitate:
     orgel_titel.append(str(predigt["item"]))
     orgel_wordshare.append(predigt["word_share"])
-    orgel_wordfraction.append(float("{:.4f}".format((predigt["word_share"]/len(sermon.words))*100)))
+    orgel_wordfraction.append(float(f"{(predigt["word_share"]/len(sermon.words)*100):.2f}"))
     orgel_labels.append(str(predigt["item"]))
     orgel_data.append(predigt["word_share"])
 for musik in sermon.musikzitate:
     musik_titel.append(str(musik["item"]))
     musik_wordshare.append(musik["word_share"])
-    musik_wordfraction.append(float("{:.4f}".format((musik["word_share"]/len(sermon.words))*100)))
+    musik_wordfraction.append(float(f"{(musik["word_share"]/len(sermon.words)*100):.2f}"))
     musik_labels.append(str(musik["item"]))
     musik_data.append(musik["word_share"])
 
@@ -204,7 +204,10 @@ for musik in sermon.musikzitate:
 labels = []
 values = []
 colors = []
-for item, broad_color in zip([[lit_labels, lit_data], [orgel_labels, orgel_data], [musik_labels, musik_data]], ['quelle', 'orgelpredigt', 'musikwerk']):
+for item, broad_color in zip([[lit_labels, lit_data], 
+                              [orgel_labels, orgel_data], 
+                              [musik_labels, musik_data]], 
+                             ['quelle', 'orgelpredigt', 'musikwerk']):
     print(item[0])
     #for x,y  in item[0], item[1]:
     labels += item[0]
@@ -256,8 +259,14 @@ for row, nr in zip(chunked_types, range(1, len(chunked_types))):
     item = dict(Counter(row))
     bar_title = f"Wörter 1 bis 100" if nr == 1 else f"Wörter {nr * 100} bis {(nr * 100) +100}"
     for key, val in item.items():
-        color, ref = key.split(',')
-        name = f'{str(ref).strip()}' if is_id(ref) else str(key).replace(',', ' ').strip()
+        colors, ref = key.split(',')
+        colors = colors.strip().split(" ")
+        if len(colors) > 1:
+            color = colors[1] if is_id(colors[1]) else colors[0]
+        else:
+            color = colors[0]
+        key_cleaned = str(key).replace(',', '').strip().split('.')[0]
+        name = f'{str(ref).strip()}' if is_id(ref) else key_cleaned
         url=f'https://orgelpredigt.ur.de/{str(ref).strip()}' if is_id(ref) else ""
         quote_distribution_chunked.add_trace(go.Bar(
             name=name, 
