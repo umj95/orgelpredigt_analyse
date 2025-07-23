@@ -1,6 +1,9 @@
 # content files
 sermon_tables/
 predigt_verbessert.txt
+source_texts/
+all_sources.json
+source_occurrences.json
 
 # cache
 __pycache__
