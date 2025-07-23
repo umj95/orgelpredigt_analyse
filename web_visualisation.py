@@ -15,6 +15,14 @@ import json
 import re
 import os
 
+st.set_page_config(
+    page_title="Orgelpredigt_Analyse",
+    page_icon=None,
+    layout="wide",
+    initial_sidebar_state="auto",
+    menu_items=None,
+)
+
 color_map = {
         'orgelpredigt': 'rgb(135, 44, 162)',
         'musikwerk': 'rgb(192, 54, 157)',
@@ -64,7 +72,9 @@ for i in relevant_sermons:
 
 option = st.selectbox(
     "Welche Predigt soll analysiert werden (ID)?",
-    ids
+    ids,
+    #index=None,
+    #placeholder="Wählen Sie eine Predigt aus",
 )
 
 sermon = Sermon(option[-7:])
@@ -184,19 +194,19 @@ musik_wordfraction = []
 for quelle in sermon.literaturzitate:
     lit_titel.append(str(quelle["item"]))
     lit_wordshare.append(quelle["word_share"])
-    lit_wordfraction.append(float(f"{(quelle["word_share"]/len(sermon.words)*100):.2f}"))
+    lit_wordfraction.append(float(f"{(quelle['word_share']/len(sermon.words)*100):.2f}"))
     lit_labels.append(str(quelle["item"]))
     lit_data.append(quelle["word_share"])
 for predigt in sermon.orgelpredigtzitate:
     orgel_titel.append(str(predigt["item"]))
     orgel_wordshare.append(predigt["word_share"])
-    orgel_wordfraction.append(float(f"{(predigt["word_share"]/len(sermon.words)*100):.2f}"))
+    orgel_wordfraction.append(float(f"{(predigt['word_share']/len(sermon.words)*100):.2f}"))
     orgel_labels.append(str(predigt["item"]))
     orgel_data.append(predigt["word_share"])
 for musik in sermon.musikzitate:
     musik_titel.append(str(musik["item"]))
     musik_wordshare.append(musik["word_share"])
-    musik_wordfraction.append(float(f"{(musik["word_share"]/len(sermon.words)*100):.2f}"))
+    musik_wordfraction.append(float(f"{(musik['word_share']/len(sermon.words)*100):.2f}"))
     musik_labels.append(str(musik["item"]))
     musik_data.append(musik["word_share"])
 
@@ -224,6 +234,7 @@ quotations_piechart.update_layout(
     height=700,
     margin=dict(t=80, b=50, l=50, r=50),
     title_x=0.5,  # Center title
+    title='Verwendete Zitate',
     legend=dict(
         orientation="h",  # horizontal legend
         y=-0.1  # push legend below chart
@@ -234,7 +245,7 @@ quotations_piechart.update_layout(
 literatur = pd.DataFrame(
     {'Titel': lit_titel + orgel_titel + musik_titel,
      'Länge': lit_wordshare + orgel_wordshare + musik_wordshare,
-     '% Anteil': lit_wordfraction + orgel_wordshare + musik_wordshare
+     '% Anteil': lit_wordfraction + orgel_wordfraction + musik_wordfraction
     }).sort_values(by=['% Anteil'], ascending=False)
 literatur['Titel'] = literatur['Titel'].apply(lambda x: ' '.join(x.split()[:20]))
 literatur.style.hide()
@@ -282,14 +293,6 @@ quote_distribution_chunked.update_layout(barmode='stack')
 ##### STREAMLIT PAGE #####
 ##########################
 
-st.set_page_config(
-    page_title="Orgelpredigt_Analyse",
-    page_icon=None,
-    layout="wide",
-    initial_sidebar_state="auto",
-    menu_items=None,
-)
-
 st.title(f"{str(sermon)} – Analyse")
 
 col1, col2 = st.columns(2, gap="small", vertical_alignment="top", border=False)
@@ -319,7 +322,7 @@ with col1:
     ##### Geographischer Überblick
     st.header("Geographischer Überblick zu Predigt und Biographie des Autors")
     st.components.v1.html(folium.Figure().add_child(map).render(), height=500)
-    st.header("Zitate")
+    #st.header("Zitate")
     st.plotly_chart(text_types_piechart)
 
 with col2:

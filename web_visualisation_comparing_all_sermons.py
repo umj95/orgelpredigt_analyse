@@ -1,6 +1,8 @@
 import streamlit as st
-from orgelpredigt_analysis import Sermon
+from orgelpredigt_analysis import Sermon, Person
 from collections import Counter
+
+import db_connection
 
 import plotly.express as px
 #px.colors.sequential.Agsunset
@@ -13,6 +15,8 @@ import folium
 import json
 import re
 import os
+
+cursor, connection = db_connection.get_connection()
 
 color_map = {
     'orgelpredigt': 'rgb(135, 44, 162)',
@@ -34,6 +38,103 @@ def is_id(value):
         return True
     else:
         return False
+
+def get_short_info(id):
+    cursor = connection.cursor()
+    if is_id(id):
+        if id.startswith("E08"):
+            try:
+                cursor.execute(f"SELECT e08autor1, e08titel1, e08ort, e08jahr FROM e08_quellen WHERE e08id = '{id}'")
+                column_names = [col[0] for col in cursor.description]
+                results = cursor.fetchall()
+                if results:
+                    data = [dict(zip(column_names, row)) for row in results][0]
+                    author = data.get("e08autor1", "no author")
+                    title = data.get("e08titel1", "no title")
+                    place = data.get("e08ort", "s.l.")
+                    year = data.get("e08jahr", "s.a.")
+                    return f"{author}: {title} ({place}, {year})"
+                else:
+                    return "no data for this source"
+            except Error as e:
+                print(f"Database error occurred for {id}:", e)
+            except Exception as e:
+                print(f"Unexpected error for {id}:", e)
+        elif id.startswith("E09"):
+            try:
+                cursor.execute(f"SELECT e09autor1, e09titel1, e09ort, e09jahr FROM e09_literatur WHERE e09id = '{id}'")
+                column_names = [col[0] for col in cursor.description]
+                results = cursor.fetchall()
+                if results:
+                    data = [dict(zip(column_names, row)) for row in results][0]
+                    author = data.get("e09autor1", "no author")
+                    title = data.get("e09titel1", "no title")
+                    place = data.get("e09ort", "s.l.")
+                    year = data.get("e09jahr", "s.a.")
+                    return f"{author}: {title} ({place}, {year})"
+                else:
+                    return "no data for this source"
+            except Error as e:
+                print(f"Database error occurred for {id}:", e)
+            except Exception as e:
+                print(f"Unexpected error for {id}:", e)
+        elif id.startswith("E10"):
+            try:
+                cursor.execute(f"SELECT e10komponist, e10werk FROM e10_musikwerke WHERE e10id = '{id}'")
+                column_names = [col[0] for col in cursor.description]
+                results = cursor.fetchall()
+                if results:
+                    data = [dict(zip(column_names, row)) for row in results][0]
+                    composer = data.get("e10komponist", "no composer")
+                    title = data.get("e10werk", "no title")
+                    return f"{composer}: {title}"
+                else:
+                    return "no data for this source"
+            except Error as e:
+                print(f"Database error occurred for {id}:", e)
+            except Exception as e:
+                print(f"Unexpected error for {id}:", e)
+        elif id.startswith("E00"):
+            try:
+                cursor.execute(f"SELECT e00autor, e00kurztitel FROM e00_orgelpredigten WHERE e00id = '{id}'")
+                column_names = [col[0] for col in cursor.description]
+                results = cursor.fetchall()
+                if results:
+                    sermon_info = [dict(zip(column_names, row)) for row in results][0]
+                    author = Person(sermon_info["e00autor"]).name
+                    title = sermon_info["e00kurztitel"]
+                    return f"{author}: {title}"
+                else:
+                    return "no data for this source"
+            except Error as e:
+                print(f"Database error occurred for {id}:", e)
+            except Exception as e:
+                print(f"Unexpected error for {id}:", e)
+        else:
+            return f"{id}"
+
+def create_legend(color_map):
+    legend_translation = {
+        "E00": "Predigt",
+        "E10": "Musikwerk",
+        "E08": "Quelle",
+        "E09": "Literatur"
+    }
+    legend_traces = []
+
+    for group_name, color in color_map.items():
+        if group_name.startswith("E"):
+            legend_traces.append(
+                go.Scatter(
+                    x=[None], y=[None],  # invisible point
+                    mode='markers',
+                    marker=dict(size=10, color=color),
+                    legendgroup=group_name,
+                    showlegend=True,
+                    name=legend_translation[group_name]
+                )
+            )
+    return legend_traces
 
 #########################
 ##### CHOOSE SERMON #####
@@ -157,7 +258,7 @@ for node, adjacencies in enumerate(G.adjacency()):
     node_adjacencies.append(len(adjacencies[1]))
     #node_text.append('# of connections: '+str(len(adjacencies[1])))
 for id in ids:
-    node_text.append(f"{id} ({in_degrees[id]} Verweise)")
+    node_text.append(f"{get_short_info(id)} ({in_degrees[id]} Verweise)")
     in_connections.append(in_degrees[id])
 
 node_trace.marker.color = in_connections
@@ -174,6 +275,7 @@ sermons_network_graph = go.Figure(data=[edge_trace, node_trace],
                 showlegend=False,
                 hovermode='closest',
                 margin=dict(b=40,l=10,r=10,t=80),
+                width=600, height=600,
                 annotations=[dict(
                     text="",
                     showarrow=True,
@@ -197,9 +299,8 @@ G2.add_nodes_from(nodes)
 G2.add_edges_from(connections)
 
 in_degrees = dict(G2.in_degree())
-print(in_degrees)
 
-pos = nx.spring_layout(G2, k=0.8, iterations=100)
+pos = nx.spring_layout(G2, k=2, iterations=100)
 degrees = dict(G2.degree())
 
 for node in G2.nodes:
@@ -246,22 +347,14 @@ node_trace = go.Scatter(
     hoverinfo='text',
     text=[n for n in G2.nodes()],
     marker=dict(
-        showscale=True,
+        showscale=False,
         size=node_sizes,
         colorscale='Magma',
         reversescale=False,
         color=node_colors,
-        colorbar=dict(
-            thickness=15,
-            title=dict(
-              text='Node Connections',
-              side='right'
-            ),
-            xanchor='left',
-        ),
         line_width=2))
 
-in_degrees_list = [in_degrees[node] for node in G.nodes]
+in_degrees_list = [in_degrees[node] for node in G2.nodes]
 
 node_adjacencies = []
 node_text = []
@@ -270,10 +363,10 @@ for node, adjacencies in enumerate(G2.adjacency()):
     node_adjacencies.append(len(adjacencies[1]))
     #node_text.append('# of connections: '+str(len(adjacencies[1])))
 for node in G2.nodes:
-    node_text.append(f"{node} ({in_degrees[node]} Verweise)")
+    node_text.append(f"{get_short_info(node)} ({in_degrees[node]} Verweise)")
     in_connections.append(in_degrees[id])
 
-node_trace.marker.size = [(x + 3) * 3  for x in in_degrees_list]
+node_trace.marker.size = [(x + 3) * 2.5  for x in in_degrees_list]
 node_trace.text = node_text
 
 sermons_sources_network = go.Figure(data=[edge_trace, node_trace],
@@ -283,7 +376,7 @@ sermons_sources_network = go.Figure(data=[edge_trace, node_trace],
                     font=dict(size=16)
                     ),
                 #shapes=edge_shapes,
-                showlegend=False,
+                showlegend=True,
                 hovermode='closest',
                 margin=dict(b=40,l=10,r=10,t=80),
                 annotations=[dict(
@@ -295,6 +388,25 @@ sermons_sources_network = go.Figure(data=[edge_trace, node_trace],
                 yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)
             )
         )
+
+legend_traces = create_legend(color_map)
+
+for trace in legend_traces:
+    sermons_sources_network.add_trace(trace)
+
+sermons_sources_network.update_layout(
+    xaxis=dict(scaleanchor='y', scaleratio=1),
+    yaxis=dict(scaleanchor='x', scaleratio=1),
+    width=1200, height=1200,
+    legend=dict(
+        title='Kategorien',
+        x=1.05,  # position legend to the right
+        y=1,
+        bgcolor='rgba(255,255,255,0.7)',
+        bordercolor='black',
+        borderwidth=1
+    )
+)
 
 ##########################
 ##### STACKED CHARTS #####
@@ -328,7 +440,7 @@ def create_stacked_chart(sermon):
             else:
                 color = colors[0]
             key_cleaned = str(key).replace(',', '').strip().split('.')[0]
-            name = f'{str(ref).strip()}' if is_id(ref) else key_cleaned
+            name = f'{" ".join(get_short_info(str(ref)).split()[:6])}' if is_id(ref) else key_cleaned
             url=f'https://orgelpredigt.ur.de/{str(ref).strip()}' if is_id(ref) else ""
             quote_distribution_chunked.add_trace(go.Bar(
                 name=name, 
@@ -339,8 +451,8 @@ def create_stacked_chart(sermon):
                 ))
 
     quote_distribution_chunked.update_layout(barmode='stack',
-                                             width=1400,
-                                             height=500)
+                                             width=800,
+                                             height=300)
     
     return quote_distribution_chunked
 
@@ -351,7 +463,7 @@ def create_stacked_chart(sermon):
 st.set_page_config(
     page_title="Orgelpredigt_Analyse",
     page_icon=None,
-    layout="centered",
+    layout="wide",
     initial_sidebar_state="auto",
     menu_items=None)
 
@@ -364,6 +476,6 @@ for id in ids:
     sermon = Sermon(id)
     st.markdown(f"**{sermon.kurztitel}**")
     st.plotly_chart(create_stacked_chart(sermon))
-    st.divider()
+    #st.divider()
 
          
