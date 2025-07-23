@@ -6,12 +6,31 @@ import re
 
 cursor, connection = db_connection.get_connection()
 
-def is_id(value):
+def is_id(value: str) -> bool:
     pattern = re.compile(r'E[01][0-9]{5}')
     if re.match(pattern, value):
         return True
     else:
         return False
+
+def get_short_info(id: str) -> str:
+    if id[:3] == "E00":
+        x = Orgelpredigt(id)
+        return f"{x.autor}: {x.kurztitel}"
+    elif id[:3] == "E01":
+        x = Person(id)
+        return f"{x.name} ({x.daten})"
+    elif id[:3] == "E03":
+        x = Place(id)
+        return f"{x.name}"
+    elif id[:3] == ("E08" or "E09"):
+        x = Source(id)
+        return f"{x.autor}: {x.titel} ({x.jahr})"
+    elif id[:3] == "E10":
+        x = Musikwerk(id)
+        return f"{x.komponist}: {x.titel}"
+    else:
+        return "Ungültige ID"
     
 class Place:
     def __init__(self, id, conn=connection):
