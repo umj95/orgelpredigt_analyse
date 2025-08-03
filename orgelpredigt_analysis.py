@@ -14,19 +14,19 @@ def is_id(value: str) -> bool:
         return False
 
 def get_short_info(id: str) -> str:
-    if id[:3] == "E00":
+    if id.startswith("E00"):
         x = Orgelpredigt(id)
         return f"{x.autor}: {x.kurztitel}"
-    elif id[:3] == "E01":
+    elif id.startswith("E01"):
         x = Person(id)
         return f"{x.name} ({x.daten})"
-    elif id[:3] == "E03":
+    elif id.startswith("E03"):
         x = Place(id)
         return f"{x.name}"
-    elif id[:3] == ("E08" or "E09"):
+    elif id.startswith(("E08", "E09")):
         x = Source(id)
         return f"{x.autor}: {x.titel} ({x.jahr})"
-    elif id[:3] == "E10":
+    elif id.startswith("E10"):
         x = Musikwerk(id)
         return f"{x.komponist}: {x.titel}"
     else:
