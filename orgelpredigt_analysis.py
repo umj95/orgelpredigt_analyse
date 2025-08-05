@@ -345,9 +345,9 @@ class Sermon:
 
     def get_sermon_table(self):
         df = pd.read_csv(f'sermon_tables/{self.id}.tsv', sep='\t')
-        self.words = df["word"].tolist()
-        self.word_types = df["types"].tolist()
-        self.reference = df["reference"].apply(ast.literal_eval).tolist()
+        self.words = df["word"].tolist()                                    # a list of all words
+        self.word_types = df["types"].tolist()                              # a list of all word types
+        self.reference = df["reference"].apply(ast.literal_eval).tolist()   # a list of all ids of references
         self.all_references = sum(self.reference, [])
     
     def get_quotations(self):
