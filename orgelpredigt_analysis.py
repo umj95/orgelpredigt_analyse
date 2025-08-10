@@ -3,6 +3,7 @@ from mysql.connector import Error
 import pandas as pd
 import ast
 import re
+import json
 
 cursor, connection = db_connection.get_connection()
 
@@ -313,6 +314,7 @@ class Sermon:
         self.get_sermon_info()
         self.get_sermon_table()
         self.get_quotations()
+        self.get_sermon_chunked()
     
     def __str__(self):
         return f"{self.autor.nachname}, {self.autor.vorname}: {self.kurztitel}"
@@ -349,6 +351,12 @@ class Sermon:
         self.word_types = df["types"].tolist()                              # a list of all word types
         self.reference = df["reference"].apply(ast.literal_eval).tolist()   # a list of all ids of references
         self.all_references = sum(self.reference, [])
+
+    def get_sermon_chunked(self):
+        with open(f"sermons_chunked/{self.id}.json", "r") as f:
+            sermon_chunked = json.load(f)
+        self.chunked = sermon_chunked
+
     
     def get_quotations(self):
         quoted_source_ids = []
