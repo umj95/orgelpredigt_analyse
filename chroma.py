@@ -1,5 +1,5 @@
 # %%
-!pip install chromadb
+!pip install chromadb langchain_community langchain_ollama langchain_core
 # %%
 from typing import Iterable, List
 from langchain_community.document_loaders import DirectoryLoader, TextLoader, JSONLoader
@@ -8,11 +8,29 @@ from langchain_ollama import OllamaEmbeddings
 from langchain_core.documents.base import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from pprint import pprint
+import os
+import json
+
+# %%
+# Read all verses for each songbook page into a document list
+documents = []
+for i in range(41,1291):
+    with open(f"source_texts/praxis_pietatis_verses/{i}.json") as f:
+        data = json.load(f)
+    
+    for sentence in data:
+        document = Document(
+            page_content = sentence,
+            metadata = {'source': f'{i}'}
+        )
+        documents.append(document)
+
+# %%
 # %%
 # 1. Load documents from a local folder
-docs_path = "./source_texts/praxis_pietatis_verses"  # Change as needed
-loader = DirectoryLoader(docs_path, glob="*.json", loader_cls=JSONLoader)
-documents = loader.load()
+#docs_path = "./source_texts/praxis_pietatis_verses"  # Change as needed
+#loader = DirectoryLoader(docs_path, glob="*.json", loader_cls=JSONLoader)
+#documents = loader.load()
 
 # --- Add document splitting ---
 # text_splitter = RecursiveCharacterTextSplitter(
@@ -48,13 +66,13 @@ vectordb = Chroma.from_documents(
 retriever = vectordb.as_retriever(
     search_type="similarity",
     search_kwargs={
-        "k": 10,
+        "k": 3,
         # "fetch_k": 200,
         # "filter": {"source": {"$contains": "chapter1"}}
     },
 )
 # %%
-docs = retriever.get_relevant_documents("ein feste burg")
+docs = retriever.get_relevant_documents("ein gute wehr und waffen")
 docs.sort(key=lambda x: x.metadata["source"])
 docs
 
