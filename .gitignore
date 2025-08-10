@@ -4,6 +4,7 @@ predigt_verbessert.txt
 source_texts/
 all_sources.json
 source_occurrences.json
+chroma_db/
 
 # cache
 __pycache__
