@@ -1,5 +1,5 @@
 import streamlit as st
-from orgelpredigt_analysis import Sermon
+from orgelpredigt_analysis import Sermon, get_short_info
 
 from collections import Counter
 
@@ -66,18 +66,31 @@ relevant_sermons = sorted(
     key=lambda x: x[2]
 )
 
-ids = []
-for i in relevant_sermons:
-    ids.append(f"{i[1]} -- {i[0]}")
+### Streamlit
+st.markdown("Welche Predigt soll analysiert werden? Bitte ID eingeben oder Predigt aus dropdown-Menü auswählen")
+col1, col2 = st.columns([0.8, 0.2])
 
-option = st.selectbox(
-    "Welche Predigt soll analysiert werden (ID)?",
-    ids,
-    #index=None,
-    #placeholder="Wählen Sie eine Predigt aus",
-)
+with col1:
+    ids = []
+    for i in relevant_sermons:
+        ids.append(f"{i[1]} -- {i[0]}")
 
-sermon = Sermon(option[-7:])
+    option = st.selectbox(
+        label="Predigt auswählen",
+        options=ids,
+        placeholder="Predigttitel -- Predigt-ID"
+    )
+with col2:
+    input_id = st.text_input("oder  Predigt-ID eingeben")
+
+if input_id:
+    ids = [item[0] for item in relevant_sermons]
+    if input_id in ids:
+        sermon = Sermon(input_id)
+    else:
+        st.error("Die Eingabe kann keiner edierten Predigt zugewiesen werden.")
+else:
+    sermon = Sermon(option[-7:])
 
 #############################
 ##### MAP VISUALISATION #####
@@ -289,12 +302,82 @@ for row, nr in zip(chunked_types, range(1, len(chunked_types))):
 
 quote_distribution_chunked.update_layout(barmode='stack')
 
+################################
+##### TEXT WITH HIGHLIGHTS #####
+################################
+
+def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int) -> str:
+    """Takes a sentence dictionary and returns an html <p>-tag with appropriate child tags
+        Args:
+            sentence: The dict containing the keys "words" (list), "types" (list) and "references" (list of lists)
+            par_nr: The number of the paragraph
+            sentence_nr: The number of the sentence in the paragraph
+        Returns:
+            A string containing the tag
+    """
+
+    def add_tooltip(id: str) -> str:
+        tooltip = f'<span class="tooltiptext">{get_short_info(id)}</span>'
+        return tooltip
+
+    tag = f'<span class="orgelpredigt_span" id="{par_nr}-{sentence_nr}">'
+
+    current_tag = []
+
+    words = sentence["words"]
+    types = sentence["types"]
+    refs = sentence["references"]
+
+    if types[0] != "":
+        current_tag.append(types[0].strip())
+        tag += f'<span class="{types[0].strip()} tooltip">{add_tooltip(refs[0][0])}'
+
+    for word, type, ref in zip(words, types, refs):
+
+        if len(ref) > 0:
+            thisref = ref[-1]
+        else:
+            thisref = ''
+
+        if type == "":
+            if len(current_tag) == 0:
+                tag += f' {word}'
+            else:
+                tag += f'</span> {word}'
+                current_tag.pop()
+        elif len(current_tag) > 0:
+            if type.strip() == current_tag[-1]:
+                tag += f' {word}'
+            else:
+                tag += f'<span class="{type.strip()} tooltip">{add_tooltip(thisref)}{word}'
+                current_tag.append(type.strip())
+        else:
+            tag += f'<span class="{type.strip()} tooltip">{add_tooltip(thisref)}{word}'
+            current_tag.append(type.strip())
+    
+    if len(current_tag) != 0:
+        tag += '</span>'
+
+    return f'{tag}</span>'
+
+sermon_html = f'<div class="orgelpredigt">'
+
+for i in range(len(sermon.chunked)):
+    paragraph_text = f'<div class="parmarker">Paragraph {i}</div><p class="orgelpredigt_p" id="{i}">'
+    for j in range(len(sermon.chunked[i])):
+        paragraph_text += sentence_to_html(sermon.chunked[i][j], i, j)
+    paragraph_text += "</p>"
+    sermon_html += paragraph_text
+
+sermon_html += "</div>"
+
 ##########################
 ##### STREAMLIT PAGE #####
 ##########################
 
 st.title(f"{str(sermon)} – Analyse")
 
+tab1, tab2 = st.tabs(["Überblick", "Predigttext"])
 col1, col2 = st.columns(2, gap="small", vertical_alignment="top", border=False)
 
 with st.sidebar:
@@ -317,21 +400,113 @@ with st.sidebar:
     st.markdown(f"**Gestorben:** {sermon.autor.sterbedatum} ({sermon.autor.sterbeort})")
     st.markdown(f"**Funktionen:** {sermon.autor.funktionen}")
 
+with tab1:
+    with col1:
+        ##### Geographischer Überblick
+        st.header("Geographischer Überblick zu Predigt und Biographie des Autors")
+        st.components.v1.html(folium.Figure().add_child(map).render(), height=500)
+        #st.header("Zitate")
+        st.plotly_chart(text_types_piechart)
 
-with col1:
-    ##### Geographischer Überblick
-    st.header("Geographischer Überblick zu Predigt und Biographie des Autors")
-    st.components.v1.html(folium.Figure().add_child(map).render(), height=500)
-    #st.header("Zitate")
-    st.plotly_chart(text_types_piechart)
+    with col2:
+        st.header("Verteilung von Zitaten im Text")
+        st.plotly_chart(quote_distribution_chunked)
 
-with col2:
-    st.header("Verteilung von Zitaten im Text")
-    st.plotly_chart(quote_distribution_chunked)
+        ##### Überblick Zitate
+        st.plotly_chart(quotations_piechart)
+    
+    #table_container = st.empty()
+    #table_container.table(literatur)
+    #st.divider()
+    #st.header("Alle Zitate")
+    #st.table(literatur)
 
-    ##### Überblick Zitate
-    st.plotly_chart(quotations_piechart)
+with tab2:
+    st.markdown(f"""
+        <style>
+            div.orgelpredigt {{
+                padding: 10%;
+            }}
+            span.musikwerk {{
+                background-color: {color_map["musikwerk"]}; 
+                border-radius: 5px; 
+                padding: 2px; 
+            }}
+            span.orgelpredigt {{
+                background-color: {color_map["orgelpredigt"]}; 
+                border-radius: 5px; 
+                padding: 2px; 
+            }}
+            span.literatur {{
+                background-color: {color_map["literatur"]}; 
+                border-radius: 5px; 
+                padding: 2px; 
+            }}
+            span.quelle {{
+                background-color: {color_map["quelle"]}; 
+                border-radius: 5px; 
+                padding: 2px; 
+            }}
+            span.bibel {{
+                background-color: {color_map["bibel"]}; 
+                border-radius: 5px; 
+                padding: 2px; 
+            }}
+            /* Tooltip container */
+            .tooltip {{
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+            }}
 
-st.table(literatur)
+            /* Tooltip text */
+            .tooltip .tooltiptext {{
+                visibility: hidden;
+                width: 120px;
+                background-color: #555;
+                color: #fff;
+                text-align: center;
+                padding: 5px 0;
+                border-radius: 6px;
+
+                /* Position the tooltip text */
+                position: absolute;
+                z-index: 1;
+                bottom: 125%;
+                left: 50%;
+                margin-left: -60px;
+
+                /* Fade in tooltip */
+                opacity: 0;
+                transition: opacity 0.3s;
+            }}
+
+            /* Tooltip arrow */
+                .tooltip .tooltiptext::after {{
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #555 transparent transparent transparent;
+            }}
+
+            /* Show the tooltip text when you mouse over the tooltip container */
+            .tooltip:hover .tooltiptext {{
+                visibility: visible;
+                opacity: 1;
+            }} 
+
+            div.parmarker {{
+                margin-left: -8em;
+                color: lightgrey;
+            }}
+        </style>
+        """, unsafe_allow_html=True)
+
+    st.header(sermon.volltitel)
+    st.html(sermon_html)
 
 
