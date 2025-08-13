@@ -5,6 +5,7 @@ source_texts/
 all_sources.json
 source_occurrences.json
 chroma_db/
+graphics/
 
 # cache
 __pycache__
