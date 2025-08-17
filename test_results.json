@@ -1,0 +1,68 @@
+[
+    {
+        "type": "similarity",
+        "fuzziness": 80,
+        "date": "2025-08-18T00:32:11.577579",
+        "sermons": [
+            {
+                "id": "E000036",
+                "agreed_hits": 90,
+                "divergent_hits": 7,
+                "new_hits": 25,
+                "missed_hits": 29,
+                "avg_certainty": 87.71073770491805,
+                "precision": 0.7377049180327869,
+                "recall": 0.7142857142857143,
+                "f1-score": 0.7258064516129032
+            },
+            {
+                "id": "E000072",
+                "agreed_hits": 29,
+                "divergent_hits": 5,
+                "new_hits": 13,
+                "missed_hits": 21,
+                "avg_certainty": 85.10021276595744,
+                "precision": 0.6170212765957447,
+                "recall": 0.5272727272727272,
+                "f1-score": 0.5686274509803921
+            },
+            {
+                "id": "E000070",
+                "agreed_hits": 31,
+                "divergent_hits": 12,
+                "new_hits": 16,
+                "missed_hits": 14,
+                "avg_certainty": 91.39457627118645,
+                "precision": 0.5254237288135594,
+                "recall": 0.543859649122807,
+                "f1-score": 0.5344827586206897
+            },
+            {
+                "id": "E000055",
+                "agreed_hits": 12,
+                "divergent_hits": 8,
+                "new_hits": 16,
+                "missed_hits": 6,
+                "avg_certainty": 86.30555555555556,
+                "precision": 0.3333333333333333,
+                "recall": 0.46153846153846156,
+                "f1-score": 0.3870967741935484
+            },
+            {
+                "id": "E000061",
+                "agreed_hits": 10,
+                "divergent_hits": 8,
+                "new_hits": 28,
+                "missed_hits": 72,
+                "avg_certainty": 84.02934782608696,
+                "precision": 0.21739130434782608,
+                "recall": 0.1111111111111111,
+                "f1-score": 0.14705882352941177
+            }
+        ],
+        "overall_precision": 0.4861749122246501,
+        "overall_recall": 0.47161353266616424,
+        "overall_f1": 0.47261445178738903,
+        "overall_certainty": 86.9080860247409
+    }
+]
