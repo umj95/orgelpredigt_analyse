@@ -1,8 +1,8 @@
 [
     {
-        "type": "similarity",
+        "type": "similarity_search",
         "fuzziness": 80,
-        "date": "2025-08-18T00:32:11.577579",
+        "date": "25-08-19_17:46",
         "sermons": [
             {
                 "id": "E000036",
