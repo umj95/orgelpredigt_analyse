@@ -6,6 +6,7 @@ import json
 from collections import Counter
 import re
 import plotly.graph_objects as go
+from pprint import pprint
 
 # %%
 with open('predigten_übersicht.json') as f:
@@ -43,7 +44,8 @@ with open("predigten_übersicht.json", "w") as f:
 # print info about aggregated word, type and ref counts.
 print(f"Nr. der Worte in allen Predigten: {len(all_words)}")
 type_counters = dict(Counter(all_types))
-print(f"Nr. der Wörter in den Zitationstypen: {type_counters}")
+print(f"Nr. der Wörter in den Zitationstypen:")
+pprint(type_counters)
 
 # %%
 # plot the 20 reference works with the highest word count overall
@@ -112,3 +114,11 @@ top_5_most_music_pieces = heapq.nlargest(5, predigten, key=lambda x: predigten[x
 print("=== Die top 5 Predigten mit den meisten Musikzitaten ===")
 
 print(*[f"{oa.get_short_info(i)} [{i}]" for i in top_5_most_music_pieces], sep="\n")
+
+# %%
+# Find 5 sermons with longest quotes from other sermons
+top_5_most_sermon_quotes = heapq.nlargest(5, predigten, key=lambda x: predigten[x]['worte_orgelpredigt'])
+
+print("=== Die top 5 Predigten mit den längsten Zitaten aus anderen Orgelpredigten ===")
+
+print(*[f"{oa.get_short_info(i)} [{i}]" for i in top_5_most_sermon_quotes], sep="\n")
