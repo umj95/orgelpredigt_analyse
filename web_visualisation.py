@@ -290,13 +290,19 @@ for row, nr in zip(chunked_types, range(1, len(chunked_types))):
         else:
             color = colors[0]
         key_cleaned = str(key).replace(',', '').strip().split('.')[0]
-        name = f'{str(ref).strip()}' if is_id(ref) else key_cleaned
+        id_checker = re.match(r'E[01][0-9]{5}', str(ref))
+        if id_checker:
+            id = id_checker[0]
+            print(id)
+        else: 
+            id = str(ref)
+        name = f'{id}' if is_id(ref) else key_cleaned
         url=f'https://orgelpredigt.ur.de/{str(ref).strip()}' if is_id(ref) else ""
         quote_distribution_chunked.add_trace(go.Bar(
             name=name, 
             x=[bar_title], 
             y=[val],
-            hovertemplate=f'<b>{name}</b><br>Value: {val} Words<br>Link: <a href="{url}">{ref}</a><extra></extra>',
+            hovertemplate=f'<b>{get_short_info(id)}</b><br>Value: {val} Words<br>Link: <a href="{url}">{ref}</a><extra></extra>',
             marker_color=color_map.get(str(color).strip(), 'gray')
             ))
 
@@ -316,7 +322,17 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int) -> str:
             A string containing the tag
     """
 
-    def add_tooltip(id: str) -> str:
+    def add_tooltip(id_list: str) -> str:
+        if isinstance(id_list, list):
+            #id = "List"
+            if len(id_list) > 0:
+                id = id_list[-1]
+            else:
+                id = ""
+        elif isinstance(id_list, str) and len(id_list) > 0:
+            id = id_list.split()[0]
+        else:
+            id = id_list
         tooltip = f'<span class="tooltiptext">{get_short_info(id)}</span>'
         return tooltip
 
@@ -330,7 +346,7 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int) -> str:
 
     if types[0] != "":
         current_tag.append(types[0].strip())
-        tag += f'<span class="{types[0].strip()} tooltip">{add_tooltip(refs[0][0])}'
+        tag += f'<span class="{types[0].strip()} tooltip">{add_tooltip(refs[0])}'
 
     for word, type, ref in zip(words, types, refs):
 
