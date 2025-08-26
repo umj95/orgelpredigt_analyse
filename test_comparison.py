@@ -13,8 +13,8 @@ overall_result_table = [['Timestamp', 'Method', 'Fuzziness', 'Average Certainty'
 
 for result in test_results:
     item = [result['date'], result['type'], result['fuzziness'],
-            result['overall_certainty'], result['overall_precision'],
-            result['overall_recall'], result['overall_f1']]
+            result['overall_certainty_verse'], result['overall_precision_verse'],
+            result['overall_recall_verse'], result['overall_f1_verse']]
     overall_result_table.append(item)
 
 overall_results = pd.DataFrame(overall_result_table)
