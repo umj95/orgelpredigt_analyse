@@ -31,7 +31,7 @@ def get_short_info(id: str) -> str:
         x = Musikwerk(id)
         return f"{x.komponist}: {x.titel}"
     else:
-        return "Ungültige ID"
+        return f"{id} (Ungültige ID)"
     
 class Place:
     def __init__(self, id, conn=connection):
@@ -65,7 +65,7 @@ class Place:
                 self.gebiet = data["e03gebiet"]
                 self.koordinaten = data["e03koordinaten"]
             else:
-                print(f"Query executed for {self.id}, but no data found.")
+                #print(f"Query executed for {self.id}, but no data found.")
                 self.name = "no_name"
                 self.gnd = ""
                 self.typ = ""
@@ -118,7 +118,7 @@ class Person:
                 self.geburtsort = Place(data["e01geburtsort"])
                 self.sterbeort = Place(data["e01sterbeort"])
             else:
-                print(f"Query executed for {self.id}, but no data found.")
+                #print(f"Query executed for {self.id}, but no data found.")
                 self.name = "no_name"
                 self.wirkungsorte = ""
                 self.geburtsort = ""
@@ -190,7 +190,7 @@ class Source:
                     self.vdnummer = data["e08vdnummer"]
                     self.dnbnummer = data["e08dnbnummer"]
                 else:
-                    print(f"Query executed for {self.id}, but no data found.")
+                    #print(f"Query executed for {self.id}, but no data found.")
                     self.autor = "no_author"
                     self.titel = "no_title"
                     self.ort = "no_place"
@@ -219,7 +219,7 @@ class Source:
                     self.typ = data["e09typ"]
                     self.dnbnummer = data["e09dnbnummer"]
                 else:
-                    print(f"Query executed for {self.id}, but no data found.")
+                    #print(f"Query executed for {self.id}, but no data found.")
                     self.autor = "no_author"
                     self.titel = "no_title"
                     self.ort = "no_place"
@@ -263,7 +263,7 @@ class Musikwerk:
                     #self.jahr = data["e10jahr"]
                     #self.verlag = data["e10verlag"]
                 else:
-                    print(f"Query executed for {self.id}, but no data found.")
+                    #print(f"Query executed for {self.id}, but no data found.")
                     self.komponist = "no_composer"
                     self.titel = "no_title"
                     self.kurztitel = ""
@@ -298,7 +298,7 @@ class Orgelpredigt:
                 self.autor = Person(sermon_info["e00autor"])
                 self.kurztitel = sermon_info["e00kurztitel"]
             else: 
-                print(f"Query executed for {self.id}, but no data found.")
+                #print(f"Query executed for {self.id}, but no data found.")
                 self.autor.nachname = "--"
                 self.autor.vorname = "--"
                 self.kurztitel = self.id
@@ -338,7 +338,8 @@ class Sermon:
                 self.autor = Person(sermon_info["e00autor"])
                 self.verleger = Person(sermon_info["e00verleger"])
             else: 
-                print(f"Query executed for {self.id}, but no data found.")
+                print("")
+                #print(f"Query executed for {self.id}, but no data found.")
         except Error as e:
             print(f"Database error occurred for {self.id}:", e)
         except Exception as e:
