@@ -189,10 +189,6 @@ while response not in table_names:
     response = input("Bitte Dateinamen eingeben")
 
 # %%
-print()
-
-
-# %%
 with open(f"similarity_tables/{response}") as f:
     sim_table = json.load(f)
 
@@ -408,9 +404,7 @@ dates = [x['date'] for x in test_results]
 if date not in dates:
     test_results.append(test_score)
 
-    with open("test_results.json", "w") as f:
+    with open(f"test_results_{corpus}.json", "w") as f:
         json.dump(test_results, f, ensure_ascii=False, cls=NumpyEncoder)
 
-
 # %%
-guessed_hits

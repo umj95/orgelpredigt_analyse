@@ -124,8 +124,6 @@ def retriever(query: str) -> tuple[Document]:
     return docs
 
 # %%
-
-# %%
 print("Sollen Predigten mit den meisten (1), oder den längsten (2) Liedzitaten analysiert werden?")
 response = None
 while response not in ["1", "2"]:
@@ -188,6 +186,3 @@ for id in testsermons:
 # %%
 with open(f'similarity_tables/vector_search_{corpus}_{cosine_cutoff}_{date}.json', "w") as f:
     json.dump(similarity_table, f, ensure_ascii=False)
-
-# %%
-guessed_hits

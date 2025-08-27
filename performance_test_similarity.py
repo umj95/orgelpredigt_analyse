@@ -379,8 +379,4 @@ if date not in dates:
 guessed_hits['Paragraph'] = guessed_hits['Paragraph'].apply(lambda x: int(x))
 guessed_hits['Satz'] = guessed_hits['Satz'].apply(lambda x: int(x))
 guessed_hits = guessed_hits.sort_values(['Paragraph', 'Satz'])
-guessed_hits
 
-# %%
-known_hits
-# %%
