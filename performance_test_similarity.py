@@ -190,6 +190,7 @@ with open(f"similarity_tables/{response}") as f:
     sim_table = json.load(f)
 
 date = sim_table['date']
+corpus = sim_table['corpus']
 method = sim_table['method']
 fuzziness = sim_table['fuzziness']
 
@@ -203,6 +204,7 @@ guessed_hits
 # %%
 test_score = {}
 test_score["type"] = method
+test_score["corpus"] = corpus
 test_score["fuzziness"] = fuzziness
 test_score["date"] = date
 test_score["sermons"] = []
@@ -362,7 +364,7 @@ test_score["overall_f1_hits"] = statistics.mean(all_f1_hits)
 # %%
 pprint(test_score)
 # %%
-with open("test_results.json", "r") as f:
+with open(f"test_results_{corpus}.json", "r") as f:
     test_results = json.load(f)
 
 dates = [x['date'] for x in test_results]
@@ -370,7 +372,7 @@ dates = [x['date'] for x in test_results]
 if date not in dates:
     test_results.append(test_score)
 
-    with open("test_results.json", "w") as f:
+    with open(f"test_results_{corpus}.json", "w") as f:
         json.dump(test_results, f, ensure_ascii=False, cls=NumpyEncoder)
 
 # %%
@@ -381,3 +383,4 @@ guessed_hits
 
 # %%
 known_hits
+# %%

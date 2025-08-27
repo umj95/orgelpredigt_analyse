@@ -9,7 +9,6 @@ import os
 import io
 import pprint
 
-import datetime
 from numpyencoder import NumpyEncoder
 
 from langchain_community.vectorstores import Chroma
@@ -18,6 +17,7 @@ from langchain_core.documents.base import Document
 from langchain_core.runnables import chain
 from typing import List
 import math
+from sentence_transformers import SentenceTransformer
 
 #%%
 def flatten(xss):
@@ -188,23 +188,42 @@ response = None
 while response not in table_names:
     response = input("Bitte Dateinamen eingeben")
 
+# %%
+print()
+
 
 # %%
 with open(f"similarity_tables/{response}") as f:
     sim_table = json.load(f)
 
 date = sim_table['date']
+corpus = sim_table['corpus']
 method = sim_table['method']
-model = sim_table['model']
+model_name = sim_table['model']
 fuzziness = sim_table['fuzziness']
 
+model = SentenceTransformer(f'sentence-transformers/{model_name}')
 
-embeddings = OllamaEmbeddings(model=model)
+from langchain_core.embeddings.embeddings import Embeddings
+class EmbedSomething(Embeddings):
+    def __init__(self,model) -> None:
+        self.model = model
 
-vectordb = Chroma(persist_directory=f"./chroma/chroma_db_{model}", embedding_function=embeddings)
+    def embed_documents(self,texts):
+        t = self.model.encode(texts)
+        return t.tolist()
 
+    def embed_query(self, text: str) -> List[float]:
+        t = self.model.encode(text)
+        return t.tolist()
+
+
+emb = EmbedSomething(model)
+
+#%%
+vectordb = Chroma(persist_directory=f"./chroma/chroma_db_{model_name}", embedding_function=emb)
 @chain
-def retriever(inputs: dict) -> List[Document]:
+def retriever(inputs: dict) -> tuple[Document]:
     query = inputs["query"]
     page = inputs["page"]
     docs, scores = zip(
@@ -221,6 +240,7 @@ def retriever(inputs: dict) -> List[Document]:
 # %% 
 test_score = {}
 test_score["type"] = method
+test_score["corpus"] = corpus
 test_score["fuzziness"] = fuzziness
 test_score["date"] = date
 test_score["sermons"] = []
@@ -380,7 +400,7 @@ test_score["overall_f1_hits"] = statistics.mean(all_f1_hits)
 # %%
 pprint.pprint(test_score)
 # %%
-with open("test_results.json", "r") as f:
+with open(f"test_results_{corpus}.json", "r") as f:
     test_results = json.load(f)
 
 dates = [x['date'] for x in test_results]

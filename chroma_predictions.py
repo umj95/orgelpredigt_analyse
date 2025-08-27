@@ -1,19 +1,17 @@
 # %%
 from typing import Iterable, List
-from langchain_community.document_loaders import DirectoryLoader, TextLoader, JSONLoader
 from langchain_community.vectorstores import Chroma
 from langchain_ollama import OllamaEmbeddings
 from langchain_core.documents.base import Document
 from langchain_core.runnables import chain
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 from pprint import pprint
-import os
 import json
 import orgelpredigt_analysis as oa
 import re
 import pandas as pd
 import datetime
 from functools import reduce
+from sentence_transformers import SentenceTransformer
 
 import nltk
 from nltk.corpus import stopwords
@@ -26,9 +24,7 @@ german_stop_words = set(stopwords.words('german'))
 
 orgel_stop_words = {'herr', 'gott', 'gottes', 'jesus', 'jesu', 'christus', 'christi', 'christe', 'christen', 'amen', 'heilig', 'heiliger', 'geist', 'sohn'}
 
-
 stop_words = german_stop_words.union(orgel_stop_words)
-stop_words
 
 # %%
 def flatten_reduce(matrix):
@@ -94,16 +90,33 @@ def remove_duplicates(df):
 
 
 # %%
-model = "nomic-embed-text"
-embeddings = OllamaEmbeddings(
-    model=model
-)  # Or another embedding model available in Ollama
+#embeddings = OllamaEmbeddings(
+#    model=model
+#)
+model_name = "LaBSE"
+model = SentenceTransformer(f'sentence-transformers/{model_name}')
+
+from langchain_core.embeddings.embeddings import Embeddings
+class EmbedSomething(Embeddings):
+    def __init__(self,model) -> None:
+        self.model = model
+
+    def embed_documents(self,texts):
+        t = self.model.encode(texts)
+        return t.tolist()
+
+    def embed_query(self, text: str) -> List[float]:
+        t = self.model.encode(text)
+        return t.tolist()
+
+
+emb = EmbedSomething(model)
 
 #%%
-vectordb = Chroma(persist_directory=f"./chroma/chroma_db_{model}", embedding_function=embeddings)
+vectordb = Chroma(persist_directory=f"./chroma/chroma_db_{model_name}", embedding_function=emb)
 
 @chain
-def retriever(query: str) -> List[Document]:
+def retriever(query: str) -> tuple[Document]:
     docs, scores = zip(*vectordb.similarity_search_with_score(query, k=4))
     for doc, score in zip(docs, scores):
         doc.metadata["score"] = score
@@ -111,7 +124,19 @@ def retriever(query: str) -> List[Document]:
     return docs
 
 # %%
-with open("sermons_with_most_music.json", "r") as f:
+
+# %%
+print("Sollen Predigten mit den meisten (1), oder den längsten (2) Liedzitaten analysiert werden?")
+response = None
+while response not in ["1", "2"]:
+    response = input("Bitte Dateinamen eingeben")
+
+if response == "2":
+    corpus = "longest"
+else:
+    corpus = "most"
+
+with open(f"sermons_with_{corpus}_music.json", "r") as f:
     testsermons = json.load(f)
 
 # %%
@@ -121,10 +146,11 @@ date = datetime.datetime.now().strftime("%y-%m-%d_%H:%M")
 # %%
 similarity_table = {}
 similarity_table['date'] = date
+similarity_table["corpus"] = corpus
 similarity_table['method'] = 'vector_database'
-similarity_table['model'] = model
+similarity_table['model'] = model_name
 similarity_table['fuzziness'] = cosine_cutoff
-similarity_table['comments'] = "Stopwörter incl. spezifica entfernt"
+similarity_table['comments'] = "LaBSE-Modell mit Stopwörtern"
 
 similarity_table['results'] = []
 
@@ -140,7 +166,8 @@ for id in testsermons:
                 else:
                     sent_nr += 1
                     words = sermon.chunked[i][j]["words"]
-                    filtered_words = [word for word in words if word.lower() not in stop_words]
+                    filtered_words = words
+                    #filtered_words = [word for word in words if word.lower() not in stop_words]
                     query = " ".join(filtered_words)
                     query = re.sub(r'[/.,;:?!]', '', query)
                     matches = retriever.invoke(query)
@@ -159,7 +186,7 @@ for id in testsermons:
     similarity_table['results'].append([id, sent_nr, guessed_hits.to_csv()[1:]])
 
 # %%
-with open(f'similarity_tables/vector_search_{cosine_cutoff}_{date}.json', "w") as f:
+with open(f'similarity_tables/vector_search_{corpus}_{cosine_cutoff}_{date}.json', "w") as f:
     json.dump(similarity_table, f, ensure_ascii=False)
 
 # %%
