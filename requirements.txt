@@ -2,3 +2,4 @@ plotly
 networkx
 folium
 scipy
+matplotlib
