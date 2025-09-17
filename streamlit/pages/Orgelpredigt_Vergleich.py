@@ -23,8 +23,6 @@ from pathlib import Path
 # root directory path
 ROOT = Path(__file__).resolve().parents[2]
 
-cursor, connection = db_connection.get_connection()
-
 color_map = {
     'orgelpredigt': 'rgb(135, 44, 162)',
     'musikwerk': 'rgb(192, 54, 157)',
