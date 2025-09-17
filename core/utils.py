@@ -1,11 +1,22 @@
-import db_connection
-from mysql.connector import Error
+#import core.db_connection as db_connection
+#from mysql.connector import Error
 import pandas as pd
 import ast
 import re
 import json
 
-cursor, connection = db_connection.get_connection()
+with open('source_texts/orgelpredigt/e00_orgelpredigten.json') as f:
+    e00_orgelpredigten = json.load(f)
+with open('source_texts/orgelpredigt/e01_personen.json') as f:
+    e01_personen = json.load(f)
+with open('source_texts/orgelpredigt/e03_geographica.json') as f:
+    e03_geographica = json.load(f)
+with open('source_texts/orgelpredigt/e08_quellen.json') as f:
+    e08_quellen = json.load(f)
+with open('source_texts/orgelpredigt/e09_literatur.json') as f:
+    e09_literatur = json.load(f)
+with open('source_texts/orgelpredigt/e10_musikwerke.json') as f:
+    e10_musikwerke = json.load(f)
 
 def is_id(value: str) -> bool:
     pattern = re.compile(r'E[01][0-9]{5}')
@@ -33,10 +44,12 @@ def get_short_info(id: str) -> str:
     else:
         return f"{id} (Ungültige ID)"
     
+
+testvar = "bla"
+
 class Place:
-    def __init__(self, id, conn=connection):
+    def __init__(self, id):
         self.id = id
-        self.cursor = conn.cursor()
         if is_id(id):
             self.get_place_info()
         else:
@@ -51,36 +64,33 @@ class Place:
 
     def get_place_info(self):
         try:
-            self.cursor.execute(f"SELECT e03id, e03name, e03gnd, e03typ, e03gebiet, e03koordinaten FROM e03_geographica WHERE e03id = '{self.id}'")
-            results = self.cursor.fetchall()
+            #with open('source_texts/orgelpredigt/e03_geographica.json') as f:
+            #    table = json.load(f)
+            results = [item for item in e03_geographica if item['e03id'] == self.id]
 
             if results:
-                column_names = [col[0] for col in self.cursor.description]
-                data = [dict(zip(column_names, row))  
-                    for row in results][0]
-        
+                data = results[0]
+
                 self.name = data["e03name"]
                 self.gnd = data["e03gnd"]
                 self.typ = data["e03typ"]
                 self.gebiet = data["e03gebiet"]
                 self.koordinaten = data["e03koordinaten"]
             else:
-                #print(f"Query executed for {self.id}, but no data found.")
                 self.name = "no_name"
                 self.gnd = ""
                 self.typ = ""
                 self.gebiet = ""
                 self.koordinaten = ""
         
-        except Error as e:
-            print(f"Database error occurred for {self.id}:", e)
+        #except Error as e:
+        #    print(f"Database error occurred for {self.id}:", e)
         except Exception as e:
             print(f"Unexpected error for {self.id}:", e)
 
 class Person:
-    def __init__(self, id, conn=connection):
+    def __init__(self, id):
         self.id = id
-        self.cursor = conn.cursor()
         if is_id(id):
             self.get_person_info()
         else:
@@ -97,13 +107,12 @@ class Person:
 
     def get_person_info(self):
         try:
-            self.cursor.execute(f"SELECT  e01id, e01gnd, e01nachname, e01vorname, e01akademisch, e01geburtsdatum, e01geburtsort, e01sterbedatum, e01sterbeort, e01rahmendaten, e01daten, e01wirkungsorte, e01funktionen FROM e01_personen WHERE e01id = '{self.id}'")
-            column_names = [col[0] for col in self.cursor.description]
-            results = self.cursor.fetchall()
+            #with open('source_texts/orgelpredigt/e01_personen.json') as f:
+            #    table = json.load(f)
+            results = [item for item in e01_personen if item['e01id'] == self.id]
             if results:
-                data = [dict(zip(column_names, row))  
-                    for row in results][0]
-                
+                data = results[0]
+
                 self.name = " ".join([data["e01vorname"], data["e01nachname"]])
                 self.vorname = data["e01vorname"]
                 self.nachname = data["e01nachname"]
@@ -118,14 +127,13 @@ class Person:
                 self.geburtsort = Place(data["e01geburtsort"])
                 self.sterbeort = Place(data["e01sterbeort"])
             else:
-                #print(f"Query executed for {self.id}, but no data found.")
                 self.name = "no_name"
                 self.wirkungsorte = ""
                 self.geburtsort = ""
                 self.sterbeort = ""
 
-        except Error as e:
-            print(f"Database error occurred for {self.id}:", e)
+        #except Error as e:
+        #    print(f"Database error occurred for {self.id}:", e)
         except Exception as e:
             print(f"Unexpected error for {self.id}:", e)
 
@@ -156,9 +164,8 @@ class Person:
         return network
     
 class Source:
-    def __init__(self, id, conn=connection):
+    def __init__(self, id):
         self.id = id
-        self.cursor = conn.cursor()
         if is_id(id):
             self.get_quelle_info()
             self.get_literatur_info()
@@ -174,12 +181,12 @@ class Source:
     def get_quelle_info(self):
         if self.id.startswith("E08"):
             try:
-                self.cursor.execute(f"SELECT e08id, e08autor1, e08titel1, e08band1, e08ort, e08jahr, e08verlag, e08typ, e08vdnummer, e08dnbnummer FROM e08_quellen WHERE e08id = '{self.id}'")
-                column_names = [col[0] for col in self.cursor.description]
-                results = self.cursor.fetchall()
+                #with open('source_texts/orgelpredigt/e08_quellen.json') as f:
+                #    table = json.load(f)
+                results = [item for item in e08_quellen if item['e08id'] == self.id]
                 if results:
-                    data = [dict(zip(column_names, row))  
-                        for row in results][0]
+                    data = results[0]
+
                     self.autor = data["e08autor1"]
                     self.titel = data["e08titel1"]
                     self.band = data["e08band1"]
@@ -190,13 +197,12 @@ class Source:
                     self.vdnummer = data["e08vdnummer"]
                     self.dnbnummer = data["e08dnbnummer"]
                 else:
-                    #print(f"Query executed for {self.id}, but no data found.")
                     self.autor = "no_author"
                     self.titel = "no_title"
                     self.ort = "no_place"
                     self.jahr = "no_year"
-            except Error as e:
-                print(f"Database error occurred for {self.id}:", e)
+            #except Error as e:
+            #    print(f"Database error occurred for {self.id}:", e)
             except Exception as e:
                 print(f"Unexpected error for {self.id}:", e)
                     
@@ -204,12 +210,12 @@ class Source:
     def get_literatur_info(self):
         if self.id.startswith("E09"):
             try:
-                self.cursor.execute(f"SELECT e09id, e09autor1, e09titel1, e09band1, e09ort, e09jahr, e09verlag, e09typ, e09dnbnummer FROM e09_literatur WHERE e09id = '{self.id}'")
-                column_names = [col[0] for col in self.cursor.description]
-                results = self.cursor.fetchall()
+                #with open('source_texts/orgelpredigt/e09_literatur.json') as f:
+                #    table = json.load(f)
+                results = [item for item in e09_literatur if item['e09id'] == self.id]
                 if results:
-                    data = [dict(zip(column_names, row))  
-                        for row in results][0]
+                    data = results[0]
+
                     self.autor = data["e09autor1"]
                     self.titel = data["e09titel1"]
                     self.band = data["e09band1"]
@@ -219,20 +225,18 @@ class Source:
                     self.typ = data["e09typ"]
                     self.dnbnummer = data["e09dnbnummer"]
                 else:
-                    #print(f"Query executed for {self.id}, but no data found.")
                     self.autor = "no_author"
                     self.titel = "no_title"
                     self.ort = "no_place"
                     self.jahr = "no_year"
-            except Error as e:
-                print(f"Database error occurred for {self.id}:", e)
+            #except Error as e:
+            #    print(f"Database error occurred for {self.id}:", e)
             except Exception as e:
                 print(f"Unexpected error for {self.id}:", e)
 
 class Musikwerk:
-    def __init__(self, id, conn=connection):
+    def __init__(self, id):
         self.id = id
-        self.cursor = conn.cursor()
         if is_id(id):
             self.get_musikwerk_info()
         else:
@@ -248,36 +252,30 @@ class Musikwerk:
     def get_musikwerk_info(self):
         if self.id.startswith("E10"):
             try:
-                self.cursor.execute(f"SELECT e10id, e10komponist, e10werk, e10kurztitel, e10textdichter, e10gattung, e10besetzung FROM e10_musikwerke WHERE e10id = '{self.id}'")
-                column_names = [col[0] for col in self.cursor.description]
-                results = self.cursor.fetchall()
+                #with open('source_texts/orgelpredigt/e10_musikwerke.json') as f:
+                #    table = json.load(f)
+                results = [item for item in e10_musikwerke if item['e10id'] == self.id]
                 if results:
-                    data = [dict(zip(column_names, row))  
-                        for row in results][0]
+                    data = results[0]
                     self.komponist = data["e10komponist"]
                     self.titel = data["e10werk"]
                     self.kurztitel = data["e10kurztitel"]
                     self.gattung = data["e10gattung"]
                     self.besetzung = data["e10besetzung"]
-                    #self.ort = data["e10ort"]
-                    #self.jahr = data["e10jahr"]
-                    #self.verlag = data["e10verlag"]
                 else:
-                    #print(f"Query executed for {self.id}, but no data found.")
                     self.komponist = "no_composer"
                     self.titel = "no_title"
                     self.kurztitel = ""
                     self.gattung = ""
                     self.besetzung = ""
-            except Error as e:
-                print(f"Database error occurred for {self.id}:", e)
+            #except Error as e:
+            #    print(f"Database error occurred for {self.id}:", e)
             except Exception as e:
                 print(f"Unexpected error for {self.id}:", e)
 
 class Orgelpredigt:
-    def __init__(self, id, conn=connection):
+    def __init__(self, id):
         self.id = id
-        self.cursor = conn.cursor()
         if is_id(id):
             self.get_orgelpredigt_info()
         else:
@@ -290,27 +288,25 @@ class Orgelpredigt:
 
     def get_orgelpredigt_info(self):
         try:
-            self.cursor.execute(f"SELECT e00autor, e00kurztitel FROM e00_orgelpredigten WHERE e00id = '{self.id}'")
-            column_names = [col[0] for col in self.cursor.description]
-            results = self.cursor.fetchall()
+            #with open('source_texts/orgelpredigt/e00_orgelpredigten.json') as f:
+            #    table = json.load(f)
+            results = [item for item in e00_orgelpredigten if item['e00id'] == self.id]
             if results:
-                sermon_info = [dict(zip(column_names, row)) for row in results][0]
+                sermon_info = results[0]
                 self.autor = Person(sermon_info["e00autor"])
                 self.kurztitel = sermon_info["e00kurztitel"]
-            else: 
-                #print(f"Query executed for {self.id}, but no data found.")
+            else:
                 self.autor.nachname = "--"
                 self.autor.vorname = "--"
                 self.kurztitel = self.id
-        except Error as e:
-            print(f"Database error occurred for {self.id}:", e)
+        #except Error as e:
+        #    print(f"Database error occurred for {self.id}:", e)
         except Exception as e:
             print(f"Unexpected error for {self.id}:", e)
 
 class Sermon:
-    def __init__(self, id, conn=connection):
+    def __init__(self, id):
         self.id = id
-        self.cursor = conn.cursor()
         self.get_sermon_info()
         self.get_sermon_table()
         self.get_quotations()
@@ -321,11 +317,11 @@ class Sermon:
     
     def get_sermon_info(self):
         try:
-            self.cursor.execute(f"SELECT e00autor, e00kurztitel, e00volltitel, e00verlagsort, e00verleger, e00jahr, e00umfang, e00konfession, e00bibelstelle, e00sonntag, e00einweihungsort FROM e00_orgelpredigten WHERE e00id = '{self.id}'")
-            column_names = [col[0] for col in self.cursor.description]
-            results = self.cursor.fetchall()
+            #with open('source_texts/orgelpredigt/e00_orgelpredigten.json') as f:
+            #    table = json.load(f)
+            results = [item for item in e00_orgelpredigten if item['e00id'] == self.id]
             if results:
-                sermon_info = [dict(zip(column_names, row)) for row in results][0]
+                sermon_info = results[0]
                 self.kurztitel = sermon_info["e00kurztitel"]
                 self.volltitel = sermon_info["e00volltitel"]
                 self.erscheinungsjahr = sermon_info["e00jahr"]
@@ -339,17 +335,16 @@ class Sermon:
                 self.verleger = Person(sermon_info["e00verleger"])
             else: 
                 print("")
-                #print(f"Query executed for {self.id}, but no data found.")
-        except Error as e:
-            print(f"Database error occurred for {self.id}:", e)
+        #except Error as e:
+        #    print(f"Database error occurred for {self.id}:", e)
         except Exception as e:
             print(f"Unexpected error for {self.id}:", e)
             
 
     def get_sermon_table(self):
         df = pd.read_csv(f'sermon_tables/{self.id}.tsv', sep='\t')
-        self.words = df["word"].tolist()                                    # a list of all words
-        self.word_types = df["types"].tolist()                              # a list of all word types
+        self.words = df["word"].tolist()                      # a list of all words
+        self.word_types = df["types"].tolist()                # a list of all word types
         self.reference = df["reference"].apply(ast.literal_eval).tolist()   # a list of all ids of references
         self.all_references = sum(self.reference, [])
 

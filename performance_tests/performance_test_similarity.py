@@ -1,23 +1,22 @@
 # %%
 import json
 import re
-import orgelpredigt_analysis as oa
+import core.utils as oa
 from rapidfuzz import fuzz
 import pandas as pd
 import statistics
 import os
 import io
-import pprint
+from pprint import pprint
+import math 
 
+import datetime
 from numpyencoder import NumpyEncoder
 
-from langchain_community.vectorstores import Chroma
-from langchain_ollama import OllamaEmbeddings
-from langchain_core.documents.base import Document
-from langchain_core.runnables import chain
-from typing import List
-import math
-from sentence_transformers import SentenceTransformer
+from pathlib import Path
+
+# root directory path
+ROOT = Path(__file__).resolve().parents[1]
 
 #%%
 def flatten(xss):
@@ -32,7 +31,7 @@ def is_equal(L):
 def is_song_in_book(id):
     match = re.findall(r'E10[0-9]{4}', id)[0]
     
-    with open('songs_to_pages_mapping.json') as f:
+    with open(ROOT / 'songs_to_pages_mapping.json') as f:
         songbook_pages = json.load(f)
     if songbook_pages[match]["pages"] == '':
         return False
@@ -41,7 +40,7 @@ def is_song_in_book(id):
     
 def song_page(id): 
     match = re.findall(r'E10[0-9]{4}', id)[0]
-    with open('songs_to_pages_mapping.json') as f:
+    with open(ROOT / 'songs_to_pages_mapping.json') as f:
         songbook_pages = json.load(f)
     page = songbook_pages[match]["pages"]
     
@@ -110,22 +109,25 @@ def remove_duplicates(df: pd.DataFrame) -> pd.DataFrame:
 
     return df
 
-def reconsider_match(sent, pages, retriever):
-    highest_match = 1
+def reconsider_match(sent, pages):
+    highest_match = 0
     matches = {}
     for page in pages:
-        hits = retriever.invoke({"query": sent, "page": page})
-        for hit in hits:
-            if hit.metadata["score"] < highest_match:
-                highest_match = hit.metadata["score"]
-                matches[highest_match] = [hit.page_content, page]
+        with open(ROOT / f"source_texts/praxis_pietatis_verses/{page}.json") as f:
+            verses = json.load(f)
+        
+        for verse in verses:
+            sim_score = fuzz.ratio(sent, verse)
+            if sim_score > highest_match:
+                highest_match = sim_score
+                matches[sim_score] = [verse, page]
 
-    if highest_match < 1:
+    if highest_match > 0:
         return [matches[highest_match], highest_match]
     else:
-        return [["no match", 0], 1]
+        return [["no match", 0], 0.0]
     
-def add_inferred_matches(guessed_hits: pd.DataFrame, sermon: oa.Sermon, retriever) -> pd.DataFrame:
+def add_inferred_matches(guessed_hits: pd.DataFrame, sermon: oa.Sermon) -> pd.DataFrame:
     for n in range(3):
         additional_matches = []
         sent_add = lambda x : [x+2,x+3,x+4]
@@ -137,17 +139,16 @@ def add_inferred_matches(guessed_hits: pd.DataFrame, sermon: oa.Sermon, retrieve
             if all(x==pars[0] for x in pars):   # abort if paragraphs change
                 if sents[1] in sent_add(sents[0]):
                     missing_sent = " ".join(sermon.chunked[pars[0]][sents[0]+1]["words"])
-                    match, sim_score = reconsider_match(missing_sent, [pages[0], pages[1]], retriever)
-                    if match[0] != "no match":
-                        verse = match[0]
-                        page = match[1]
-                        additional_matches.append([missing_sent, 
-                                                pars[0],
-                                                sents[0]+1, 
-                                                page, 
-                                                verse, 
-                                                float(f"{sim_score:.2f}"), 
-                                                False])
+                    match, sim_score = reconsider_match(missing_sent, [pages[0], pages[1]])
+                    verse = match[0]
+                    page = match[1]
+                    additional_matches.append([missing_sent, 
+                                            pars[0],
+                                            sents[0]+1, 
+                                            page, 
+                                            verse, 
+                                            float(f"{sim_score:.2f}"), 
+                                            False])
                     
         new_matches = pd.DataFrame(additional_matches, columns=["Predigt", "Paragraph", "Satz", 
                                                         "Liederbuch", "Liedvers", 
@@ -159,7 +160,7 @@ def add_inferred_matches(guessed_hits: pd.DataFrame, sermon: oa.Sermon, retrieve
     
     return guessed_hits
 
-def correct_inbetween_matches(df: pd.DataFrame, retriever) -> pd.DataFrame:
+def correct_inbetween_matches(df: pd.DataFrame) -> pd.DataFrame:
     for i in range(0, len(df) - 3):
         chunk = df.iloc[i:i+3]
         pages = chunk["Liederbuch"].to_list()
@@ -168,7 +169,8 @@ def correct_inbetween_matches(df: pd.DataFrame, retriever) -> pd.DataFrame:
         if (all(x==pars[0] for x in pars) and not is_equal(pages)):   # abort if paragraphs change or pages are already the same
             if pages[0] == pages[2]:
                 missing_sent = chunk["Predigt"][chunk.index[1]]
-                match, sim_score = reconsider_match(missing_sent, [pages[0]], retriever)
+                print(missing_sent)
+                match, sim_score = reconsider_match(missing_sent, [pages[0]])
                 if sim_score > 60:
                     verse = match[0]
                     page = match[1]
@@ -179,7 +181,7 @@ def correct_inbetween_matches(df: pd.DataFrame, retriever) -> pd.DataFrame:
     return df
 
 #%%
-table_names = os.listdir("similarity_tables")
+table_names = os.listdir(ROOT / "similarity_tables")
 
 print("Welche Resultate aus der folgenden Liste sollen verglichen werden?")
 for i in table_names:
@@ -189,51 +191,22 @@ while response not in table_names:
     response = input("Bitte Dateinamen eingeben")
 
 # %%
-with open(f"similarity_tables/{response}") as f:
+with open(ROOT / f"similarity_tables/{response}") as f:
     sim_table = json.load(f)
 
 date = sim_table['date']
 corpus = sim_table['corpus']
 method = sim_table['method']
-model_name = sim_table['model']
 fuzziness = sim_table['fuzziness']
 
-model = SentenceTransformer(f'sentence-transformers/{model_name}')
+# %%
+buffer = io.StringIO(sim_table['results'][0][2])
+guessed_hits = pd.read_csv(buffer)
+guessed_hits = remove_duplicates(guessed_hits).reset_index(drop=True)
+guessed_hits = add_inferred_matches(guessed_hits, oa.Sermon(sim_table['results'][0][0]))
+guessed_hits
 
-from langchain_core.embeddings.embeddings import Embeddings
-class EmbedSomething(Embeddings):
-    def __init__(self,model) -> None:
-        self.model = model
-
-    def embed_documents(self,texts):
-        t = self.model.encode(texts)
-        return t.tolist()
-
-    def embed_query(self, text: str) -> List[float]:
-        t = self.model.encode(text)
-        return t.tolist()
-
-
-emb = EmbedSomething(model)
-
-#%%
-vectordb = Chroma(persist_directory=f"./chroma/chroma_db_{model_name}", embedding_function=emb)
-@chain
-def retriever(inputs: dict) -> tuple[Document]:
-    query = inputs["query"]
-    page = inputs["page"]
-    docs, scores = zip(
-        *vectordb.similarity_search_with_score(
-            query,
-            k=1,
-            filter={"source": str(page)}
-        )
-    )
-    for doc, score in zip(docs, scores):
-        doc.metadata["score"] = score
-    return docs
-
-# %% 
+# %%
 test_score = {}
 test_score["type"] = method
 test_score["corpus"] = corpus
@@ -253,11 +226,11 @@ for result in sim_table['results']:
 
     guessed_hits = pd.read_csv(buffer)    # create dataframe
 
-    #guessed_hits = remove_duplicates(guessed_hits).reset_index(drop=True)
+    guessed_hits = remove_duplicates(guessed_hits).reset_index(drop=True)
 
-    guessed_hits = add_inferred_matches(guessed_hits, sermon, retriever)
-    guessed_hits = correct_inbetween_matches(guessed_hits, retriever)
-
+    guessed_hits = add_inferred_matches(guessed_hits, sermon)
+    guessed_hits = correct_inbetween_matches(guessed_hits)
+    
     guessed_hits.sort_values("Satz", ascending=True, inplace=True)
     guessed_hits.reset_index(drop=True)
 
@@ -394,9 +367,9 @@ test_score["overall_recall_hits"] = statistics.mean(all_recall_hits)
 test_score["overall_f1_hits"] = statistics.mean(all_f1_hits)
 
 # %%
-pprint.pprint(test_score)
+pprint(test_score)
 # %%
-with open(f"test_results_{corpus}.json", "r") as f:
+with open(ROOT / f"test_results_{corpus}.json", "r") as f:
     test_results = json.load(f)
 
 dates = [x['date'] for x in test_results]
@@ -404,7 +377,11 @@ dates = [x['date'] for x in test_results]
 if date not in dates:
     test_results.append(test_score)
 
-    with open(f"test_results_{corpus}.json", "w") as f:
+    with open(ROOT / f"test_results_{corpus}.json", "w") as f:
         json.dump(test_results, f, ensure_ascii=False, cls=NumpyEncoder)
 
 # %%
+guessed_hits['Paragraph'] = guessed_hits['Paragraph'].apply(lambda x: int(x))
+guessed_hits['Satz'] = guessed_hits['Satz'].apply(lambda x: int(x))
+guessed_hits = guessed_hits.sort_values(['Paragraph', 'Satz'])
+

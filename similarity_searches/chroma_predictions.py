@@ -6,7 +6,7 @@ from langchain_core.documents.base import Document
 from langchain_core.runnables import chain
 from pprint import pprint
 import json
-import orgelpredigt_analysis as oa
+import core.utils as oa
 import re
 import pandas as pd
 import datetime
@@ -15,6 +15,10 @@ from sentence_transformers import SentenceTransformer
 
 import nltk
 from nltk.corpus import stopwords
+from pathlib import Path
+
+# root directory path
+ROOT = Path(__file__).resolve().parents[2]
 
 # %%
 nltk.download('stopwords')
@@ -113,7 +117,8 @@ class EmbedSomething(Embeddings):
 emb = EmbedSomething(model)
 
 #%%
-vectordb = Chroma(persist_directory=f"./chroma/chroma_db_{model_name}", embedding_function=emb)
+directory = str(ROOT / f"./chroma/chroma_db_{model_name}")
+vectordb = Chroma(persist_directory = directory, embedding_function=emb)
 
 @chain
 def retriever(query: str) -> tuple[Document]:
@@ -134,7 +139,7 @@ if response == "2":
 else:
     corpus = "most"
 
-with open(f"sermons_with_{corpus}_music.json", "r") as f:
+with open(ROOT / f"sermons_with_{corpus}_music.json", "r") as f:
     testsermons = json.load(f)
 
 # %%
@@ -184,5 +189,5 @@ for id in testsermons:
     similarity_table['results'].append([id, sent_nr, guessed_hits.to_csv()[1:]])
 
 # %%
-with open(f'similarity_tables/vector_search_{corpus}_{cosine_cutoff}_{date}.json', "w") as f:
+with open(ROOT / f'similarity_tables/vector_search_{corpus}_{cosine_cutoff}_{date}.json', "w") as f:
     json.dump(similarity_table, f, ensure_ascii=False)

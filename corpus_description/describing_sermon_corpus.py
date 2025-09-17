@@ -1,15 +1,20 @@
 # %%
 import pandas as pd
 import os
-import orgelpredigt_analysis as oa
+import core.utils as oa
 import json
 from collections import Counter
 import re
 import plotly.graph_objects as go
 from pprint import pprint
 
+from pathlib import Path
+
+# root directory path
+ROOT = Path(__file__).resolve().parents[2]
+
 # %%
-with open('predigten_übersicht.json') as f:
+with open(ROOT / 'predigten_übersicht.json') as f:
     predigten = json.load(f)
 
 # %%
@@ -36,8 +41,11 @@ for id in [*predigten]:
     predigten[id]["worte_orgelpredigt"] = Counter(sermon.word_types)[' orgelpredigt']
     predigten[id]["worte_musikwerk"] = Counter(sermon.word_types)[' musikwerk']
     predigten[id]["zitierte_musikwerke"] = len(list(set([s for s in sermon.all_references if musik_id.match(s)])))
+    predigten[id]["bibelstelle"] = sermon.bibelstelle
+    predigten[id]["verlagsort"] = sermon.verlagsort.name
+    predigten[id]["einweihungsort"] = sermon.einweihungsort.name
 
-with open("predigten_übersicht.json", "w") as f:
+with open(ROOT / "predigten_übersicht.json", "w") as f:
     json.dump(predigten, f, ensure_ascii=False)
 
 # %%

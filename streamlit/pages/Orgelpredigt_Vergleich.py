@@ -1,0 +1,609 @@
+import sys
+import os
+
+import streamlit as st
+from core.utils import Sermon, Person, get_short_info
+from collections import Counter
+
+import core.db_connection as db_connection
+
+import plotly.express as px
+#px.colors.sequential.Agsunset
+import networkx as nx
+
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+import pandas as pd
+
+import folium
+import json
+import re
+
+from pathlib import Path
+
+# root directory path
+ROOT = Path(__file__).resolve().parents[2]
+
+cursor, connection = db_connection.get_connection()
+
+color_map = {
+    'orgelpredigt': 'rgb(135, 44, 162)',
+    'musikwerk': 'rgb(192, 54, 157)',
+    'literatur': 'rgb(234, 79, 136)',
+    'quelle': 'rgb(250, 120, 118)',
+    'bibel': 'rgb(246, 169, 122)',
+    'nan': 'rgb(237, 217, 163)',
+    'text': 'rgb(237, 217, 163)',
+    'E00': 'rgb(135, 44, 162)',
+    'E10': 'rgb(192, 54, 157)',
+    'E09': 'rgb(234, 79, 136)',
+    'E08': 'rgb(250, 120, 118)'
+    }
+
+def is_id(value):
+    pattern = re.compile(r'E[01][0-9]{5}')
+    if re.match(pattern, value):
+        return True
+    else:
+        return False
+
+def create_legend(color_map):
+    legend_translation = {
+        "E00": "Predigt",
+        "E10": "Musikwerk",
+        "E08": "Quelle",
+        "E09": "Literatur"
+    }
+    legend_traces = []
+
+    for group_name, color in color_map.items():
+        if group_name.startswith("E"):
+            legend_traces.append(
+                go.Scatter(
+                    x=[None], y=[None],  # invisible point
+                    mode='markers',
+                    marker=dict(size=10, color=color),
+                    legendgroup=group_name,
+                    showlegend=True,
+                    name=legend_translation[group_name]
+                )
+            )
+    return legend_traces
+
+
+#########################
+##### CHOOSE SERMON #####
+#########################
+
+#Get the list of all files in a directory
+with open(ROOT / "predigten_übersicht.json", "r", encoding="utf-8") as file: 
+    data = json.load(file)
+
+# Ensure all entries have a 'year' key
+cleaned = {k: v for k, v in data.items() if 'year' in v}
+
+year_finder = re.compile(r'[0-9]{4}')
+
+for k, v in data.items():
+    year = re.findall(year_finder, v['year'])[0]
+    if year:
+        v['year'] = year
+    else:
+        v['year'] = '[s.a.]'
+
+# Convert to nested list and sort by year
+relevant_sermons = sorted(
+    [[key, value['title'], int(value['year']), value['bibelstelle'], value['verlagsort'], value['einweihungsort']] for key, value in cleaned.items()],
+    key=lambda x: x[2]
+)
+
+options = []
+for i in relevant_sermons:
+    options.append(f"{i[1]} -- {i[0]}")
+
+### Streamlit
+st.markdown("Welche Predigt soll analysiert werden? Bitte ID eingeben oder Predigt aus dropdown-Menü auswählen")
+
+tab1, tab2 = st.tabs(["Manuelle Auswahl", "Auswahl nach Kriterien aus Metadaten"])
+
+with tab1:
+    st.write("IDs manuell aus Liste auswählen")
+    # Initialize session state
+    if "selected_ids" not in st.session_state:
+        st.session_state.selected_ids = [None]  # start with one selectbox
+    if "to_remove" not in st.session_state:
+        st.session_state.to_remove = None
+
+    def add_selectbox():
+        st.session_state.selected_ids.append(None)
+
+    def remove_selectbox(index):
+        st.session_state.to_remove = index
+
+    st.button("Add", on_click=add_selectbox)
+
+    # Handle removal at the start
+    if st.session_state.to_remove is not None:
+        st.session_state.selected_ids.pop(st.session_state.to_remove)
+        st.session_state.to_remove = None
+
+    # Render selectboxes with remove buttons
+    for i, val in enumerate(st.session_state.selected_ids):
+        cols = st.columns([4, 1])
+        with cols[0]:
+            selected = st.selectbox(
+                f"{i+1}. Ausgewählte Predigt",
+                options,
+                index = None,
+                #index=options.index(val) if val in options else 0,
+                key=f"selectbox_{i}"
+            )
+            st.session_state.selected_ids[i] = selected
+        with cols[1]:
+            if st.button("Remove", key=f"remove_{i}"):
+                remove_selectbox(i)
+
+    selection = st.session_state.selected_ids
+
+with tab2:
+    bibelstellen = set([x[3].split(",")[0] for x in relevant_sermons])
+    verlagsorte = set([x[4] for x in relevant_sermons])
+    einweihungsorte = set([x[5] for x in relevant_sermons])
+
+    st.write("IDs nach Kriterien aus Metadaten auswählen")
+    years_range = st.slider("Veröffentlichungsjahr", 1600, 1800, (1600, 1800))
+
+    bibel_select = st.selectbox(
+        f"Bibelstelle auswählen",
+        bibelstellen,
+        index=None
+        #key=f"selectbox_{i}"
+    )
+    
+    verlag_select = st.selectbox(
+        f"Verlagsort auswählen",
+        verlagsorte,
+        index=None
+    )
+
+    einweihung_select = st.selectbox(
+        f"Einweihungsort auswählen",
+        einweihungsorte,
+        index=None
+    )
+
+    selection = [x for x in relevant_sermons if years_range[0] < x[2] < years_range[1]]
+
+    if bibel_select:
+        selection = [x for x in selection if bibel_select in x[3]]
+    if verlag_select:
+        selection = [x for x in selection if verlag_select in x[4]]
+    if einweihung_select:
+        selection = [x for x in selection if einweihung_select in x[5]]
+    
+ids = [x[0][-7:] for x in selection]
+
+if len(selection) > 0:
+    st.write(f"Die folgende{"n" if len(selection) > 1 else ""} {len(selection)} Predigt{"en" if len(selection) > 1 else ""} entsprechen Ihrer Auswahl:")
+    for elem in selection:
+        st.markdown(f"- [{elem[1]}](https://orgelpredigt.ur.de/{elem[0]})")
+else:
+    st.write("Keine Predigt entspriche Ihrer Auswahl.")
+
+
+#########################
+##### NETWORK GRAPH #####
+#########################
+
+sermons = []
+for id in ids:
+    item = {}
+    current_sermon = Sermon(id)
+    item["id"] = current_sermon.id
+    item["links"] = [item for item in current_sermon.all_references if is_id(item)]
+    sermons.append(item)
+
+##### Only Sermons
+#G = nx.DiGraph()
+#
+#nodes = []
+#connections = []
+#for sermon in sermons:
+#    nodes.append(sermon['id'])
+#    for link in sermon['links']:
+#        if re.match(r'E00[0-9]{4}', link):
+#            connections.append((sermon['id'], link))
+#
+#G.add_nodes_from(nodes)
+#G.add_edges_from(connections)
+#
+#in_degrees = dict(G.in_degree()) # compute incoming connections for each node
+#degrees = dict(G.degree())
+#
+#pos = nx.kamada_kawai_layout(G)
+#for node in G.nodes:
+#    G.nodes[node]['pos'] = pos[node]
+#    assert 'pos' in G.nodes[node], f"Node {node} missing 'pos'"
+#    assert G.nodes[node]['pos'] is not None, f"Node {node} has None position"
+#
+#mapping = {i: name for i, name in enumerate(ids)}
+#G = nx.relabel_nodes(G, mapping)
+#
+#edge_x = []
+#edge_y = []
+#edge_shapes = []
+#for edge in G.edges():
+#    x0, y0 = G.nodes[edge[0]]['pos']
+#    x1, y1 = G.nodes[edge[1]]['pos']
+#    edge_x.append(x0)
+#    edge_x.append(x1)
+#    edge_x.append(None)
+#    edge_y.append(y0)
+#    edge_y.append(y1)
+#    edge_y.append(None)
+#    
+#edge_trace = go.Scatter(
+#    x=edge_x, y=edge_y,
+#    line=dict(width=0.5, color='#888'),
+#    hoverinfo='none',
+#    mode='lines')
+#
+#node_x = []
+#node_y = []
+#node_sizes = []
+#for node in G.nodes():
+#    x, y = G.nodes[node]['pos']
+#    node_x.append(x)
+#    node_y.append(y)
+#    node_sizes.append(degrees[node] * 10)
+#
+#node_trace = go.Scatter(
+#    x=node_x, y=node_y,
+#    mode='markers',
+#    hoverinfo='text',
+#    text=[n for n in G.nodes()],
+#    marker=dict(
+#        showscale=True,
+#        size=node_sizes,
+#        colorscale='Magma',
+#        reversescale=False,
+#        color=[],
+#        colorbar=dict(
+#            thickness=15,
+#            title=dict(
+#              text='Node Connections',
+#              side='right'
+#            ),
+#            xanchor='left',
+#        ),
+#        line_width=2))
+#
+#node_adjacencies = []
+#node_text = []
+#in_connections = []
+#for node, adjacencies in enumerate(G.adjacency()):
+#    node_adjacencies.append(len(adjacencies[1]))
+#    #node_text.append('# of connections: '+str(len(adjacencies[1])))
+#for id in ids:
+#    node_text.append(f"{get_short_info(id)} ({in_degrees[id]} Verweise)")
+#    in_connections.append(in_degrees[id])
+#
+#node_trace.marker.color = in_connections
+#node_trace.marker.size = [(x + 4) * 3  for x in in_connections]
+#node_trace.text = node_text
+#
+#sermons_network_graph = go.Figure(data=[edge_trace, node_trace],
+#            layout=go.Layout(
+#                title=dict(
+#                    text="<br>Quotations in between sermons",
+#                    font=dict(size=16)
+#                    ),
+#                #shapes=edge_shapes,
+#                showlegend=False,
+#                hovermode='closest',
+#                margin=dict(b=40,l=10,r=10,t=80),
+#                width=600, height=600,
+#                annotations=[dict(
+#                    text="",
+#                    showarrow=True,
+#                    xref="paper", yref="paper",
+#                    x=0.00, y=-0.00 )],
+#                xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+#                yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)
+#            )
+#        )
+
+##### Sermons and Sources
+G2 = nx.DiGraph()
+nodes = []
+connections = []
+for sermon in sermons:
+    nodes.append(sermon['id'])
+    for link in sermon['links']:
+        connections.append((sermon['id'], link))
+
+G2.add_nodes_from(nodes)
+G2.add_edges_from(connections)
+
+in_degrees = dict(G2.in_degree())
+
+pos = nx.spring_layout(G2, k=2, iterations=100)
+degrees = dict(G2.degree())
+
+for node in G2.nodes:
+    G2.nodes[node]['pos'] = pos[node]
+    assert 'pos' in G2.nodes[node], f"Node {node} missing 'pos'"
+    assert G2.nodes[node]['pos'] is not None, f"Node {node} has None position"
+
+mapping = {i: name for i, name in enumerate(ids)}
+G2 = nx.relabel_nodes(G2, mapping)
+
+edge_x = []
+edge_y = []
+edge_shapes = []
+for edge in G2.edges():
+    x0, y0 = G2.nodes[edge[0]]['pos']
+    x1, y1 = G2.nodes[edge[1]]['pos']
+    edge_x.append(x0)
+    edge_x.append(x1)
+    edge_x.append(None)
+    edge_y.append(y0)
+    edge_y.append(y1)
+    edge_y.append(None)
+    
+edge_trace = go.Scatter(
+    x=edge_x, y=edge_y,
+    line=dict(width=0.5, color='#888'),
+    hoverinfo='none',
+    mode='lines')
+
+node_x = []
+node_y = []
+node_sizes = []
+node_colors = []
+for node in G2.nodes():
+    x, y = G2.nodes[node]['pos']
+    node_x.append(x)
+    node_y.append(y)
+    node_sizes.append(degrees[node] * 10)
+    node_colors.append(color_map.get(node[:3], 'gray'))
+
+node_trace = go.Scatter(
+    x=node_x, y=node_y,
+    mode='markers',
+    hoverinfo='text',
+    text=[n for n in G2.nodes()],
+    marker=dict(
+        showscale=False,
+        size=node_sizes,
+        colorscale='Magma',
+        reversescale=False,
+        color=node_colors,
+        line_width=2))
+
+in_degrees_list = [in_degrees[node] for node in G2.nodes]
+
+node_adjacencies = []
+node_text = []
+in_connections = []
+for node, adjacencies in enumerate(G2.adjacency()):
+    node_adjacencies.append(len(adjacencies[1]))
+    #node_text.append('# of connections: '+str(len(adjacencies[1])))
+for node in G2.nodes:
+    node_text.append(f"{get_short_info(node)} ({in_degrees[node]} Verweise)")
+    in_connections.append(in_degrees[id])
+
+node_trace.marker.size = [(x + 3) * 2.5  for x in in_degrees_list]
+node_trace.text = node_text
+
+sermons_sources_network = go.Figure(data=[edge_trace, node_trace],
+            layout=go.Layout(
+                title=dict(
+                    text="<br>Quotations among Sermons, Sources, and Music",
+                    font=dict(size=16)
+                    ),
+                #shapes=edge_shapes,
+                showlegend=True,
+                hovermode='closest',
+                margin=dict(b=40,l=10,r=10,t=80),
+                annotations=[dict(
+                    text="",
+                    showarrow=True,
+                    xref="paper", yref="paper",
+                    x=0.00, y=-0.00 )],
+                xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+                yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)
+            )
+        )
+
+legend_traces = create_legend(color_map)
+
+for trace in legend_traces:
+    sermons_sources_network.add_trace(trace)
+
+sermons_sources_network.update_layout(
+    xaxis=dict(scaleanchor='y', scaleratio=1),
+    yaxis=dict(scaleanchor='x', scaleratio=1),
+    width=1200, height=1200,
+    legend=dict(
+        title='Kategorien',
+        x=1.05,  # position legend to the right
+        y=1,
+        bgcolor='rgba(255,255,255,0.7)',
+        bordercolor='black',
+        borderwidth=1
+    )
+)
+
+
+##########################
+##### STREAMLIT PAGE #####
+##########################
+
+st.set_page_config(
+    page_title="Orgelpredigt_Analyse",
+    page_icon=None,
+    layout="wide",
+    initial_sidebar_state="auto",
+    menu_items=None)
+
+st.title("Vergleich aller Orgelpredigten")
+#st.plotly_chart(sermons_network_graph)
+st.plotly_chart(sermons_sources_network)
+
+
+st.title("Liedzitate – kumulativ und diachron betrachtet")
+
+col1, col2 = st.columns([0.5, 0.5])
+
+with col1:
+    quote_type = st.selectbox(
+            label="Zitatart auswählen",
+            options=["musikwerk", "quelle", "orgelpredigt"],
+            placeholder="musikwerk"
+        )
+with col2:
+    quote_time_dist = st.selectbox(
+            label="Zeitliche Einteilung",
+            options=["ganzer Zeitraum", "50-Jahr-Intervalle", "25-Jahr-Intervalle"],
+            placeholder="ganzer Zeitraum"
+    )
+
+def create_quote_dist_chart(ids: list, type: str) -> go.Figure:
+    type_dict = {
+        "orgelpredigt": "Orgelpredigtzitate",
+        "musikwerk": "Liedzitate",
+        "quelle": "Literaturzitate",
+    }
+    if type not in type_dict.keys():
+        occ_fig = go.Figure()
+        occ_fig.update_layout(title_text="Type not recognised!")
+        return occ_fig
+    
+    else:
+        colors_cumulative = {
+            'orgelpredigt': (219, 192, 227),
+            'musikwerk': (236, 195, 226),
+            'quelle': (255, 196, 197)
+        }
+        red = colors_cumulative[type][0]
+        green = colors_cumulative[type][1]
+        blue = colors_cumulative[type][2]
+
+        chunked_text = [0]*100
+        thumbnails = [""]*100
+
+        for id in ids:
+            sermon = Sermon(id)
+
+            dec = int(len(sermon.words) / 99)
+            overhang = len(sermon.words) % dec
+
+            for i, j in zip(range(0, len(sermon.words), dec), range(0, 100)):
+                types_unique = list(set(sermon.word_types[i:i+dec]))
+                types_str = " ".join([x for x in types_unique if isinstance(x, str)])
+                if type in types_str:
+                    type_test = 1
+                    hit = f"{sermon.kurztitel}<br>"
+                else:
+                    type_test = 0
+                    hit = ""
+                
+                chunked_text[j] = chunked_text[j] + type_test
+                thumbnails[j] = thumbnails[j] + hit
+            
+            last_types_unique = list(set(sermon.word_types[-overhang:]))
+            last_types_str = " ".join([x for x in last_types_unique if isinstance(x, str)])
+            if type in last_types_str:
+                last_type_test = 1
+                last_hit = f"{sermon.kurztitel}<br>"
+            else:
+                last_type_test = 0
+                last_hit = ""
+            
+            #chunked_text[-1] = chunked_text[-1] + last_orgelpredigt_test
+            #thumbnails[-1] = thumbnails[-1] + last_hit
+
+        occ_fig = go.Figure()
+
+        for i in range(0, len(chunked_text)):
+            hovertext = f'{chunked_text[i]} {type_dict[type]} im {i+1}%'
+            if thumbnails[i] != "":
+                    hovertext += f"<br>{thumbnails[i]}"
+
+            gradient = chunked_text[i] * 15
+            #color = f'rgb({max(250-gradient, 0)},{max(250-gradient, 0)},{max(250-gradient, 0)})'
+            if gradient > 0:
+                color = f'rgb({red},{max(green-gradient, 0)},{max(250-gradient, 0)})'
+            else:
+                color = 'rgb(245,245,245)'
+            occ_fig.add_trace(go.Bar(
+                x = [f"{type_dict[type]} je Predigtprozent"],
+                y = [100],
+                marker_color = color,
+                hovertext = hovertext
+            ))
+
+        occ_fig.update_layout(width=1500,height=500, showlegend=False)
+            
+        return occ_fig
+
+def group_sermons_in_years(data, interval: int) -> list:
+    chunked_sermons = []
+    start_year = 1600
+    end_year = 1800
+    yearfinder = re.compile(r'[0-9]{4}')
+    for i in range(start_year, end_year, interval):
+        sermons = []
+        for id, info in data.items():
+            year = int(re.findall(yearfinder, info['year'])[0])
+            if year > i and year < i + interval:
+                sermons.append(id)
+        chunked_sermons.append(sermons)
+
+    return chunked_sermons
+
+if quote_time_dist == "50-Jahr-Intervalle":
+    sermons_grouped_50 = group_sermons_in_years(data, 50)
+    figs_50 = []
+    for i in range(len(sermons_grouped_50)):
+        figs_50.append(create_quote_dist_chart(sermons_grouped_50[i], quote_type))
+    
+    # Create subplots
+    fig = make_subplots(rows=len(figs_50), 
+                        cols=1, 
+                        subplot_titles=[f"Verteilung in Predigten zwischen {1600 + (i*50)} und {1600+(i*50)+50} ({len(sermons_grouped_50[i])} Predigten)" for i in range(len(figs_50))])
+
+    # Add traces from each figure to the subplots
+    for i, fig_item in enumerate(figs_50):
+        for trace in fig_item.data:
+            fig.add_trace(trace, row=i+1, col=1)
+
+    # Update layout
+    fig.update_layout(height=1200, width=1000, showlegend = False)
+    fig.update_layout(title_text="Accumulierte Verteilung von Zitaten in 50-Jahr Intervallen")
+
+elif quote_time_dist == "25-Jahr-Intervalle":
+    sermons_grouped_25 = group_sermons_in_years(data, 25)
+    figs_25 = []
+    for i in range(len(sermons_grouped_25)):
+        figs_25.append(create_quote_dist_chart(sermons_grouped_25[i], quote_type))
+    
+    # Create subplots
+    fig = make_subplots(rows=len(figs_25), 
+                        cols=1, 
+                        subplot_titles=[f"Verteilung in Predigten zwischen {1600 + (i*25)} und {1600+(i*25)+25} ({len(sermons_grouped_25[i])} Predigten)" for i in range(len(figs_25))])
+
+    # Add traces from each figure to the subplots
+    for i, fig_item in enumerate(figs_25):
+        for trace in fig_item.data:
+            fig.add_trace(trace, row=i+1, col=1)
+
+    # Update layout
+    fig.update_layout(height=1200, width=1000, showlegend = False)
+    fig.update_layout(title_text="Accumulierte Verteilung von Zitaten in 25-Jahr Intervallen")
+
+else:
+    fig = create_quote_dist_chart(ids, quote_type)
+
+st.plotly_chart(fig)

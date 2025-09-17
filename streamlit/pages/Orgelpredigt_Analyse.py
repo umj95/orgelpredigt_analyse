@@ -1,5 +1,8 @@
+import sys
+import os
+
 import streamlit as st
-from orgelpredigt_analysis import Sermon, get_short_info
+from core.utils import Sermon, get_short_info
 
 from collections import Counter
 
@@ -13,7 +16,10 @@ import pandas as pd
 import folium
 import json
 import re
-import os
+from pathlib import Path
+
+# root directory path
+ROOT = Path(__file__).resolve().parents[2]
 
 st.set_page_config(
     page_title="Orgelpredigt_Analyse",
@@ -45,7 +51,7 @@ def is_id(value):
 #########################
 
 # Get the list of all files in a directory
-with open("predigten_übersicht.json", "r", encoding="utf-8") as file: 
+with open(ROOT / "predigten_übersicht.json", "r", encoding="utf-8") as file: 
     data = json.load(file)
 
 # Ensure all entries have a 'year' key
@@ -430,12 +436,6 @@ with tab1:
 
         ##### Überblick Zitate
         st.plotly_chart(quotations_piechart)
-    
-    #table_container = st.empty()
-    #table_container.table(literatur)
-    #st.divider()
-    #st.header("Alle Zitate")
-    #st.table(literatur)
 
 with tab2:
     st.markdown(f"""
