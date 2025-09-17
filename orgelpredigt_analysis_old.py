@@ -51,18 +51,14 @@ class Place:
 
     def get_place_info(self):
         try:
-            #self.cursor.execute(f"SELECT e03id, e03name, e03gnd, e03typ, e03gebiet, e03koordinaten FROM e03_geographica WHERE e03id = '{self.id}'")
-            #results = self.cursor.fetchall()
-            with open('source_texts/orgelpredigt/e03_geographica.json') as f:
-                table = json.load(f)
-            results = [item for item in table if item['e03id'] == self.id]
+            self.cursor.execute(f"SELECT e03id, e03name, e03gnd, e03typ, e03gebiet, e03koordinaten FROM e03_geographica WHERE e03id = '{self.id}'")
+            results = self.cursor.fetchall()
 
             if results:
-                #column_names = [col[0] for col in self.cursor.description]
-                #data = [dict(zip(column_names, row))  
-                #    for row in results][0]
-                data = results[0]
-
+                column_names = [col[0] for col in self.cursor.description]
+                data = [dict(zip(column_names, row))  
+                    for row in results][0]
+        
                 self.name = data["e03name"]
                 self.gnd = data["e03gnd"]
                 self.typ = data["e03typ"]
@@ -101,17 +97,13 @@ class Person:
 
     def get_person_info(self):
         try:
-            #self.cursor.execute(f"SELECT  e01id, e01gnd, e01nachname, e01vorname, e01akademisch, e01geburtsdatum, e01geburtsort, e01sterbedatum, e01sterbeort, e01rahmendaten, e01daten, e01wirkungsorte, e01funktionen FROM e01_personen WHERE e01id = '{self.id}'")
-            #column_names = [col[0] for col in self.cursor.description]
-            #results = self.cursor.fetchall()
-            with open('source_texts/orgelpredigt/e01_personen.json') as f:
-                table = json.load(f)
-            results = [item for item in table if item['e01id'] == self.id]
+            self.cursor.execute(f"SELECT  e01id, e01gnd, e01nachname, e01vorname, e01akademisch, e01geburtsdatum, e01geburtsort, e01sterbedatum, e01sterbeort, e01rahmendaten, e01daten, e01wirkungsorte, e01funktionen FROM e01_personen WHERE e01id = '{self.id}'")
+            column_names = [col[0] for col in self.cursor.description]
+            results = self.cursor.fetchall()
             if results:
-                #data = [dict(zip(column_names, row))  
-                #    for row in results][0]
-                data = results[0]
-
+                data = [dict(zip(column_names, row))  
+                    for row in results][0]
+                
                 self.name = " ".join([data["e01vorname"], data["e01nachname"]])
                 self.vorname = data["e01vorname"]
                 self.nachname = data["e01nachname"]
@@ -182,17 +174,12 @@ class Source:
     def get_quelle_info(self):
         if self.id.startswith("E08"):
             try:
-                #self.cursor.execute(f"SELECT e08id, e08autor1, e08titel1, e08band1, e08ort, e08jahr, e08verlag, e08typ, e08vdnummer, e08dnbnummer FROM e08_quellen WHERE e08id = '{self.id}'")
-                #column_names = [col[0] for col in self.cursor.description]
-                #results = self.cursor.fetchall()
-                with open('source_texts/orgelpredigt/e08_quellen.json') as f:
-                    table = json.load(f)
-                results = [item for item in table if item['e08id'] == self.id]
+                self.cursor.execute(f"SELECT e08id, e08autor1, e08titel1, e08band1, e08ort, e08jahr, e08verlag, e08typ, e08vdnummer, e08dnbnummer FROM e08_quellen WHERE e08id = '{self.id}'")
+                column_names = [col[0] for col in self.cursor.description]
+                results = self.cursor.fetchall()
                 if results:
-                #data = [dict(zip(column_names, row))  
-                #    for row in results][0]
-                    data = results[0]
-
+                    data = [dict(zip(column_names, row))  
+                        for row in results][0]
                     self.autor = data["e08autor1"]
                     self.titel = data["e08titel1"]
                     self.band = data["e08band1"]
@@ -203,6 +190,7 @@ class Source:
                     self.vdnummer = data["e08vdnummer"]
                     self.dnbnummer = data["e08dnbnummer"]
                 else:
+                    #print(f"Query executed for {self.id}, but no data found.")
                     self.autor = "no_author"
                     self.titel = "no_title"
                     self.ort = "no_place"
@@ -216,18 +204,12 @@ class Source:
     def get_literatur_info(self):
         if self.id.startswith("E09"):
             try:
-                #self.cursor.execute(f"SELECT e09id, e09autor1, e09titel1, e09band1, e09ort, e09jahr, e09verlag, e09typ, e09dnbnummer FROM e09_literatur WHERE e09id = '{self.id}'")
-                #column_names = [col[0] for col in self.cursor.description]
-                #results = self.cursor.fetchall()
-                #if results:
-                #    data = [dict(zip(column_names, row))  
-                #        for row in results][0]
-                with open('source_texts/orgelpredigt/e09_literatur.json') as f:
-                    table = json.load(f)
-                results = [item for item in table if item['e09id'] == self.id]
+                self.cursor.execute(f"SELECT e09id, e09autor1, e09titel1, e09band1, e09ort, e09jahr, e09verlag, e09typ, e09dnbnummer FROM e09_literatur WHERE e09id = '{self.id}'")
+                column_names = [col[0] for col in self.cursor.description]
+                results = self.cursor.fetchall()
                 if results:
-                    data = results[0]
-
+                    data = [dict(zip(column_names, row))  
+                        for row in results][0]
                     self.autor = data["e09autor1"]
                     self.titel = data["e09titel1"]
                     self.band = data["e09band1"]
@@ -237,6 +219,7 @@ class Source:
                     self.typ = data["e09typ"]
                     self.dnbnummer = data["e09dnbnummer"]
                 else:
+                    #print(f"Query executed for {self.id}, but no data found.")
                     self.autor = "no_author"
                     self.titel = "no_title"
                     self.ort = "no_place"
@@ -265,19 +248,12 @@ class Musikwerk:
     def get_musikwerk_info(self):
         if self.id.startswith("E10"):
             try:
-                #self.cursor.execute(f"SELECT e10id, e10komponist, e10werk, e10kurztitel, e10textdichter, e10gattung, e10besetzung FROM e10_musikwerke WHERE e10id = '{self.id}'")
-                #column_names = [col[0] for col in self.cursor.description]
-                #results = self.cursor.fetchall()
-                #if results:
-                #    data = [dict(zip(column_names, row))  
-                #        for row in results][0]
-                with open('source_texts/orgelpredigt/e10_musikwerke.json') as f:
-                    table = json.load(f)
-                results = [item for item in table if item['e10id'] == self.id]
+                self.cursor.execute(f"SELECT e10id, e10komponist, e10werk, e10kurztitel, e10textdichter, e10gattung, e10besetzung FROM e10_musikwerke WHERE e10id = '{self.id}'")
+                column_names = [col[0] for col in self.cursor.description]
+                results = self.cursor.fetchall()
                 if results:
-                #data = [dict(zip(column_names, row))  
-                #    for row in results][0]
-                    data = results[0]
+                    data = [dict(zip(column_names, row))  
+                        for row in results][0]
                     self.komponist = data["e10komponist"]
                     self.titel = data["e10werk"]
                     self.kurztitel = data["e10kurztitel"]
@@ -287,6 +263,7 @@ class Musikwerk:
                     #self.jahr = data["e10jahr"]
                     #self.verlag = data["e10verlag"]
                 else:
+                    #print(f"Query executed for {self.id}, but no data found.")
                     self.komponist = "no_composer"
                     self.titel = "no_title"
                     self.kurztitel = ""
@@ -313,17 +290,15 @@ class Orgelpredigt:
 
     def get_orgelpredigt_info(self):
         try:
-            #self.cursor.execute(f"SELECT e00autor, e00kurztitel FROM e00_orgelpredigten WHERE e00id = '{self.id}'")
-            #column_names = [col[0] for col in self.cursor.description]
-            #results = self.cursor.fetchall()
-            with open('source_texts/orgelpredigt/e00_orgelpredigten.json') as f:
-                table = json.load(f)
-            results = [item for item in table if item['e00id'] == self.id]
+            self.cursor.execute(f"SELECT e00autor, e00kurztitel FROM e00_orgelpredigten WHERE e00id = '{self.id}'")
+            column_names = [col[0] for col in self.cursor.description]
+            results = self.cursor.fetchall()
             if results:
-                sermon_info = results[0]
+                sermon_info = [dict(zip(column_names, row)) for row in results][0]
                 self.autor = Person(sermon_info["e00autor"])
                 self.kurztitel = sermon_info["e00kurztitel"]
-            else:
+            else: 
+                #print(f"Query executed for {self.id}, but no data found.")
                 self.autor.nachname = "--"
                 self.autor.vorname = "--"
                 self.kurztitel = self.id
@@ -346,16 +321,11 @@ class Sermon:
     
     def get_sermon_info(self):
         try:
-            #self.cursor.execute(f"SELECT e00autor, e00kurztitel, e00volltitel, e00verlagsort, e00verleger, e00jahr, e00umfang, e00konfession, e00bibelstelle, e00sonntag, e00einweihungsort FROM e00_orgelpredigten WHERE e00id = '{self.id}'")
-            #column_names = [col[0] for col in self.cursor.description]
-            #results = self.cursor.fetchall()
-            #if results:
-            #    sermon_info = [dict(zip(column_names, row)) for row in results][0]
-            with open('source_texts/orgelpredigt/e00_orgelpredigten.json') as f:
-                table = json.load(f)
-            results = [item for item in table if item['e00id'] == self.id]
+            self.cursor.execute(f"SELECT e00autor, e00kurztitel, e00volltitel, e00verlagsort, e00verleger, e00jahr, e00umfang, e00konfession, e00bibelstelle, e00sonntag, e00einweihungsort FROM e00_orgelpredigten WHERE e00id = '{self.id}'")
+            column_names = [col[0] for col in self.cursor.description]
+            results = self.cursor.fetchall()
             if results:
-                sermon_info = results[0]
+                sermon_info = [dict(zip(column_names, row)) for row in results][0]
                 self.kurztitel = sermon_info["e00kurztitel"]
                 self.volltitel = sermon_info["e00volltitel"]
                 self.erscheinungsjahr = sermon_info["e00jahr"]

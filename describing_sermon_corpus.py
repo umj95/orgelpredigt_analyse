@@ -162,7 +162,7 @@ orgelpredigt_zitate = []
 for id, info in predigten.items():
     sermon = oa.Sermon(id)
     predigtzitate = len(sermon.orgelpredigtzitate)
-    orgelpredigt_zitate.append([sermon.kurztitel, sermon.predigtzitate])
+    orgelpredigt_zitate.append([sermon.kurztitel, sermon.orgelpredigtzitate])
 
 #%%
 orgelpredigt_zitate_sorted =sorted(orgelpredigt_zitate, key=lambda x: x[1], reverse=True)
