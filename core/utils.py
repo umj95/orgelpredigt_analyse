@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 
 # root directory path
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1]
 
 with open(ROOT / 'source_texts/orgelpredigt/e00_orgelpredigten.json') as f:
     e00_orgelpredigten = json.load(f)
