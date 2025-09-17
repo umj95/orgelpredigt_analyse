@@ -9,3 +9,9 @@ version = "0.1.0"
 [tool.setuptools.packages.find]
 where = ["."]
 
+[tool.poetry]
+name = "ma-project"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+package-mode = false
