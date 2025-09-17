@@ -7,10 +7,7 @@ import streamlit as st
 from core.utils import Sermon, Person, get_short_info
 from collections import Counter
 
-import core.db_connection as db_connection
-
 import plotly.express as px
-#px.colors.sequential.Agsunset
 import networkx as nx
 
 import plotly.graph_objects as go
