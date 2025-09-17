@@ -48,6 +48,9 @@ print(f"Nr. der Wörter in den Zitationstypen:")
 pprint(type_counters)
 
 # %%
+len(predigten)
+
+# %%
 # plot the 20 reference works with the highest word count overall
 ref_counters = dict(Counter(all_refs).most_common(20))
 refs_only_ids = {oa.get_short_info(key): value for key, value in ref_counters.items() if re.match(r'E[01][0-9]{5}', str(key))}
@@ -68,7 +71,7 @@ ref_counters = dict(Counter(all_refs))
 
 ref_counter_music = {oa.get_short_info(key): value for key, value in ref_counters.items() if key.startswith("E10")}
 
-ref_counter_music.pop("no_composer: no_title")
+#ref_counter_music.pop("no_composer: no_title")
 ref_counter_music.pop("E100: E100")
 
 fig = go.Figure(data=[go.Bar(x=list(ref_counter_music.keys()), 
@@ -80,6 +83,13 @@ fig.update_layout(title='Zitierte Musikwerke',
                   xaxis_title='Werke', 
                   yaxis_title='Worte')
 fig.show()
+
+# %%
+print(refs_only_ids)
+# %%
+# create table of most quoted works
+df = pd.DataFrame.from_dict({k:[v] for k,v in refs_only_ids.items()})
+df
 
 # %%
 # plot the 20 most quoted songs
@@ -98,6 +108,30 @@ fig.update_layout(title='20 meistzitierte Musikwerke',
                   xaxis_title='Werke', 
                   yaxis_title='Worte')
 fig.show()
+
+# %%
+print(top_20_music)
+
+# %%
+# plot the 5 most quoted sermons
+ref_counter_sermons = {oa.get_short_info(key).split(":")[1]: value for key, value in ref_counters.items() if key.startswith("E00")}
+
+import heapq
+
+
+top_5 = heapq.nlargest(5, ref_counter_sermons.items(), key=lambda x: x[1])
+top_5_sermons = {i[0]: i[1] for i in top_5}
+
+fig = go.Figure(data=[go.Bar(x=list(top_5_sermons.keys()), 
+                             y=list(top_5_sermons.values()), 
+                             marker_color='blue', 
+                             marker_line_color='blue')])
+
+fig.update_layout(title='5 meistzitierte Orgelpredigten', 
+                  xaxis_title='Predigten', 
+                  yaxis_title='Worte in anderen Predigten')
+fig.show()
+
 
 # %%
 # Find 5 sermons with longest music quotes
@@ -122,3 +156,21 @@ top_5_most_sermon_quotes = heapq.nlargest(5, predigten, key=lambda x: predigten[
 print("=== Die top 5 Predigten mit den längsten Zitaten aus anderen Orgelpredigten ===")
 
 print(*[f"{oa.get_short_info(i)} [{i}]" for i in top_5_most_sermon_quotes], sep="\n")
+
+# %%
+orgelpredigt_zitate = []
+for id, info in predigten.items():
+    sermon = oa.Sermon(id)
+    predigtzitate = len(sermon.orgelpredigtzitate)
+    orgelpredigt_zitate.append([sermon.kurztitel, sermon.predigtzitate])
+
+#%%
+orgelpredigt_zitate_sorted =sorted(orgelpredigt_zitate, key=lambda x: x[1], reverse=True)
+orgelpredigt_zitate_sorted
+
+# %%
+total_songquotes = 0
+for id, predigt in predigten.items():
+    total_songquotes += predigt["zitierte_musikwerke"]
+
+print(f"{total_songquotes} in 65 Predigten, also im Durchschnitt {total_songquotes / 65}")
