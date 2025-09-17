@@ -5,17 +5,22 @@ import ast
 import re
 import json
 
-with open('source_texts/orgelpredigt/e00_orgelpredigten.json') as f:
+from pathlib import Path
+
+# root directory path
+ROOT = Path(__file__).resolve().parents[2]
+
+with open(ROOT / 'source_texts/orgelpredigt/e00_orgelpredigten.json') as f:
     e00_orgelpredigten = json.load(f)
-with open('source_texts/orgelpredigt/e01_personen.json') as f:
+with open(ROOT / 'source_texts/orgelpredigt/e01_personen.json') as f:
     e01_personen = json.load(f)
-with open('source_texts/orgelpredigt/e03_geographica.json') as f:
+with open(ROOT / 'source_texts/orgelpredigt/e03_geographica.json') as f:
     e03_geographica = json.load(f)
-with open('source_texts/orgelpredigt/e08_quellen.json') as f:
+with open(ROOT / 'source_texts/orgelpredigt/e08_quellen.json') as f:
     e08_quellen = json.load(f)
-with open('source_texts/orgelpredigt/e09_literatur.json') as f:
+with open(ROOT / 'source_texts/orgelpredigt/e09_literatur.json') as f:
     e09_literatur = json.load(f)
-with open('source_texts/orgelpredigt/e10_musikwerke.json') as f:
+with open(ROOT / 'source_texts/orgelpredigt/e10_musikwerke.json') as f:
     e10_musikwerke = json.load(f)
 
 def is_id(value: str) -> bool:
@@ -342,14 +347,14 @@ class Sermon:
             
 
     def get_sermon_table(self):
-        df = pd.read_csv(f'sermon_tables/{self.id}.tsv', sep='\t')
+        df = pd.read_csv(ROOT / f'sermon_tables/{self.id}.tsv', sep='\t')
         self.words = df["word"].tolist()                      # a list of all words
         self.word_types = df["types"].tolist()                # a list of all word types
         self.reference = df["reference"].apply(ast.literal_eval).tolist()   # a list of all ids of references
         self.all_references = sum(self.reference, [])
 
     def get_sermon_chunked(self):
-        with open(f"sermons_chunked/{self.id}.json", "r") as f:
+        with open(ROOT / f"sermons_chunked/{self.id}.json", "r") as f:
             sermon_chunked = json.load(f)
         self.chunked = sermon_chunked
 
