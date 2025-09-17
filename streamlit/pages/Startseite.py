@@ -2,7 +2,7 @@ import sys
 import os
 
 import streamlit as st
-from orgelpredigt_analyse.ore.utils import Sermon, Person, get_short_info
+from orgelpredigt_analyse.core.utils import Sermon, Person, get_short_info
 from collections import Counter
 
 #import core.db_connection as db_connection
