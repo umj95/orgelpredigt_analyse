@@ -23,6 +23,9 @@ from pathlib import Path
 # root directory path
 ROOT = Path(__file__).resolve().parents[2]
 
+print("WORKING DIR:", os.getcwd())
+print("SYS.PATH:", sys.path)
+
 st.set_page_config(
     page_title="Orgelpredigt_Analyse",
     page_icon=None,
