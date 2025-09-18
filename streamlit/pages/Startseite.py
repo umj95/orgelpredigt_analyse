@@ -37,14 +37,16 @@ st.set_page_config(
 )
 
 st.title('‘Das Wort sie sollen lassen stahn’ – Zitatnetzwerke in deutschsprachigen Orgelpredigten der frühen Neuzeit')
-st.write('Click on the links below to navigate to the other pages.')
 
 col1, col2 = st.columns([0.8,0.2], gap="small", vertical_alignment="top", border=False)
 
 with col1:
     ##### Geographischer Überblick
-    st.header("Predigt – Bibel – Kirchenlied: Eine Annäherung")
-    st.write("Diese Seite bietet einen interaktiven Einstieg in die textuellen Netzwerke zwischen Lied- und Bibelzitat, in welchen sich frühmoderne Orgelpredigten bewegen. Die Startseite vermittelt hier einen generellen Überblick. Über 'Orgelpredigt Analyse' können einzelne Predigten genauer analysiert werden. Über 'Orgelpredigt Vergleich' können zwei oder mehr Predigten gemeinsam auf Überschneidungen hin untersucht werden.")
+    #st.header("Predigt – Bibel – Kirchenlied: Eine Annäherung")
+    st.markdown("Diese Seite bietet einen interaktiven Einstieg in die textuellen Netzwerke in welchen sich frühmoderne Orgelpredigten bewegen. Die Daten auf denen diese Ansicht beruht basieren auf dem DFG-geförderten Projekt [Deutsche Orgelpredigtdrucke zwischen 1600 und 1800 – Katalogisierung, Texterfassung, Auswertung](https://orgelpredigt.ur.de/). Als dynamische Oberfläche zur Analyse der Netzwerkeffekte in entweder einzelnen oder mehreren Orgelpredigten bildet diese Seite teil der Masterarbeit _‚Das Wort sie sollen lassen stahn‘: 
+Digitale Analyse intertextueller Beziehungen in historischen Textcorpora anhand von Liedzitaten in deutschen Orgelpredigten_. Für die Mehrzahl der hier vorgestellten Visualisierungen wird auf die im Rahmen des DFG-Projektes erstellten manuellen Textannotationen zurück gegriffen. Wo dies nicht der Fall ist, und zusätzlich oder stattdessen maschinell generierte Verbindungen dargestellt werden, wird explizit darauf hingewiesen. Grundsätzlich ist zu beachten, dass, während die zu den Predigten gelieferten Metadaten auf den entsprechenden Datensätzen des Projektes basieren, die Angaben zu Zitationen in Predigten _allein auf im Fließtext markierten Passagen_ beruhen, also nicht auf Marginalien oder Erwähnungen in Fußnoten oder Einführungstexten. Aufgrund dessen können sich die hier präsentierten Daten teils anders ausnehmen als in der Darstellung im Orgelpredigt-Portal.")
+st.subheader("Zur Nutzung")
+st.markdown("Die Startseite vermittelt einen generellen Überblick. Auf der Seite 'Orgelpredigt Analyse' können einzelne Predigten genauer inspiziert und im Volltext angezeigt werden. Über 'Orgelpredigt Vergleich' können zwei oder mehr Predigten gemeinsam auf Überschneidungen hin untersucht werden.")
 
 with col2:
     st.image(ROOT / "streamlit/mittweidische_orgel.jpg", caption="Prospekt der Weller-Orgel in Mittweida. Quelle: https://digital.slub-dresden.de/werkansicht?tx_dlf%5Bid%5D=10528&tx_dlf%5Bpage%5D=6#")
@@ -219,7 +221,7 @@ node_trace.text = node_text
 sermons_sources_network = go.Figure(data=[edge_trace, node_trace],
             layout=go.Layout(
                 title=dict(
-                    text="<br>Quotations among Sermons, Sources, and Music",
+                    text="<br>Zitatnetzwerk zwischen Predigten, Musikwerken und Literatur",
                     font=dict(size=16)
                     ),
                 #shapes=edge_shapes,
@@ -256,9 +258,11 @@ sermons_sources_network.update_layout(
 )
 
 st.title("Literatur- und Liedzitate zwischen allen Orgelpredigten")
-st.markdown("Der folgende Netzwerk-Graph visualisiert die Verweise in Predigttexten auf Literatur, Musikwerke, sowie andere Predigten.")
+st.markdown("Der folgende Netzwerk-Graph visualisiert die Verweise in Predigttexten auf Literatur, Musikwerke, sowie andere Predigten. Über Mouse hover werden die jeweiligen Titel angezeigt.")
 st.plotly_chart(sermons_sources_network)
+
 st.title("Liedzitate – kumulativ und diachron betrachtet")
+st.markdown("Dieser 'Barcode' repräsentiert die kumulative Verwendung von Zitaten (Typ auswählbar) je Predigtprozent. Je dunkler der Balken, desto mehr Zitate des jeweiligen Typs erscheinen in dem entsprechenden Prozent. Über das Auswahlfeld 'Zeitliche Einteilung' können auch mehrere zeitlich gestaffelte Diagramme generiert werden.")
 
 col1, col2 = st.columns([0.5, 0.5])
 
