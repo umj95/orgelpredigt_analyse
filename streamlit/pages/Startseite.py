@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 
 # root directory path
-root = Path(os.getcwd()).resolve().parents[0]
+root = Path(os.getcwd()).resolve().parents[1]
 
 # Add the repository root to the Python path
 sys.path.append(str(root))
