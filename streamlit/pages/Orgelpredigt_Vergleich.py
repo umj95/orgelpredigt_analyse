@@ -1,9 +1,15 @@
 import sys
 import os
 
+# Get the absolute path to the repository root
+repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Add the repository root to the Python path
+sys.path.append(repo_root)
+
 print(sys.path)
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import streamlit as st
 from core.utils import Sermon, Person, get_short_info
