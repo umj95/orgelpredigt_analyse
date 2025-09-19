@@ -1,23 +1,21 @@
 import sys
 import os
 
+print(sys.path)
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import streamlit as st
 from core.utils import Sermon, Person, get_short_info
 from collections import Counter
 
-#import core.db_connection as db_connection
-
 import plotly.express as px
 from plotly.subplots import make_subplots
-#px.colors.sequential.Agsunset
 import networkx as nx
 
 import plotly.graph_objects as go
 import pandas as pd
 
-import folium
 import json
 import re
 
