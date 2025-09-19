@@ -1,17 +1,12 @@
 import sys
 import os
 
-# Get the absolute path to the repository root
-from pathlib import Path
+repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if repo_root not in sys.path:
+    sys.path.insert(0, repo_root)
 
-# root directory path
-root = Path(os.getcwd()).resolve().parents[1]
+print(">>> SYS.PATH:", sys.path)  # (optional, for debugging)
 
-# Add the repository root to the Python path
-sys.path.append(str(root))
-print(sys.path)
-
-#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
 import streamlit as st
 from core.utils import Sermon, get_short_info
@@ -50,6 +45,11 @@ color_map = {
         'literatur': 'rgb(234, 79, 136)',
         'quelle': 'rgb(250, 120, 118)',
         'bibel': 'rgb(246, 169, 122)',
+        'machine_orgelpredigt': 'rgb(135, 44, 162)',
+        'machine_musikwerk': 'rgb(192, 54, 157)',
+        'machine_literatur': 'rgb(234, 79, 136)',
+        'machine_quelle': 'rgb(250, 120, 118)',
+        'machine_bibel': 'rgb(246, 169, 122)',
         'nan': 'rgb(237, 217, 163)',
         'text': 'rgb(237, 217, 163)'
     }
@@ -60,6 +60,9 @@ def is_id(value):
         return True
     else:
         return False
+    
+def flatten(xss):
+    return [x for xs in xss for x in xs]
 
 #########################
 ##### CHOOSE SERMON #####
@@ -333,7 +336,7 @@ quote_distribution_chunked.update_layout(barmode='stack')
 ##### TEXT WITH HIGHLIGHTS #####
 ################################
 
-def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int) -> str:
+def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int, preds: list) -> str:
     """Takes a sentence dictionary and returns an html <p>-tag with appropriate child tags
         Args:
             sentence: The dict containing the keys "words" (list), "types" (list) and "references" (list of lists)
@@ -343,18 +346,22 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int) -> str:
             A string containing the tag
     """
 
-    def add_tooltip(id_list: str) -> str:
-        if isinstance(id_list, list):
-            #id = "List"
-            if len(id_list) > 0:
-                id = id_list[-1]
+    def add_tooltip(tooltips: list) -> str:
+        tooltip = '<span class="tooltiptext">'
+        print(tooltips)
+        for elem in tooltips:
+            if elem[0] == "machine":
+                tooltip += f'<b>Maschinelle Auszeichnung</b><br/>'
             else:
-                id = ""
-        elif isinstance(id_list, str) and len(id_list) > 0:
-            id = id_list.split()[0]
-        else:
-            id = id_list
-        tooltip = f'<span class="tooltiptext">{get_short_info(id)}</span>'
+                tooltip += f'<b>Manuelle Auszeichnung</b></br>'
+            if isinstance(elem[1], str):
+                if is_id(elem[1]):
+                    tooltip += f'<a href="https://orgelpredigt.ur.de/{elem[1]}" target="_blank">{get_short_info(elem[1])}</a></br>'
+                else:
+                    tooltip += f'{elem[1]}</br>'
+            else:
+                tooltip += f'elem[1] is a list!</br>'
+        tooltip += '</span>'
         return tooltip
 
     tag = f'<span class="orgelpredigt_span" id="{par_nr}-{sentence_nr}">'
@@ -365,9 +372,37 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int) -> str:
     types = sentence["types"]
     refs = sentence["references"]
 
+    multiple_machine = ""
+    machine_and_manual = ""
+    tooltips = []
+
+    # create spans for detected automatic tags
+    pred_nr = len(preds)        # how many predictions exist for this sentence?
+    if pred_nr > 0:
+        if pred_nr > 1:
+            multiple_machine = "multi_machine"
+        for pred in preds:
+            if pred["pred_type"] == "bibel":
+                tooltip_add = "Lutherbibel "
+            else:
+                tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Crüger, <i>Praxis Pietatis Melica</i> S."
+            tag += f'<span class="{pred["model"]} machine_{pred["pred_type"]} machine_tooltip {multiple_machine}">'
+            
+            tooltips.append(["machine", f"{tooltip_add}{pred["ref_id"]}: „{pred["text"]}“ (Ähnlichkeit: {pred["similarity"]})"])
+
+
+    # create spans for manual tags
     if types[0] != "":
+        if pred_nr > 0:
+            machine_and_manual = "mach_and_man"
         current_tag.append(types[0].strip())
-        tag += f'<span class="{types[0].strip()} tooltip">{add_tooltip(refs[0])}'
+        tag += f'<span class="{types[0].strip()} {machine_and_manual} manual_tooltip">'
+        for ref in set(flatten(refs)):
+            tooltips.append(["manual", ref])
+    
+    # add tooltip if applicable
+    if len(tooltips) > 0:
+        tag += add_tooltip(tooltips)
 
     for word, type, ref in zip(words, types, refs):
 
@@ -386,27 +421,24 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int) -> str:
             if type.strip() == current_tag[-1]:
                 tag += f' {word}'
             else:
-                tag += f'<span class="{type.strip()} tooltip">{add_tooltip(thisref)}{word}'
+                #tag += f'<span class="{type.strip()} manual_tooltip">{add_tooltip(thisref)}{word}'
+                tag += f'<span class="{type.strip()} manual_tooltip">{word}'
                 current_tag.append(type.strip())
         else:
-            tag += f'<span class="{type.strip()} tooltip">{add_tooltip(thisref)}{word}'
+            #tag += f'<span class="{type.strip()} manual_tooltip">{add_tooltip(thisref)}{word}'
+            tag += f'<span class="{type.strip()} manual_tooltip">{word}'
             current_tag.append(type.strip())
     
     if len(current_tag) != 0:
         tag += '</span>'
+    
+    if pred_nr > 0:
+        for i in range(pred_nr):
+            tag += '</span>'
 
     return f'{tag}</span>'
 
-sermon_html = f'<div class="orgelpredigt">'
 
-for i in range(len(sermon.chunked)):
-    paragraph_text = f'<div class="parmarker">Paragraph {i}</div><p class="orgelpredigt_p" id="{i}">'
-    for j in range(len(sermon.chunked[i])):
-        paragraph_text += sentence_to_html(sermon.chunked[i][j], i, j)
-    paragraph_text += "</p>"
-    sermon_html += paragraph_text
-
-sermon_html += "</div>"
 
 ##########################
 ##### STREAMLIT PAGE #####
@@ -453,89 +485,245 @@ with tab1:
         st.plotly_chart(quotations_piechart)
 
 with tab2:
+    human = False
+    machine = False
+
+    human = st.checkbox("Manuelle Annotationen")
+    machine = st.checkbox("Maschinelle Annotation")
+
+    file_list = []
+    predictions = []
+
+    for filename in os.listdir("predictions/"):
+        if sermon.id in filename:
+            file_list.append(filename)
+    if len(file_list) > 0:
+        for file in file_list:
+            predictions.append(pd.read_csv(f"predictions/{file}"))
+
     st.markdown(f"""
-        <style>
-            div.orgelpredigt {{
-                padding: 10%;
-            }}
-            span.musikwerk {{
-                background-color: {color_map["musikwerk"]}; 
-                border-radius: 5px; 
-                padding: 2px; 
-            }}
-            span.orgelpredigt {{
-                background-color: {color_map["orgelpredigt"]}; 
-                border-radius: 5px; 
-                padding: 2px; 
-            }}
-            span.literatur {{
-                background-color: {color_map["literatur"]}; 
-                border-radius: 5px; 
-                padding: 2px; 
-            }}
-            span.quelle {{
-                background-color: {color_map["quelle"]}; 
-                border-radius: 5px; 
-                padding: 2px; 
-            }}
-            span.bibel {{
-                background-color: {color_map["bibel"]}; 
-                border-radius: 5px; 
-                padding: 2px; 
-            }}
-            /* Tooltip container */
-            .tooltip {{
-                position: relative;
-                display: inline-block;
-                border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-            }}
+            <style>
+                div.orgelpredigt {{
+                    padding: 10%;
+                }}
+                div.parmarker {{
+                    margin-left: -8em;
+                    color: lightgrey;
+                }}
+                span.mach_and_man {{
+                }}
+                a {{
+                    color: skyblue;
+                }}
+            </style>
+                """, unsafe_allow_html=True)
 
-            /* Tooltip text */
-            .tooltip .tooltiptext {{
-                visibility: hidden;
-                width: 120px;
-                background-color: #555;
-                color: #fff;
-                text-align: center;
-                padding: 5px 0;
-                border-radius: 6px;
+    if human:
+        st.markdown(f"""
+            <style>
+                span.musikwerk {{
+                    font-weight: bolder;
+                    /*background-color: {color_map["musikwerk"]}; */
+                    border-radius: 5px; 
+                    padding: 2px; 
+                }}
+                span.orgelpredigt {{
+                    font-weight: bolder;
+                    /*background-color: {color_map["orgelpredigt"]}; */
+                    border-radius: 5px; 
+                    padding: 2px; 
+                }}
+                span.literatur {{
+                    font-weight: bolder;
+                    /*background-color: {color_map["literatur"]}; */
+                    border-radius: 5px; 
+                    padding: 2px; 
+                }}
+                span.quelle {{
+                    font-weight: bolder;
+                    /*background-color: {color_map["quelle"]}; */
+                    border-radius: 5px; 
+                    padding: 2px; 
+                }}
+                span.bibel {{
+                    font-weight: bolder;
+                    /*background-color: {color_map["bibel"]}; */
+                    border-radius: 5px; 
+                    padding: 2px; 
+                }}
+                /* Tooltip container */
+                .manual_tooltip {{
+                    position: relative;
+                    display: inline-block;
+                }}
+                /* Tooltip text */
+                .manual_tooltip .tooltiptext {{
+                    font-weight: normal;
+                    width: 120px;
+                    background-color: #555;
+                    color: #fff;
+                    text-align: center;
+                    padding: 5px 0;
+                    border-radius: 6px;
 
-                /* Position the tooltip text */
-                position: absolute;
-                z-index: 1;
-                bottom: 125%;
-                left: 50%;
-                margin-left: -60px;
+                    /* Position the tooltip text */
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 125%;
+                    left: 50%;
+                    margin-left: -60px;
 
-                /* Fade in tooltip */
-                opacity: 0;
-                transition: opacity 0.3s;
-            }}
+                    /* Fade in tooltip */
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                }}
 
-            /* Tooltip arrow */
-                .tooltip .tooltiptext::after {{
-                content: "";
-                position: absolute;
-                top: 100%;
-                left: 50%;
-                margin-left: -5px;
-                border-width: 5px;
-                border-style: solid;
-                border-color: #555 transparent transparent transparent;
-            }}
+                /* Tooltip arrow */
+                .manual_tooltip .tooltiptext::after {{
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: #555 transparent transparent transparent;
+                }}
 
-            /* Show the tooltip text when you mouse over the tooltip container */
-            .tooltip:hover .tooltiptext {{
-                visibility: visible;
-                opacity: 1;
-            }} 
+                /* Show the tooltip text when you mouse over the tooltip container */
+                .manual_tooltip:hover .tooltiptext {{
+                    visibility: visible;
+                    opacity: 1;
+                }} 
+            </style>
+            """, unsafe_allow_html=True)
+    
+    if machine:
+        st.markdown(f"""
+            <style>
+                span.machine_musikwerk {{
+                    background-color: {color_map["musikwerk"]}; 
+                    border-radius: 5px; 
+                    padding: 2px; 
+                }}
+                span.machine_orgelpredigt {{
+                    background-color: {color_map["orgelpredigt"]}; 
+                    border-radius: 5px; 
+                    padding: 2px; 
+                }}
+                span.machine_literatur {{
+                    background-color: {color_map["literatur"]}; 
+                    border-radius: 5px; 
+                    padding: 2px; 
+                }}
+                span.machine_quelle {{
+                    background-color: {color_map["quelle"]}; 
+                    border-radius: 5px; 
+                    padding: 2px; 
+                }}
+                span.machine_bibel {{
+                    background-color: {color_map["bibel"]}; 
+                    /*border: 5px solid black;*/
+                    border-radius: 5px; 
+                    padding: 2px; 
+                }}
+                span.multi_machine {{
+                    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+                }}
+                /* Tooltip container */
+                .machine_tooltip {{
+                    position: relative;
+                    display: inline-block;
+                }}
+                /* Tooltip text */
+                .machine_tooltip .tooltiptext {{
+                    width: 120px;
+                    background-color: #555;
+                    color: #fff;
+                    text-align: center;
+                    padding: 5px 0;
+                    border-radius: 6px;
 
-            div.parmarker {{
-                margin-left: -8em;
-                color: lightgrey;
-            }}
-        </style>
+                    /* Position the tooltip text */
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 125%;
+                    left: 50%;
+                    margin-left: -60px;
+
+                    /* Fade in tooltip */
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                }}
+
+                /* Tooltip arrow */
+                .machine_tooltip .tooltiptext::after {{
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: #555 transparent transparent transparent;
+                }}
+
+                /* Show the tooltip text when you mouse over the tooltip container */
+                .machine_tooltip:hover .tooltiptext {{
+                    visibility: visible;
+                    opacity: 1;
+                }} 
+            </style>
+            """, unsafe_allow_html=True)
+    if not human:
+        st.markdown(f"""
+            <style>
+                .manual_tooltip .tooltiptext{{
+                    display: none;
+                }}
+            </style>
         """, unsafe_allow_html=True)
+    if not machine:
+        st.markdown(f"""
+            <style>
+                .machine_tooltip .tooltiptext{{
+                    display: none;
+                }}
+            </style>
+        """, unsafe_allow_html=True)
+
+    sermon_html = f'<div class="orgelpredigt">'
+
+    for i in range(len(sermon.chunked)):
+        #create a new div for each paragraph
+        paragraph_text = f'<div class="parmarker">Paragraph {i}</div><p class="orgelpredigt_p" id="{i}">'
+        # go over each sentence
+        for j in range(len(sermon.chunked[i])):
+            # see if any predictions apply and put them in a list of dicts
+            preds = []
+            for df in predictions:
+                row = df[(df['Paragraph'] == i) & (df['Satz'] == j)]
+                if not row.empty:
+                    row_dict = row.iloc[0].to_dict()
+                    if "Bibelstelle" in row:
+                        row_dict["model"] = "similarity_search"
+                        row_dict["pred_type"] = "bibel"
+                        row_dict["ref_id"] = row_dict["Bibelstelle"]
+                        row_dict["text"] = row_dict["Bibelvers"]
+                        row_dict["similarity"] = row_dict["Ähnlichkeit"]
+                    else:
+                        row_dict["model"] = "similarity_search"
+                        row_dict["pred_type"] = "musikwerk"
+                        row_dict["ref_id"] = row_dict["Liederbuch"]
+                        row_dict["text"] = row_dict["Liedvers"]
+                        row_dict["similarity"] = row_dict["Ähnlichkeit"]
+                    preds.append(row_dict)
+
+            paragraph_text += sentence_to_html(sermon.chunked[i][j], i, j, preds)
+        paragraph_text += "</p>"
+        sermon_html += paragraph_text
+
+    sermon_html += "</div>"
 
     st.header(sermon.volltitel)
     st.html(sermon_html)

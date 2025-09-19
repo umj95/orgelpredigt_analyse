@@ -1,16 +1,12 @@
 import streamlit as st
 
 import sys, os
-#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if repo_root not in sys.path:
+    sys.path.insert(0, repo_root)
 
-# Get the absolute path to the repository root
-from pathlib import Path
+print(">>> SYS.PATH:", sys.path)  # (optional, for debugging)
 
-# root directory path
-root = Path(os.getcwd()).resolve().parents[0]
-
-# Add the repository root to the Python path
-sys.path.append(str(root))
 
 print("new path after append:")
 print(sys.path)
