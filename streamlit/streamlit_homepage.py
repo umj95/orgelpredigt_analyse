@@ -6,6 +6,9 @@ print(sys.path)
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+print("new path after append:")
+print(sys.path)
+
 pg = st.navigation([st.Page("pages/Startseite.py"),
                     st.Page("pages/Orgelpredigt_Analyse.py"), 
                     st.Page("pages/Orgelpredigt_Vergleich.py")])
