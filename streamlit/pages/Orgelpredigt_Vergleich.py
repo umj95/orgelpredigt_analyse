@@ -2,10 +2,13 @@ import sys
 import os
 
 # Get the absolute path to the repository root
-repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+from pathlib import Path
+
+# root directory path
+root = Path(os.getcwd()).resolve().parents[0]
 
 # Add the repository root to the Python path
-sys.path.append(repo_root)
+sys.path.append(str(root))
 
 print(sys.path)
 
