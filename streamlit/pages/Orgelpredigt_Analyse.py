@@ -510,28 +510,20 @@ with tab2:
     if predictions:
         options = []
         files = {}
+        types = {}
         for pred in predictions:
             identifier = f"Maschinelle Annotation – Typ: {pred["task"]}, Methode: {pred["method"]}, Unschärfe: {pred['fuzziness']}, Datum: {pred['date']}"
 
             files[identifier] = pred['file']
+            types[identifier] = pred['task']
             options.append(identifier)
 
         selected = create_checkboxes(options)
-
+        if any(selected.values()):
+            machine = True
         for key, val in selected.items():
-            if val:
-                csv_list.append(pd.read_csv(files[key]))
-                machine = True
-
-    #file_list = []
-    #predictions = []
-
-    #for filename in os.listdir("predictions/"):
-    #    if sermon.id in filename:
-    #        file_list.append(filename)
-    #if len(file_list) > 0:
-    #    for file in file_list:
-    #        predictions.append(pd.read_csv(f"predictions/{file}"))
+            if val == True:
+                csv_list.append([pd.read_csv(files[key]), types[key]])
 
     st.markdown(f"""
             <style>
@@ -633,7 +625,7 @@ with tab2:
     if machine:
         st.markdown(f"""
             <style>
-                span.machine_musikwerk {{
+                span.machine_lieder {{
                     background-color: {color_map["musikwerk"]}; 
                     border-radius: 5px; 
                     padding: 2px; 
@@ -733,21 +725,22 @@ with tab2:
         for j in range(len(sermon.chunked[i])):
             # see if any predictions apply and put them in a list of dicts
             preds = []
-            for df in csv_list:
+            task = "lieder"
+            for df, task in csv_list:
                 row = df[(df['Paragraph'] == i) & (df['Satz'] == j)]
                 if not row.empty:
                     row_dict = row.iloc[0].to_dict()
                     if "Bibelstelle" in row:
                         row_dict["model"] = "similarity_search"
-                        row_dict["pred_type"] = "bibel"
-                        row_dict["ref_id"] = row_dict["Bibelstelle"]
-                        row_dict["text"] = row_dict["Bibelvers"]
+                        row_dict["pred_type"] = task
+                        row_dict["ref_id"] = row_dict["Fundstelle"]
+                        row_dict["text"] = row_dict["Vers"]
                         row_dict["similarity"] = row_dict["Ähnlichkeit"]
                     else:
                         row_dict["model"] = "similarity_search"
-                        row_dict["pred_type"] = "musikwerk"
-                        row_dict["ref_id"] = row_dict["Liederbuch"]
-                        row_dict["text"] = row_dict["Liedvers"]
+                        row_dict["pred_type"] = task
+                        row_dict["ref_id"] = row_dict["Fundstelle"]
+                        row_dict["text"] = row_dict["Vers"]
                         row_dict["similarity"] = row_dict["Ähnlichkeit"]
                     preds.append(row_dict)
 
