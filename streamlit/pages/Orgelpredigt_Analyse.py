@@ -627,6 +627,7 @@ with tab2:
             <style>
                 span.machine_lieder {{
                     background-color: {color_map["musikwerk"]}; 
+                    color: white;
                     border-radius: 5px; 
                     padding: 2px; 
                 }}

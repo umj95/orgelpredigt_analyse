@@ -130,7 +130,8 @@ def reconsider_match(sent, pages, retriever):
     else:
         return [["no match", 0], 1]
     
-def add_inferred_matches(guessed_hits: pd.DataFrame, sermon: oa.Sermon, retriever) -> pd.DataFrame:
+def add_inferred_matches(guessed_hits: pd.DataFrame, id: str, retriever) -> pd.DataFrame:
+    sermon = oa.Sermon(id)
     for n in range(3):
         additional_matches = []
         sent_add = lambda x : [x+2,x+3,x+4]
