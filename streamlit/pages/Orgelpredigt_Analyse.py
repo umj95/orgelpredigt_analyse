@@ -116,6 +116,14 @@ if input_id:
 else:
     sermon = Sermon(option[-7:])
 
+if Path(ROOT / f"predictions/{sermon.id}_predictions.json").is_file():
+    # file exists:
+    with open(ROOT / f"predictions/{sermon.id}_predictions.json", "r", encoding="utf-8") as f:
+        predictions = json.load(f)
+else:
+    predictions = []
+
+
 #############################
 ##### MAP VISUALISATION #####
 #############################
@@ -444,6 +452,12 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int, preds: list)
 ##### STREAMLIT PAGE #####
 ##########################
 
+def create_checkboxes(options):
+    selected_options = {}
+    for option in options:
+        selected_options[option] = st.checkbox(option)
+    return selected_options
+
 st.title(f"{str(sermon)} – Analyse")
 
 tab1, tab2 = st.tabs(["Überblick", "Predigttext"])
@@ -489,17 +503,35 @@ with tab2:
     machine = False
 
     human = st.checkbox("Manuelle Annotationen")
-    machine = st.checkbox("Maschinelle Annotation")
 
-    file_list = []
-    predictions = []
+    csv_list = []
 
-    for filename in os.listdir("predictions/"):
-        if sermon.id in filename:
-            file_list.append(filename)
-    if len(file_list) > 0:
-        for file in file_list:
-            predictions.append(pd.read_csv(f"predictions/{file}"))
+    # create checkboxes for all machine annotations found
+    if predictions:
+        options = []
+        files = {}
+        for pred in predictions:
+            identifier = f"Maschinelle Annotation – Typ: {pred["task"]}, Methode: {pred["method"]}, Unschärfe: {pred['fuzziness']}, Datum: {pred['date']}"
+
+            files[identifier] = pred['file']
+            options.append(identifier)
+
+        selected = create_checkboxes(options)
+
+        for key, val in selected.items():
+            if val:
+                csv_list.append(pd.read_csv(files[key]))
+                machine = True
+
+    #file_list = []
+    #predictions = []
+
+    #for filename in os.listdir("predictions/"):
+    #    if sermon.id in filename:
+    #        file_list.append(filename)
+    #if len(file_list) > 0:
+    #    for file in file_list:
+    #        predictions.append(pd.read_csv(f"predictions/{file}"))
 
     st.markdown(f"""
             <style>
@@ -522,32 +554,32 @@ with tab2:
         st.markdown(f"""
             <style>
                 span.musikwerk {{
-                    font-weight: bolder;
-                    /*background-color: {color_map["musikwerk"]}; */
+                    font-style: italic;
+                    text-decoration: underline {color_map["musikwerk"]} 2px;
                     border-radius: 5px; 
                     padding: 2px; 
                 }}
                 span.orgelpredigt {{
-                    font-weight: bolder;
-                    /*background-color: {color_map["orgelpredigt"]}; */
+                    font-style: italic;
+                    text-decoration: underline {color_map["orgelpredigt"]} 2px;
                     border-radius: 5px; 
                     padding: 2px; 
                 }}
                 span.literatur {{
-                    font-weight: bolder;
-                    /*background-color: {color_map["literatur"]}; */
+                    font-style: italic;
+                    text-decoration: underline {color_map["literatur"]} 2px;
                     border-radius: 5px; 
                     padding: 2px; 
                 }}
                 span.quelle {{
-                    font-weight: bolder;
-                    /*background-color: {color_map["quelle"]}; */
+                    font-style: italic;
+                    text-decoration: underline {color_map["quelle"]} 2px;
                     border-radius: 5px; 
                     padding: 2px; 
                 }}
                 span.bibel {{
-                    font-weight: bolder;
-                    /*background-color: {color_map["bibel"]}; */
+                    font-style: italic;
+                    text-decoration: underline {color_map["bibel"]} 2px;
                     border-radius: 5px; 
                     padding: 2px; 
                 }}
@@ -701,7 +733,7 @@ with tab2:
         for j in range(len(sermon.chunked[i])):
             # see if any predictions apply and put them in a list of dicts
             preds = []
-            for df in predictions:
+            for df in csv_list:
                 row = df[(df['Paragraph'] == i) & (df['Satz'] == j)]
                 if not row.empty:
                     row_dict = row.iloc[0].to_dict()

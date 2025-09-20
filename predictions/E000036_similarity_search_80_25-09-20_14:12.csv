@@ -1,0 +1,399 @@
+Predigt,Paragraph,Satz,Bibelstelle,Bibelvers,Ähnlichkeit,Dopplung
+0,so frage ich nichts nach himmel und erden,21,15,Psalm_73_25,so frage ich nichts nach Himel vnd Erden,91.36,False
+1,so frage ich nichts nach himmel und erden,21,15,Psalm_73_25,so frage ich nichts nach Himel vnd Erden,91.36,True
+2,wenn mir gleich leib und seel verschmacht,21,16,Psalm_73_26,Wenn mir gleich Leib vnd Seele verschmacht,89.16,False
+3,wenn mir gleich leib und seel verschmacht,21,16,Psalm_73_26,Wenn mir gleich Leib vnd Seele verschmacht,89.16,True
+4,der wird nimmermehr sterben,23,8,Psalm_10_11,Er wirds nimer mehr sehen,80.77,False
+5,der wird nimmermehr sterben,23,8,Psalm_10_11,Er wirds nimer mehr sehen,80.77,True
+6,der mich gesandt hat,23,15,1 Mose_16_14,der mich angesehen hat,80.95,True
+7,der mich gesandt hat,23,15,5 Mose_32_18,der dich gemacht hat,80.0,True
+8,der mich gesandt hat,23,15,2 Samuel_24_13,dem der mich gesand hat,88.37,True
+9,der mich gesandt hat,23,15,2 Könige_1_6,der euch gesand hat,87.18,True
+10,der mich gesandt hat,23,15,Jesaja_51_13,der dich gemacht hat,80.0,True
+11,der mich gesandt hat,23,15,Jeremia_42_9,zu dem jr mich gesand habt,82.61,True
+12,der mich gesandt hat,23,15,1 Mose_16_14,der mich angesehen hat,80.95,True
+13,der mich gesandt hat,23,15,5 Mose_32_18,der dich gemacht hat,80.0,True
+14,der mich gesandt hat,23,15,2 Samuel_24_13,dem der mich gesand hat,88.37,True
+15,der mich gesandt hat,23,15,2 Könige_1_6,der euch gesand hat,87.18,True
+16,der mich gesandt hat,23,15,Jesaja_51_13,der dich gemacht hat,80.0,True
+17,der mich gesandt hat,23,15,Jeremia_42_9,zu dem jr mich gesand habt,82.61,True
+18,es ist mit mir gar anders,23,27,Psalm_38_9,Es ist mit mir gar anders,96.0,False
+19,es ist mit mir gar anders,23,27,Psalm_38_9,Es ist mit mir gar anders,96.0,True
+20,aber deine tröstungen ergötzten meine seele,23,39,Psalm_94_19,Aber deine Tröstung ergetzeten meine Seele,87.06,False
+21,aber deine tröstungen ergötzten meine seele,23,39,Psalm_94_19,Aber deine Tröstung ergetzeten meine Seele,87.06,True
+22,sey nun wieder zufrieden meine seele,23,40,Psalm_116_7,Sey nu wider zu frieden meine Seele,90.14,False
+23,sey nun wieder zufrieden meine seele,23,40,Psalm_116_7,Sey nu wider zu frieden meine Seele,90.14,True
+24,denn der herr thut dir gutes,23,41,Psalm_116_7,Denn der HERR thut dir guts,80.0,False
+25,denn der herr thut dir gutes,23,41,Psalm_116_7,Denn der HERR thut dir guts,80.0,True
+26,der wird dir geben was dein hertz wünschet,23,47,Psalm_37_4,Der wird dir geben was dein hertz wündschet,96.47,False
+27,der wird dir geben was dein hertz wünschet,23,47,Psalm_37_4,Der wird dir geben was dein hertz wündschet,96.47,True
+28,die da friede verkündigen,27,8,Jesaja_52_7,die da Friede verkündigen,96.0,True
+29,die da friede verkündigen,27,8,Jesaja_52_7,die da Friede verkündigen,96.0,True
+30,gutes predigen heyl verkündigen,27,9,Jesaja_52_7,Guts predigen Heil verkündigen,88.52,False
+31,gutes predigen heyl verkündigen,27,9,Jesaja_52_7,Guts predigen Heil verkündigen,88.52,True
+32,die da sagen zu zion,27,10,Jesaja_52_7,Die da sagen zu Zion,90.0,False
+33,die da sagen zu zion,27,10,Jesaja_52_7,Die da sagen zu Zion,90.0,True
+34,dein gott ist könig,27,11,Jesaja_52_7,Dein Gott ist König,84.21,False
+35,dein gott ist könig,27,11,Jesaja_52_7,Dein Gott ist König,84.21,True
+36,werden sagen das hat gott gethan,29,1,Psalm_64_10,werden sagen Das hat Gott gethan,93.75,False
+37,werden sagen das hat gott gethan,29,1,Psalm_64_10,werden sagen Das hat Gott gethan,93.75,True
+38,und mercken daß es sein werck sey,29,2,Psalm_64_10,vnd mercken das sein werck sey,92.06,False
+39,und mercken daß es sein werck sey,29,2,Psalm_64_10,vnd mercken das sein werck sey,92.06,True
+40,gehet zu seinen thoren ein mit dancken,29,13,Psalm_100_4,Gehet zu seinen Thoren ein mit dancken,94.74,False
+41,gehet zu seinen thoren ein mit dancken,29,13,Psalm_100_4,Gehet zu seinen Thoren ein mit dancken,94.74,True
+42,zu seinen vorhöfen mit loben,29,14,Psalm_100_4,zu seinen Vorhöfen mit loben,96.43,False
+43,zu seinen vorhöfen mit loben,29,14,Psalm_100_4,zu seinen Vorhöfen mit loben,96.43,True
+44,dancket ihm lobet seinen nahmen,29,15,Psalm_100_4,Dancket jm lobet seinen Namen,86.67,True
+45,dancket ihm lobet seinen nahmen,29,15,Psalm_100_4,Dancket jm lobet seinen Namen,86.67,True
+46,so es hören sprechen,29,17,3 Mose_14_48,So sol ers rein sprechen,81.82,False
+47,so es hören sprechen,29,17,3 Mose_14_48,So sol ers rein sprechen,81.82,True
+48,man singet mit freuden in den hütten der gerechten,29,18,Psalm_118_15,Man singt mit freuden vom Sieg in den hütten der Gerechten,87.04,False
+49,man singet mit freuden in den hütten der gerechten,29,18,Psalm_118_15,Man singt mit freuden vom Sieg in den hütten der Gerechten,87.04,True
+50,und es begab sich,36,0,1 Mose_4_8,VND es begab sich,82.35,False
+51,und es begab sich,36,0,1 Mose_27_1,VND es begab sich,82.35,True
+52,und es begab sich,36,0,1 Mose_35_22,Vnd es begab sich,94.12,True
+53,und es begab sich,36,0,Josua_5_13,Vnd es begab sich,94.12,True
+54,und es begab sich,36,0,Richter_1_14,Vnd es begab sich,94.12,True
+55,und es begab sich,36,0,Rut_2_3,Vnd es begab sich eben,82.05,True
+56,und es begab sich,36,0,2 Samuel_11_2,VND es begab sich,82.35,True
+57,und es begab sich,36,0,2 Könige_13_21,Vnd es begab sich,94.12,True
+58,und es begab sich,36,0,1 Mose_4_8,VND es begab sich,82.35,True
+59,und es begab sich,36,0,1 Mose_27_1,VND es begab sich,82.35,True
+60,und es begab sich,36,0,1 Mose_35_22,Vnd es begab sich,94.12,True
+61,und es begab sich,36,0,Josua_5_13,Vnd es begab sich,94.12,True
+62,und es begab sich,36,0,Richter_1_14,Vnd es begab sich,94.12,True
+63,und es begab sich,36,0,Rut_2_3,Vnd es begab sich eben,82.05,True
+64,und es begab sich,36,0,2 Samuel_11_2,VND es begab sich,82.35,True
+65,und es begab sich,36,0,2 Könige_13_21,Vnd es begab sich,94.12,True
+66,und sprach zu ihnen,36,18,1 Mose_1_28,vnd sprach zu jnen,86.49,True
+67,und sprach zu ihnen,36,18,1 Mose_31_5,vnd sprach zu jnen,86.49,True
+68,und sprach zu ihnen,36,18,1 Mose_32_17,vnd sprach zu jnen,86.49,True
+69,und sprach zu ihnen,36,18,1 Mose_34_14,vnd sprachen zu jnen,82.05,True
+70,und sprach zu ihnen,36,18,1 Mose_39_14,vnd sprach zu jnen,86.49,True
+71,und sprach zu ihnen,36,18,1 Mose_42_7,vnd sprach zu jnen,86.49,True
+72,und sprach zu ihnen,36,18,1 Mose_42_9,vnd sprach zu jnen,86.49,True
+73,und sprach zu ihnen,36,18,1 Mose_45_24,Vnd sprach zu jnen,86.49,True
+74,und sprach zu ihnen,36,18,1 Mose_49_29,vnd sprach zu jnen,86.49,True
+75,und sprach zu ihnen,36,18,2 Mose_1_18,vnd sprach zu jnen,86.49,True
+76,und sprach zu ihnen,36,18,2 Mose_3_16,vnd sprich zu jnen,81.08,True
+77,und sprach zu ihnen,36,18,2 Mose_5_21,vnd sprachen zu jnen,82.05,True
+78,und sprach zu ihnen,36,18,2 Mose_9_27,vnd sprach zu jnen,86.49,True
+79,und sprach zu ihnen,36,18,2 Mose_10_8,der sprach zu jnen,81.08,True
+80,und sprach zu ihnen,36,18,2 Mose_12_21,vnd sprach zu jnen,86.49,True
+81,und sprach zu ihnen,36,18,2 Mose_16_23,Vnd er sprach zu jnen,80.0,True
+82,und sprach zu ihnen,36,18,2 Mose_19_12,vnd sprich zu jnen,81.08,True
+83,und sprach zu ihnen,36,18,2 Mose_19_15,Vnd er sprach zu jnen,80.0,True
+84,und sprach zu ihnen,36,18,2 Mose_32_27,Vnd er sprach zu jnen,80.0,True
+85,und sprach zu ihnen,36,18,2 Mose_35_1,vnd sprach zu jnen,86.49,True
+86,und sprach zu ihnen,36,18,3 Mose_1_2,vnd sprich zu jnen,81.08,True
+87,und sprach zu ihnen,36,18,3 Mose_8_5,vnd sprach zu jnen,86.49,True
+88,und sprach zu ihnen,36,18,3 Mose_11_1,vnd sprach zu jnen,86.49,True
+89,und sprach zu ihnen,36,18,3 Mose_17_2,vnd sprich zu jnen,81.08,True
+90,und sprach zu ihnen,36,18,3 Mose_18_2,vnd sprich zu jnen,81.08,True
+91,und sprach zu ihnen,36,18,3 Mose_19_2,vnd sprich zu jnen,81.08,True
+92,und sprach zu ihnen,36,18,3 Mose_21_1,vnd sprich zu jnen,81.08,True
+93,und sprach zu ihnen,36,18,3 Mose_23_2,vnd sprich zu jnen,81.08,True
+94,und sprach zu ihnen,36,18,3 Mose_23_10,vnd sprich zu jnen,81.08,True
+95,und sprach zu ihnen,36,18,3 Mose_25_2,vnd sprich zu jnen,81.08,True
+96,und sprach zu ihnen,36,18,3 Mose_27_2,vnd sprich zu jnen,81.08,True
+97,und sprach zu ihnen,36,18,4 Mose_5_6,vnd sprich zu jnen,81.08,True
+98,und sprach zu ihnen,36,18,4 Mose_6_2,vnd sprich zu jnen,81.08,True
+99,und sprach zu ihnen,36,18,4 Mose_15_2,vnd sprich zu jnen,81.08,True
+100,und sprach zu ihnen,36,18,4 Mose_15_18,vnd sprich zu jnen,81.08,True
+101,und sprach zu ihnen,36,18,4 Mose_15_38,vnd sprich zu jnen,81.08,True
+102,und sprach zu ihnen,36,18,4 Mose_16_3,vnd sprachen zu jnen,82.05,True
+103,und sprach zu ihnen,36,18,4 Mose_20_10,vnd sprach zu jnen,86.49,True
+104,und sprach zu ihnen,36,18,4 Mose_22_8,Vnd er sprach zu jnen,80.0,True
+105,und sprach zu ihnen,36,18,4 Mose_28_2,vnd sprich zu jnen,81.08,True
+106,und sprach zu ihnen,36,18,4 Mose_28_3,Vnd sprich zu jnen,81.08,True
+107,und sprach zu ihnen,36,18,4 Mose_31_15,vnd sprach zu jnen,86.49,True
+108,und sprach zu ihnen,36,18,4 Mose_32_29,vnd sprach zu jnen,86.49,True
+109,und sprach zu ihnen,36,18,4 Mose_33_51,vnd sprich zu jnen,81.08,True
+110,und sprach zu ihnen,36,18,4 Mose_34_2,vnd sprich zu jnen,81.08,True
+111,und sprach zu ihnen,36,18,4 Mose_35_10,vnd sprich zu jnen,81.08,True
+112,und sprach zu ihnen,36,18,5 Mose_5_1,vnd sprach zu jnen,86.49,True
+113,und sprach zu ihnen,36,18,5 Mose_29_1,vnd sprach zu jnen,86.49,True
+114,und sprach zu ihnen,36,18,5 Mose_31_2,vnd sprach zu jnen,86.49,True
+115,und sprach zu ihnen,36,18,Josua_2_9,vnd sprach zu jnen,86.49,True
+116,und sprach zu ihnen,36,18,Josua_4_5,vnd sprach zu jnen,86.49,True
+117,und sprach zu ihnen,36,18,Josua_6_6,vnd sprach zu jnen,86.49,True
+118,und sprach zu ihnen,36,18,Josua_7_2,vnd sprach zu jnen,86.49,True
+119,und sprach zu ihnen,36,18,Josua_22_2,vnd sprach zu jnen,86.49,True
+120,und sprach zu ihnen,36,18,Richter_3_28,Vnd sprach zu jnen,86.49,True
+121,und sprach zu ihnen,36,18,Richter_6_8,der sprach zu jnen,81.08,True
+122,und sprach zu ihnen,36,18,Richter_7_16,Vnd sprach zu jnen,86.49,True
+123,und sprach zu ihnen,36,18,Richter_18_2,vnd sprachen zu jnen,82.05,True
+124,und sprach zu ihnen,36,18,Richter_19_23,vnd sprach zu jnen,86.49,True
+125,und sprach zu ihnen,36,18,1 Samuel_2_23,Vnd er sprach zu jnen,80.0,True
+126,und sprach zu ihnen,36,18,1 Samuel_17_8,vnd sprach zu jnen,86.49,True
+127,und sprach zu ihnen,36,18,1 Samuel_25_5,vnd sprach zu jnen,86.49,True
+128,und sprach zu ihnen,36,18,1 Könige_12_28,vnd sprach zu jnen,86.49,True
+129,und sprach zu ihnen,36,18,1 Könige_22_6,vnd sprach zu jnen,86.49,True
+130,und sprach zu ihnen,36,18,2 Könige_1_2,vnd sprach zu jnen,86.49,True
+131,und sprach zu ihnen,36,18,2 Könige_1_3,vnd sprich zu jnen,81.08,True
+132,und sprach zu ihnen,36,18,2 Könige_2_18,vnd sprach zu jnen,86.49,True
+133,und sprach zu ihnen,36,18,2 Könige_4_24,vnd sprach zum Knaben,80.0,True
+134,und sprach zu ihnen,36,18,2 Könige_6_11,vnd sprach zu jnen,86.49,True
+135,und sprach zu ihnen,36,18,2 Könige_11_15,vnd sprach zu jnen,86.49,True
+136,und sprach zu ihnen,36,18,2 Könige_25_24,vnd sprach zu jnen,86.49,True
+137,und sprach zu ihnen,36,18,1 Chronik_12_17,vnd sprach zu jnen,86.49,True
+138,und sprach zu ihnen,36,18,1 Chronik_15_12,vnd sprach zu jnen,86.49,True
+139,und sprach zu ihnen,36,18,2 Chronik_10_9,vnd sprach zu jnen,86.49,True
+140,und sprach zu ihnen,36,18,2 Chronik_10_10,vnd sprich zu jnen,81.08,True
+141,und sprach zu ihnen,36,18,2 Chronik_12_5,vnd sprach zu jnen,86.49,True
+142,und sprach zu ihnen,36,18,2 Chronik_18_5,vnd sprach zu jnen,86.49,True
+143,und sprach zu ihnen,36,18,2 Chronik_23_3,Vnd er sprach zu jnen,80.0,True
+144,und sprach zu ihnen,36,18,2 Chronik_23_14,vnd sprach zu jnen,86.49,True
+145,und sprach zu ihnen,36,18,2 Chronik_24_5,vnd sprach zu jnen,86.49,True
+146,und sprach zu ihnen,36,18,2 Chronik_24_20,vnd sprach zu jnen,86.49,True
+147,und sprach zu ihnen,36,18,2 Chronik_28_9,vnd sprach zu jnen,86.49,True
+148,und sprach zu ihnen,36,18,2 Chronik_28_13,vnd sprachen zu jnen,82.05,True
+149,und sprach zu ihnen,36,18,2 Chronik_29_5,vnd sprach zu jnen,86.49,True
+150,und sprach zu ihnen,36,18,Esra_4_2,vnd sprachen zu jnen,82.05,True
+151,und sprach zu ihnen,36,18,Esra_8_28,Vnd sprach zu jnen,86.49,True
+152,und sprach zu ihnen,36,18,Esra_10_10,vnd sprach zu jnen,86.49,True
+153,und sprach zu ihnen,36,18,Nehemia_2_17,Vnd sprach zu jnen,86.49,True
+154,und sprach zu ihnen,36,18,Nehemia_5_7,vnd sprach zu jnen,86.49,True
+155,und sprach zu ihnen,36,18,Nehemia_5_8,vnd sprach zu jnen,86.49,True
+156,und sprach zu ihnen,36,18,Nehemia_7_3,vnd sprach zu jnen,86.49,True
+157,und sprach zu ihnen,36,18,Nehemia_13_17,vnd sprach zu jnen,86.49,True
+158,und sprach zu ihnen,36,18,Nehemia_13_21,vnd sprach zu jnen,86.49,True
+159,und sprach zu ihnen,36,18,Jeremia_11_3,vnd sprich zu jnen,81.08,True
+160,und sprach zu ihnen,36,18,Jeremia_17_20,vnd sprich zu jnen,81.08,True
+161,und sprach zu ihnen,36,18,Jeremia_19_11,vnd sprich zu jnen,81.08,True
+162,und sprach zu ihnen,36,18,Jeremia_25_30,vnd sprich zu jnen,81.08,True
+163,und sprach zu ihnen,36,18,Jeremia_26_4,Vnd sprich zu jnen,81.08,True
+164,und sprach zu ihnen,36,18,Jeremia_35_5,vnd sprach zu jnen,86.49,True
+165,und sprach zu ihnen,36,18,Jeremia_42_9,vnd sprach zu jnen,86.49,True
+166,und sprach zu ihnen,36,18,Jeremia_43_10,Vnd sprich zu jnen,81.08,True
+167,und sprach zu ihnen,36,18,Hesekiel_20_3,vnd sprich zu jnen,81.08,True
+168,und sprach zu ihnen,36,18,Hesekiel_20_5,vnd sprich zu jnen,81.08,True
+169,und sprach zu ihnen,36,18,Hesekiel_20_7,Vnd sprach zu jnen,86.49,True
+170,und sprach zu ihnen,36,18,Hesekiel_20_27,vnd sprich zu jnen,81.08,True
+171,und sprach zu ihnen,36,18,Hesekiel_24_3,vnd sprich zu jnen,81.08,True
+172,und sprach zu ihnen,36,18,Hesekiel_33_2,vnd sprich zu jnen,81.08,True
+173,und sprach zu ihnen,36,18,Hesekiel_37_4,vnd sprich zu jnen,81.08,True
+174,und sprach zu ihnen,36,18,Daniel_3_14,vnd sprach zu jnen,86.49,True
+175,und sprach zu ihnen,36,18,1 Mose_1_28,vnd sprach zu jnen,86.49,True
+176,und sprach zu ihnen,36,18,1 Mose_31_5,vnd sprach zu jnen,86.49,True
+177,und sprach zu ihnen,36,18,1 Mose_32_17,vnd sprach zu jnen,86.49,True
+178,und sprach zu ihnen,36,18,1 Mose_34_14,vnd sprachen zu jnen,82.05,True
+179,und sprach zu ihnen,36,18,1 Mose_39_14,vnd sprach zu jnen,86.49,True
+180,und sprach zu ihnen,36,18,1 Mose_42_7,vnd sprach zu jnen,86.49,True
+181,und sprach zu ihnen,36,18,1 Mose_42_9,vnd sprach zu jnen,86.49,True
+182,und sprach zu ihnen,36,18,1 Mose_45_24,Vnd sprach zu jnen,86.49,True
+183,und sprach zu ihnen,36,18,1 Mose_49_29,vnd sprach zu jnen,86.49,True
+184,und sprach zu ihnen,36,18,2 Mose_1_18,vnd sprach zu jnen,86.49,True
+185,und sprach zu ihnen,36,18,2 Mose_3_16,vnd sprich zu jnen,81.08,True
+186,und sprach zu ihnen,36,18,2 Mose_5_21,vnd sprachen zu jnen,82.05,True
+187,und sprach zu ihnen,36,18,2 Mose_9_27,vnd sprach zu jnen,86.49,True
+188,und sprach zu ihnen,36,18,2 Mose_10_8,der sprach zu jnen,81.08,True
+189,und sprach zu ihnen,36,18,2 Mose_12_21,vnd sprach zu jnen,86.49,True
+190,und sprach zu ihnen,36,18,2 Mose_16_23,Vnd er sprach zu jnen,80.0,True
+191,und sprach zu ihnen,36,18,2 Mose_19_12,vnd sprich zu jnen,81.08,True
+192,und sprach zu ihnen,36,18,2 Mose_19_15,Vnd er sprach zu jnen,80.0,True
+193,und sprach zu ihnen,36,18,2 Mose_32_27,Vnd er sprach zu jnen,80.0,True
+194,und sprach zu ihnen,36,18,2 Mose_35_1,vnd sprach zu jnen,86.49,True
+195,und sprach zu ihnen,36,18,3 Mose_1_2,vnd sprich zu jnen,81.08,True
+196,und sprach zu ihnen,36,18,3 Mose_8_5,vnd sprach zu jnen,86.49,True
+197,und sprach zu ihnen,36,18,3 Mose_11_1,vnd sprach zu jnen,86.49,True
+198,und sprach zu ihnen,36,18,3 Mose_17_2,vnd sprich zu jnen,81.08,True
+199,und sprach zu ihnen,36,18,3 Mose_18_2,vnd sprich zu jnen,81.08,True
+200,und sprach zu ihnen,36,18,3 Mose_19_2,vnd sprich zu jnen,81.08,True
+201,und sprach zu ihnen,36,18,3 Mose_21_1,vnd sprich zu jnen,81.08,True
+202,und sprach zu ihnen,36,18,3 Mose_23_2,vnd sprich zu jnen,81.08,True
+203,und sprach zu ihnen,36,18,3 Mose_23_10,vnd sprich zu jnen,81.08,True
+204,und sprach zu ihnen,36,18,3 Mose_25_2,vnd sprich zu jnen,81.08,True
+205,und sprach zu ihnen,36,18,3 Mose_27_2,vnd sprich zu jnen,81.08,True
+206,und sprach zu ihnen,36,18,4 Mose_5_6,vnd sprich zu jnen,81.08,True
+207,und sprach zu ihnen,36,18,4 Mose_6_2,vnd sprich zu jnen,81.08,True
+208,und sprach zu ihnen,36,18,4 Mose_15_2,vnd sprich zu jnen,81.08,True
+209,und sprach zu ihnen,36,18,4 Mose_15_18,vnd sprich zu jnen,81.08,True
+210,und sprach zu ihnen,36,18,4 Mose_15_38,vnd sprich zu jnen,81.08,True
+211,und sprach zu ihnen,36,18,4 Mose_16_3,vnd sprachen zu jnen,82.05,True
+212,und sprach zu ihnen,36,18,4 Mose_20_10,vnd sprach zu jnen,86.49,True
+213,und sprach zu ihnen,36,18,4 Mose_22_8,Vnd er sprach zu jnen,80.0,True
+214,und sprach zu ihnen,36,18,4 Mose_28_2,vnd sprich zu jnen,81.08,True
+215,und sprach zu ihnen,36,18,4 Mose_28_3,Vnd sprich zu jnen,81.08,True
+216,und sprach zu ihnen,36,18,4 Mose_31_15,vnd sprach zu jnen,86.49,True
+217,und sprach zu ihnen,36,18,4 Mose_32_29,vnd sprach zu jnen,86.49,True
+218,und sprach zu ihnen,36,18,4 Mose_33_51,vnd sprich zu jnen,81.08,True
+219,und sprach zu ihnen,36,18,4 Mose_34_2,vnd sprich zu jnen,81.08,True
+220,und sprach zu ihnen,36,18,4 Mose_35_10,vnd sprich zu jnen,81.08,True
+221,und sprach zu ihnen,36,18,5 Mose_5_1,vnd sprach zu jnen,86.49,True
+222,und sprach zu ihnen,36,18,5 Mose_29_1,vnd sprach zu jnen,86.49,True
+223,und sprach zu ihnen,36,18,5 Mose_31_2,vnd sprach zu jnen,86.49,True
+224,und sprach zu ihnen,36,18,Josua_2_9,vnd sprach zu jnen,86.49,True
+225,und sprach zu ihnen,36,18,Josua_4_5,vnd sprach zu jnen,86.49,True
+226,und sprach zu ihnen,36,18,Josua_6_6,vnd sprach zu jnen,86.49,True
+227,und sprach zu ihnen,36,18,Josua_7_2,vnd sprach zu jnen,86.49,True
+228,und sprach zu ihnen,36,18,Josua_22_2,vnd sprach zu jnen,86.49,True
+229,und sprach zu ihnen,36,18,Richter_3_28,Vnd sprach zu jnen,86.49,True
+230,und sprach zu ihnen,36,18,Richter_6_8,der sprach zu jnen,81.08,True
+231,und sprach zu ihnen,36,18,Richter_7_16,Vnd sprach zu jnen,86.49,True
+232,und sprach zu ihnen,36,18,Richter_18_2,vnd sprachen zu jnen,82.05,True
+233,und sprach zu ihnen,36,18,Richter_19_23,vnd sprach zu jnen,86.49,True
+234,und sprach zu ihnen,36,18,1 Samuel_2_23,Vnd er sprach zu jnen,80.0,True
+235,und sprach zu ihnen,36,18,1 Samuel_17_8,vnd sprach zu jnen,86.49,True
+236,und sprach zu ihnen,36,18,1 Samuel_25_5,vnd sprach zu jnen,86.49,True
+237,und sprach zu ihnen,36,18,1 Könige_12_28,vnd sprach zu jnen,86.49,True
+238,und sprach zu ihnen,36,18,1 Könige_22_6,vnd sprach zu jnen,86.49,True
+239,und sprach zu ihnen,36,18,2 Könige_1_2,vnd sprach zu jnen,86.49,True
+240,und sprach zu ihnen,36,18,2 Könige_1_3,vnd sprich zu jnen,81.08,True
+241,und sprach zu ihnen,36,18,2 Könige_2_18,vnd sprach zu jnen,86.49,True
+242,und sprach zu ihnen,36,18,2 Könige_4_24,vnd sprach zum Knaben,80.0,True
+243,und sprach zu ihnen,36,18,2 Könige_6_11,vnd sprach zu jnen,86.49,True
+244,und sprach zu ihnen,36,18,2 Könige_11_15,vnd sprach zu jnen,86.49,True
+245,und sprach zu ihnen,36,18,2 Könige_25_24,vnd sprach zu jnen,86.49,True
+246,und sprach zu ihnen,36,18,1 Chronik_12_17,vnd sprach zu jnen,86.49,True
+247,und sprach zu ihnen,36,18,1 Chronik_15_12,vnd sprach zu jnen,86.49,True
+248,und sprach zu ihnen,36,18,2 Chronik_10_9,vnd sprach zu jnen,86.49,True
+249,und sprach zu ihnen,36,18,2 Chronik_10_10,vnd sprich zu jnen,81.08,True
+250,und sprach zu ihnen,36,18,2 Chronik_12_5,vnd sprach zu jnen,86.49,True
+251,und sprach zu ihnen,36,18,2 Chronik_18_5,vnd sprach zu jnen,86.49,True
+252,und sprach zu ihnen,36,18,2 Chronik_23_3,Vnd er sprach zu jnen,80.0,True
+253,und sprach zu ihnen,36,18,2 Chronik_23_14,vnd sprach zu jnen,86.49,True
+254,und sprach zu ihnen,36,18,2 Chronik_24_5,vnd sprach zu jnen,86.49,True
+255,und sprach zu ihnen,36,18,2 Chronik_24_20,vnd sprach zu jnen,86.49,True
+256,und sprach zu ihnen,36,18,2 Chronik_28_9,vnd sprach zu jnen,86.49,True
+257,und sprach zu ihnen,36,18,2 Chronik_28_13,vnd sprachen zu jnen,82.05,True
+258,und sprach zu ihnen,36,18,2 Chronik_29_5,vnd sprach zu jnen,86.49,True
+259,und sprach zu ihnen,36,18,Esra_4_2,vnd sprachen zu jnen,82.05,True
+260,und sprach zu ihnen,36,18,Esra_8_28,Vnd sprach zu jnen,86.49,True
+261,und sprach zu ihnen,36,18,Esra_10_10,vnd sprach zu jnen,86.49,True
+262,und sprach zu ihnen,36,18,Nehemia_2_17,Vnd sprach zu jnen,86.49,True
+263,und sprach zu ihnen,36,18,Nehemia_5_7,vnd sprach zu jnen,86.49,True
+264,und sprach zu ihnen,36,18,Nehemia_5_8,vnd sprach zu jnen,86.49,True
+265,und sprach zu ihnen,36,18,Nehemia_7_3,vnd sprach zu jnen,86.49,True
+266,und sprach zu ihnen,36,18,Nehemia_13_17,vnd sprach zu jnen,86.49,True
+267,und sprach zu ihnen,36,18,Nehemia_13_21,vnd sprach zu jnen,86.49,True
+268,und sprach zu ihnen,36,18,Jeremia_11_3,vnd sprich zu jnen,81.08,True
+269,und sprach zu ihnen,36,18,Jeremia_17_20,vnd sprich zu jnen,81.08,True
+270,und sprach zu ihnen,36,18,Jeremia_19_11,vnd sprich zu jnen,81.08,True
+271,und sprach zu ihnen,36,18,Jeremia_25_30,vnd sprich zu jnen,81.08,True
+272,und sprach zu ihnen,36,18,Jeremia_26_4,Vnd sprich zu jnen,81.08,True
+273,und sprach zu ihnen,36,18,Jeremia_35_5,vnd sprach zu jnen,86.49,True
+274,und sprach zu ihnen,36,18,Jeremia_42_9,vnd sprach zu jnen,86.49,True
+275,und sprach zu ihnen,36,18,Jeremia_43_10,Vnd sprich zu jnen,81.08,True
+276,und sprach zu ihnen,36,18,Hesekiel_20_3,vnd sprich zu jnen,81.08,True
+277,und sprach zu ihnen,36,18,Hesekiel_20_5,vnd sprich zu jnen,81.08,True
+278,und sprach zu ihnen,36,18,Hesekiel_20_7,Vnd sprach zu jnen,86.49,True
+279,und sprach zu ihnen,36,18,Hesekiel_20_27,vnd sprich zu jnen,81.08,True
+280,und sprach zu ihnen,36,18,Hesekiel_24_3,vnd sprich zu jnen,81.08,True
+281,und sprach zu ihnen,36,18,Hesekiel_33_2,vnd sprich zu jnen,81.08,True
+282,und sprach zu ihnen,36,18,Hesekiel_37_4,vnd sprich zu jnen,81.08,True
+283,und sprach zu ihnen,36,18,Daniel_3_14,vnd sprach zu jnen,86.49,True
+284,der dich geladen hat,36,30,5 Mose_32_18,der dich gemacht hat,80.0,False
+285,der dich geladen hat,36,30,2 Chronik_9_8,der dich lieb hat,81.08,True
+286,der dich geladen hat,36,30,Jesaja_49_7,der dich erwelet hat,80.0,True
+287,der dich geladen hat,36,30,Jesaja_51_13,der dich gemacht hat,80.0,True
+288,der dich geladen hat,36,30,Jeremia_11_17,der dich gepflantzt hat,83.72,True
+289,der dich geladen hat,36,30,5 Mose_32_18,der dich gemacht hat,80.0,True
+290,der dich geladen hat,36,30,2 Chronik_9_8,der dich lieb hat,81.08,True
+291,der dich geladen hat,36,30,Jesaja_49_7,der dich erwelet hat,80.0,True
+292,der dich geladen hat,36,30,Jesaja_51_13,der dich gemacht hat,80.0,True
+293,der dich geladen hat,36,30,Jeremia_11_17,der dich gepflantzt hat,83.72,True
+294,der soll erhöhet werden,36,36,Sprüche_9_7,der mus gehönet werden,80.0,False
+295,der soll erhöhet werden,36,36,Sprüche_9_7,der mus gehönet werden,80.0,True
+296,i ob es recht ist,40,0,4 Mose_15_24,wie es recht ist,84.85,True
+297,i ob es recht ist,40,0,Hesekiel_34_16,wie es recht ist,84.85,True
+298,i ob es recht ist,40,0,4 Mose_15_24,wie es recht ist,84.85,True
+299,i ob es recht ist,40,0,Hesekiel_34_16,wie es recht ist,84.85,True
+300,und truncken das süsse,44,22,Nehemia_8_10,vnd trincket das süsse,86.36,False
+301,und truncken das süsse,44,22,Nehemia_8_10,vnd trincket das süsse,86.36,True
+302,die nichts für sich bereitet hatten,44,24,Nehemia_8_10,die nichts fur sich bereit haben,89.55,False
+303,die nichts für sich bereitet hatten,44,24,Nehemia_8_10,die nichts fur sich bereit haben,89.55,True
+304,der ihn gesand hat,44,37,2 Mose_4_28,der jn gesand hatte,86.49,False
+305,der ihn gesand hat,44,37,2 Samuel_24_13,dem der mich gesand hat,82.93,True
+306,der ihn gesand hat,44,37,2 Könige_1_6,der euch gesand hat,86.49,True
+307,der ihn gesand hat,44,37,2 Mose_4_28,der jn gesand hatte,86.49,True
+308,der ihn gesand hat,44,37,2 Samuel_24_13,dem der mich gesand hat,82.93,True
+309,der ihn gesand hat,44,37,2 Könige_1_6,der euch gesand hat,86.49,True
+310,ob es recht ist,44,121,4 Mose_15_24,wie es recht ist,83.87,False
+311,ob es recht ist,44,121,Hesekiel_34_16,wie es recht ist,83.87,True
+312,ob es recht ist,44,121,4 Mose_15_24,wie es recht ist,83.87,True
+313,ob es recht ist,44,121,Hesekiel_34_16,wie es recht ist,83.87,True
+314,i es ist wahr,51,9,Rut_3_12,Nu es ist war,84.62,True
+315,i es ist wahr,51,9,Rut_3_12,Nu es ist war,84.62,True
+316,mit paucken und reigen,59,18,Jesaja_30_32,mit paucken vnd harffen,80.0,True
+317,mit paucken und reigen,59,18,Jesaja_30_32,mit paucken vnd harffen,80.0,True
+318,und lobsinget ihm auf dem psalter von zehn säyten,59,24,Psalm_33_2,vnd lobsinget jm auff dem Psalter von zehen seiten,86.87,True
+319,und lobsinget ihm auf dem psalter von zehn säyten,59,24,Psalm_33_2,vnd lobsinget jm auff dem Psalter von zehen seiten,86.87,True
+320,singet ihm ein neues lied,59,25,Psalm_33_3,Singet jm ein newes Lied,81.63,False
+321,singet ihm ein neues lied,59,25,Psalm_33_3,Singet jm ein newes Lied,81.63,True
+322,machets gut auf säytenspiel mit schalle,59,26,Psalm_33_3,Machts gut auff Seitenspielen mit schalle,85.0,False
+323,machets gut auf säytenspiel mit schalle,59,26,Psalm_33_3,Machts gut auff Seitenspielen mit schalle,85.0,True
+324,daß ist ein köstlich ding,59,28,Psalm_92_2,DAs ist ein köstlich ding,88.0,False
+325,daß ist ein köstlich ding,59,28,Psalm_147_1,das ist ein köstlich ding,96.0,True
+326,daß ist ein köstlich ding,59,28,Klagelieder_3_26,Es ist ein köstlich ding,89.8,True
+327,daß ist ein köstlich ding,59,28,Psalm_92_2,DAs ist ein köstlich ding,88.0,True
+328,daß ist ein köstlich ding,59,28,Psalm_147_1,das ist ein köstlich ding,96.0,True
+329,daß ist ein köstlich ding,59,28,Klagelieder_3_26,Es ist ein köstlich ding,89.8,True
+330,auf der anderen seite,63,0,2 Mose_26_20,Also auff der andern seiten,83.33,True
+331,auf der anderen seite,63,0,Hesekiel_41_20,auff der andern seiten,93.02,True
+332,auf der anderen seite,63,0,2 Mose_26_20,Also auff der andern seiten,83.33,True
+333,auf der anderen seite,63,0,Hesekiel_41_20,auff der andern seiten,93.02,True
+334,und die sänger wie am reigen,72,9,Psalm_87_7,Vnd die Senger wie am Reigen,85.71,True
+335,und die sänger wie am reigen,72,9,Psalm_87_7,Vnd die Senger wie am Reigen,85.71,True
+336,so würden sie ehre haben,93,33,Hesekiel_33_33,so werden sie erfaren,80.0,False
+337,so würden sie ehre haben,93,33,Hesekiel_33_33,so werden sie erfaren,80.0,True
+338,der ein geist ist,97,15,5 Mose_18_6,da er ein Gast ist,80.0,True
+339,der ein geist ist,97,15,5 Mose_18_6,da er ein Gast ist,80.0,True
+340,zürnet und sündiget nicht,97,25,Psalm_4_5,Zürnet jr so sündiget nicht,80.77,True
+341,zürnet und sündiget nicht,97,25,Psalm_4_5,Zürnet jr so sündiget nicht,80.77,True
+342,und weisheit und stärcke,109,4,Daniel_2_20,beide weisheit vnd stercke,80.0,False
+343,und weisheit und stärcke,109,4,Daniel_2_20,beide weisheit vnd stercke,80.0,True
+344,nehmet die psalmen und gebet her die paucken,113,1,Psalm_81_3,Nemet die Psalmen vnd gebet her die Paucken,89.66,True
+345,nehmet die psalmen und gebet her die paucken,113,1,Psalm_81_3,Nemet die Psalmen vnd gebet her die Paucken,89.66,True
+346,liebliche harfen mit psalter,113,2,Psalm_81_3,Lieblich Harffen mit Psaltern,84.21,True
+347,liebliche harfen mit psalter,113,2,Psalm_81_3,Lieblich Harffen mit Psaltern,84.21,True
+348,denn ich mag deines psaltersspiels nicht hören,116,14,Amos_5_23,Denn Jch mag deines Psalterspiles nicht hören,90.11,True
+349,denn ich mag deines psaltersspiels nicht hören,116,14,Amos_5_23,Denn Jch mag deines Psalterspiles nicht hören,90.11,True
+350,und aufrichtigkeit ist ihm angenehm,124,25,1 Chronik_29_17,vnd auffrichtigkeit ist dir angenem,88.57,True
+351,und aufrichtigkeit ist ihm angenehm,124,25,1 Chronik_29_17,vnd auffrichtigkeit ist dir angenem,88.57,True
+352,und weinen wenn sie an zion gedachten,134,26,Psalm_137_1,vnd weineten Wenn wir an Zion gedachten,84.21,True
+353,und weinen wenn sie an zion gedachten,134,26,Psalm_137_1,vnd weineten Wenn wir an Zion gedachten,84.21,True
+354,und ich bin sein,139,7,Hohelied_2_16,vnd ich bin sein,93.75,False
+355,und ich bin sein,139,7,Hohelied_6_3,vnd ich bin sein,93.75,True
+356,und ich bin sein,139,7,Hohelied_2_16,vnd ich bin sein,93.75,True
+357,und ich bin sein,139,7,Hohelied_6_3,vnd ich bin sein,93.75,True
+358,und er hält sich auch zu mir,139,8,Hohelied_7_11,vnd er helt sich auch zu mir,92.86,True
+359,und er hält sich auch zu mir,139,8,Hohelied_7_11,vnd er helt sich auch zu mir,92.86,True
+360,mein gott sey nicht ferne von mir,141,4,Psalm_71_12,GOtt sey nicht ferne von mir,85.25,True
+361,mein gott sey nicht ferne von mir,141,4,Psalm_71_12,GOtt sey nicht ferne von mir,85.25,True
+362,jch bin bey dir,141,8,Jesaja_43_5,denn ich bin bey dir,80.0,True
+363,jch bin bey dir,141,8,Jeremia_1_8,Denn ich bin bey dir,80.0,True
+364,jch bin bey dir,141,8,Jeremia_1_19,Denn ich bin bey dir,80.0,True
+365,jch bin bey dir,141,8,Jeremia_15_20,Denn Jch bin bey dir,80.0,True
+366,jch bin bey dir,141,8,Jeremia_30_11,Denn ich bin bey dir,80.0,True
+367,jch bin bey dir,141,8,Jesaja_43_5,denn ich bin bey dir,80.0,True
+368,jch bin bey dir,141,8,Jeremia_1_8,Denn ich bin bey dir,80.0,True
+369,jch bin bey dir,141,8,Jeremia_1_19,Denn ich bin bey dir,80.0,True
+370,jch bin bey dir,141,8,Jeremia_15_20,Denn Jch bin bey dir,80.0,True
+371,jch bin bey dir,141,8,Jeremia_30_11,Denn ich bin bey dir,80.0,True
+372,bald sind wir frölich,143,7,Psalm_126_3,Des sind wir frölich,82.93,True
+373,bald sind wir frölich,143,7,Psalm_126_3,Des sind wir frölich,82.93,True
+374,denn du hältest mich bey meiner rechten hand,143,17,Psalm_73_23,Denn du heltest mich bey meiner rechten Hand,93.18,True
+375,denn du hältest mich bey meiner rechten hand,143,17,Psalm_73_23,Denn du heltest mich bey meiner rechten Hand,93.18,True
+376,du leitest mich nach deinem rath,143,18,Psalm_73_24,Du leitest mich nach deinem Rat,92.06,True
+377,du leitest mich nach deinem rath,143,18,Psalm_73_24,Du leitest mich nach deinem Rat,92.06,True
+378,und nimmest mich endlich mit ehren an,143,19,Psalm_73_24,Vnd nimpst mich endlich mit ehren an,93.15,False
+379,und nimmest mich endlich mit ehren an,143,19,Psalm_73_24,Vnd nimpst mich endlich mit ehren an,93.15,True
+380,daß meine würtze triefen,151,19,Hohelied_4_16,das seine Würtze trieffen,85.71,True
+381,daß meine würtze triefen,151,19,Hohelied_4_16,das seine Würtze trieffen,85.71,True
+382,und liebliches wesen zu seiner rechten ewiglich,159,13,Psalm_16_11,vnd lieblich wesen zu deiner Rechten ewiglich,91.3,True
+383,und liebliches wesen zu seiner rechten ewiglich,159,13,Psalm_16_11,vnd lieblich wesen zu deiner Rechten ewiglich,91.3,True
+384,für dem ich stehe,159,17,1 Könige_18_15,fur dem ich stehe,94.12,True
+385,für dem ich stehe,159,17,2 Könige_3_14,fur dem ich stehe,94.12,True
+386,für dem ich stehe,159,17,2 Könige_5_16,fur dem ich stehe,94.12,True
+387,für dem ich stehe,159,17,1 Könige_18_15,fur dem ich stehe,94.12,True
+388,für dem ich stehe,159,17,2 Könige_3_14,fur dem ich stehe,94.12,True
+389,für dem ich stehe,159,17,2 Könige_5_16,fur dem ich stehe,94.12,True
+390,sondern hast lust zum leben,163,4,Psalm_30_6,Vnd er hat lust zum Leben,84.62,True
+391,sondern hast lust zum leben,163,4,Psalm_30_6,Vnd er hat lust zum Leben,84.62,True
+392,und hast lust in demselben zu wohnen,163,12,Psalm_132_13,Vnd hat lust daselbs zu wonen,80.0,False
+393,und hast lust in demselben zu wohnen,163,12,Psalm_132_13,Vnd hat lust daselbs zu wonen,80.0,True
+394,wer ihr achtet der hat eitel lust daran,163,31,Psalm_111_2,Wer jr achtet der hat eitel lust dran,92.11,False
+395,wer ihr achtet der hat eitel lust daran,163,31,Psalm_111_2,Wer jr achtet der hat eitel lust dran,92.11,True
+396,und deinen nahmen rühmen immer und ewiglich,163,109,Psalm_145_2,Vnd deinen Namen rhümen jmer vnd ewiglich,85.71,False
+397,und deinen nahmen rühmen immer und ewiglich,163,109,Psalm_145_2,Vnd deinen Namen rhümen jmer vnd ewiglich,85.71,True
