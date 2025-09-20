@@ -13,12 +13,14 @@ import datetime
 from functools import reduce
 from sentence_transformers import SentenceTransformer
 
+import datetime
+
 import nltk
 from nltk.corpus import stopwords
 from pathlib import Path
 
 # root directory path
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1]
 
 # %%
 nltk.download('stopwords')
@@ -52,14 +54,23 @@ def find_shared_nums(set1, set2, set3):
     return common_numbers
 
 def remove_duplicates(df):
+    # group hits by par-sent
     grouped_hits = df.copy().groupby(["Paragraph", "Satz"])
 
     group_keys = list(grouped_hits.groups.keys())
 
-    page_add = lambda x : [x, x+1,x+2]
+    def page_add(x): 
+        if type(x) == int:
+            return [x, x+1,x+2]
+        else:
+            book, chap, vers = x.split("_")
+            return [f"{book}_{chap}_{vers}",
+                    f"{book}_{chap}_{int(vers) + 1}",
+                    f"{book}_{chap}_{int(vers) + 2}"]
     sent_add = lambda x : [x, x+1, x+2, x+3]
 
     for i in range(0, len(group_keys)-2):
+        # iterate over group_keys in 3-grams
         keys = group_keys[i:i+3]
         all_pages = []
         if is_equal([x[0] for x in keys]):
@@ -92,6 +103,56 @@ def remove_duplicates(df):
 
     return df
 
+# %%
+def page_add(x): 
+        if type(x) == int:
+            return [x, x+1,x+2]
+        else:
+            book, chap, vers = x.split("_")
+            return [f"{book}_{chap}_{vers}",
+                    f"{book}_{chap}_{int(vers) + 1}",
+                    f"{book}_{chap}_{int(vers) + 2}"]
+#%%
+
+grouped_hits = guessed_hits.copy().groupby(["Paragraph", "Satz"])
+
+group_keys = list(grouped_hits.groups.keys())
+keys = group_keys[0:0+3]
+key = keys[0]
+key
+current_group = grouped_hits.get_group(key)
+group_pages = current_group["Liederbuch"].to_list()
+group_pages
+potential_pages = flatten_reduce([page_add(x) for x in group_pages])
+potential_pages
+
+# %%
+print("Sollen Bibelstellen (1) oder Liedzitate (2) gesucht werden?")
+response = None
+while response not in ["1", "2"]:
+    response = input("Bitte Nummer eingeben")
+
+if response == "1":
+    task = "bibel"
+    print("Bibelstellen werden gesucht")
+else:
+    task = "lieder"
+    print("Liedzitate werden gesucht")
+
+# %%
+print("Sollen Predigten mit den meisten (1), oder den längsten (2) Liedzitaten analysiert werden?")
+response = None
+while response not in ["1", "2"]:
+    response = input("Bitte Dateinamen eingeben")
+
+if response == "2":
+    corpus = "longest"
+else:
+    corpus = "most"
+
+with open(ROOT / f"sermons_with_{corpus}_music.json", "r") as f:
+    testsermons = json.load(f)
+
 
 # %%
 #embeddings = OllamaEmbeddings(
@@ -117,7 +178,10 @@ class EmbedSomething(Embeddings):
 emb = EmbedSomething(model)
 
 #%%
-directory = str(ROOT / f"./chroma/chroma_db_{model_name}")
+if task == "bibel":
+    directory = str(ROOT / f"./chroma/chroma_db_bibel_{model_name}")
+else:
+    directory = str(ROOT / f"./chroma/chroma_db_{model_name}")
 vectordb = Chroma(persist_directory = directory, embedding_function=emb)
 
 @chain
@@ -129,26 +193,13 @@ def retriever(query: str) -> tuple[Document]:
     return docs
 
 # %%
-print("Sollen Predigten mit den meisten (1), oder den längsten (2) Liedzitaten analysiert werden?")
-response = None
-while response not in ["1", "2"]:
-    response = input("Bitte Dateinamen eingeben")
-
-if response == "2":
-    corpus = "longest"
-else:
-    corpus = "most"
-
-with open(ROOT / f"sermons_with_{corpus}_music.json", "r") as f:
-    testsermons = json.load(f)
-
-# %%
 cosine_cutoff = 0.3
 date = datetime.datetime.now().strftime("%y-%m-%d_%H:%M")
 
 # %%
 similarity_table = {}
 similarity_table['date'] = date
+similarity_table['task'] = task
 similarity_table["corpus"] = corpus
 similarity_table['method'] = 'vector_database'
 similarity_table['model'] = model_name
@@ -157,37 +208,69 @@ similarity_table['comments'] = "LaBSE-Modell mit Stopwörtern"
 
 similarity_table['results'] = []
 
-for id in testsermons:
-    print(f"starting with {id}")
-    hits = []
-    sermon = oa.Sermon(id)
-    sent_nr = 0
-    for i in range(len(sermon.chunked)):                # for each paragraph
-            for j in range(len(sermon.chunked[i])):         # for each sentence
-                if " bibel" in sermon.chunked[i][j]["types"]:
-                    continue
-                else:
-                    sent_nr += 1
-                    words = sermon.chunked[i][j]["words"]
-                    filtered_words = words
-                    #filtered_words = [word for word in words if word.lower() not in stop_words]
-                    query = " ".join(filtered_words)
-                    query = re.sub(r'[/.,;:?!]', '', query)
-                    matches = retriever.invoke(query)
-                    for match in matches:
-                        if match.metadata["score"] < cosine_cutoff:
-                            hits.append([query, i, j, match.page_content, int(match.metadata["source"]), match.metadata["score"], False])
-    
-    guessed_hits = pd.DataFrame(hits, columns=["Predigt", "Paragraph", "Satz", "Liedvers", "Liederbuch", "Ähnlichkeit", "Validated"])     # create dataframe
-    guessed_hits['Dopplung'] = guessed_hits.groupby('Satz')['Satz'].transform(lambda x: x.duplicated())
+if task == "bibel":
+    for id in testsermons:
+        print(f"starting with {id}")
+        hits = []
+        sermon = oa.Sermon(id)
+        sent_nr = 0
+        for i in range(len(sermon.chunked)):                # for each paragraph
+                for j in range(len(sermon.chunked[i])):         # for each sentence
+                    if " musikwerk" in sermon.chunked[i][j]["types"]:
+                        continue
+                    else:
+                        sent_nr += 1
+                        words = sermon.chunked[i][j]["words"]
+                        filtered_words = words
+                        #filtered_words = [word for word in words if word.lower() not in stop_words]
+                        query = " ".join(filtered_words)
+                        query = re.sub(r'[/.,;:?!]', '', query)
+                        matches = retriever.invoke(query)
+                        for match in matches:
+                            if match.metadata["score"] < cosine_cutoff:
+                                hits.append([query, i, j, match.page_content, match.metadata["source"], match.metadata["score"], False])
+        
+        guessed_hits = pd.DataFrame(hits, columns=["Predigt", "Paragraph", "Satz", "Liedvers", "Liederbuch", "Ähnlichkeit", "Validated"])     # create dataframe
+        guessed_hits['Dopplung'] = guessed_hits.groupby('Satz')['Satz'].transform(lambda x: x.duplicated())
+        guessed_hits = remove_duplicates(guessed_hits)
 
-    guessed_hits = remove_duplicates(guessed_hits)
+        guessed_hits =guessed_hits.drop(guessed_hits[(guessed_hits['Validated'] == False) & (guessed_hits['Ähnlichkeit'] > 0.2)].index)
 
-    guessed_hits =guessed_hits.drop(guessed_hits[(guessed_hits['Validated'] == False) & 
-                               (guessed_hits['Ähnlichkeit'] > 0.2)].index)
+        similarity_table['results'].append([id, sent_nr, guessed_hits.to_csv()[1:]])
+else:
+    for id in testsermons:
+        print(f"starting with {id}")
+        hits = []
+        sermon = oa.Sermon(id)
+        sent_nr = 0
+        for i in range(len(sermon.chunked)):                # for each paragraph
+                for j in range(len(sermon.chunked[i])):         # for each sentence
+                    if " bibel" in sermon.chunked[i][j]["types"]:
+                        continue
+                    else:
+                        sent_nr += 1
+                        words = sermon.chunked[i][j]["words"]
+                        filtered_words = words
+                        #filtered_words = [word for word in words if word.lower() not in stop_words]
+                        query = " ".join(filtered_words)
+                        query = re.sub(r'[/.,;:?!]', '', query)
+                        matches = retriever.invoke(query)
+                        for match in matches:
+                            if match.metadata["score"] < cosine_cutoff:
+                                hits.append([query, i, j, match.page_content, match.metadata["source"], match.metadata["score"], False])
+        
+        guessed_hits = pd.DataFrame(hits, columns=["Predigt", "Paragraph", "Satz", "Liedvers", "Liederbuch", "Ähnlichkeit", "Validated"])     # create dataframe
+        guessed_hits['Dopplung'] = guessed_hits.groupby('Satz')['Satz'].transform(lambda x: x.duplicated())
 
-    similarity_table['results'].append([id, sent_nr, guessed_hits.to_csv()[1:]])
+        guessed_hits = remove_duplicates(guessed_hits)
+
+        guessed_hits =guessed_hits.drop(guessed_hits[(guessed_hits['Validated'] == False) & (guessed_hits['Ähnlichkeit'] > 0.2)].index)
+
+        similarity_table['results'].append([id, sent_nr, guessed_hits.to_csv()[1:]])
 
 # %%
-with open(ROOT / f'similarity_tables/vector_search_{corpus}_{cosine_cutoff}_{date}.json', "w") as f:
+guessed_hits
+
+# %%
+with open(ROOT / f'similarity_tables/vector_search_{task}_{corpus}_{cosine_cutoff}_{date}.json', "w") as f:
     json.dump(similarity_table, f, ensure_ascii=False)
