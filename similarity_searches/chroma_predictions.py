@@ -114,17 +114,17 @@ def page_add(x):
                     f"{book}_{chap}_{int(vers) + 2}"]
 #%%
 
-grouped_hits = guessed_hits.copy().groupby(["Paragraph", "Satz"])
+#grouped_hits = guessed_hits.copy().groupby(["Paragraph", "Satz"])
 
-group_keys = list(grouped_hits.groups.keys())
-keys = group_keys[0:0+3]
-key = keys[0]
-key
-current_group = grouped_hits.get_group(key)
-group_pages = current_group["Liederbuch"].to_list()
-group_pages
-potential_pages = flatten_reduce([page_add(x) for x in group_pages])
-potential_pages
+#group_keys = list(grouped_hits.groups.keys())
+#keys = group_keys[0:0+3]
+#key = keys[0]
+#key
+#current_group = grouped_hits.get_group(key)
+#group_pages = current_group["Liederbuch"].to_list()
+#group_pages
+#potential_pages = flatten_reduce([page_add(x) for x in group_pages])
+#potential_pages
 
 # %%
 print("Sollen Bibelstellen (1) oder Liedzitate (2) gesucht werden?")
