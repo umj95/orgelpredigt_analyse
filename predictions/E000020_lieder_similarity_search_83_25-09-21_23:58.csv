@@ -1,0 +1,31 @@
+Predigt,Paragraph,Satz,Fundstelle,Vers,Ähnlichkeit,Dopplung
+liebster jesu wir sind hier etc,2,58,1112,jebster jeju wir sind hier,84.21,False
+groß ist der herr,3,7,380,er ist der herr,87.5,False
+mein herz ist bereit,3,35,423,mein herz ist dir bereitt,88.89,False
+gott mein herz ist bereit,3,36,423,mein herz ist dir bereitt,80.0,False
+was im himmel lebet,4,45,1193,was im himmel erklinget,80.95,False
+die er uns erwiesen,7,1,666,die er uns er weiset,87.18,True
+daß du uns so gnädig bist,7,47,950,daß du gnädig bist,83.72,False
+"und was sollen wir sagen,",7,48,950,das alles lindern kan,56.52,False
+daß du uns aus unverdienter güte eine wohlthat nach der andern erweisest?,7,49,726,der du uns speisest in der noth,46.15,False
+"danket doch dem herrn,",7,50,726,wir dancken dir o herre gott,52.0,False
+denn er ist sehr freundlich,7,51,726,denn er ist freundlich,89.8,True
+was ich genannt habe,11,2,187,was ich gesundigt habe,80.95,False
+so tret’t denn vor sein angesicht mit jauchzenvollem springen,12,0,1111,so kommet vor sein angesicht mit janchhen vollem springen,84.75,False
+bezahlet die gelobte pflicht und laßt uns frölich singen:,12,1,1111,bezahlet die gelobte pflicht,65.88,False
+gott hat es alles wohl bedacht,12,2,1111,gott hat es alles wol be dacht und alles,82.86,True
+und alles alles wohl gemacht,12,3,127,du hast es alles wol gemacht,82.14,False
+gebt unserm gott die ehre,12,4,1111,gebt unserm gott die ehre,100.0,True
+laß es denn seyn,18,28,869,muß es denn seyn,87.5,False
+mit harfen und psaltern,19,22,970,mit harffen und pandor,80.0,False
+da wir das empfinden,20,28,419,da wirst dus finden,82.05,True
+und ich denke nicht,23,43,584,und ich weiß nicht,81.08,False
+sie werden sich erinnern,23,68,1256,die werden mich verhindern,84.0,False
+du bist mein gott,24,1,672,du bist mein gott,100.0,True
+ich will dir danken,24,2,200,ich wil dir danckbar feyn,81.82,True
+du bist meines vaters gott,24,3,783,du bist mein vater,81.82,True
+ich will dich erheben,24,4,586,ich wil dich rühmen,85.0,True
+der der mich gezeuget hat,24,5,227,die er mix geleget hat,80.85,False
+nun mein herz ist bereit,24,11,423,mein herz ist dir bereitt,81.63,False
+gott mein herz ist bereit,24,12,423,mein herz ist dir bereitt,80.0,False
+und hoff auf ihn,25,4,1224,und hofft auf dich,88.24,True

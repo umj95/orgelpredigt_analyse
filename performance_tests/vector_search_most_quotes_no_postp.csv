@@ -1,0 +1,12 @@
+Korpus,Methode,Unschärfefaktor,Dopplungen entfernt,Treffer inferiert,Treffer korrigiert,F1-Score,Precision,Recall,Matthews-Coefficient,Sicherheit
+5 Predigten mit meisten Liedzitaten,Vektorsuche,35,Ja,Nein,Nein,0.4751,0.4725,0.545,0.4771,0.2595
+5 Predigten mit meisten Liedzitaten,Vektorsuche,40,Ja,Nein,Nein,0.4827,0.4818,0.545,0.4839,0.2497
+5 Predigten mit meisten Liedzitaten,Vektorsuche,45,Ja,Nein,Nein,0.4893,0.5119,0.5175,0.4892,0.2206
+5 Predigten mit meisten Liedzitaten,Vektorsuche,50,Ja,Nein,Nein,0.4721,0.5293,0.4756,0.475,0.1957
+5 Predigten mit meisten Liedzitaten,Vektorsuche,55,Ja,Nein,Nein,0.4727,0.5573,0.4582,0.4785,0.1712
+5 Predigten mit meisten Liedzitaten,Vektorsuche,60,Ja,Nein,Nein,0.4671,0.5829,0.4398,0.4776,0.1501
+5 Predigten mit meisten Liedzitaten,Vektorsuche,65,Ja,Nein,Nein,0.4113,0.5507,0.356,0.4204,0.1313
+5 Predigten mit meisten Liedzitaten,Vektorsuche,70,Ja,Nein,Nein,0.3631,0.5255,0.3098,0.3777,0.1125
+5 Predigten mit meisten Liedzitaten,Vektorsuche,75,Ja,Nein,Nein,0.3528,0.5191,0.2993,0.3681,0.108
+5 Predigten mit meisten Liedzitaten,Vektorsuche,80,Ja,Nein,Nein,0.3302,0.5117,0.2711,0.3474,0.1025
+5 Predigten mit meisten Liedzitaten,Vektorsuche,85,Ja,Nein,Nein,0.2817,0.5948,0.1938,0.3223,0.0637

@@ -1,0 +1,5 @@
+Korpus,Methode,Unschärfefaktor,Dopplungen entfernt,Treffer inferiert,Treffer korrigiert,F1-Score,Precision,Recall,Matthews-Coefficient,Sicherheit
+5 Predigten mit meisten Liedern,Ähnlichkeitssuche,75,Ja,Nein,Nein,0.3414,0.2682,0.4819,0.3251,84.6838
+5 Predigten mit meisten Liedern,Ähnlichkeitssuche,80,Ja,Nein,Nein,0.4353,0.4281,0.4495,0.4151,90.1147
+5 Predigten mit meisten Liedern,Ähnlichkeitssuche,83,Ja,Nein,Nein,0.4706,0.5347,0.4262,0.4574,92.8001
+5 Predigten mit meisten Liedern,Ähnlichkeitssuche,90,Ja,Nein,Nein,0.4726,0.7029,0.3643,0.4884,96.3611
