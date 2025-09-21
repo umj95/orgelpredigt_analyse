@@ -263,15 +263,14 @@ for item, broad_color in zip([[lit_labels, lit_data],
                               [orgel_labels, orgel_data], 
                               [musik_labels, musik_data]], 
                              ['quelle', 'orgelpredigt', 'musikwerk']):
-    print(item[0])
     #for x,y  in item[0], item[1]:
     labels += item[0]
     values += item[1]
-    colors += generate_normalized_gradient(color_map[broad_color], len(labels))
+    #colors += generate_normalized_gradient(color_map[broad_color], len(labels))
 
 quotations_piechart = go.Figure(go.Pie(values=values, 
                              labels=labels, 
-                             marker=dict(colors=colors),
+                             #marker=dict(colors=colors),
                              title='Verwendete Zitate'))
 
 quotations_piechart.update_layout(
@@ -325,7 +324,6 @@ for row, nr in zip(chunked_types, range(1, len(chunked_types))):
         id_checker = re.match(r'E[01][0-9]{5}', str(ref))
         if id_checker:
             id = id_checker[0]
-            print(id)
         else: 
             id = str(ref)
         name = f'{id}' if is_id(ref) else key_cleaned
@@ -354,13 +352,62 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int, preds: list)
             A string containing the tag
     """
 
+    def inline_style(preds: list) -> str:
+        
+        color_map = {'lieder':[192, 54, 157], 'bibel':[246, 169, 122]}
+        colors = {'lieder': 'white', 'bibel': 'inherit'}
+        
+        if len(preds) == 1:
+            tagtype = preds[0][0]
+            cert = preds[0][1]
+            if cert < 1:
+                opacity = round(1-cert, 4)
+            else:
+                opacity = round(cert / 100, 4)
+            bg_color = color_map[tagtype]
+            bg_color.append(opacity)  # type: ignore
+            color_str = ", ".join([str(i) for i in bg_color])
+            attr = f'style="background-color: rgb({color_str}); color: {colors[tagtype] if opacity > 0.3 else "#5B5B66"}; border-radius: 5px; padding: 2px;">'
+        
+        else:
+            tagtypes = [x[0] for x in preds]
+            certs = [x[1] for x in preds]
+            print(f"len certs: {len(certs)}")
+
+            step = 100 / len(certs)  # Calculate the step size
+            intervals = [int(i * step) for i in range(len(certs) + 1)]
+            print(f"len intervals: {len(intervals)}")
+
+            colors = []
+            # create list of colours
+            for i in range(len(certs)):
+                if certs[i] < 1:
+                    opacity = round(1-certs[i], 4)
+                else:
+                    opacity = round(certs[i] / 100, 4)
+                bg_color = color_map[tagtypes[i]]
+                bg_color.append(opacity)  # type: ignore
+                color_str = ", ".join([str(i) for i in bg_color])
+                colors.append(color_str)
+            
+            final = ""
+
+            for i in range(len(certs)):
+                if i < len(certs)-1:
+                    final += f'rgba({colors[i]}) {intervals[i]}%, '
+                else:
+                    final += f'rgba({colors[i]}) 100%'
+            
+            print(final)
+
+            attr = f'style="background-image: linear-gradient(to right,{final}); border-radius: 5px; padding: 2px;">'
+        
+        return attr
+
     def add_tooltip(tooltips: list) -> str:
         tooltip = '<span class="tooltiptext">'
-        print(tooltips)
         for elem in tooltips:
-            if elem[0] == "machine":
-                tooltip += f'<b>Maschinelle Auszeichnung</b><br/>'
-            else:
+            if elem[1] == "manual":
                 tooltip += f'<b>Manuelle Auszeichnung</b></br>'
             if isinstance(elem[1], str):
                 if is_id(elem[1]):
@@ -388,15 +435,42 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int, preds: list)
     pred_nr = len(preds)        # how many predictions exist for this sentence?
     if pred_nr > 0:
         if pred_nr > 1:
+            pred_collection = []
             multiple_machine = "multi_machine"
-        for pred in preds:
-            if pred["pred_type"] == "bibel":
-                tooltip_add = "Lutherbibel "
-            else:
-                tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Crüger, <i>Praxis Pietatis Melica</i> S."
-            tag += f'<span class="{pred["model"]} machine_{pred["pred_type"]} machine_tooltip {multiple_machine}">'
+            for pred in preds:
+                pred_collection.append([pred["pred_type"], pred["similarity"]])
+                if pred["pred_type"] == "bibel":
+                    tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Lutherbibel "
+                else:
+                    tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Crüger, <i>Praxis Pietatis Melica</i> "
+
+            tag += f'<span class="machine_tooltip {multiple_machine}" '
+            tag += inline_style(pred_collection)
             
-            tooltips.append(["machine", f"{tooltip_add}{pred["ref_id"]}: „{pred["text"]}“ (Ähnlichkeit: {pred["similarity"]})"])
+            for pred in preds:
+                if pred["pred_type"] == "bibel":
+                    tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Lutherbibel "
+                    page = f'{pred["ref_id"]}'
+                else:
+                    tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Crüger, <i>Praxis Pietatis Melica</i> "
+                    page = f'<a href="https://www.digitale-sammlungen.de/en/view/bsb10589853?page={pred["ref_id"]}" target="_blank">S. {pred["ref_id"]}</a>'
+                sim = (1-pred["similarity"])*100 if pred["similarity"] < 1 else pred["similarity"]
+                tooltips.append(["machine", f"{tooltip_add}{page}: „{pred["text"]}“ (Ähnlichkeit: {sim:.0f}%)"])
+        else:
+            for pred in preds:
+                if pred["pred_type"] == "bibel":
+                    tooltip_add = "Lutherbibel "
+                    page = f'{pred["ref_id"]}'
+                else:
+                    tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Crüger, <i>Praxis Pietatis Melica</i> "
+                    page = f'<a href="https://www.digitale-sammlungen.de/en/view/bsb10589853?page={pred["ref_id"]}" target="_blank">S. {pred["ref_id"]}</a>'
+
+                tag += f'<span class="{pred["model"]} machine_{pred["pred_type"]} machine_tooltip {multiple_machine}" '
+                style = inline_style([[pred["pred_type"], pred["similarity"]]]) 
+                tag += style
+
+                sim = (1-pred["similarity"])*100 if pred["similarity"] < 1 else pred["similarity"]
+                tooltips.append(["machine", f"{tooltip_add}{page}: „{pred["text"]}“ (Ähnlichkeit: {sim:.0f}%)"])
 
 
     # create spans for manual tags
@@ -539,56 +613,22 @@ with tab2:
                 a {{
                     color: skyblue;
                 }}
-            </style>
-                """, unsafe_allow_html=True)
-
-    if human:
-        st.markdown(f"""
-            <style>
-                span.musikwerk {{
-                    font-style: italic;
-                    text-decoration: underline {color_map["musikwerk"]} 2px;
-                    border-radius: 5px; 
-                    padding: 2px; 
-                }}
-                span.orgelpredigt {{
-                    font-style: italic;
-                    text-decoration: underline {color_map["orgelpredigt"]} 2px;
-                    border-radius: 5px; 
-                    padding: 2px; 
-                }}
-                span.literatur {{
-                    font-style: italic;
-                    text-decoration: underline {color_map["literatur"]} 2px;
-                    border-radius: 5px; 
-                    padding: 2px; 
-                }}
-                span.quelle {{
-                    font-style: italic;
-                    text-decoration: underline {color_map["quelle"]} 2px;
-                    border-radius: 5px; 
-                    padding: 2px; 
-                }}
-                span.bibel {{
-                    font-style: italic;
-                    text-decoration: underline {color_map["bibel"]} 2px;
-                    border-radius: 5px; 
-                    padding: 2px; 
-                }}
                 /* Tooltip container */
                 .manual_tooltip {{
                     position: relative;
                     display: inline-block;
+                    cursor: pointer;
                 }}
                 /* Tooltip text */
                 .manual_tooltip .tooltiptext {{
                     font-weight: normal;
-                    width: 120px;
+                    max-width: 200px;
                     background-color: #555;
                     color: #fff;
                     text-align: center;
                     padding: 5px 0;
                     border-radius: 6px;
+                    visibility: hidden;
 
                     /* Position the tooltip text */
                     position: absolute;
@@ -619,55 +659,21 @@ with tab2:
                     visibility: visible;
                     opacity: 1;
                 }} 
-            </style>
-            """, unsafe_allow_html=True)
-    
-    if machine:
-        st.markdown(f"""
-            <style>
-                span.machine_lieder {{
-                    background-color: {color_map["musikwerk"]}; 
-                    color: white;
-                    border-radius: 5px; 
-                    padding: 2px; 
-                }}
-                span.machine_orgelpredigt {{
-                    background-color: {color_map["orgelpredigt"]}; 
-                    border-radius: 5px; 
-                    padding: 2px; 
-                }}
-                span.machine_literatur {{
-                    background-color: {color_map["literatur"]}; 
-                    border-radius: 5px; 
-                    padding: 2px; 
-                }}
-                span.machine_quelle {{
-                    background-color: {color_map["quelle"]}; 
-                    border-radius: 5px; 
-                    padding: 2px; 
-                }}
-                span.machine_bibel {{
-                    background-color: {color_map["bibel"]}; 
-                    /*border: 5px solid black;*/
-                    border-radius: 5px; 
-                    padding: 2px; 
-                }}
-                span.multi_machine {{
-                    background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-                }}
                 /* Tooltip container */
                 .machine_tooltip {{
                     position: relative;
                     display: inline-block;
+                    cursor: pointer;
                 }}
                 /* Tooltip text */
                 .machine_tooltip .tooltiptext {{
-                    width: 120px;
+                    max-width: 200px;
                     background-color: #555;
                     color: #fff;
                     text-align: center;
-                    padding: 5px 0;
+                    padding: 1em;
                     border-radius: 6px;
+                    visibility: hidden;
 
                     /* Position the tooltip text */
                     position: absolute;
@@ -699,12 +705,91 @@ with tab2:
                     opacity: 1;
                 }} 
             </style>
+                """, unsafe_allow_html=True)
+
+    if human:
+        st.markdown(f"""
+            <style>
+                span.musikwerk {{
+                    font-style: italic;
+                    text-decoration: underline {color_map["musikwerk"]} 2px;
+                    border-radius: 5px; 
+                    padding: 2px; 
+                    cursor: pointer;
+                }}
+                span.orgelpredigt {{
+                    font-style: italic;
+                    text-decoration: underline {color_map["orgelpredigt"]} 2px;
+                    border-radius: 5px; 
+                    padding: 2px; 
+                    cursor: pointer;
+                }}
+                span.literatur {{
+                    font-style: italic;
+                    text-decoration: underline {color_map["literatur"]} 2px;
+                    border-radius: 5px; 
+                    padding: 2px; 
+                    cursor: pointer;
+                }}
+                span.quelle {{
+                    font-style: italic;
+                    text-decoration: underline {color_map["quelle"]} 2px;
+                    border-radius: 5px; 
+                    padding: 2px; 
+                    cursor: pointer;
+                }}
+                span.bibel {{
+                    font-style: italic;
+                    text-decoration: underline {color_map["bibel"]} 2px;
+                    border-radius: 5px; 
+                    padding: 2px; 
+                    cursor: pointer;
+                }}
+                
+            </style>
             """, unsafe_allow_html=True)
+    
+    #if machine:
+    #    st.markdown(f"""
+    #        <style>
+    #            span.machine_lieder {{
+    #                background-color: {color_map["musikwerk"]}; 
+    #                color: white;
+    #                border-radius: 5px; 
+    #                padding: 2px;
+    #            }}
+    #            span.machine_orgelpredigt {{
+    #                background-color: {color_map["orgelpredigt"]}; 
+    #                border-radius: 5px; 
+    #                padding: 2px;
+    #            }}
+    #            span.machine_literatur {{
+    #                background-color: {color_map["literatur"]}; 
+    #                border-radius: 5px; 
+    #                padding: 2px; 
+    #            }}
+    #            span.machine_quelle {{
+    #                background-color: {color_map["quelle"]}; 
+    #                border-radius: 5px; 
+    #                padding: 2px; 
+    #            }}
+    #            span.machine_bibel {{
+    #                background-color: {color_map["bibel"]}; 
+    #                /*border: 5px solid black;*/
+    #                border-radius: 5px; 
+    #                padding: 2px; 
+    #            }}
+    #            /*span.multi_machine {{
+    #                background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    #            }}*/
+    #            
+    #        </style>
+    #        """, unsafe_allow_html=True)
     if not human:
         st.markdown(f"""
             <style>
                 .manual_tooltip .tooltiptext{{
-                    display: none;
+                    visiblity: hidden;
                 }}
             </style>
         """, unsafe_allow_html=True)
@@ -712,7 +797,7 @@ with tab2:
         st.markdown(f"""
             <style>
                 .machine_tooltip .tooltiptext{{
-                    display: none;
+                    visibility: hidden;
                 }}
             </style>
         """, unsafe_allow_html=True)
