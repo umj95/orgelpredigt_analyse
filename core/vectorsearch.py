@@ -33,6 +33,9 @@ orgel_stop_words = {'herr', 'gott', 'gottes', 'jesus', 'jesu', 'christus', 'chri
 
 stop_words = german_stop_words.union(orgel_stop_words)
 
+def flatten(xss):
+    return [x for xs in xss for x in xs]
+
 def flatten_reduce(matrix):
     return list(reduce(lambda x, y: x + y, matrix, []))
 

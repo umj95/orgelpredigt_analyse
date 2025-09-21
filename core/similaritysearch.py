@@ -143,7 +143,7 @@ def correct_inbetween_matches(df: pd.DataFrame) -> pd.DataFrame:
         if (all(x==pars[0] for x in pars) and not is_equal(pages)):   # abort if paragraphs change or pages are already the same
             if pages[0] == pages[2]:
                 missing_sent = chunk["Predigt"][chunk.index[1]]
-                print(missing_sent)
+                #print(missing_sent)
                 match, sim_score = reconsider_match(missing_sent, [pages[0]])
                 if sim_score > 60:
                     verse = match[0]
@@ -172,12 +172,18 @@ def remove_duplicates(df: pd.DataFrame) -> pd.DataFrame:
         return duplicate_indices
     
     for satz_id, indices in find_duplicate_satz(df.copy()).items():
+        print(f"working on {satz_id}, indices: {indices}, length of df: {len(df)}")
+        matches = []
         satz = [int(x) for x in satz_id.split("-")]
         if indices[0]-1 in df.index:
             check = df["Fundstelle"][indices[0]-1]
-        else:
+            matches = df.query(f"Paragraph == {satz[0]} and Satz == {satz[1]} and Fundstelle == '{check}'").index
+        elif indices[0]+1 in df.index:
             check = df["Fundstelle"][indices[-1]+1]
-        matches = df.query(f"Paragraph == {satz[0]} and Satz == {satz[1]} and Fundstelle == '{check}'").index
+            matches = df.query(f"Paragraph == {satz[0]} and Satz == {satz[1]} and Fundstelle == '{check}'").index
+        else:
+            print(f"== find_duplicates == {indices[0]} +/- 1 outside of df.index!")
+
         if len(matches):
             match_index = matches[0]
             for i in indices:
@@ -206,7 +212,7 @@ def find_similarities(task: str, id: str, relevant_texts: list, fuzziness: int, 
         pd.Dataframe: a dataframe with found passages
     """
     if task == "lieder":
-        print(f"Starting with {id}")
+        print(f"Starting with {id} (lieder)")
         sermon = oa.Sermon(id)
 
         # perform classification
@@ -233,7 +239,7 @@ def find_similarities(task: str, id: str, relevant_texts: list, fuzziness: int, 
         guessed_hits = remove_duplicates(guessed_hits).reset_index(drop=True)
 
     else:
-        print(f"Starting with {id}")
+        print(f"Starting with {id} (bibel)")
         sermon = oa.Sermon(id)
 
         # perform classification
