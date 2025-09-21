@@ -11,7 +11,7 @@ from pprint import pprint
 from pathlib import Path
 
 # root directory path
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1]
 
 # %%
 with open(ROOT / 'predigten_übersicht.json') as f:
@@ -45,8 +45,8 @@ for id in [*predigten]:
     predigten[id]["verlagsort"] = sermon.verlagsort.name
     predigten[id]["einweihungsort"] = sermon.einweihungsort.name
 
-with open(ROOT / "predigten_übersicht.json", "w") as f:
-    json.dump(predigten, f, ensure_ascii=False)
+#with open(ROOT / "predigten_übersicht.json", "w") as f:
+#    json.dump(predigten, f, ensure_ascii=False)
 
 # %%
 # print info about aggregated word, type and ref counts.
@@ -156,6 +156,39 @@ top_5_most_music_pieces = heapq.nlargest(5, predigten, key=lambda x: predigten[x
 print("=== Die top 5 Predigten mit den meisten Musikzitaten ===")
 
 print(*[f"{oa.get_short_info(i)} [{i}]" for i in top_5_most_music_pieces], sep="\n")
+
+# %%
+predigten
+
+# %%
+print("==== Predigten mit den meisten zitierten Musikwerken ====")
+music_pieces = []
+for id in top_5_most_music_pieces:
+    werke = predigten[id]['zitierte_musikwerke']
+    words = predigten[id]['worte_musikwerk']
+    music_pieces.append({'id': id, 'name': oa.get_short_info(id), 'words': words, 'Prozentsatz': (words/predigten[id]['length'])*100,'zitierte_werke': werke})
+music_pieces
+
+# %%
+print("==== Predigten mit den längsten zitierten Musikwerken ====")
+music_words = []
+for id in top_5_most_music_words:
+    words = predigten[id]['worte_musikwerk']
+    werke = predigten[id]['zitierte_musikwerke']
+    music_words.append({'id': id, 'name': oa.get_short_info(id), 'words': words, 'Prozentsatz': (words/predigten[id]['length'])*100,'zitierte_werke': werke})
+music_words
+
+# %%
+print("==== Predigten mit großtem Prozentsatz an Liedzitaten ====")
+percentages=[]
+for key, val in predigten.items():
+    percents = (val["worte_musikwerk"] / val["length"])*100
+    percentages.append([key, percents])
+
+sorted_list = sorted(percentages, key=lambda x: x[1], reverse=True)
+
+for item in sorted_list[:5]:
+    print(f"{item[0]} {oa.get_short_info(item[0])}: {item[1]}% Liedzitate")
 
 # %%
 # Find 5 sermons with longest quotes from other sermons
