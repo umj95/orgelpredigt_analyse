@@ -1,22 +1,27 @@
 import sys
 import os
 
+# Get the absolute path to the repository root
+from pathlib import Path
+
+# root directory path
+root = Path(os.getcwd()).resolve().parents[1]
+
+# Add the repository root to the Python path
+sys.path.append(str(root))
+
 repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if repo_root not in sys.path:
     sys.path.insert(0, repo_root)
 
 print(">>> SYS.PATH:", sys.path)  # (optional, for debugging)
 
-
 import streamlit as st
 from core.utils import Sermon, get_short_info
 
 from collections import Counter
-
 import plotly.express as px
-
 import matplotlib.pyplot as plt
-
 import plotly.graph_objects as go
 import pandas as pd
 
