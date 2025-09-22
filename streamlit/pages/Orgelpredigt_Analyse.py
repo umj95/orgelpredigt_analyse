@@ -602,7 +602,7 @@ with tab2:
             machine = True
         for key, val in selected.items():
             if val == True:
-                csv_list.append([pd.read_csv(files[key]), types[key]])
+                csv_list.append([pd.read_csv(ROOT / files[key]), types[key]])
 
     st.markdown(f"""
             <style>
