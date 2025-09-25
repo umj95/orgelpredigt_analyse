@@ -5,14 +5,16 @@ import os
 from pathlib import Path
 
 # root directory path
-#root = Path(os.getcwd()).resolve().parents[1]
+root = Path(os.getcwd()).resolve().parents[1]
 
 # Add the repository root to the Python path
-#sys.path.append(str(root))
+sys.path.append(str(root))
 
-#repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-#if repo_root not in sys.path:
-#    sys.path.insert(0, repo_root)
+repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if repo_root not in sys.path:
+    sys.path.insert(0, repo_root)
+# root directory path
+ROOT = Path(__file__).resolve().parents[2]
 
 import streamlit as st
 from core.utils import Sermon, get_short_info
@@ -29,12 +31,8 @@ import pandas as pd
 import folium
 import json
 import re
-from pathlib import Path
 
 from rapidfuzz import fuzz
-
-# root directory path
-ROOT = Path(__file__).resolve().parents[2]
 
 print("WORKING DIR:", os.getcwd())
 print("SYS.PATH:", sys.path)
