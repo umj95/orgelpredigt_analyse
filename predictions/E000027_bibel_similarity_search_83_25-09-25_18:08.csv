@@ -1,0 +1,24 @@
+Predigt,Paragraph,Satz,Fundstelle,Vers,Ähnlichkeit,Dopplung
+die gnade unsers herrn jesu christi,2,0,Kor2_13_13,die gnade vnsers herrn jhesu christ,94.29,True
+die liebe gottes und die gemeinschaft des heiligen geistes sey mit uns allen,2,1,Kor2_13_13,vnd die liebe gottis vnd die gemeynschafft des heyligengeystis sey mit euch allenamen,83.23,False
+und ihre zahl war viel tausend mal tausend,4,9,Offb_5_11,vnd yhr zall war viel tausent mal tausent,86.75,False
+und sprachen mit großer stimme,4,10,Offb_5_12,vnd sprachen mit grosser stym,84.75,False
+das lamm das erwürget ist,4,11,Offb_5_12,das lamb das erwurget ist,92.0,False
+heil sey dem der auf dem stuhle sitzet,4,22,Offb_7_10,heyl sey dem der auff dem stuel sitzt,90.67,False
+unserm gott und dem lamme,4,23,Offb_7_10,vnserm gott vnd dem lamb,85.71,False
+welche kein mensch sagen könne,4,36,Kor2_12_4,wilche keyn mensch sagen kan,86.21,False
+wenn wir dich mit frölichem munde loben,16,15,Psalm_63_6,wenn ich dich mit frölichem munde loben solte,88.1,False
+denn ich sage euch,17,9,Lk_10_24,denn ich sage euch,100.0,True
+wie lieblich sind deine völlige wohnungen,19,36,Psalm_84_2,wje lieblich sind deine wonunge,83.33,True
+herr zebaoth wohl denen,19,37,Psalm_84_13,herr zebaoth wol dem menschen,84.62,False
+"die recht eigentlich in deinem hause wohnen,",19,38,Psalm_84_13,wol denen die in deinem hause wonen,70.89,False
+die loben dich immerdar,19,39,Psalm_84_5,die loben dich jmerdar,93.33,False
+sondern von angesicht zu angesichte,22,18,2 Mose_33_11,von angesicht zu angesicht,85.25,False
+und sehen sein angesichte,24,13,Offb_22_4,vnd sehen seyn angesicht,89.8,False
+wie er es verdienete,27,13,Jesaja_3_11,wie sie es verdienen,85.0,True
+lobet den herrn alle seine heerschaaren,28,15,Psalm_103_21,lobet des herrn alle seine heerscharen,96.1,True
+seine diener die ihr seinen willen ausrichtet ,28,16,Psalm_103_21,seine diener die jr seinen willen thut,83.33,False
+die gott den menschen gegeben hat,49,1,Prediger_3_10,die gott den menschen gegeben hat,100.0,True
+und es ist alles dein,74,13,1 Chronik_29_16,vnd ist alles dein,87.18,True
+thue nur weg von mir das geplerre deiner lieder,77,3,Amos_5_23,thu nur weg von mir das geplerr deiner lieder,97.83,False
+der in seinen sünden,79,12,1 Könige_16_26,vnd in seinen sünden,90.0,False

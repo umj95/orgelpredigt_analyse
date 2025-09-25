@@ -1,0 +1,64 @@
+Predigt,Paragraph,Satz,Fundstelle,Vers,Ähnlichkeit,Dopplung
+die gnade unsers herrn jesu christi,5,0,Kor2_13_13,die gnade vnsers herrn jhesu christ,94.29,True
+dienet dem herrn mit freuden,6,2,Psalm_100_2,dienet dem herrn mit freuden,100.0,True
+kommet vor sein angesicht mit frolocken,6,3,Psalm_100_2,kompt fur sein angesicht mit frolocken,90.91,False
+erkennet daß der herr gott ist,6,4,Psalm_100_3,erkennet das der herr gott ist,96.67,False
+er hat uns gemacht,6,5,Psalm_100_3,er hat vns gemacht,94.44,False
+und nicht wir selbst,6,6,Psalm_100_3,vnd nicht wir selbs,92.31,False
+zu seinem volk und zu schaafen seiner weide,6,7,Psalm_100_3,zu seinem volck vnd zu schafen seiner weide,95.35,False
+gehet zu seinen thoren ein mit danken,6,8,Psalm_100_4,gehet zu seinen thoren ein mit dancken,98.67,False
+zu seinen vorhöfen mit loben,6,9,Psalm_100_4,zu seinen vorhöfen mit loben,100.0,False
+danket ihm lobet seinen namen,6,10,Psalm_100_4,dancket jm lobet seinen namen,93.1,False
+denn der herr ist freundlich,6,11,Psalm_100_5,denn der herr ist freundlich,100.0,False
+und seine gnade währet ewig,6,12,Psalm_100_5,vnd seine gnade weret ewig,90.57,False
+und seine wahrheit für und für,6,13,Psalm_100_5,vnd seine warheit fur vnd fur,84.75,False
+daß wir auf erden erkennen seinen weg,8,2,Psalm_67_3,das wir auff erden erkennen seinen weg,96.0,True
+und unter allen heiden sein heil,8,3,Psalm_67_3,vnter allen heiden sein heil,90.0,True
+ein psalmlied auf den sabbattag,10,0,Psalm_92_1,ein psalmlied auff den sabbath tag,95.38,True
+das ist ein köstlich ding,10,1,Psalm_147_1,das ist ein köstlich ding,100.0,True
+dem herrn danken und lobsingen deinem namen du höchster,10,2,Psalm_92_2,dem herrn dancken vnd lobsingen deinem namen du höhester,95.5,True
+des morgens deine gnade und des nachts deine wahrheit verkündigen;,10,3,Psalm_92_2,vnd des nachts deine warheit verkündigen,73.58,False
+auf den zehen saiten und psalter,10,4,Psalm_92_4,auff den zehen seiten vnd psalter,92.31,True
+mit spielen auf der harfen,10,5,Psalm_92_4,mit spielen auff der harffen,96.3,True
+denn herr du lässest mich frölich singen von deinen werken,10,6,Psalm_92_5,denn herr du lessest mich frölich singen von deinen wercken,97.44,True
+und ich rühme die geschäfte deiner hände,10,7,Psalm_92_5,vnd ich rhüme die gescheffte deiner hende,88.89,True
+es ist ein köstlich ding,12,7,Klagelieder_3_26,es ist ein köstlich ding,100.0,True
+dem herrn danken und lobsingen deinem namen,12,8,Psalm_92_2,dem herrn dancken vnd lobsingen deinem namen du höhester,84.85,True
+so man des wahrnimmt an den werken,14,8,Röm_1_20,so man des warnympt bey den wercken,84.06,True
+denn in ihm leben,15,8,Apg_17_28,denn ynn yhm leben,85.71,True
+weben und sind wir,15,9,Apg_17_28,weben vnnd sind wyr,86.49,True
+und die veste verkündiget seiner hände werk,15,22,Psalm_19_2,vnd die feste verkündiget seiner hende werck,91.95,False
+"ps. 19, 1. die erde,",15,23,Psalm_33_5,die auff erden wonen,40.0,False
+"auf der wir wandeln,",15,24,Psalm_33_5,die auff erden wonen,55.0,False
+ist voll der güte des herrn,15,25,Psalm_33_5,die erde ist vol der güte des herrn,83.87,False
+"ps. 119, 64 frage doch das vieh,",15,26,Hiob_12_7,frage doch das vieh,74.51,False
+"wer gott, und wie groß er sey,",15,27,Hiob_12_7,der gerechte vnd frome mus verlachet sein,47.89,False
+das wird dichs lehren,15,28,Hiob_12_7,das wird dichs leren,97.56,False
+und die vögel unter dem himmel,15,29,Hiob_12_7,vnd die vogel vnter dem himel,88.14,False
+die werden dirs sagen,15,30,Hiob_12_7,die werden dirs sagen,100.0,True
+und kein ohr gehöret hat,15,62,Kor1_2_9,vnd keyn ore gehoret hat,83.33,False
+und den er gesandt hat,15,77,Joh_5_36,den er gesand hat,87.18,False
+durch die auferstehung jesu christi von den todten,15,96,Petr1_1_3,durch die aufferstehung jhesu christi von den todten,98.04,False
+du bist toll und zur freude,16,13,Prediger_2_2,du bist toll vnd zur freude,96.3,True
+zu dem himmlischen jerusalem,16,19,Hebr_12_22,zu dem hymlischen jerusalem,94.55,False
+und zu der menge vieler tausend engel,16,20,Hebr_12_22,vnd zu der mengevieler tausent engele,91.89,False
+und zu der gemeine der erstgebohrnen,16,21,Hebr_12_23,vnd zu der gemeyne der erstgebornen,92.96,False
+die im himmel angeschrieben sind,16,22,Hebr_12_23,die ym hymel angeschrieben sind,92.06,True
+und zu den geistern der vollkommenen gerechten ebr,16,23,Hebr_12_23,vnd zu dengeystern der volkomenen gerechten,88.17,False
+gehe aus deinem vaterland,19,2,1 Mose_12_1,gehe aus deinem vaterland,100.0,True
+und aus deiner freundschaft,19,3,1 Mose_12_1,vnd von deiner freundschafft,83.64,True
+und aus deines vaters hause,19,4,1 Mose_12_1,vnd aus deines vatershause,94.34,True
+in ein land das ich dir zeigen will,19,5,1 Mose_12_1,jn ein land das ich dir zeigen wil,95.65,True
+die seinen nahmen ehren,21,3,Psalm_86_9,vnd deinen namen ehren,84.44,True
+die lehrer werden leuchten,22,9,Daniel_12_3,die lerer aber werden leuchten,89.29,True
+wie des himmels glanz,22,10,Daniel_12_3,wie des himels glantz,95.24,True
+und die viele zur gerechtigkeit weisen,22,11,Daniel_12_3,vnd die so viel zur gerechtigkeit weisen,92.31,True
+wie die sterne immer und ewiglich,22,12,Daniel_12_3,wie die sternen jmer vnd ewiglich,90.91,True
+daß güte und treue einander begegnen,25,2,Psalm_85_11,das güte vnd trewe einander begegen,90.14,True
+gerechtigkeit und friede sich küssen,25,3,Psalm_85_11,gerechtigkeit vnd friede sich küssen,97.22,True
+daß friede sey immerdar in ihren mauren und glück in ihren pallästen!,25,4,Psalm_85_11,das er friede zusagte seinem volck vnd seinen heiligen,52.03,False
+"ja, es seegne uns alle gott,",25,5,Psalm_67_8,es segene vns gott,69.57,False
+"unser gott, es seegne uns gott,",25,6,Psalm_67_8,es segene vns gott,65.31,False
+und alle welt fürchte ihn,25,7,Psalm_67_8,vnd alle welt fürchte jn,89.8,True
+amen alles was odem hat,25,8,Psalm_150_6,alles was odem hat,87.8,True
+lobe den herrn halleluja,25,9,Psalm_150_6,lobe den herrn halelu ia,91.67,True

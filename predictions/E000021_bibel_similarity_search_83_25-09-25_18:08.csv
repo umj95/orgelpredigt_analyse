@@ -1,0 +1,94 @@
+Predigt,Paragraph,Satz,Fundstelle,Vers,Ähnlichkeit,Dopplung
+alle lande sind seiner ehren voll,5,1,Jesaja_6_3,alle land sind seiner ehren vol,96.88,False
+wann dieses anfähet zu geschehen,7,0,Lk_21_27,wenn aber dises anfehet zu geschehen,85.29,False
+so sehet auf und hebet eure häupter auf,7,1,Lk_21_27,so sehet auff vnd hebt ewere hewpter auff,85.0,True
+wann dieses anfähet zu geschehen,7,26,Lk_21_27,wenn aber dises anfehet zu geschehen,85.29,False
+so sehet auf und hebet eure häupter auf,7,27,Lk_21_27,so sehet auff vnd hebt ewere hewpter auff,85.0,False
+wann dieses anfähet zu geschehen,8,14,Lk_21_27,wenn aber dises anfehet zu geschehen,85.29,False
+so sehet auf und hebet eure häupter auf,8,15,Lk_21_27,so sehet auff vnd hebt ewere hewpter auff,85.0,False
+was die rechte gethan,10,3,Mt_6_3,was die rechte thut,85.0,False
+die liebe decket auch der sünden menge,11,6,Petr1_4_8,denn die liebe deckt auch dersunden menge,88.61,False
+wann dieses anfähet zu geschehen,11,15,Lk_21_27,wenn aber dises anfehet zu geschehen,85.29,True
+so sehet auf und hebet eure häupter auf,11,16,Lk_21_27,so sehet auff vnd hebt ewere hewpter auff,85.0,False
+und auf erden wird den leuten bange seyn,13,2,Lk_21_24,vnnd auff erden wirt den leuten bang seyn,91.36,False
+"und werden zagen, und das meer und die wasserwogen werden brausen,",13,3,Lk_21_24,vnnd das meer vnd die wasser wogen werden brausen,80.0,False
+und die menschen werden verschmachten für furcht und für warten der dinge,13,4,Lk_21_25,vnd die menschen werden verschmachten fur furcht vnd wartten derdinger,90.91,False
+die kommen sollen auf erden:,13,5,Lk_21_25,die komen sollen vbir den gantzen erden kreysz,64.86,False
+dann auch der himmel kräften sich bewegen werden.,13,6,Lk_21_25,denn auch der hymel krefft werden sich bewegen,77.89,False
+und alsdann werden sie sehen des menschen sohn kommen in den wolken mit grosser kraft und herrlichkeit.,13,7,Lk_21_25,vnd als denn werden sie sehen des menschen son komen,63.23,False
+wann aber diß alles anfähet zu geschehen,13,8,Lk_21_27,wenn aber dises anfehet zu geschehen,86.84,False
+so sehet auf und hebet eure häupter auf,13,9,Lk_21_27,so sehet auff vnd hebt ewere hewpter auff,85.0,False
+darum daß sich eure erlösung nahet,13,10,Lk_21_27,darumb das sich ewer erlosung nahet,86.96,False
+daß jezt der sommer nahe ist,13,15,Lk_21_29,das itzt der sommer nahe ist,89.29,True
+also auch ihr wann ihr diß alles sehet angehen,13,16,Lk_21_30,also auch yhr wenn yhr dis alles sehet geschehen,85.11,True
+so wisst daß das reich gottes nahe ist,13,17,Lk_21_30,so wisset dasdzdasreych gottis nahe ist,85.71,False
+warlich ich sage euch,13,18,Mk_14_9,warlich ich sage euch,100.0,True
+diß geschlecht wird nicht vergehen,13,19,Lk_21_31,dis geschlecht wirt nit vergehen,90.91,True
+bis daß es alles geschehe,13,20,Lk_21_31,bis das es alles geschehe,96.0,True
+himmel und erde werden vergehen,13,21,Lk_21_32,hymel vnd erden werden vergehen,90.32,True
+aber meine worte vergehen nicht.,13,22,Lk_21_32,aber meyn wort werden nit vergehen,69.7,False
+aber hütet euch daß eure herzen nicht beschweret werden mit fressen und saufen,13,23,Lk_21_33,aber huttet euch das ewre hertzen nicht beschweredt werden mit fressen vnd sauffen,92.5,False
+und mit sorgen der nahrung,13,24,Lk_21_33,vnd mit sorgen der narungen,90.57,False
+und komme dieser tag schnell über euch,13,25,Lk_21_33,vnd kome diser tagschnell vber euch,90.41,False
+"dann wie ein fallstrik wird er kommen über alle,",13,26,Lk_21_33,denn wie eyn fallstrick,56.34,False
+die auf erden wohnen,13,27,Psalm_33_14,die auff erden wonen,95.0,True
+"so seyd nun wacker allezeit und betet,",13,28,Lk_21_35,so seyt nu wacker alltzeyt,71.88,False
+"daß ihr würdig werden möget zu entfliehen diesem allem,",13,29,Lk_21_35,vnd bettet das yhr wirdig werden mugt zu entfliehen diszem allem,80.67,False
+das geschehen soll und zu stehen vor des menschen sohn,13,30,Lk_21_35,das geschehen soll vnd zu stehen fur des menschen son,93.46,False
+und sie sollen mein volk seyn,16,11,Jeremia_24_7,vnd sie sollen mein volck sein,91.53,False
+deiner gnade und warheit,28,28,Psalm_115_1,vmb deine gnade vnd warheit,86.27,False
+meister siehe welche steine,31,1,Mk_13_1,meyster sihe wilche steyne,86.79,True
+und welch ein bau ist das.,31,2,Mk_13_1,vnd wilch eyn baw ist  das?,79.25,False
+"jesus aber antwortete: nicht ein stein wird auf dem andern bleiben,",31,3,Mk_13_1,sihestu  wol all disen grossen baw? nicht eyn steyn wirt auff demandern gelassen werden,61.04,False
+der nicht zerbrochen werde,31,4,Mk_13_2,der nicht zu brochen werde,92.31,True
+der herr aber war nicht im winde,36,10,1 Könige_19_11,der herr aber war nicht im winde,100.0,True
+nach dem winde aber kam ein erdbeben,36,11,1 Könige_19_11,nach dem winde aber kam ein erdbeben,100.0,True
+aber der herr war nicht im erdbeben,36,12,1 Könige_19_11,aber der herr war nicht im erdbeben,100.0,False
+und nach dem erdbeben war ein feuer,36,13,1 Könige_19_12,vnd nach dem erdbeben kam ein fewr,86.96,False
+aber der herr war nicht im feuer,36,14,1 Könige_19_12,aber der herr war nicht im fewr,95.24,True
+und nach dem feuer kam ein stillsanftes sausen,36,15,1 Könige_19_12,vnd nach dem fewr kam ein still sanfftes sausen,92.47,True
+was gott bereitet hat,36,37,Apg_10_15,was gott gereyniget hatt,84.44,False
+und da sie gebeten hatten,38,11,1 Mose_31_54,vnd da sie gessen hatten,85.71,True
+bewegte sich die stätte,38,12,Apg_4_31,bewegt sich die stett,90.91,True
+da sie versammlet waren,38,13,Apg_4_31,da sie versamlet waren,97.78,True
+und wurden alle des h geistes voll,38,14,Apg_4_31,vnd wurden alle des heyligen geysts voll,83.78,True
+und redeten das wort gottes mit freudigkeit,38,15,Apg_4_31,vnd redten das wort gottis mit freydickeyt,87.06,True
+die ihm nicht widerstehen,39,4,Jesaja_33_19,die man nicht verstehen,83.33,True
+züchtig gerecht und gottseelig zu leben in dieser welt,40,31,Tit_2_11,vnd zuchtig gerecht vnd gottselig leben ynn diser welt,85.19,False
+hütet euch daß eure herzen nicht beschweret werden mit fressen und saufen,40,38,Lk_21_33,aber huttet euch das ewre hertzen nicht beschweredt werden mit fressen vnd sauffen,89.03,False
+und mit sorgen der nahrung,40,39,Lk_21_33,vnd mit sorgen der narungen,90.57,False
+singet und spielet dem herrn in euren herzen,41,7,Eph_5_17,singet vnd spielt dem herrn ynn ewren hertzen,89.89,False
+"und alles, was jhr thut mit worten und werken das thut alles im namen des herrn jesu,",41,8,Kol_3_17,vnd alles was yhr thutt mit wortten odder mit wercken,59.42,False
+und danket gott und dem vater durch jhn,41,9,Kol_3_17,vnnd danckt gott dem vater durch yhn,85.33,True
+und zagen und das meer und die wasserwogen werden brausen,43,20,Lk_21_24,vnnd das meer vnd die wasser wogen werden brausen,86.79,True
+und die menschen werden verschmachten für forcht und für warten der dinge,43,21,Lk_21_25,vnd die menschen werden verschmachten fur furcht vnd wartten derdinger,89.51,True
+so wisset daß das reich gottes nahe ist,44,6,Lk_21_30,so wisset dasdzdasreych gottis nahe ist,87.18,True
+so wisset daß das reich gottes nahe ist,44,24,Lk_21_30,so wisset dasdzdasreych gottis nahe ist,87.18,True
+also auch ihr wann ihr diß alles seht angehen,45,29,Lk_21_30,also auch yhr wenn yhr dis alles sehet geschehen,83.87,False
+so wisset daß das reich gottes nahe ist,45,30,Lk_21_30,so wisset dasdzdasreych gottis nahe ist,87.18,True
+warlich ich sage euch,47,5,Mt_23_32,warlich ich sage euch,100.0,True
+diß geschlecht wird nicht vergehen,47,52,Lk_21_31,dis geschlecht wirt nit vergehen,90.91,True
+bis diß alles geschehe,47,53,Lk_21_31,bis das es alles geschehe,85.11,True
+die auf erden wohnen,48,13,Psalm_33_14,die auff erden wonen,95.0,True
+der herr ist nahe,49,9,Phil_4_5,der herr ist nahe,100.0,True
+"so dünkt mich, wann wir entweder an einem tage dem herrn,",49,10,Phil_4_5,jch byn aber hochlich erfrewet ynn dem herrn,47.52,False
+"oder sonst zu einer angenehmen zeit eines wochenentlichen gottesdiensts den schall unserer neuen orgel hören,",49,11,Phil_4_5,denn gen thessalonich sandtet yhr zu meyner notdurfft eyn mal,42.35,False
+soll es bey uns heissen:,49,12,Phil_4_5,das sie eynes synnes seyen,56.0,False
+der herr ist nahe,49,13,Phil_4_5,der herr ist nahe,100.0,True
+"halleluja, macht euch bereit,",49,14,Phil_4_5,der mich mechtig macht christus,46.67,False
+ihr müsst jhm entgegen gehn!,49,15,4 Mose_20_5,oder ich wil dir mit dem schwert entgegen ziehen,55.26,False
+"es ist dieses um so nöthiger,",49,16,4 Mose_20_5,das ist das hadderwasser,49.06,False
+da man nicht wissen kan,49,17,4 Mose_20_5,da man nicht seen kan,90.91,True
+weil sie nicht wissen,49,41,Jesaja_42_16,den sie nicht wissen,87.8,False
+und soll nicht mehr hinaus gehen,49,49,Offb_3_12,vnd soll nicht mehr hynaus gehen,93.75,False
+wie ein wasserstrom und jesu gerechtigkeit wie meereswellen,52,22,Jesaja_48_18,wie ein wasserstrom vnd deine gerechtigkeit wie meerswellen,91.53,False
+wann dieses anfähet zu geschehen,54,23,Lk_21_27,wenn aber dises anfehet zu geschehen,85.29,True
+so sehet auf und hebet eure häupter auf,54,24,Lk_21_27,so sehet auff vnd hebt ewere hewpter auff,85.0,True
+darum daß sich eure erlösung nahet,54,25,Lk_21_27,darumb das sich ewer erlosung nahet,86.96,True
+seelig sind die todten,55,29,Offb_14_13,schreybe selig sind die todten,84.62,True
+des richters der lebendigen und der todten,57,1,Apg_10_42,eyn richter der lebendigen vnd der todten,91.57,True
+himmel und erde werden vergehen,59,4,Lk_21_32,hymel vnd erden werden vergehen,90.32,True
+du heiliger in jsrael,62,52,Jesaja_48_17,der heilige in jsrael,90.48,True
+du gesegneter des herrn,62,57,Jesaja_65_23,der gesegneten des herrn,89.36,False
+an dem heutigen tage,62,58,Mt_22_23,an dem selbigen tage,85.0,False
+mein herr und mein gott,62,93,Joh_20_28,meyn  herre vnd meyn gott,83.33,False
