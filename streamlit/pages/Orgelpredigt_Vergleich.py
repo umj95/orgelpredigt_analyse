@@ -71,6 +71,17 @@ def create_legend(color_map):
             )
     return legend_traces
 
+def merge_unique(list1, list2):
+    combined = list1 + list2
+    seen = set()
+    unique = []
+    for item in combined:
+        t = tuple(item)
+        if t not in seen:
+            seen.add(t)
+            unique.append(item)
+    return unique
+
 
 #########################
 ##### CHOOSE SERMON #####
@@ -103,57 +114,42 @@ for i in relevant_sermons:
     options.append(f"{i[1]} -- {i[0]}")
 
 ### Streamlit
-st.markdown("Welche Predigt soll analysiert werden? Bitte ID eingeben oder Predigt aus dropdown-Menü auswählen")
+st.markdown("Welche Predigt(en) soll(en) analysiert werden?")
 
-tab1, tab2 = st.tabs(["Manuelle Auswahl", "Auswahl nach Kriterien aus Metadaten"])
 
-with tab1:
-    st.write("IDs manuell aus Liste auswählen")
-    # Initialize session state
-    if "selected_ids" not in st.session_state:
-        st.session_state.selected_ids = [None]  # start with one selectbox
-    if "to_remove" not in st.session_state:
-        st.session_state.to_remove = None
+sermon_ids = [f"{x[1]}, {x[0]}" for x in relevant_sermons]
+bibelstellen = set([x[3].split(",")[0] for x in relevant_sermons])
+verlagsorte = set([x[4] for x in relevant_sermons])
+einweihungsorte = set([x[5] for x in relevant_sermons])
+bools = ["UND", "ODER", "NICHT"]
 
-    def add_selectbox():
-        st.session_state.selected_ids.append(None)
+col1, col2 = st.columns([0.3,0.7])
 
-    def remove_selectbox(index):
-        st.session_state.to_remove = index
-
-    st.button("Add", on_click=add_selectbox)
-
-    # Handle removal at the start
-    if st.session_state.to_remove is not None:
-        st.session_state.selected_ids.pop(st.session_state.to_remove)
-        st.session_state.to_remove = None
-
-    # Render selectboxes with remove buttons
-    for i, val in enumerate(st.session_state.selected_ids):
-        cols = st.columns([4, 1])
-        with cols[0]:
-            selected = st.selectbox(
-                f"{i+1}. Ausgewählte Predigt",
-                options,
-                index = None,
-                #index=options.index(val) if val in options else 0,
-                key=f"selectbox_{i}"
-            )
-            st.session_state.selected_ids[i] = selected
-        with cols[1]:
-            if st.button("Remove", key=f"remove_{i}"):
-                remove_selectbox(i)
-
-    selection = st.session_state.selected_ids
-
-with tab2:
-    bibelstellen = set([x[3].split(",")[0] for x in relevant_sermons])
-    verlagsorte = set([x[4] for x in relevant_sermons])
-    einweihungsorte = set([x[5] for x in relevant_sermons])
-
-    st.write("IDs nach Kriterien aus Metadaten auswählen")
-    years_range = st.slider("Veröffentlichungsjahr", 1600, 1800, (1600, 1800))
-
+with col1:
+    id_bool = st.write(
+        "Auswahloptionen für weitere Parameter"
+    )
+    bibel_bool = st.selectbox(
+        f"",
+        bools,
+        key="bibel_bool"
+    )
+    verlag_bool = st.selectbox(
+        f"",
+        bools,
+        key="verlag_bool"
+    )
+    einweihung_bool = st.selectbox(
+        f"",
+        bools,
+        key="einweihungs_bool"
+    )
+with col2:
+    id_select = st.selectbox(
+        f"Individuelle Predigt auswählen",
+        sermon_ids,
+        index=None
+    )
     bibel_select = st.selectbox(
         f"Bibelstelle auswählen",
         bibelstellen,
@@ -166,22 +162,46 @@ with tab2:
         verlagsorte,
         index=None
     )
-
     einweihung_select = st.selectbox(
         f"Einweihungsort auswählen",
         einweihungsorte,
         index=None
     )
 
-    selection = [x for x in relevant_sermons if years_range[0] < x[2] < years_range[1]]
+years_range = st.slider("Veröffentlichungsjahr", 1600, 1800, (1600, 1800))
 
-    if bibel_select:
+all_options = [x for x in relevant_sermons if years_range[0] < x[2] < years_range[1]]
+selection = [x for x in relevant_sermons if years_range[0] < x[2] < years_range[1]]
+if id_select:
+    id_extract = id_select.split(",")[1].strip()
+    selection = [x for x in selection if id_extract in x[0]]
+if bibel_select:
+    if bibel_bool == "UND":
         selection = [x for x in selection if bibel_select in x[3]]
-    if verlag_select:
+    elif bibel_bool == "ODER":
+        add_selection = [x for x in all_options if bibel_select in x[3]]
+        selection = merge_unique(selection, add_selection)
+    elif bibel_bool == "NICHT":
+        add_selection = [x for x in selection if bibel_select not in x[3]]
+if verlag_select:
+    #selection = [x for x in selection if verlag_select in x[4]]
+    if verlag_bool == "UND":
         selection = [x for x in selection if verlag_select in x[4]]
-    if einweihung_select:
+    elif verlag_bool == "ODER":
+        add_selection = [x for x in all_options if verlag_select in x[4]]
+        selection = merge_unique(selection, add_selection)
+    elif verlag_bool == "NICHT":
+        add_selection = [x for x in selection if verlag_select not in x[4]]
+if einweihung_select:
+    #selection = [x for x in selection if einweihung_select in x[5]]
+    if einweihung_bool == "UND":
         selection = [x for x in selection if einweihung_select in x[5]]
-    
+    elif einweihung_bool == "ODER":
+        add_selection = [x for x in all_options if einweihung_select in x[5]]
+        selection = merge_unique(selection, add_selection)
+    elif einweihung_bool == "NICHT":
+        add_selection = [x for x in selection if einweihung_select not in x[5]]
+
 ids = [x[0][-7:] for x in selection]
 
 if len(selection) > 0:
@@ -189,7 +209,7 @@ if len(selection) > 0:
     for elem in selection:
         st.markdown(f"- [{elem[1]}](https://orgelpredigt.ur.de/{elem[0]})")
 else:
-    st.write("Keine Predigt entspriche Ihrer Auswahl.")
+    st.write("Keine Predigt entspricht Ihrer Auswahl.")
 
 
 #########################
@@ -203,116 +223,6 @@ for id in ids:
     item["id"] = current_sermon.id
     item["links"] = [item for item in current_sermon.all_references if is_id(item)]
     sermons.append(item)
-
-##### Only Sermons
-#G = nx.DiGraph()
-#
-#nodes = []
-#connections = []
-#for sermon in sermons:
-#    nodes.append(sermon['id'])
-#    for link in sermon['links']:
-#        if re.match(r'E00[0-9]{4}', link):
-#            connections.append((sermon['id'], link))
-#
-#G.add_nodes_from(nodes)
-#G.add_edges_from(connections)
-#
-#in_degrees = dict(G.in_degree()) # compute incoming connections for each node
-#degrees = dict(G.degree())
-#
-#pos = nx.kamada_kawai_layout(G)
-#for node in G.nodes:
-#    G.nodes[node]['pos'] = pos[node]
-#    assert 'pos' in G.nodes[node], f"Node {node} missing 'pos'"
-#    assert G.nodes[node]['pos'] is not None, f"Node {node} has None position"
-#
-#mapping = {i: name for i, name in enumerate(ids)}
-#G = nx.relabel_nodes(G, mapping)
-#
-#edge_x = []
-#edge_y = []
-#edge_shapes = []
-#for edge in G.edges():
-#    x0, y0 = G.nodes[edge[0]]['pos']
-#    x1, y1 = G.nodes[edge[1]]['pos']
-#    edge_x.append(x0)
-#    edge_x.append(x1)
-#    edge_x.append(None)
-#    edge_y.append(y0)
-#    edge_y.append(y1)
-#    edge_y.append(None)
-#    
-#edge_trace = go.Scatter(
-#    x=edge_x, y=edge_y,
-#    line=dict(width=0.5, color='#888'),
-#    hoverinfo='none',
-#    mode='lines')
-#
-#node_x = []
-#node_y = []
-#node_sizes = []
-#for node in G.nodes():
-#    x, y = G.nodes[node]['pos']
-#    node_x.append(x)
-#    node_y.append(y)
-#    node_sizes.append(degrees[node] * 10)
-#
-#node_trace = go.Scatter(
-#    x=node_x, y=node_y,
-#    mode='markers',
-#    hoverinfo='text',
-#    text=[n for n in G.nodes()],
-#    marker=dict(
-#        showscale=True,
-#        size=node_sizes,
-#        colorscale='Magma',
-#        reversescale=False,
-#        color=[],
-#        colorbar=dict(
-#            thickness=15,
-#            title=dict(
-#              text='Node Connections',
-#              side='right'
-#            ),
-#            xanchor='left',
-#        ),
-#        line_width=2))
-#
-#node_adjacencies = []
-#node_text = []
-#in_connections = []
-#for node, adjacencies in enumerate(G.adjacency()):
-#    node_adjacencies.append(len(adjacencies[1]))
-#    #node_text.append('# of connections: '+str(len(adjacencies[1])))
-#for id in ids:
-#    node_text.append(f"{get_short_info(id)} ({in_degrees[id]} Verweise)")
-#    in_connections.append(in_degrees[id])
-#
-#node_trace.marker.color = in_connections
-#node_trace.marker.size = [(x + 4) * 3  for x in in_connections]
-#node_trace.text = node_text
-#
-#sermons_network_graph = go.Figure(data=[edge_trace, node_trace],
-#            layout=go.Layout(
-#                title=dict(
-#                    text="<br>Quotations in between sermons",
-#                    font=dict(size=16)
-#                    ),
-#                #shapes=edge_shapes,
-#                showlegend=False,
-#                hovermode='closest',
-#                margin=dict(b=40,l=10,r=10,t=80),
-#                width=600, height=600,
-#                annotations=[dict(
-#                    text="",
-#                    showarrow=True,
-#                    xref="paper", yref="paper",
-#                    x=0.00, y=-0.00 )],
-#                xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-#                yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)
-#            )
-#        )
 
 ##### Sermons and Sources
 G2 = nx.DiGraph()
@@ -400,7 +310,7 @@ node_trace.text = node_text
 sermons_sources_network = go.Figure(data=[edge_trace, node_trace],
             layout=go.Layout(
                 title=dict(
-                    text="<br>Quotations among Sermons, Sources, and Music",
+                    text="<br>Zitate zwischen Predigten, Literatur und Musik",
                     font=dict(size=16)
                     ),
                 #shapes=edge_shapes,
@@ -449,11 +359,10 @@ st.set_page_config(
     menu_items=None)
 
 st.title("Vergleich aller Orgelpredigten")
-#st.plotly_chart(sermons_network_graph)
 st.plotly_chart(sermons_sources_network)
 
 
-st.title("Liedzitate – kumulativ und diachron betrachtet")
+st.title("(Orgelpredigt|Literatur|Lied)-Zitate – kumulativ und diachron betrachtet")
 
 col1, col2 = st.columns([0.5, 0.5])
 
