@@ -1,0 +1,86 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+mein hertz ist bereit,4,0,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,True
+gott mein hertz ist bereit,4,1,Gott mein hertz ist bereit,Psalm_57_8,0.054701998829841614,True,True
+das ich singe vnd lobe,4,2,Das ich singe vnd lobe,Psalm_57_8,0.08503545820713043,True,True
+wache auff meine ehre/,4,3,Wach auff meine Ehre,Psalm_57_9,0.63,,False
+wache auff psalter vnnd harffe,4,4,wach auff Psalter vnd Harffe,Psalm_57_9,0.33255311846733093,True,True
+frühe wil ich auffwachen,4,5,Früe wil ich auffwachen,Psalm_57_9,0.38363438844680786,True,True
+herr ich wil dir dancken vnter den völckern,4,6,HERR ich wil dir dancken vnter den Völckern,Psalm_57_10,0.3710864782333374,True,True
+ich wil dir lobsingen vnter den leuten,4,7,Jch wil dir lobsingen vnter den Leuten,Psalm_57_10,0.29836422204971313,True,True
+an den wassern zu babel sassen wir vnnd weineten,5,3,AN den wassern zu Babel sassen wir,Psalm_137_1,0.5017213821411133,True,True
+wenn wir an zion gedachten,5,4,vnd weineten Wenn wir an Zion gedachten,Psalm_137_1,0.4114289879798889,True,True
+vnsere harffen hiengen wir an die weyden,5,5,Vnsere Harffen hiengen wir an die Weiden,Psalm_137_2,0.3879203796386719,True,True
+meine harpffe ist ein klage worden,9,44,Meine Harffe ist eine klage worden,Hiob_30_31,0.13022981584072113,True,False
+vnnd meine pfeiffe ein weinen,9,45,vnd meine Pfeiffe ein weinen,Hiob_30_31,0.13351275026798248,True,False
+das er sich erquickte,10,9,das er gethan hat,2 Könige_1_18,0.11754845827817917,False,True
+mein hertz ist bereit,12,5,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,True
+gott mein hertz ist bereit,12,6,Gott mein hertz ist bereit,Psalm_57_8,0.054701998829841614,True,True
+wache auff psalter vnd harffen,13,4,wach auff Psalter vnd Harffe,Psalm_57_9,0.323177695274353,True,True
+früe wil ich auffwachen,13,5,Früe wil ich auffwachen,Psalm_57_9,0.10955502837896347,True,True
+herr ich wil dir dancken vnter den völckern,14,3,HERR ich wil dir dancken vnter den Völckern,Psalm_57_10,0.3710864782333374,True,True
+ich wil dir lobsingen vnter den leuten,14,4,Jch wil dir lobsingen vnter den Leuten,Psalm_57_10,0.29836422204971313,True,True
+mein hertz ist bereit,16,41,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,True
+gott mein hertz ist bereit,16,42,Gott mein hertz ist bereit,Psalm_57_8,0.054701998829841614,True,True
+das er nicht vmbkäme,16,54,das er nicht auffstund,Ester_5_9,0.10562469810247421,False,False
+vnter den menschen kindern die flammen sind,16,61,Die Menschen kinder sind flammen,Psalm_57_5,0.3238711357116699,True,False
+vnd jhre zungen scharffe schwerter,16,63,vnd jre Zungen scharffe schwerter,Psalm_57_5,0.29503434896469116,True,False
+mein hertz ist bereit,17,2,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,True
+gott mein hertz ist bereit,17,3,Gott mein hertz ist bereit,Psalm_57_8,0.054701998829841614,True,True
+mein hertz ist bereit,17,6,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,True
+mein hertz ist bereit,17,7,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,True
+werde ich gnade finden für dem herrn,17,15,Werde ich gnade finden fur dem HERRN,2 Samuel_15_25,0.2996741235256195,True,True
+so wird er mich wiederholen,17,16,So wird er mich widerholen,2 Samuel_15_25,0.3598550856113434,True,True
+spricht er aber also/,17,17,Spricht er aber also,2 Samuel_15_26,0.39,,False
+jch habe nicht lust zu dir,17,18,Jch hab nicht lust zu dir,2 Samuel_15_26,0.17886018753051758,True,True
+siehe hie bin ich/,17,19,Sihe hie bin ich,2 Samuel_15_26,0.39,,False
+er machs mit mir,17,20,Er machs mit mir,2 Samuel_15_26,0.08249938488006592,True,True
+gott es ist mein rechter ernst,17,28,GOtt Es ist mein rechter ernst,Psalm_108_2,0.2337156981229782,True,True
+ich wil singen vnd tichten,17,29,Jch wil singen vnd tichten,Psalm_108_2,0.25072765350341797,True,True
+das ich singe vnnd lobe,17,33,Das ich singe vnd lobe,Psalm_57_8,0.13141709566116333,False,True
+mein hertz ist bereit,18,5,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,True
+gott mein hertz ist bereit,18,6,Gott mein hertz ist bereit,Psalm_57_8,0.054701998829841614,True,True
+das ich singe vnnd lobe,18,7,Das ich singe vnd lobe,Psalm_57_8,0.13141709566116333,True,True
+die sie nicht verstehen,18,11,die man nicht verstehen,Jesaja_33_19,0.13914592564105988,False,True
+jch wil beten mit dem geist,18,76,Jch wil beten mit dem geyst,Kor1_14_15,0.23720675706863403,True,False
+vnnd wil auch beten im sinn,18,77,vnnd wil beten auch mit dem synn,Kor1_14_15,0.253402441740036,True,False
+jch wil psalmen singen im geist/,18,78,Jch wil singen mit dem geyst,Kor1_14_15,0.6,,False
+vnd wil auch psalmen singen mit dem sinn,18,79,vnnd wil singen auch mit dem synn,Kor1_14_15,0.3019756078720093,True,False
+mein hertz ist bereit,18,88,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,False
+gott mein hertz ist bereit,18,89,Gott mein hertz ist bereit,Psalm_57_8,0.054701998829841614,True,False
+das ich singe vnd lobe,18,90,Das ich singe vnd lobe,Psalm_57_8,0.08503545820713043,True,False
+mein hertz ist bereit,19,17,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,True
+gott mein hertz ist bereit,19,18,Gott mein hertz ist bereit,Psalm_57_8,0.054701998829841614,True,True
+als weren sie nicht darin,19,43,als weren sie nicht sein,Hiob_39_16,0.1483115702867508,False,True
+denn er ist getrew,20,76,denn er ist vnrein,3 Mose_13_36,0.150668665766716,False,True
+so sollen wir dencken,20,83,so wöllen wir jn deuten,Daniel_2_4,0.18835747241973877,False,True
+jch wil frühe auff seyn,21,12,JCh wil dich vnterweisen,Psalm_32_8,0.5537545680999756,True,True
+jch wil dir dancken herr vnter den völckern/,21,13,JCh wil dich vnterweisen,Psalm_32_8,0.54,,False
+jch wil dir lobsingen vnter den leuten,21,14,JCh wil dich vnterweisen,Psalm_32_8,0.43225541710853577,True,True
+wache auf meine ehre,21,41,Wach auff meine Ehre,Psalm_57_9,0.5148943662643433,True,True
+wache auff psalter vnnd harffen,21,42,wach auff Psalter vnd Harffe,Psalm_57_9,0.41764599084854126,True,True
+wach auff psalter vnd harffen,21,50,wach auff Psalter vnd Harffe,Psalm_57_9,0.3218942880630493,True,True
+früe wil ich auffwachen,21,52,Früe wil ich auffwachen,Psalm_57_9,0.10955502837896347,True,True
+sondern viel mehr schedlich sey,22,6,sondern viel mehr dancksagung,Eph_5_3,0.18202412128448486,False,True
+lobet jhn mit paucken vnd reyen,22,28,Lobet jn mit Paucken vnd Reigen,Psalm_150_4,0.28621259331703186,True,True
+lobet jhn mit seiten vnd pfeiffen,22,29,Lobet jn mit Seiten vnd Pfeiffen,Psalm_150_4,0.29613280296325684,True,True
+lobet jhn mit hellen cymbeln,22,30,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.17765183746814728,True,True
+lobet jn mit wolklingenden cymbeln,22,31,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.14958396553993225,True,True
+die verthädigen wir nicht,24,26,das wir nicht verdürben,Jona_1_6,0.1692275106906891,False,True
+cap weh denen die des morgens früe auff sind,24,63,WEh denen die des morgens früe auff sind,Jesaja_5_12,0.3213178813457489,True,True
+des sauffens sich zubefleissigen,24,64,des Sauffens sich zu vleissigen,Jesaja_5_12,0.44827112555503845,True,True
+vnd sitzen biß in die nacht,24,65,vnd sitzen bis in die nacht,Jesaja_5_12,0.14742115139961243,True,True
+daß sie der wein erhitzt vnd haben harffen/,24,66,das sie der Wein erhitzt,Jesaja_5_12,0.69,,False
+psalter paucken pfeiffen vnd wein in jhrem wolleben,24,67,Paucken Pfeiffen vnd wein in jrem Wolleben,Jesaja_5_13,0.4363895356655121,True,True
+vnd sehen nicht auff das werck des herrn,24,68,Vnd sehen nicht auff das werck des HERRN,Jesaja_5_13,0.2796921133995056,True,True
+vnd schawen nicht auff das gescheffte seiner hände,24,69,vnd schawen nicht auff das geschefft seiner Hende,Jesaja_5_13,0.35604169964790344,True,True
+darumb wird mein volck müssen weggeführt werden vnversehens,24,70,Darumb wird mein Volck müssen weggefürt werden vnuersehens,Jesaja_5_14,0.18969208002090454,True,True
+vnd werden seine herrliche hunger leiden,24,71,vnd werden seine Herrlichen hunger leiden,Jesaja_5_14,0.13319332897663116,True,True
+vnd sein pöbel durst leiden,24,72,vnd sein Pöbel durst leiden,Jesaja_5_14,0.017241718247532845,True,True
+ja die helle hat die seele weit auffgespärret,24,73,Daher hat die Helle die Seele weit auffgesperret,Jesaja_5_15,0.619939923286438,True,True
+vnnd den rachen ohn alle masse,24,74,vnd den Rachen auffgethan on alle masse,Jesaja_5_15,0.22445929050445557,True,True
+wenn er aber sagt,25,8,Wenn er aber sagt,Kor1_15_26,0.10786660015583038,False,True
+ich wil dir lobsingen,28,4,ich wil dich verhoren,Apg_23_35,0.14324387907981873,False,True
+werdet vol geistes vnd redet vntereinander von psalmen vnd lobgesängen vnd geistlichen liedern,28,6,vnd redetvnternander von psalmen vnd lobsengen vnd geystlichen lieden,Eph_5_17,0.5108546018600464,True,True
+singet vnd spielet dem herrn in ewrem hertzen,28,7,singet vnd spielt dem herrn ynn ewren hertzen,Eph_5_17,0.09880833327770233,True,True
+organon hoc resonet sacros ut suaviter hymnos,60,9,mit psalmen vnd lobsengen vnd geystlichen lyden ynn der gnade,Kol_3_16,0.936687707901001,True,True
+diu atque simul resonare sinat sacra dogmata verbi scultetum è cathedrâ voce sonante diu,60,11,mit psalmen vnd lobsengen vnd geystlichen lyden ynn der gnade,Kol_3_16,0.8976316452026367,True,True

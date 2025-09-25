@@ -1,0 +1,6 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+2 sam 6 15 1,20,1,a s b s,557,1.101684331893921,True,True
+und viel stattliche orgelwerck hin und wieder aufgerichtet,28,3,und manch schönes werck ersonnen,1070,0.7360882759094238,True,True
+auch diese kunst so hoch getrieben,28,4,so kunst hat heb gewonnen,1070,0.553105354309082,True,True
+und immer im thun seyn,55,3,und stets trag im gemuthe,262,0.19723165035247803,False,True
+noch um des mißbrauchs willen zu verachten sind,63,9,noch im thun wilt du für dem erren wan deln,790,0.6876190900802612,True,True

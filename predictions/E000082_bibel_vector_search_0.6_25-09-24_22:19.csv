@@ -1,0 +1,75 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+lobt ihn in seinen thaten,5,2,Lobet jn in seinen Thatten,Psalm_150_2,0.49494147300720215,True,True
+lobt ihn in seiner grosen herrligkeit,5,3,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.32104775309562683,True,True
+lobt ihn mit hellen cymbaln,5,8,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.5840388536453247,True,True
+lobt ihn mit wolklingenden cymbaln,5,9,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.560740053653717,True,True
+und geistlichen liedern singet und spielet dem herrn in eurem hertzen,6,18,singet vnd spielt dem herrn ynn ewren hertzen,Eph_5_17,0.6643028259277344,True,True
+und da der spielman auf der seiten spielet,6,60,Vnd da der Spielman auff der seiten spielet,2 Könige_3_15,0.2123468816280365,True,False
+kam die hand des herrn auf ihn,6,61,kam die hand des HERRN auff jn,2 Könige_3_15,0.3301541805267334,True,False
+nicht an mich gläuben,8,26,Zeuch mich nicht hin,Psalm_28_3,0.1788199245929718,False,True
+in gleichnissen daß sie es nicht sehen,8,28,das sie es nicht sehen,Lk_8_10,0.26967090368270874,True,True
+ob sie es schon sehen,8,29,ob sie es schon sehen,Lk_8_10,1.303274979255753e-13,True,True
+und nicht verstehen ob sie es schon hören,8,30,vnd nicht verstehen ob sie es schon horen,Lk_8_10,0.11223872750997543,True,True
+ob sie es schon könten,8,32,ob sie es schon sehen,Lk_8_10,0.3436856269836426,True,True
+da jesus christus der ekstein ist,8,76,da Jhesus Christus der eckstein ist,Eph_2_20,0.11035231500864029,False,True
+wechst zu einem heiligen tempel in dem herrn,8,78,der wechst zu eynem heyligen tempel ynn dem herrn,Eph_2_21,0.33108067512512207,True,True
+noch keine andere creatur scheiden von der liebe gottes,8,100,noch keyn ander creatur mag vns scheyden von der liebe gotis,Röm_8_39,0.39197003841400146,True,True
+10 stehet er ist die feste burg,8,144,der hat ein sichere Festung,Sprüche_14_26,0.810754120349884,True,False
+und gesungen haben eine feste burg etc,8,146,der hat ein sichere Festung,Sprüche_14_26,0.9447659254074097,True,False
+einen zur rechten den andern zur linken,8,169,eine zur rechten vnd die ander zur lincken,2 Chronik_3_17,0.13291765749454498,False,False
+da sie selber nicht können,8,175,denn sie kandtens nicht,2 Könige_4_39,0.183506041765213,False,False
+psalm stehet er wird dich mit seinen fittichen dekken,8,187,ER wird dich mit seinen Fittichen decken,Psalm_91_4,0.49354052543640137,True,False
+und deine zuversicht wird seyn unter seinen flügeln,8,188,vnd deine Zuuersicht wird sein vnter seinen Flügeln,Psalm_91_4,0.5608497858047485,True,False
+er hat seinen engel befohlen über dir/,8,189,DEnn er hat seinen Engeln befolhen vber dir,Psalm_91_11,0.59,,False
+daß sie dich behüten auf allen deinen wegen,8,190,Das sie dich behüten auff alle deinen wegen,Psalm_91_11,0.12785044312477112,False,False
+daß sie dich auf den händen tragen,8,191,Das sie dich auff den henden tragen,Psalm_91_12,0.3025227189064026,True,False
+er ruft mich an/,8,192,Er kennet meinen Namen,Psalm_91_14,0.61,,False
+so wil ich ihn schützen etc,8,193,darumb wil ich jn schützen,Psalm_91_14,0.3480832576751709,True,False
+denn der andere einer ist ein keyser,8,199,die ander ein Brandopffer,3 Mose_14_22,0.549111008644104,True,False
+der ander ein könig,8,200,die ander ein Brandopffer,3 Mose_14_22,0.28619852662086487,True,False
+der dritte ein fürst/,8,201,die ander ein Brandopffer,3 Mose_14_22,0.89,,False
+der sechste ein bürger oder handwerksman,8,204,ein schaf oder zigenmutter,3 Mose_5_6,0.5766989588737488,True,False
+der siebende ein baur oder akerman,8,205,ein schaf oder zigenmutter,3 Mose_5_6,0.49055400490760803,True,False
+sondern mit dem theuren blute christi,8,221,sondern mit dem theuren blut Christi,Petr1_1_19,0.10456007719039917,True,False
+als eines unschuldigen und unbeflekten lammes,8,222,als eynes vnschuldigen vnd vnbefleckten lambs,Petr1_1_19,0.5319352746009827,True,False
+wo das nicht wäre,9,2,wo aber das nicht were,Joh_14_2,0.17423638701438904,False,True
+da ist kein glaube,9,17,da kein weg ist,Hiob_12_24,0.4532328248023987,True,True
+wo kein glaube ist,9,19,da kein weg ist,Hiob_12_24,0.5016342997550964,True,True
+psalm singet sihe wie fein und lieblich ists,9,35,Sihe wie fein vnd lieblich ists,Psalm_133_1,0.7505257725715637,True,True
+daß brüder einträchtig bey einander wohnen,9,36,Das Brüder eintrechtig bey einander wonen,Psalm_133_1,0.18409985303878784,True,True
+wie der köstliche balsam ist etc,9,37,Wie der köstlich Balsam ist,Psalm_133_2,0.3283296823501587,True,True
+denn daselbst verheist der herr segen und leben immer und ewiglich,9,38,Denn daselbs verheisst der HERR Segen vnd Leben jmer vnd ewiglich,Psalm_133_3,0.47670698165893555,True,True
+und sind die so es hören,9,94,sind die so es horen,Lk_8_13,0.20635443925857544,True,True
+gehen aber hin unter den sorgen/,9,95,vnd gehen hyn vnter den sorgen,Lk_8_13,0.69,,False
+reichthum und wollust dieses lebens,9,96,reychtumb vnnd wollust dis lebens,Lk_8_13,0.5120058059692383,True,True
+erstikken das wort und bringen keine frucht,9,97,vnnd ersticken vnnd bringen nit frucht,Lk_8_13,0.43266424536705017,True,True
+der auf dem stule sitzt,9,147,der auff dem stuel sitzt,Offb_6_16,0.03932877257466316,True,True
+und für dem zorn des lams,9,148,vnd fur dem zorn des lambs,Offb_6_16,0.5680803060531616,True,True
+denn es ist kommen der grose tag seines zorns,9,149,denn es ist komen der grosse tag seynes zorns,Offb_6_17,0.2377249002456665,True,True
+und wer kan bestehen,9,150,vnd wer kan bestehen?,Offb_6_17,0.34283238649368286,True,True
+daß wer gott liebet,9,168,das wer Got liebet,Joh1_4_20,0.36301302909851074,True,True
+daß der auch seinen bruder liebe,9,169,das der auch seynen bruder liebe,Joh1_4_20,0.2685885429382324,True,True
+wenn nemlich hier eine tiefe,9,177,vnd es ward so tieff,Hesekiel_47_5,0.6532562971115112,True,True
+und da eine tiefe brauset,9,178,vnd es ward so tieff,Hesekiel_47_5,0.6277468800544739,True,True
+werden zugleich mit denselbigen hingerükket werden in den wolken dem herrn entgegen in der luft,9,229,werden zu gleych mit den selbigen hyngetzuckt werden ynn den wolcken,Thess1_4_17,0.661903440952301,True,True
+und werden also bey dem herrn seyn allezeit,9,230,vnd werden also bey dem herrn seyn alltzeyt,Thess1_4_17,0.23694676160812378,True,True
+so tröstet euch nun mit diesen worten unter einander,9,231,So trostet euch nu mit disen wortten vnternander,Thess1_4_18,0.48352643847465515,True,True
+und er wird senden seine engel mit hellen posaunen,9,234,vnnd er wirt senden seyne Engele mit hellenposaunen,Mt_24_29,0.42545098066329956,True,True
+was syrach c 7,9,243,der waren sieben tausent,Esra_2_65,0.6759605407714844,True,True
+stehet du menschenkind ich habe dich zum wächter gesetzt über das hauß jsrael,9,254,Du Menschenkind Jch hab dich zum Wechter gesetzt vber das haus Jsrael,Hesekiel_3_17,0.44882678985595703,True,False
+du solt aus meinem munde das wort hören,9,255,Du solt aus meinem Munde das wort hören,Hesekiel_3_17,0.06291887164115906,True,False
+und sie von meinetwegen warnen,9,256,vnd sie von meinet wegen warnen,Hesekiel_3_17,0.3528425395488739,True,False
+als die da rechenschaft dafür geben müssen,9,263,als die da rechenschafft dafur geben sollen,Hebr_13_15,0.3975772261619568,True,False
+auf daß sie ihr amt mit freuden thun und nicht mit seufzen/,9,264,auff das siedzdasmit freuden thun vnd nicht mit sufftzen,Hebr_13_15,0.8,,False
+denn das ist euch nicht gut,9,265,denn das ist euch nicht zutreglich,Hebr_13_15,0.19442442059516907,True,False
+und die viel zur gerechtigkeit weisen,10,8,vnd die so viel zur Gerechtigkeit weisen,Daniel_12_3,0.34618908166885376,True,True
+wie die sternen immer und ewiglich,10,9,wie die Sternen jmer vnd ewiglich,Daniel_12_3,0.1473652422428131,True,True
+es ist nicht recht,10,30,das kein Recht ist,Jesaja_59_15,0.18940921127796173,False,True
+psalm 2 11 dienet dem herrn mit furcht,10,38,Dienet dem HERRN mit furcht,Psalm_2_11,0.827405571937561,True,True
+und freuet euch mit zittern,10,39,Vnd frewet euch mit zittern,Psalm_2_11,0.47246435284614563,True,True
+denn welche der geist gottes treibet,11,62,Denn die der geyst gottis treybt,Röm_8_14,0.41391152143478394,True,True
+die sind gottes kinder,11,63,die sind gottis kinder,Röm_8_14,0.05454625189304352,True,True
+so bekennet man mit dem munde,11,101,vnd so man mit dem mund bekennet,Röm_10_10,0.19805435836315155,False,True
+der sol selig werden,11,137,der sol geweihet sein,2 Mose_30_29,0.1739618480205536,False,True
+ruf mich an in der zeit der noht,13,18,Vnd ruffe Mich an in der Not,Psalm_50_15,0.5643100142478943,True,True
+so wil ich dich erretten,13,19,So wil ich dich erretten,Psalm_50_15,0.08996286243200302,True,True

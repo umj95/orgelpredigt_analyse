@@ -1,0 +1,49 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+herrn reinhold nagel wolverdienten schöppenmeister,8,0,reinem herren wolffg mofel,1102,0.6517695188522339,True,True
+herrn reinhold maraun wolmritirten vice-schöppenmeister,8,1,reinem herren wolffg mofel,1102,0.8946880102157593,True,True
+heilig heilig heilig ist gott der herr zebaoth,22,2,oheilig heilig heilig ist der herr zebaoth,1091,0.10297293215990067,False,True
+laß mich hören deine stimme ,23,7,laß dich mein wort ergeken,390,0.4372479319572449,True,True
+die stimme deines gebeths,23,8,dein wort dein geist,740,0.5544682145118713,True,True
+die stimme deines flehens/,23,9,dein wort dein geist,740,0.66,,False
+die stimme deiner andacht,23,10,dein wort dein geist,740,0.5038321018218994,True,True
+die stimme deiner lieder.,23,11,dein wort dein geist,740,0.86,,False
+du bist meine freundin,23,14,du bist mein freund,876,0.02798272855579853,False,True
+ich mag gerne deine liebliche rede hören/,23,15,so ruff ich laut und hell nach dir,199,0.84,,False
+du bist mein täublein,23,16,du bist mein hirt,199,0.1269785314798355,False,False
+lobe den herrn meine seele,24,18,lob mein seel den herren,644,0.14206412434577942,True,True
+und was in mir ist seinen heiligen nahmen.,24,19,was in mir ist den namen sein sein wolthat thut er meh xen,644,0.85,,False
+lobe den herrn meine seele,24,20,lob mein seel den herren,644,0.14206412434577942,True,False
+groß ist herr deine güte,24,49,groß ist herr deine treu,640,0.15482813119888306,False,False
+meine hülffe kommt vom herrn,26,20,mein hülffe komt mir von dem herrn,888,0.09057146310806274,False,True
+höre gott unsere stimmen,27,26,laf deinen trost uns hören,617,0.3971615433692932,True,True
+herr thue meine lippen auf,28,0,herr thu mir meine lippen auf,234,0.04410714656114578,False,True
+lobet ihn mit psalter und harffen,30,6,lobt ihn mit klang und schalle,692,0.2964758574962616,True,True
+lobet ihn mit paucken und reigen,30,7,lobt ihn mit klang und schalle,692,0.3203814923763275,True,True
+lobet ihn mit sayten und pfeiffen,30,8,lobt ihn mit klang und schalle,692,0.27344560623168945,True,True
+lobet ihn mit hellen cymbeln,30,9,lobt ihn mit groffemschalle,616,0.43559151887893677,True,True
+lobet ihn mit wolklingenden cymbeln,30,10,lobt ihn mit groffemschalle,616,0.409079372882843,True,True
+allein so leicht dieser einwurff gemacht wird,30,15,so darff es leicht geschehen,460,0.41128742694854736,True,True
+so leicht mag er auch wiederleget werden,30,16,so darff es leicht geschehen,460,0.550300121307373,True,True
+hält sichs doch also in den dingen,32,4,so schau für atten dingen,1262,0.5184898376464844,True,True
+welche kein mensch verstehet,32,29,das von kein mensch nicht weiß,1218,0.19315573573112488,False,True
+weil keines das andere verstimmet,33,29,daß keines giebt dem andern nach,82,0.29771432280540466,True,True
+keines wieder das andere streitet,33,30,daß keines giebt dem andern nach,82,0.296379953622818,True,True
+das kleinoth wornach wir lauffen,35,7,unser kercker da wir faffen,462,0.5059545636177063,True,True
+der haffen wornach wir seegeln,35,8,unser kercker da wir faffen,462,0.4806216061115265,True,True
+die krohne/ worum wir streiten/,35,9,unser kercker da wir faffen,462,0.76,,False
+die burg worum wir ringen,35,10,unser kercker da wir faffen,462,0.6397503614425659,True,True
+ehre sey gott in der höhe,35,35,gott in der höhe sey nun ehr,416,0.19285064935684204,False,True
+denn du bist erwürget,43,44,weil du ihnn bist bekandt,463,0.18065227568149567,False,True
+hohe und niedrige reiche und arme,44,10,hoch und nieder arm und reich,257,0.14770908653736115,False,True
+es kommt die zeit,44,71,es kommt die zeit,848,2.0904087380362035e-13,False,True
+es kommt die zeit,44,81,es kommt die zeit,848,2.0904087380362035e-13,False,False
+es kommt die stunde,44,86,es kommt die stund,1247,0.015635555610060692,False,False
+mit allen ihren pfeiffen,46,3,mit allen seinen wercken,356,0.12181498110294342,False,True
+hohen und niedrigen reichen und armen,46,6,hoch und nieder arm und reich,257,0.1785038411617279,False,True
+wir übergeben selbigem diese laute orgelstimme mit lautem bitten und flehen,48,24,lobt ihn mit klang und schalle,692,0.7549868822097778,True,True
+deine güte kan es groß machen,48,26,dein majestät bes tehen,692,0.4847785234451294,True,True
+denn in dir ist alles,48,34,weil in dir selbsten alles liegt,692,0.14398856461048126,False,True
+und du bist alles und in allen,48,35,und dn alles in allen bist,133,0.13075360655784607,False,True
+nimm an unser orgelwerck,48,40,nimm unser abendopffer auf,134,0.4465564489364624,True,True
+der herr lasse sein angesicht leuchten über dir,48,52,der herr geschworn hat über dich,608,0.49754542112350464,True,True
+der herr hebe sein angesicht über dich,48,54,der herr geschworn hat über dich,608,0.3040785789489746,True,True

@@ -1,0 +1,64 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+13 das kirchlein s agathae auf dem frauenfels,2,20,und hält sein kirch in steter hut,745,1.0442402362823486,True,False
+und 15 die kirche an den hohen hospital vor dem johannisthore,2,22,und hält sein kirch in steter hut,745,0.9149942398071289,True,False
+nehmlich in der stadt die kirche zu s bartholomaei und die brüderkirche,2,27,an gottes kirch und gmein,745,0.7621787786483765,True,False
+das hospital-kirchlein zu s jacob und die hospital kirche zum h geist,2,29,an gottes kirch und gmein,745,0.8752544522285461,True,False
+ja auch wohl mehr,3,5,ja das noch mehr,461,0.19906848669052124,False,True
+aug anno 1644 hieher gebracht,8,19,der am ersten kam,583,1.0681262016296387,True,True
+welcher den 1 apr anno 1639,8,21,der am ersten kam,583,0.769130527973175,True,True
+h friedrich wilhelms ii,8,45,d werther herr und on hily,131,0.9002026319503784,True,True
+dem sey lob und ehre in der gemeine,14,5,lob und preiß sey gott dem vater und dem,634,0.6551335453987122,True,True
+die in christo jesu ist,14,6,die in christo jesu ist,364,8.097350372680834e-14,False,True
+zu aller zeit von ewigkeit zu ewigkeit,14,7,von ewigkeit zu ewigkeit,634,0.1551057994365692,True,True
+man betrachte davids vorhaben von erbauung des tempels,15,26,einm mann vertraut von davids haus,388,0.7103697061538696,True,True
+wer hat davids hertz mit dem vorsatz dem herrn ein hauß zu bauen erfüllet,15,28,einm mann vertraut von davids haus,388,0.7725111842155457,True,True
+unser wünschen ist wahr worden,16,17,all unser hoffnung wird verlacht,965,0.5344860553741455,True,True
+unser verlangen ist erfüllet,16,18,all unser hoffnung wird verlacht,965,0.5309638977050781,True,True
+das haben wir an diesen tage erlebet,16,22,was wir in jenen tagen,1265,0.2865036725997925,True,True
+was wir verlanget zu hören/,16,23,was wir in jenen tagen,1265,0.8,,False
+das haben wir an heutigen tage gehöret,16,24,was wir in jenen tagen,1265,0.2674228847026825,True,True
+o gott es erfüllet,17,22,o gott gez falle dir,98,0.3834282457828522,True,True
+lobet ihn mit hellen cymbeln,19,2,lobt ihn mit groffemschalle,616,0.43559151887893677,True,True
+lobet ihn mit wohlklingenden cymbeln,19,3,lobt ihn mit groffemschalle,616,0.4192377030849457,True,True
+haben die christlichen lehrer dem exempel der jüden nachgehende dienlich zu seyn erachtet,21,35,die junger christi stehen recht gottsfürchtiger art,598,0.9695335030555725,True,True
+maj 1604 m erasmus winter die orgel zu meuselwitz den 20,22,28,wer christi marter faft ins hertz,515,1.122989296913147,True,True
+christophorus friccius die neue orgel zu burchdorff am viii,22,30,wer christi marter faft ins hertz,515,1.0141983032226562,True,True
+aber die engel können hier nicht verstanden werden,27,30,und kanst das nicht verstehen,1252,0.5913688540458679,True,True
+sie loben den herrn,30,31,lobt gott den herrn,673,0.4299680292606354,True,True
+sie loben den herrn,30,33,lobt gott den herrn,673,0.4299680292606354,True,True
+o der herrlichen krafft und wirckung der orgeln,36,60,die harffen und die orgeln gut,891,0.6458045840263367,True,True
+daß es die meisten mit dem worte organum und orgel geben,36,62,die harffen und die orgeln gut,891,0.8242867588996887,True,True
+also auch der mensch,38,27,also wird auch o mensch,1284,0.18441784381866455,False,True
+die orgel wird unbrauchbar,38,31,die seel bleibt unverloren,901,0.7813029885292053,True,True
+die orgel ist ohne nutzen,38,33,die seel bleibt unverloren,901,0.8209844827651978,True,True
+daß ich gedult habe,39,79,daß ich offt geschlet,211,0.16998767852783203,False,True
+zu prägen befohlen wird erfüllet,40,52,der fromme wird gestrafft,553,0.7699887752532959,True,True
+wenn der zischlende vogelgesang erschallet und die hellen cymbeln erklingen,41,15,wann die lekte trompt erklingt,591,0.6564576029777527,True,True
+wenn die harffenspieler auff gottes harffe spielen,41,17,wann die lekte trompt erklingt,591,0.6656959056854248,True,True
+gott vater gott sohn und gott heil geiste ein,44,8,gott vater sohn und heilger geist,630,0.17931975424289703,False,True
+choro laudate eum in chordis &amp,44,15,lobt ihn mit klang und schalle,692,0.562044620513916,True,True
+organo mit güldenen buchstaben an die orgel in der marienkirche zu hall d,44,16,laft stimm und orgel hören für seinem ho hen thron,692,0.9902269244194031,True,True
+lobet ihn mit seiten und pfeiffen,44,19,lobt ihn mit klang und schalle,692,0.36567771434783936,True,True
+alles was odem hat/,44,20,auch was sich nur kan regen,692,0.8,,False
+lobe den herrn an der orgel in der pfarrkirche zu wittenberg m,44,21,laft stimm und orgel hören für seinem ho hen thron,692,1.0069862604141235,True,True
+lobet ihn mit psalter und harffen,44,25,lobt ihn mit klang und schalle,692,0.2964758574962616,True,True
+lobet ihn mit paucken und reigen,44,26,lobt ihn mit klang und schalle,692,0.3203814923763275,True,True
+lobet ihn mit hellen cymbeln,44,27,lobt ihn mit groffemschalle,616,0.43559151887893677,True,True
+lobet ihn mit wohlklingenden cymbeln,44,28,lobt ihn mit groffemschalle,616,0.4192377030849457,True,True
+denn hier wird der ausspruch sirachs c,44,44,bis cs in die weit hier kommt,722,0.8777995705604553,True,True
+wahr befunden lobet und preiset den herrn,44,46,rühmt d des herren gut und gnad,722,0.5442616939544678,True,True
+so hoch ihr vermöget/,44,47,so aus hoffart sich erheben,1219,0.84,,False
+er ist doch noch höher;,44,48,es ware nur ein thon,1219,0.97,,False
+preiset ihn aus allen kräfften/,44,49,trug hunderfältig seine frucht far allen,1219,0.95,,False
+und lasset nicht abe,44,50,und dich nicht lasse,1219,0.154676616191864,False,True
+zwingt die seiten in cithara,45,0,zwingt die sensen in cythara,741,0.43364524841308594,True,True
+zwingt die pfeiffen in organo und lasst die süsse musica,45,1,und lafst die süss se musica gank frendenreich erschallen,741,0.6509686708450317,True,True
+und alles was odem hat,48,4,und alles was ach hab,69,0.1778181493282318,False,True
+und alles was odem hat,49,3,und alles was ach hab,69,0.1778181493282318,False,True
+und alles was odem hat,50,3,und alles was ach hab,69,0.1778181493282318,False,True
+und alles was odem hat,51,5,und alles was ach hab,69,0.1778181493282318,False,True
+und alles was odem hat,52,5,und alles was ach hab,69,0.1778181493282318,False,True
+und alles was odem hat,53,5,und alles was ach hab,69,0.1778181493282318,False,True
+und alles was odem hat,54,5,und alles was ach hab,69,0.1778181493282318,False,True
+und alles was odem hat,55,4,und alles was ach hab,69,0.1778181493282318,False,True
+und alles was odem hat,56,5,und alles was ach hab,69,0.1778181493282318,False,True

@@ -1,0 +1,49 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+jm jahr christi 1676,0,12,herr jesu chrift jcsu christ,785,0.8809215426445007,True,False
+gedruckt zu coburg durch johann-conrad mönchen,0,13,aus herrn johann arnds gebat,785,0.9869431257247925,True,False
+daß die scharffen dicken dünste,2,66,das die rohen sunder plagt,770,0.6729139089584351,True,False
+es ist nicht vonnöthen,4,0,es ist nicht gnug,264,0.12235456705093384,False,True
+seel und alles was ich hab,4,18,und alles was ich hab,902,0.15920975804328918,False,True
+in diesem armen leben,4,19,in diesem armen leben mein,258,0.1598280370235443,False,True
+hilff/ daß ichs brauch zum lobe dein/,4,20,damit ichs gebrauch zum lobe dein,1005,0.7,,False
+zu nutz und dienst des nechsten mein,4,21,zu nuk und dienst des ncchsten mein,1005,0.31153661012649536,True,True
+wollst mir deine gnade geben,4,22,woost mir dein gnade geben,1005,0.1435752809047699,True,True
+dir/ du großer gott/,4,23,daß du gott bist wunderbar,433,0.46,,False
+gebühret die majestät und gewalt,4,24,deffen macht und herrlichkeit,433,0.419599324464798,True,True
+herrligkeit sieg und danck,4,25,deffen macht und herrlichkeit,433,0.42131850123405457,True,True
+sondern ewig heulen müssen,4,65,sondern ewig icben soll,341,0.1927386224269867,False,True
+daß sie gottes sey,4,70,daß sie von gott,1219,0.20387867093086243,True,True
+daß sie von gott herkommen,4,71,daß sie von gott,1219,0.26713088154792786,True,True
+mit harffen und psaltern,4,120,mit psalter harff und geigen,682,0.2049310803413391,True,False
+mit paucken mit cymbalen,4,121,mit cymbeln die wol klingen,682,0.5532567501068115,True,False
+damit anzeigend wie seltzam es sey,5,32,wie klug es sey gesonnen aus,915,0.7864605784416199,True,True
+wie viel seltzamer sey es,5,34,wie klug es sey gesonnen aus,915,0.4790506958961487,True,True
+herr unter den völckern,9,15,durch der wellen heer,1088,0.640997588634491,True,True
+so offt ihr demnach die sonnund feyertage es soll aber allzeit geschehen in die kirchen kommet,9,17,so geschehen an der sonnen,1088,0.7954616546630859,True,True
+und die orgeln höret/,9,18,mond und sternen sehen,1088,0.96,,False
+so sollet ihr euch aller weltlichen gedancken entschlagen/,9,19,darum daß euch gott von allem leiden,1088,0.78,,False
+euer hertz zur ruhe bringen/,9,20,habe deine lust am herrcn,789,0.79,,False
+eure lust haben an dem herrn,9,21,habe deine lust am herrcn,789,0.12350275367498398,False,True
+auf daß er euch gebe/,9,22,das für dich ist gegeben,789,0.52,,False
+was euer hertz wünschet.,9,23,dein wil o gott,1127,0.72,,False
+ps 5 v 1,9,25,s v b  mel,1127,0.9874573349952698,True,True
+auf auf und aus des leibes höhl euch in den himmel schwinget,9,34,ohn unterlaß bis an das zelt des hohen himmels steigen,806,0.4654086232185364,True,True
+den glauben mehr stärck den verstand,9,56,den glauben mehr stärck den verstand,608,2.5593359354557366e-13,True,True
+daß uns dein nam werd wohl bekand,9,57,daß uns dein nam sey wol bekannt,608,0.37732982635498047,True,True
+als die canonici aber paulus gilt uns mehr als diß concilium,10,65,unfre sund sehen an sondern christum vielmehre,300,1.0406123399734497,True,True
+und alle leute fürsten und alle richter auf erden,10,71,und alle menschen in der welt,680,0.48071032762527466,True,True
+jünglinge und jungfrauen die alten mit den jungen sollen loben den namen des herrn,10,72,gesellen jungfern groß und kleinf die jung und die begrauet seyn,680,0.5071712136268616,True,True
+durch mosen seinen diener treu,10,120,durch mose seinen diener treu,698,0.03528023138642311,True,True
+hoch auf dem berg sinai,10,121,hoch auf dem bera cinai,698,0.4619247317314148,True,True
+da jesus an dem creutze stund ,10,125,mel da jesus an dem kreutze stund,481,0.2282591164112091,True,True
+si tanta solatia in hoc die lacrimarum,11,7,wann du die todten wirst an jenem tag erwe cken,839,0.699077308177948,True,True
+quanta conferes in die nuptiarum,11,8,wann du die todten wirst an jenem tag erwe cken,839,0.6472290754318237,True,True
+u die schönsten psalmen auf viel 100,11,36,daß ich dir psalmen sing im höhern chor,1180,0.7669101357460022,True,True
+chören musiciren werden da wird es recht beßer,11,37,so wird ges wih mein singen recht gethan,1180,0.8204300403594971,True,True
+nun singet und klinget,12,0,nun jauchken soll und lachen,583,0.3808123767375946,True,True
+nun jauchzet und springet,12,1,nun jauchken soll und lachen,583,0.4084506034851074,True,True
+den seligen kindern knaben und jungfrauen den holdseligen discant,13,3,gesellen jungfern groß und kleinf die jung und die begrauet seyn,680,0.47125834226608276,True,True
+den jünglingen u jungfrauen den reinen alt,13,4,gesellen jungfern groß und kleinf die jung und die begrauet seyn,680,0.5853548049926758,True,True
+der alle ding erschaffen hat,13,44,der alle ding erschaffen hat,631,5.513895140170713e-14,False,True
+und ist nicht lange darauf durch einen sanfften u seligen tod zur ruhe gangen,13,55,und nicht bald richtt,869,0.7135540246963501,True,True
+nun dancket alle gott,15,0,nun dancket alle gott,515,2.499743034095614e-13,False,True

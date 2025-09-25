@@ -1,0 +1,52 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+lobet ihn in seinen thaten,18,2,Lobet jn in seinen Thatten,Psalm_150_2,0.49506837129592896,True,True
+lobet ihn in seiner grossen herrlichkeit,18,3,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.29271209239959717,True,True
+lobet ihn mit posaunen;,18,4,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.92,,False
+lobet ihn mit säyten und pfeiffen,18,7,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.6875120401382446,True,True
+lobet ihn mit hellen cymbeln;,18,8,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.87,,False
+lobet ihn mit wohlklingenden cymbeln,18,9,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.6790561676025391,True,True
+an einem fetten ort,19,23,an einem fetten Ort,Jesaja_5_2,0.019820116460323334,False,False
+der zu jerusalem spricht,20,5,Der zu Jerusalem spricht,Jesaja_44_26,0.10353371500968933,False,True
+so singet dabey heute dem herrn ein neues lied,20,15,vnd singen wie eyn new lied,Offb_14_3,0.7098293304443359,True,True
+singet mit einstimmen unserer lobschallenden neuen orgel,20,17,vnd singen wie eyn new lied,Offb_14_3,0.9569531083106995,True,True
+was man liebet lobet man,25,27,das wer Got liebet,Joh1_4_20,0.3758942186832428,True,True
+was man lobet liebet man,25,28,das wer Got liebet,Joh1_4_20,0.38569509983062744,True,True
+varietate unitas aus viel stimmen ein chor,25,60,vnd aus vielen Völckern zusamen komen ist,Hesekiel_38_8,0.7025106549263,True,True
+aus viel pfeiffen eine harmonie,25,61,vnd aus vielen Völckern zusamen komen ist,Hesekiel_38_8,0.6394484043121338,True,True
+wenn david die harffe nahm und mit seiner hand spielete,25,86,vnd spielet mit seiner hand,1 Samuel_16_23,0.6810447573661804,True,False
+so erquickte sich saul,25,87,so erquickt sich Saul,1 Samuel_16_23,0.315540611743927,True,False
+daß wenn verlobten personen kurtz vor ihrer hochzeit von einem lieblichen musicalischen instrument träume,26,7,wenn du einen Traum hörest,1 Mose_41_15,0.8932627439498901,True,True
+wenn einer christlichen gemeine von einer lieblichspielenden orgeln nicht etwa träumet,26,9,wenn du einen Traum hörest,1 Mose_41_15,0.8480449914932251,True,True
+das jauchtzen der frölichen ist aus,26,19,das jauchtzen der Frölichen ist aus,Jesaja_24_8,0.04133320599794388,True,True
+und die freude der harffen hat ein ende,26,20,vnd die freude der Harffen hat ein ende,Jesaja_24_8,0.30055591464042664,True,True
+unseres hertzens freude hat ein ende,26,28,Vnsers hertzen freude hat ein ende,Klagelieder_5_15,0.2438647747039795,True,True
+so wüste er nicht,27,36,so fürcht er sich nicht,Psalm_112_7,0.1405031383037567,False,True
+müssen sie angereitzet werden,29,18,sie müssen verstöret werden,Hosea_7_13,0.15434220433235168,False,True
+herr deine augen sehen nach dem glauben ,30,13,HERR deine augen sehen nach dem glauben,Jeremia_5_3,0.15303494036197662,False,True
+ergreiffe das ewige leben,30,17,ergreyff das ewige leben,Tim1_6_11,0.04719936475157738,False,True
+sie klagen meine krafft ist schwach und ohnmächtig,30,47,meine macht ist schwach vber meinem seuffzen,Hiob_23_2,0.6974392533302307,True,True
+gott antwortet meine krafft ist in den schwachen mächtig,30,48,meine macht ist schwach vber meinem seuffzen,Hiob_23_2,0.6163372993469238,True,True
+werdet voll geistes und redet unter einander von psalmen und lobgesängen und geistlichen liedern,34,27,vnd redetvnternander von psalmen vnd lobsengen vnd geystlichen lieden,Eph_5_17,0.7954800128936768,True,True
+singet und spielet dem herrn in eurem hertzen,34,28,singet vnd spielt dem herrn ynn ewren hertzen,Eph_5_17,0.4608590602874756,True,True
+denn die solches thun,34,47,das die solchs thun,Gal_5_21,0.32393187284469604,True,True
+werden das reich gottes nicht ererben,34,49,werden das reych Gottis nicht erben,Gal_5_21,0.4169185161590576,True,True
+sondern nach dem geist,35,28,sondern nach dem geyst,Röm_8_4,0.09171117842197418,False,True
+der da heilig ist,35,43,Der da heilig ist,Psalm_99_3,0.10053825378417969,False,True
+thue weg von mir das geplärr deiner lieder,35,47,Thu nur weg von mir das geplerr deiner Lieder,Amos_5_23,0.3471924662590027,True,True
+denn ich mag deines psalterspiels nicht hören,35,48,Denn Jch mag deines Psalterspiles nicht hören,Amos_5_23,0.3023354113101959,True,True
+behtet an den herrn im heiligen schmuck,37,27,Betet an den HERRN in heiligem Schmuck,Psalm_29_2,0.47733741998672485,True,True
+müsset ihr klagen meine harffe ist eine klage worden,38,36,Meine Harffe ist eine klage worden,Hiob_30_31,0.4829237163066864,True,True
+und meine pfeiffe ein weinen hiob,38,37,vnd meine Pfeiffe ein weinen,Hiob_30_31,0.5877015590667725,True,True
+er macht uns lebendig nach 2 tagen,38,96,Er macht vns lebendig nach zween tagen,Hosea_6_2,0.36718401312828064,True,True
+und wird uns am 3ten tage aufrichten,38,97,Er wird vns am dritten tage auffrichten,Hosea_6_2,0.4127296805381775,True,True
+daß wir vor ihm leben,38,98,das wir fur jm leben werden,Hosea_6_2,0.3850521147251129,True,True
+denn die nacht ist vergangen,38,137,Die nacht ist vergangen,Röm_13_12,0.24917694926261902,True,True
+und der tag herbey kommen,38,138,der tag aber ist erbey kommen,Röm_13_12,0.33992519974708557,True,True
+denn welche der geist gottes treibet,38,147,Denn die der geyst gottis treybt,Röm_8_14,0.41391152143478394,True,True
+die sind gottes kinder,38,148,die sind gottis kinder,Röm_8_14,0.05454625189304352,True,True
+so belohne auch der herr die harmonie eurer wolthätigkeit mit seegen und leben immer und ewiglich,45,1,Denn daselbs verheisst der HERR Segen vnd Leben jmer vnd ewiglich,Psalm_133_3,0.730455219745636,True,True
+lobet ihn in seinen thaten,48,2,Lobet jn in seinen Thatten,Psalm_150_2,0.49506837129592896,True,True
+lobet ihn in seiner grossen herrlichkeit,48,3,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.29271209239959717,True,True
+lobet ihn mit posaunen;,48,4,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.92,,False
+lobet ihn mit säyten und pfeiffen,48,7,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.6875120401382446,True,True
+lobet ihn mit wohlklingenden cymbeln,48,9,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.6790561676025391,True,True

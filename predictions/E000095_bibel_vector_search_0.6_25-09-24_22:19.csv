@@ -1,0 +1,64 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+zu auffmunterung solcher orgellfreude,5,8,solches ym gedechtnis zuhalten,Petr2_1_15,0.8400501012802124,True,True
+solche in memoriam publiciren zulassen,5,10,solches ym gedechtnis zuhalten,Petr2_1_15,0.7609158754348755,True,True
+denn das ist gewiß,5,30,denn das gerücht ist,1 Könige_10_7,0.09068775177001953,False,False
+hilff gott das es wohl gerathe,22,7,wilchs da sey der gutte,Röm_12_2,0.5863816738128662,True,True
+cap und lauten die wort desselben also,25,5,so schawe zu vnd liese alle diese wort,Jeremia_51_61,0.7469552159309387,True,True
+sondern auch sampt der gantzen gemeine jsrael die lade des herrn hinauff gebracht mit jauchtzen,27,7,Also bracht das gantze Jsrael die laden des Bunds des HERRN hin auff mit jauchtzen,1 Chronik_15_28,0.7607665657997131,True,True
+posaunen drometen und hellen cymbalen,27,8,Posaunen Drometen vnd hellen Cymbeln,1 Chronik_15_28,0.6988399028778076,True,True
+singet dem herrn ein neues lied,33,19,Singet jm ein newes Lied,Psalm_33_3,0.3694705069065094,True,True
+machets gut auff seitenspielen mit schalle,33,20,Machts gut auff Seitenspielen mit schalle,Psalm_33_3,0.2574429214000702,True,True
+nehmet die psalmen und gebet her die paucken,33,26,Nemet die Psalmen vnd gebet her die Paucken,Psalm_81_3,0.4123521149158478,True,True
+liebliche harffen mit psaltern,33,27,Lieblich Harffen mit Psaltern,Psalm_81_3,0.5014545917510986,True,True
+lobet den herrn mit harffen,33,34,Lobet den HERRN mit Harffen,Psalm_98_5,0.4746301770210266,True,True
+mit harffen und psalmen,33,35,Mit Harffen vnd Psalmen,Psalm_98_5,0.5841590166091919,True,True
+lobet jhn mit paucken und reigen,33,45,Lobet jn mit Paucken vnd Reigen,Psalm_150_4,0.492218017578125,True,True
+lobet jhn mit seiten und pfeiffen,33,46,Lobet jn mit Seiten vnd Pfeiffen,Psalm_150_4,0.5355197191238403,True,True
+lobet jhn mit hellen cymbalen,33,47,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.27143722772598267,True,True
+lobet jhn mit wolklingenden cymbalen,33,48,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.3013963997364044,True,True
+das ich wunderbarlich gemacht bin,33,123,das ich wünderbarlich gemacht bin,Psalm_139_14,0.2725585103034973,True,False
+wunderbarlich sind deine wercke/,33,124,Wünderbarlich sind deine Wercke,Psalm_139_14,0.54,,False
+und das erkennet meine seele wohl,33,125,Vnd das erkennet meine Seele wol,Psalm_139_14,0.46998295187950134,True,False
+wenn er war gemachet,33,137,da er geporn war,Hebr_11_22,0.13530516624450684,False,False
+todt wo ist dein stachel,33,146,Wo ist nu hie dein maul,Richter_9_38,0.32800859212875366,True,False
+helle wo ist dein sieg,33,147,Wo ist nu hie dein maul,Richter_9_38,0.4259151220321655,True,False
+erkennet das der herr gott ist,33,153,ERkennet das der HERR Gott ist,Psalm_100_3,0.5068401098251343,True,False
+er hat uns gemacht und nicht wir selbst/,33,154,er hat vns gemacht,Psalm_100_3,0.62,,False
+zu seinem volck und zu schaffen seiner weyde,33,155,zu seinem Volck vnd zu Schafen seiner weide,Psalm_100_3,0.5396519303321838,True,False
+bald jenes zu verehren promittiret,34,22,vnd bald welck wird,Psalm_90_6,0.7160478830337524,True,True
+kirchen zu bauen klöster und bisthümer zu stifften,34,42,vnd jre Kirchen sollen verstöret werden,Hosea_10_2,0.8358875513076782,True,True
+denn so spricht er,34,88,Denn so er spricht,Psalm_33_9,0.12285521626472473,False,True
+es soll die herrligkeit des letzten hauses grösser werden,34,92,Es sol die Herrligkeit dieses letzten Hauses grösser werden,Haggai_2_9,0.2714388370513916,True,True
+denn des ersten gewesen ist,34,93,denn des Ersten gewesen ist,Haggai_2_9,0.021986760199069977,True,True
+musicam vocalem das singen,35,38,wie die Leute singen,Hiob_36_24,0.6606677770614624,True,True
+das der mensch lust zu singen hat,35,40,wie die Leute singen,Hiob_36_24,0.46993258595466614,True,True
+meine zunge ist ein grieffel eines guten schreibers,35,50,Meine zunge ist ein griffel eins guten Schreibers,Psalm_45_2,0.11698152124881744,False,True
+jch werde nicht sterben,35,263,JCh werde nicht sterben,Psalm_118_17,0.06181328371167183,True,False
+sondern leben und des herren werck verkündigen,35,264,sondern leben Vnd des HErrn Werck verkündigen,Psalm_118_17,0.3541991710662842,True,False
+und redet unter einander von psalmen und lobgesängen und geistlichen liedern,36,2,vnd redetvnternander von psalmen vnd lobsengen vnd geystlichen lieden,Eph_5_17,0.7516044974327087,True,True
+singet und spielet dem herrn in euren hertzen,36,3,singet vnd spielt dem herrn ynn ewren hertzen,Eph_5_17,0.4837278127670288,True,True
+wenn er sagt singet löblich,36,8,wenn er kompt sagen,Apg_10_32,0.4398418366909027,True,True
+als wolt er sagen,36,9,wenn er kompt sagen,Apg_10_32,0.36040541529655457,True,True
+v 25 thue nur weg das geplerr deiner lieder,36,48,Thu nur weg von mir das geplerr deiner Lieder,Amos_5_23,0.7077793478965759,True,True
+dann jch mag deines psalterspiels nicht hören,36,49,Denn Jch mag deines Psalterspiles nicht hören,Amos_5_23,0.30047374963760376,True,True
+denn er hat eine herrliche that gethan,36,62,Denn er hat ein herrliche That gethan,2 Mose_15_1,0.12035872042179108,True,True
+roß und wagen hat er ins meer gestürtzet,36,63,Ross vnd wagen hat er ins Meer gestürtzt,2 Mose_15_1,0.4262053668498993,True,True
+sprechende heilig heilig heilig ist gott der herr zebaoth,41,7,heilig ist der HERR Zebaoth,Jesaja_6_3,0.4360833466053009,True,True
+alle land sind seiner ehre voll,41,8,Alle land sind seiner Ehren vol,Jesaja_6_3,0.1127130538225174,True,True
+der da war und der da ist,41,11,der da ist vnd der da war,Offb_16_5,0.16124501824378967,False,True
+und da der spielmann auff der seiten spielete,45,4,Vnd da der Spielman auff der seiten spielet,2 Könige_3_15,0.22246167063713074,True,True
+kam die hand des herrn auff den propheten,45,5,kam die hand des HERRN auff jn,2 Könige_3_15,0.3769158124923706,True,True
+wenn david seine harffen nam und spielete für saul mit seiner hand,49,2,vnd spielet mit seiner hand,1 Samuel_16_23,0.7537225484848022,True,True
+so erquickete sich saul,49,3,so erquickt sich Saul,1 Samuel_16_23,0.41980382800102234,True,True
+und ward besser mit ihm/,49,4,vnd ward besser mit jm,1 Samuel_16_23,0.65,,False
+und der böse melancholische sauerund trauergeist weich von ihm,49,5,vnd der böse Geist weich von jm,1 Samuel_16_23,0.7630736231803894,True,True
+da er noch ein knabe gewesen,51,47,da er noch ein Knabe war,2 Chronik_34_3,0.09435202181339264,False,True
+und nicht eines menschen ,62,15,vnd nicht ein Mensch,Hosea_11_9,0.13703162968158722,False,True
+das weil wir nun gehöret haben,63,1,denn wir haben gesündiget,4 Mose_14_40,0.4723026156425476,True,True
+sondern auch weil wir gehöret haben,63,3,denn wir haben gesündiget,4 Mose_14_40,0.5330195426940918,True,True
+von nun an biß in ewigkeit,64,22,von nu an bis in ewigkeit,Jesaja_9_6,0.09424350410699844,False,True
+wie er gewesen ist mit unsern vätern,67,1,wie er mit meinem Vater gewesen ist,1 Samuel_20_13,0.15994992852210999,False,True
+das wir wandeln in allen seinen wegen,67,5,das wir wandeln in allen seinen Wegen,1 Könige_8_58,0.01937592774629593,True,True
+und halten seine geboth/,67,6,vnd halten seine Gebot,1 Könige_8_58,0.7,,False
+sitten und rechte die er unsern vätern geboten hat,67,7,Sitten vnd Rechte die er vnsern Vetern geboten hat,1 Könige_8_58,0.6945626735687256,True,True
+von nun an biß in ewigkeit,67,21,von nu an bis in ewigkeit,Jesaja_9_6,0.09424350410699844,False,True

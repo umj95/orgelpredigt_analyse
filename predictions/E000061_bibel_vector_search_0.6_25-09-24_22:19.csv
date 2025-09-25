@@ -1,0 +1,163 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+aber du bist heilig,7,7,Aber du bist Heilig,Psalm_22_4,0.14986631274223328,True,True
+der du wohnest unter dem lob jsrael,7,8,Der du wonest vnter dem lob  Jsrael,Psalm_22_4,0.6199902892112732,True,True
+aber du bist heilig,7,32,Aber du bist Heilig,Psalm_22_4,0.14986631274223328,True,False
+der du wohnest unter dem lob jsrael,7,33,Der du wonest vnter dem lob  Jsrael,Psalm_22_4,0.6199902892112732,True,False
+wo ist so ein herrlich volck,9,4,Vnd wo ist so ein herrlich Volck,5 Mose_4_8,0.16759878396987915,True,True
+das so gerechte sitten und geboht habe,9,5,das so gerechte Sitten vnd Gebot habe,5 Mose_4_8,0.5090237855911255,True,True
+als alle die gesetz,9,6,als alle dis Gesetz,5 Mose_4_8,0.25971758365631104,True,True
+bis an der welt ende,9,12,bis an der Welt ende,Psalm_48_11,0.0198756605386734,False,True
+zu dem himmlischen jerusalem,9,17,zu dem hymlischen Jerusalem,Hebr_12_22,0.11498384177684784,False,True
+"und zu der menge vieler tausend engeln,",9,18,vnd zu der mengevieler tausent engele,Hebr_12_22,0.66,,False
+und zu der gemeine der erstgebohrnen,9,19,vnd zu der gemeyne der erstgebornen,Hebr_12_23,0.6003096103668213,True,True
+"die im himmel angeschrieben sind,",9,20,die ym hymel angeschrieben sind,Hebr_12_23,0.84,,False
+und zu gott dem richter über alle,9,21,vnd zu Gott dem richter vber alle,Hebr_12_23,0.3741545081138611,True,True
+und zu den geistern der vollkommenen gerechten,9,22,vnd zu dengeystern der volkomenen gerechten,Hebr_12_23,0.6963052153587341,True,True
+§ 4 denn also spricht und erklärets der hohe und erhabene,10,0,Denn also spricht der Hohe vnd Erhabene,Jesaja_57_15,0.6091978549957275,True,True
+der ewiglich wohnet des nahmen heilig ist,10,1,der ewiglich wonet des Namen heilig ist,Jesaja_57_15,0.3034398555755615,True,True
+und bey denen so zuschlagenes und demühtiges gemühts sind,10,4,vnd bey denen so zuschlagens vnd demütigen Geists sind,Jesaja_57_15,0.5819148421287537,True,True
+auf daß ich erquicke den geist der gedemühtigten,10,5,Auff das ich erquicke den geist der Gedemütigeten,Jesaja_57_15,0.2803477346897125,True,True
+und das hertz der zerschlagenen,10,6,vnd das hertz der Zurschlagenen,Jesaja_57_15,0.6936385035514832,True,True
+mein hertz ist bereit,10,27,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,True
+mein hertz ist bereit,10,28,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,True
+daß ich singe und lobe,10,29,Das ich singe vnd lobe,Psalm_57_8,0.44977641105651855,True,True
+da man höret die stimme des danckens,10,35,Da man höret die stim des Danckens,Psalm_26_7,0.2912437617778778,True,True
+und da man prediget alle seine wunder,10,36,Vnd da man prediget alle deine Wunder,Psalm_26_7,0.3507651090621948,True,False
+laß doch unsre kirche dein heiligthum seyn,12,8,vnd sein flehen vnd sihe gnediglich an dein Heiligthum,Daniel_9_17,0.6661030054092407,True,True
+daß darin dein heiliges wort rein und lauter gelehret,12,9,vnd sein flehen vnd sihe gnediglich an dein Heiligthum,Daniel_9_17,0.6709739565849304,True,True
+da sie nun nahe bey jerusalem kamen gen bethphage an den oelberg,15,0,DA sie nu nahe bey Hierusalem kamen gen Bethphage anden oleberg,Mt_21_1,0.19104987382888794,False,True
+und so euch jemand etwas wird sagen,15,8,vnd so euch yemand wirt etwas sagen,Mt_21_3,0.4986199140548706,True,True
+so sprecht der herr bedarf ihr,15,9,so sprecht der herr bedarff yhr,Mt_21_3,0.32605141401290894,True,True
+so bald wird er sie euch lassen,15,10,so bald wirt er sie euchlassen,Mt_21_3,0.06966730952262878,True,True
+das gesagt ist durch den propheten,15,13,das  gesagt ist durch den propheten,Mt_13_35,1.4040817933238386e-13,False,True
+aber viel volcks breitet die kleider auf den weg,15,22,Aber viel volcks breyttet die kleyder auff den weg,Mt_21_8,0.4649600684642792,True,True
+die andern hieben zweige von den bäumen,15,23,die andern hywben tzweyge von den bawmen,Mt_21_8,0.26606738567352295,True,True
+und streueten sie auf den weg,15,24,vnnd streweten sie auff den weg,Mt_21_8,0.19386492669582367,True,True
+das volck aber das vorgieng und nachfolgete,15,25,Das volck aber das vorgieng vnnd nach folget,Mt_21_9,0.4082139730453491,True,True
+schrey und sprach hosianna dem sohn david,15,26,schrey vnd sprach Hosiannadem son dauid,Mt_21_9,0.5369904637336731,True,True
+lobet ihn in seiner grossen herrlichkeit,19,10,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.29271209239959717,True,True
+"lobet ihn mit posaunen,",19,11,Lobet jn in seinen Thatten,Psalm_150_2,0.99,,False
+lobet ihn mit psalter und harffen,19,12,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.7324175834655762,True,True
+"lobet ihn mit paucken und reigen,",19,13,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.75,,False
+lobet ihn mit saiten und pfeiffen,19,14,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6475036144256592,True,True
+lobet ihn mit hellen cimbeln,19,15,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.5500423908233643,True,True
+lobet ihn mit wolklingenden cimbeln,19,16,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.5586014986038208,True,True
+mit so vielen registern gezieret,26,5,das er so viel tausent darnider gelegt hat,Daniel_11_12,0.7650446891784668,True,True
+mit so vielen zügen zugerichtet wäre,26,6,das er so viel tausent darnider gelegt hat,Daniel_11_12,0.5710822343826294,True,True
+der geist der weisheit und des verstandes,26,32,der Geist der weisheit vnd des verstands,Jesaja_11_2,0.39029043912887573,True,True
+der geist der erkäntniß und der furcht des herrn es,26,34,der Geist des erkentnis vnd der furcht des HERRN,Jesaja_11_2,0.642437756061554,True,True
+die sind gottes kinder,26,40,die sind gottis kinder,Röm_8_14,0.05454625189304352,False,True
+mein erretter mein gott,26,62,mein Erretter mein Gott,Psalm_18_3,0.25946006178855896,True,False
+mein hort auf den ich traue,26,63,mein Hort auff den ich trawe,Psalm_18_3,0.2345670759677887,True,False
+mein schild und horn meines heils,26,64,Mein Schild vnd Horn meines heils,Psalm_18_3,0.5000977516174316,True,False
+und mein schutz jch will den herrn loben und anruffen,26,65,JCH wil den HERRN loben vnd anruffen,2 Samuel_22_4,0.6519831418991089,True,False
+so werde ich von meinen feinden erlöset,26,66,So werde ich von meinen Feinden erlöset werden,2 Samuel_22_4,0.10219432413578033,True,False
+aber du tochter zion freue dich sehr,26,75,ABer du tochter Zion frewe dich seer,Sacharja_9_9,0.5537902116775513,True,False
+und du tochter jerusalem jauchze,26,76,vnd du tochter Jerusalem jauchtze,Sacharja_9_9,0.2423786073923111,True,False
+die sie gesähen hatten,27,22,den sie gereuchert haben,Jeremia_11_12,0.08479369431734085,False,True
+lasset die kindlein zu mir kommen,27,30,last die kindle zu myr komen,Lk_18_15,0.4056129455566406,True,True
+"und wehret ihnen nicht,",27,31,vnnd weret yhn nicht,Lk_18_15,0.85,,False
+denn solcher ist das reich gottes,27,32,denn solcher ist das reych Gottis,Lk_18_15,0.4819401204586029,True,True
+sähet wir gehen hinauf gen jerusalem,28,20,sehet wyr gehen hynauff gen Jerusalem,Lk_18_30,0.2582140862941742,True,True
+"und es wird alles vollendet werden,",28,21,vnd es wirt alles vollendet,Lk_18_30,0.46,,False
+was geschrieben ist durch die propheten von des menschen sohn,28,22,dasgeschrieben ist durch die propheten von des menschen son,Lk_18_30,0.20835798978805542,True,True
+denn er wird überantwortet werden den heiden,28,23,denn er wirt vbirantwort werden den heyden,Lk_18_31,0.5105445384979248,True,True
+der des todes gewalt hatte,28,39,dem der des tods gewalt hatte,Hebr_2_14,0.0711912289261818,True,True
+das ist dem teufel,28,40,das ist dem teuffel,Hebr_2_14,0.08865976333618164,True,True
+denn es ist ein köstlich ding,28,46,das ist ein köstlich ding,Psalm_147_1,0.18080469965934753,False,True
+denn sein nahme ist allein hoch,28,51,Denn sein Name allein ist hoch,Psalm_148_13,0.28677454590797424,True,True
+sein lob gehet so weit himmel und erde ist,28,52,Sein Lob gehet so weit Himel vnd Erden ist,Psalm_148_13,0.4576807916164398,True,True
+andere hieben zweige von den bäumen,30,10,die andern hywben tzweyge von den bawmen,Mt_21_8,0.32002925872802734,True,True
+und streueten sie auf den weg,30,11,vnnd streweten sie auff den weg,Mt_21_8,0.19386492669582367,True,True
+wir aber hielten jhn für den,30,18,Wir aber hielten Jn fur den,Jesaja_53_4,0.21330487728118896,True,True
+der geplagt und von gott geschlagen und gemartert wäre,30,19,der geplagt vnd von Gott geschlagen vnd gemartert were,Jesaja_53_4,0.3176490068435669,True,True
+aber er ist um unser missethat willen verwundet,30,20,Aber er ist vmb vnser Missethat willen verwundet,Jesaja_53_5,0.4535858929157257,True,True
+die strafe liegt auf jhm,30,22,Die Straffe ligt auff Jm,Jesaja_53_5,0.44109153747558594,True,True
+"auf daß wir friede hätten,",30,23,Auff das wir Friede hetten,Jesaja_53_5,0.59,,False
+und durch seine wunden sind wir geheilet,30,24,Vnd durch seine Wunden sind wir geheilet,Jesaja_53_5,0.3636276125907898,True,True
+herr wenn trübsal da ist,30,44,HERR wenn Trübsal da ist,Jesaja_26_16,0.28375542163848877,True,True
+so suchet man dich,30,45,So suchet man dich,Jesaja_26_16,0.14133967459201813,True,True
+und wenn du sie züchtigest,30,46,Wenn du sie züchtigest,Jesaja_26_16,0.34424251317977905,True,True
+rufen sie ängstiglich es,30,47,So ruffen sie engstiglich,Jesaja_26_16,0.6242760419845581,True,True
+bis in den tod,30,55,bis an den tod,Richter_16_16,0.11905117332935333,False,True
+offenb joh 2 dulden wir mit jhm,30,57,redten wir mit jm,2 Samuel_12_18,0.6360606551170349,True,True
+so sollen wir auch mit jhm herrschen.,30,58,redten wir mit jm,2 Samuel_12_18,0.89,,False
+leiden wir mit jhm,30,59,redten wir mit jm,2 Samuel_12_18,0.32153546810150146,True,True
+die haben christum angezogen,31,13,die haben Christum angetzogen,Gal_3_27,0.19969916343688965,False,True
+man singet mit freuden vom sieg in den hütten der gerechten,31,21,Man singt mit freuden vom Sieg in den hütten der Gerechten,Psalm_118_15,0.4753704071044922,True,True
+die rechte des herrn behält den sieg,31,22,Die Rechte des HERRN behelt den Sieg,Psalm_118_16,0.43902289867401123,True,True
+die rechte des herrn ist erhöhet,31,23,Die Rechte des HERRN ist erhöhet,Psalm_118_16,0.4370473325252533,True,True
+die rechte des herrn behält den sieg,31,24,Die Rechte des HERRN behelt den Sieg,Psalm_118_16,0.43902289867401123,True,True
+den frieden lasse ich euch,31,28,meynen fride gebe ich euch,Joh_14_26,0.36636078357696533,True,True
+meinen frieden gäbe ich euch,31,29,meynen fride gebe ich euch,Joh_14_26,0.4943200945854187,True,True
+so habt mit allen menschen friede,31,42,so habt mit allen menschen fride,Röm_12_18,0.05801814794540405,False,True
+als höret man eine stimme zu loben und zu dancken dem herrn,31,55,als höret man eine stimme zu loben vnd zu dancken dem HERRN,2 Chronik_5_13,0.28128722310066223,True,True
+und da die stimme sich erhub von den drometen,31,56,Vnd da die stim sich erhub von den Drometen,2 Chronik_5_13,0.544424831867218,True,True
+cymbeln und andern saitenspielen,31,57,Cymbeln vnd andern Seitenspielen,2 Chronik_5_13,0.5198876261711121,True,True
+und von den loben des herrn,31,58,vnd von dem loben des HERRN,2 Chronik_5_13,0.5580189228057861,True,True
+daß er gütig ist,31,59,Das er gütig ist,2 Chronik_7_3,0.1817103624343872,True,True
+und seine barmhertzigkeit ewig währet,31,60,vnd seine barmhertzigkeit ewiglich weret,2 Chronik_7_3,0.24867776036262512,True,True
+sihe es kömmt die zeit,32,7,Sjhe es kompt die zeit,Jeremia_23_5,0.2812735438346863,True,True
+spricht der herr daß ich dem david ein gerecht gewächs erwecken wil,32,8,spricht der HERR das ich dem Dauid ein gerecht Gewechs erwecken wil,Jeremia_23_5,0.2173253744840622,True,True
+"und soll ein könig seyn,",32,9,vnd sol ein König sein,Jeremia_23_5,0.76,,False
+der wol regieren wird,32,10,der wol regieren wird,Jeremia_23_5,2.3935600680299873e-13,True,True
+und recht und gerechtigkeit auf erden anrichten,32,11,vnd Recht vnd Gerechtigkeit auff Erden anrichten,Jeremia_23_5,0.2842996120452881,True,True
+zu desselben zeit soll juda geholfen werden und jsrael sicher wohnen.,32,12,Zu desselbigen zeit sol Juda geholffen werden,Jeremia_23_6,0.9,,False
+und dis wird sein nahme seyn,32,13,Vnd dis wird sein Name sein,Jeremia_23_6,0.5303841233253479,True,True
+daß man ihn nennen wird:,32,14,das man jn nennen wird,Jeremia_23_6,0.49,,False
+herr der unser gerechtigkeit ist,32,15,HERR der vnser Gerechtigkeit ist,Jeremia_23_6,0.5966846346855164,True,True
+ach daß die hülfe aus zion über jsrael käme,32,17,AH das die hülffe aus Zion vber Jsrael keme,Psalm_14_7,0.40573951601982117,True,True
+und der herr sein gefangen volck erlösete,32,18,vnd der HERR sein gefangen Volck erlösete,Psalm_14_7,0.4756571352481842,True,True
+so würde jacob frölich seyn,32,19,So würde Jacob frölich sein,Psalm_14_7,0.20413795113563538,True,True
+so werden wir heil,32,47,so werde ich heil,Jeremia_17_14,0.3533036410808563,True,True
+hilf du uns so ist uns geholfen,32,48,Hilff du mir so ist mir geholffen,Jeremia_17_14,0.413074254989624,True,True
+jhr wisset nicht was ihr bittet,33,7,yhr wisset nicht was yhr bittet,Mt_20_22,0.1792055368423462,False,True
+"matth. 20. und was hülfe es dem menschen,",33,8,was hulffs den menschen,Mt_16_25,0.74,,False
+so er die gantze welt gewünne,33,9,so er die gantzen welt gewunne,Mt_16_25,0.055037304759025574,False,True
+herr wenn ich nur dich habe,33,14,Wenn ich nur dich habe,Psalm_73_25,0.22443877160549164,True,True
+so frage ich nichts nach himmel und erden,33,15,so frage ich nichts nach Himel vnd Erden,Psalm_73_25,0.22470012307167053,True,True
+der alle hülffe thut,33,28,Der alle Hülffe thut,Psalm_74_12,0.3057911992073059,True,True
+so auf erden geschicht,33,29,so auff Erden geschicht,Psalm_74_12,0.0971144437789917,True,True
+wie sein nahme ist,33,41,wie seine gewest ist,Daniel_11_4,0.12407458573579788,False,True
+so ist auch sein ruhm,33,42,so ist auch dein Rhum,Psalm_48_11,0.39480355381965637,True,True
+bis an der welt ende,33,43,bis an der Welt ende,Psalm_48_11,0.0198756605386734,True,True
+den wil er nicht verlassen,36,3,wolt er doch nicht gehen,2 Samuel_13_25,0.1903437376022339,False,True
+jch wil einen odem in euch bringen,37,20,JCh wil dich vnterweisen,Psalm_32_8,0.2899985909461975,True,True
+jch wil euch adern gäben,37,22,JCh wil dich vnterweisen,Psalm_32_8,0.2087254673242569,True,True
+denn dieser ehrenkönig wird sagen zu denen zu seiner rechten,37,30,da wirt denn der konig sagen zu den zu seyner rechten,Mt_25_34,0.47264564037323,True,True
+ererbet das reich das euch bereitet ist von anbeginn der welt,37,32,ererbettdas reich  das euch bereytt ist von anbegynn der wellt,Mt_25_34,0.46383747458457947,True,True
+nicht sollen verlohren werden,38,5,wirt nicht zuschanden werden,Röm_10_11,0.13819734752178192,False,True
+sondern das ewige leben haben,38,6,habe das ewige leben,Joh_6_37,0.13237237930297852,False,True
+deinen willen mein gott tuhe ich gern,38,14,Deinen willen mein Gott,Psalm_40_9,0.3089929223060608,True,True
+durch seine herrlichkeit unser preiß und ehre,39,25,durch seine Barmhertzigkeit vnd grosse Güte,Jesaja_63_7,0.5236485004425049,True,True
+"durch seinen heiligen geist unsre salbung,",39,26,durch seine Barmhertzigkeit vnd grosse Güte,Jesaja_63_7,0.71,,False
+durch seine wiederkunft unser bräutigam und seeligkeit,39,27,durch seine Barmhertzigkeit vnd grosse Güte,Jesaja_63_7,0.7574945688247681,True,True
+denn die daß er sein leben lässet für seine freunde,41,24,denn die das er seyn leben lesset fur seyne freunde,Joh_15_13,0.1910487860441208,False,True
+erleuchtet und geheiliget auf daß er uns erlösete von aller ungerechtigkeit,41,44,auff das er vns erloszet von aller vngerechtickeyt,Tit_2_13,0.7309236526489258,True,True
+das fleißig wäre zu guten wercken,41,46,das da eyfferig were zu guten wercken,Tit_2_13,0.29206377267837524,True,True
+was ehrbahr was gerecht,41,63,was redlich was gerecht,Phil_4_8,0.526077151298523,True,True
+was keusch was lieblich,41,64,was keusch was lieblich,Phil_4_8,7.893287260786475e-14,True,True
+ist etwa ein lob,41,66,ist etwaeynlob dem denckt nach,Phil_4_8,0.5663962364196777,True,True
+so lange du lebest,45,2,so lange yhr man lebt,Kor1_7_38,0.18087783455848694,False,True
+wol denen die in deinem hause wohnen,45,5,WOl denen die in deinem Hause wonen,Psalm_84_5,0.19191288948059082,False,True
+wenn ich dich allezeit mit frölichem munde loben könte,45,9,Wenn ich dich mit frölichem munde loben solte,Psalm_63_6,0.18814922869205475,False,True
+das werde geschrieben auf die nachkommen,45,10,Das werde geschrieben auff die Nachkomenen,Psalm_102_19,0.21829360723495483,True,True
+und das volck das geschaffen soll werden,45,11,Vnd das Volck das geschaffen sol werden,Psalm_102_19,0.6328026056289673,True,True
+wird den herrn loben,45,12,wird den HERRN loben,Psalm_102_19,0.2889447808265686,True,True
+wo warest du da mich die morgenstern miteinander lobeten,45,20,Da mich die Morgensterne mit einander lobeten,Hiob_38_7,0.6380363702774048,True,True
+und jauchtzeten alle kinder gottes,45,21,vnd jauchzeten alle kinder Gottes,Hiob_38_7,0.2566661536693573,True,True
+heilig heilig heilig ist gott der herr zebaoth,45,31,heilig ist der HERR Zebaoth,Jesaja_6_3,0.3462023138999939,True,True
+alle lande sind seiner ehren voll,45,32,Alle land sind seiner Ehren vol,Jesaja_6_3,0.1574212908744812,True,True
+und was in mir ist,46,4,Vnd was in mir ist,Psalm_103_1,0.15998992323875427,False,True
+und hat sie aus dem mittel gethan,49,14,vnnd hatt sie aus dem mittel than,Kol_2_14,0.4210582375526428,True,True
+und ans creutz geheftet,49,15,vnd an das creutz gehefftet,Kol_2_14,0.4345833957195282,True,True
+denn es stehet geschrieben,49,17,denn es stehet geschrieben,Lk_4_10,2.238652514231776e-13,False,True
+so werden wir von dem herrn gezüchtiget,49,46,so werden wyr von dem hern getzuchtiget,Kor1_11_31,0.4333013594150543,True,True
+auf daß wir nicht samt der welt verdammet werden,49,47,auff das wyr nicht sampt der welt verdampt werden,Kor1_11_31,0.4975641965866089,True,True
+darauf er sich verließ,49,51,darauff er sich verliesz,Lk_11_22,0.1959635317325592,True,True
+und theilet den raub aus,49,52,vnd teylet den raub aus,Lk_11_22,0.47758692502975464,True,True
+anstimmen können tod wo ist dein stachel,49,55,Wo ist nu hie dein maul,Richter_9_38,0.6663053631782532,True,True
+hölle wo ist dein sieg,49,56,Wo ist nu hie dein maul,Richter_9_38,0.36343690752983093,True,True
+stärcke die schwachen errette die angefochtenen,66,25,trostet die kleynmutigen vertraget die schwachen,Thess1_5_14,0.44718867540359497,True,True
+begleite die reisenden wache bey den schlafenden,66,26,trostet die kleynmutigen vertraget die schwachen,Thess1_5_14,0.9554365277290344,True,True
+die du mir aufgebunden hast,84,48,das du mir zugesellet hast,1 Mose_3_12,0.144273042678833,False,True

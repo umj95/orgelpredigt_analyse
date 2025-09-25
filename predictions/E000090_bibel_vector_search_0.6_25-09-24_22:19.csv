@@ -1,0 +1,34 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+herrn johann pösneckern herrn johann gollern,3,0,den son Joas greiff Joas der son Joahas,2 Chronik_25_23,0.7709367275238037,True,True
+herrn johann otten herrn johann enderes,3,1,den son Joas greiff Joas der son Joahas,2 Chronik_25_23,0.7358049750328064,True,True
+kam er an das galileische meer,8,1,kam er an das Gallileische meer,Mk_7_31,0.15987509489059448,False,True
+mitten unter die grentze der zehen städte/,8,2,mitten vnter die grentze der zehen  stedte,Mk_7_31,0.67,,False
+und sie brachten zu jhm einen tauben/,8,3,vnnd sie brachten zu yhm eynen tawben der redet schwerlich,Mk_7_32,0.75,,False
+daß er die hand auff jhn legte,8,5,das er die hand auff yhn leget,Mk_7_32,0.09395872056484222,False,True
+vnd er nam jhn von dem volck besonders,8,6,vnd er nam yhn von  dem volck,Mk_7_33,0.48622962832450867,True,True
+hephata das ist thu dich auff,8,11,hephethah das ist thu dich auff,Mk_7_34,0.1450679749250412,False,True
+und wunderten sich über die masse,9,4,vnnd verwunderten sich  vbir die massz,Mk_7_37,0.4257817566394806,True,True
+und sprachen: er hat alles wohl gemacht/,9,5,vnnd sprachen Er hatts alles wol aus gericht,Mk_7_37,0.78,,False
+die tauben macht er hörend,9,6,die tawben hatt er horend gemacht,Mk_7_37,0.5395514369010925,True,True
+und die sprachlosen redend,9,7,vnnd die sprachlosen redend,Mk_7_37,0.15734930336475372,True,True
+die er den menschen anbeut,12,9,das er von dem menschen auszfure,Lk_8_28,0.19401627779006958,False,True
+thue nur weg von mir das geplerr deiner lieder,16,49,Thu nur weg von mir das geplerr deiner Lieder,Amos_5_23,0.15242888033390045,True,True
+denn ich mag deines psalterspiels deines orgelsund music spiels nicht,16,50,Denn Jch mag deines Psalterspiles nicht hören,Amos_5_23,0.5073960423469543,True,True
+sie brachten jhn zu jhm,18,22,brachten sie zu yhm,Lk_4_40,0.19819216430187225,False,True
+muß er schmertzen haben,19,18,mus er schmertzen haben,Hiob_14_22,0.21673396229743958,True,True
+und weil die seele noch bey jhm ist,19,19,Vnd weil seine Seele noch bey jm ist,Hiob_14_22,0.5836288928985596,True,True
+muß er leid tragen,19,20,mus er leide tragen,Hiob_14_22,0.34143489599227905,True,True
+der euch erschaffen hat,20,17,die dich gezeuget hat,Hohelied_8_5,0.10551004111766815,False,True
+die welt nicht lieb gewinne,22,27,Habt nicht lieb die welt,Joh1_2_15,0.26220306754112244,True,True
+noch was in der welt ist 1,22,28,noch was ynn der welt ist,Joh1_2_15,0.2090127021074295,True,True
+jch hebe meine augen auff zu den bergen,26,9,Jch hebe meine augen auff zu den Bergen,Psalm_121_1,0.1477862000465393,False,True
+heilig heilig heilig ist gott der herr zebaoth,30,18,heilig ist der HERR Zebaoth,Jesaja_6_3,0.3462023138999939,True,True
+und alle land sind seiner ehren voll,30,19,Alle land sind seiner Ehren vol,Jesaja_6_3,0.2707923650741577,True,True
+singet dem herrn und lobet seinen namen,30,38,Singet dem HERRN vnd lobet seinen Namen,Psalm_96_2,0.2723560035228729,True,True
+prediget einen tag am andern sein heil,30,39,Prediget einen tag am andern sein Heil,Psalm_96_2,0.17990443110466003,True,True
+was vor ein unaußsprechliches triumphiren,34,19,was fur ein vnterscheid sey,Maleachi_3_18,0.839564323425293,True,True
+was vor ein unnachdenckliches jauchzen,34,20,was fur ein vnterscheid sey,Maleachi_3_18,0.6700897216796875,True,True
+singen und loben wird sich im himmel unter den patriarchen und königen,34,21,vnd schwebt zwischen Himel vnd erden,2 Samuel_18_9,0.7145146727561951,True,True
+unter den propheten und aposteln/,34,22,vnd schwebt zwischen Himel vnd erden,2 Samuel_18_9,0.99,,False
+unter den engeln und außerwehlten erheben,34,23,vnd schwebt zwischen Himel vnd erden,2 Samuel_18_9,0.6931923627853394,True,True
+daß der tag kommen sey,34,24,des tag da her komen wird,Hesekiel_21_30,0.1835479736328125,False,True

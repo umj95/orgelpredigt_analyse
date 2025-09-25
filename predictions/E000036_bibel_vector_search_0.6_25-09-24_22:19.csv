@@ -1,0 +1,104 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+a wenn ich nur dich,21,13,Wenn ich nur dich habe,Psalm_73_25,0.22720731794834137,True,True
+nur dich wenn ich nur dich habe,21,14,Wenn ich nur dich habe,Psalm_73_25,0.22900515794754028,True,True
+so frage ich nichts nach himmel und erden,21,15,so frage ich nichts nach Himel vnd Erden,Psalm_73_25,0.22470012307167053,True,True
+"wenn mir gleich leib und seel verschmacht,",21,16,Wenn mir gleich Leib vnd Seele verschmacht,Psalm_73_26,0.64,,False
+so bistu doch gott allezeit meines hertzens trost und mein theil,21,17,So bistu doch Gott alle zeit meines hertzen Trost,Psalm_73_26,0.5486512184143066,True,False
+wer an mich gläubet,23,5,wer an mich glewbet,Joh_6_44,0.05953316390514374,False,True
+"der wird leben, ob er gleich stürbe.",23,6,der hatt das ewige leben,Joh_6_44,0.9,,False
+und wer da lebet und gläubet an mich,23,7,vnd wer do lebt vnd  glewbt an mich,Joh_11_25,0.5164408087730408,True,True
+der mich gesandt hat,23,15,der mich gesand hatt,Joh_8_15,0.05059588700532913,False,True
+es ist mit mir gar anders,23,27,Es ist mit mir gar anders,Psalm_38_9,0.05361222103238106,False,True
+daß es heißt jch hatte viel bekümmerniß in meinem hertzen,23,38,Jch hatte viel Bekümmernisse in meinem hertzen,Psalm_94_19,0.38751357793807983,True,False
+aber deine tröstungen ergötzten meine seele,23,39,Aber deine Tröstung ergetzeten meine Seele,Psalm_94_19,0.25899213552474976,True,False
+habe deine lust an dem herrn,23,46,Habe deine lust am HERRN,Psalm_37_4,0.33502039313316345,True,False
+der wird dir geben was dein hertz wünschet,23,47,Der wird dir geben was dein hertz wündschet,Psalm_37_4,0.2584061622619629,True,False
+deren füsse lieblich sind auf den bergen,27,7,Wje lieblich sind auff den bergen die füsse der Boten,Jesaja_52_7,0.5871900320053101,True,True
+die da friede verkündigen,27,8,die da Friede verkündigen,Jesaja_52_7,0.24586370587348938,True,True
+gutes predigen heyl verkündigen,27,9,Guts predigen Heil verkündigen,Jesaja_52_7,0.3587944209575653,True,True
+wie es heute vor,27,39,wie es heute stehet,1 Chronik_28_7,0.04268692433834076,False,True
+unsern augen ist alle menschen die es sehen,29,0,Vnd alle Menschen die es sehen,Psalm_64_10,0.3593870997428894,True,True
+werden sagen das hat gott gethan,29,1,werden sagen Das hat Gott gethan,Psalm_64_10,0.32878410816192627,True,True
+und mercken daß es sein werck sey,29,2,vnd mercken das sein werck sey,Psalm_64_10,0.5598278045654297,True,True
+gehet zu seinen thoren ein mit dancken,29,13,Gehet zu seinen Thoren ein mit dancken,Psalm_100_4,0.32260191440582275,True,True
+zu seinen vorhöfen mit loben,29,14,zu seinen Vorhöfen mit loben,Psalm_100_4,0.026469623669981956,True,True
+die rechte des herrn behält den sieg,29,19,Die Rechte des HERRN behelt den Sieg,Psalm_118_16,0.43902289867401123,True,True
+die rechte des herrn ist erhöhet,29,20,Die Rechte des HERRN ist erhöhet,Psalm_118_16,0.4370473325252533,True,True
+die rechte des herrn behält den sieg,29,21,Die Rechte des HERRN behelt den Sieg,Psalm_118_16,0.43902289867401123,True,True
+gebt unserm gott die ehre,32,1,vnd vnserm Gott opffern,2 Mose_5_8,0.4968789219856262,True,True
+"jhr die ihr gottes macht bekennt,",32,2,vnd vnserm Gott opffern,2 Mose_5_8,0.91,,False
+gebt unserm gott die ehre,32,3,vnd vnserm Gott opffern,2 Mose_5_8,0.4968789219856262,True,True
+der herr ist gott,32,5,Herre hie ist gutt seyn,Mt_17_4,0.38763153553009033,True,True
+der herr ist gott,32,6,Herre hie ist gutt seyn,Mt_17_4,0.38763153553009033,True,True
+bringet her dem herrn ehre und macht,34,1,Bringet her dem HERRN ehre vnd stercke,Psalm_29_1,0.6366217136383057,True,True
+bringet her dem herrn ehre seines nahmens,34,2,Bringet her dem HERRN ehre vnd stercke,Psalm_29_1,0.5629705190658569,True,True
+welcher ist unter euch,36,12,Wer ist vnnter euch,Mt_6_27,0.19559645652770996,False,True
+da er merckte wie sie erwehlten oben an zu sitzen,36,17,da er merckt wie sie erweleten oben an zu sitzen,Lk_14_7,0.06913722306489944,True,True
+wenn du von jemand geladen wirst zur hochzeit,36,19,wenn du von ymandgeladen wirst zur hochtzeyt,Lk_14_8,0.570784330368042,True,True
+so setze dich nicht oben an,36,20,so setze dich nicht oben an,Lk_14_8,1.7102275541927558e-13,True,True
+"daß nicht etwa ein ehrlicher,",36,21,das nicht etwa eyn eerlicher denn du,Lk_14_8,0.58,,False
+"denn du, von ihm geladen sey;",36,22,der dich geladen hatt,Lk_14_10,0.86,,False
+der dich und ihn geladen hat,36,24,der dich geladen hatt,Lk_14_10,0.33915090560913086,True,True
+"spreche zu dir: weiche diesem,",36,25,sprech zu dyr freund rucke hyn auff,Lk_14_10,0.94,,False
+sondern wenn du geladen wirst,36,27,Sondern wenn du geladen wirst,Lk_14_10,0.30991607904434204,True,True
+so gehe hin und setze dich unten an,36,28,so gang yhn vnd setz dich vnden an,Lk_14_10,0.4773305058479309,True,True
+"auf daß wenn da kommt,",36,29,auff das wenn da kompt,Lk_14_10,0.5,,False
+der dich geladen hat,36,30,der dich geladen hatt,Lk_14_10,0.027438657358288765,True,True
+"spreche zu dir: freund,",36,31,sprech zu dyr freund rucke hyn auff,Lk_14_10,0.79,,False
+denn wer sich selbst erhöhet,36,33,Denn wer sich selb erhohet,Lk_14_11,0.44964101910591125,True,True
+der soll erniedriget werden,36,34,der soll ernydrigt werden,Lk_14_11,0.07442571967840195,True,True
+"und wer sich selbst erniedriget,",36,35,vnd wer sich selb ernydrigt,Lk_14_11,0.66,,False
+der soll erhöhet werden,36,36,der soll erhohet werden,Lk_14_11,0.2751186490058899,True,True
+und truncken das süsse,44,22,vnd trincket das süsse,Nehemia_8_10,0.5470535755157471,True,True
+und sendeten auch denen theil,44,23,vnd sendet denen auch Teil,Nehemia_8_10,0.576287567615509,True,True
+die nichts für sich bereitet hatten,44,24,die nichts fur sich bereit haben,Nehemia_8_10,0.20864611864089966,True,True
+der ihn gesand hat,44,37,den er gesand hat,Joh_5_36,0.12902574241161346,False,True
+dahero es auch geschehen,44,53,es wirt also geschehen,Apg_27_25,0.16116829216480255,False,True
+thut er es nicht,44,81,das kaufft er nicht,1 Mose_47_22,0.13248324394226074,False,False
+mit paucken und reigen,59,18,mit segen an brüsten vnd beuchen,1 Mose_49_25,0.4778338074684143,True,True
+mit säyten und pfeiffen,59,19,mit segen an brüsten vnd beuchen,1 Mose_49_25,0.5678238272666931,True,True
+singet ihm ein neues lied,59,25,Singet jm ein newes Lied,Psalm_33_3,0.3962419033050537,True,True
+machets gut auf säytenspiel mit schalle,59,26,Machts gut auff Seitenspielen mit schalle,Psalm_33_3,0.32703790068626404,True,True
+daß ist ein köstlich ding,59,28,das ist ein köstlich ding,Psalm_147_1,0.007313096895813942,True,True
+solch lob ist lieblich und schön was nun der geist gottes selbst vor köstlich ausgiebet,59,29,Solch lob ist lieblich vnd schön,Psalm_147_1,0.6364481449127197,True,True
+auf der anderen seite,63,0,auff der andern seiten,Hesekiel_41_20,0.188765287399292,False,True
+dahero er denn auch,69,14,darumb er auch soll,Hebr_5_6,0.19897028803825378,False,True
+werdet voll geistes und redet untereinander von psalmen und lobgesängen und geistlichen liedern,77,6,vnd redetvnternander von psalmen vnd lobsengen vnd geystlichen lieden,Eph_5_17,0.7877389192581177,True,True
+singet und spielet dem herrn in euren hertzen,77,7,singet vnd spielt dem herrn ynn ewren hertzen,Eph_5_17,0.4837278127670288,True,True
+da denn wie alle andere,87,4,vnd wie alle andere Menschen,Richter_16_17,0.18593472242355347,False,True
+wenn sie sich oben an setzeten,93,37,wenn sie sich erheben,Psalm_89_10,0.18101447820663452,False,True
+denn wer sich selbst erhöhet,93,43,Denn wer sich selb erhohet,Lk_14_11,0.44964101910591125,True,True
+der soll erniedriget werden,93,44,der soll ernydrigt werden,Lk_14_11,0.07442571967840195,True,True
+wider den die music nichts vermag,95,9,aber dise art feret nicht aus,Mt_17_21,0.6459413766860962,True,True
+sondern durch fasten und beten es sind einige die da wollen,95,11,denn durch  beten vnd fasten,Mt_17_21,0.8465526700019836,True,True
+weil sie leiblich ist,97,12,weil sie wüst ist,Hesekiel_26_2,0.17435014247894287,False,True
+so ist es um desto geschickter seinem gott zu dienen,99,18,so sol ers seinem Herrn bezalen,2 Mose_22_11,0.6642799377441406,True,True
+und also seine sabbahtlust an dem herrn zu haben,99,20,so sol ers seinem Herrn bezalen,2 Mose_22_11,0.5654869079589844,True,True
+das lamm das erwürget ist,109,2,das lamb das erwurget ist,Offb_5_12,0.07655242085456848,False,True
+nehmet die psalmen und gebet her die paucken,113,1,Nemet die Psalmen vnd gebet her die Paucken,Psalm_81_3,0.4123521149158478,True,True
+liebliche harfen mit psalter,113,2,Lieblich Harffen mit Psaltern,Psalm_81_3,0.5538660287857056,True,True
+denn solches ist eine weise in jsrael und ein recht des gottes jacobs,113,4,Vnd ein Recht des Gottes Jacob,Psalm_81_5,0.5954986810684204,True,True
+aber inwendig sind sie voller todtenbeine und alles unflats,124,17,aber ynnewendig sind sie voller todten beyn vnd alles vnflatts,Mt_23_24,0.4128361642360687,True,True
+also auch sie von aussen scheinen sie vor den menschen fromm,124,18,Also auch yhr von aussen scheynet yhr fur den menschen frum,Mt_23_25,0.6050609946250916,True,True
+aber inwendig sind sie voller heucheley und untugend,124,19,aber ynnewendig sind sie voller todten beyn vnd alles vnflatts,Mt_23_24,0.5198537707328796,True,True
+alles was ihr thut mit worten und wercken,125,10,Vnd alles was yhr thutt mit wortten odder mit wercken,Kol_3_17,0.371634304523468,True,True
+das thut alles in dem nahmen des herrn jesu,125,11,das thut alles ynn dem namen des herrn Jhesu,Kol_3_17,0.48795396089553833,True,True
+und dancket gott und dem vater durch ihn,125,12,vnnd danckt Gott dem vater durch yhn,Kol_3_17,0.5238861441612244,True,True
+will ich spielen denn mein freund ist mein,139,6,Mein Freund ist mein,Hohelied_6_3,0.5508415102958679,True,True
+und ich bin sein,139,7,vnd ich bin sein,Hohelied_6_3,0.32783401012420654,True,True
+mein gott sey nicht ferne von mir,141,4,HERR sey nicht ferne von mir,Psalm_35_22,0.17052990198135376,False,True
+jch will dich nicht verlassen noch versäumen,141,7,Jch wil dich nicht verlassen noch von dir weichen,Josua_1_5,0.15510272979736328,False,True
+mit assaph sprechen bleibe ich stets an dir,143,16,DEnnoch bleibe ich stets an dir,Psalm_73_23,0.6261952519416809,True,True
+denn du hältest mich bey meiner rechten hand,143,17,Denn du heltest mich bey meiner rechten Hand,Psalm_73_23,0.14163677394390106,True,True
+du leitest mich nach deinem rath,143,18,Du leitest mich nach deinem Rat,Psalm_73_24,0.38894760608673096,True,True
+und nimmest mich endlich mit ehren an,143,19,Vnd nimpst mich endlich mit ehren an,Psalm_73_24,0.21661604940891266,True,True
+du solt gott deinem herrn lieben von gantzem hertzen,147,12,Du solt lieben gott deynen herren von gantzem hertzen,Mt_22_37,0.13156935572624207,False,True
+von gantzer seele von gantzem gemüthe,147,13,von gantzem gemuete von  gantzer seel,Mk_12_33,0.10092689096927643,False,True
+durch das band des friedes,149,16,durch das band des frids,Eph_4_3,0.1933717578649521,False,True
+und wir können unsere lust nicht an dem herrn haben,151,7,Wir können das nicht thun,1 Mose_34_14,0.6287299394607544,True,True
+wir können ihn nicht loben,151,8,Wir können das nicht thun,1 Mose_34_14,0.40032488107681274,True,True
+so stehe auf nordwind und wähe südwind,151,17,STehe auff Nordwind vnd kom Sudwind,Hohelied_4_16,0.5822693705558777,True,True
+und wähe durch meinen hertzensgarten,151,18,vnd webe durch meinen Garten,Hohelied_4_16,0.5132138729095459,True,True
+sey getreu bis in den tod,155,5,Sey getrew bis an den todt,Offb_2_10,0.4840306043624878,True,True
+so will ich dir dir sic die crone des lebens geben,155,6,so wil ich dyr die kron des lebens geben,Offb_2_10,0.3311713933944702,True,True
+für dem ich stehe,159,17,fur dem ich stehe,2 Könige_5_16,0.05710064247250557,False,True

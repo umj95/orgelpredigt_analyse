@@ -1,0 +1,32 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+am vierten tage kamen sie zusammen im lobethal,6,0,Am vierden tage aber kamen sie zusamen im Lobetal,2 Chronik_20_26,0.1937023103237152,True,True
+denn daselbst lobeten sie den herrn,6,1,denn daselbs lobeten sie den HERRN,2 Chronik_20_26,0.23696903884410858,True,True
+daher heißet die stätte lobethal,6,2,da her heisst die stete Lobetal,2 Chronik_20_26,0.4622155725955963,True,True
+das proviant der seelen,7,34,die Weiber des königs,2 Könige_24_15,0.8245217800140381,True,True
+die schätze der gnaden,7,35,die Weiber des königs,2 Könige_24_15,0.6609792709350586,True,True
+lieblich mit psalmen jsrael,9,1,lieblich mit Psalmen Jsrael,2 Samuel_23_1,0.05123903602361679,False,True
+darum sagte er mein hertz ist bereit,10,8,Gott mein hertz ist bereit,Psalm_57_8,0.5530515313148499,True,True
+gott mein hertz ist bereit,10,9,Gott mein hertz ist bereit,Psalm_57_8,0.054701998829841614,True,True
+daß ich singe und lobe,10,10,Das ich singe vnd lobe,Psalm_57_8,0.44977641105651855,True,True
+gott es ist mein rechter ernst,10,21,GOtt Es ist mein rechter ernst,Psalm_108_2,0.2337156981229782,True,True
+ich will singen und tichten,10,22,Jch wil singen vnd tichten,Psalm_108_2,0.4952617287635803,True,True
+der jhn gemacht hatte,11,1,der jn gemacht hat,5 Mose_32_15,0.10733054578304291,False,True
+prüfe mich herr und versuche mich,11,8,Prüfe mich HERR vnd versuche mich,Psalm_26_2,0.28611403703689575,True,True
+läutere meine nieren und mein hertz,11,9,Leutere meine nieren vnd mein hertz,Psalm_26_2,0.38533779978752136,True,True
+meine stärcke herr mein felß,11,25,meine Taube meine frome,Hohelied_5_2,0.45532503724098206,True,True
+mein burg mein erretter,11,26,meine Taube meine frome,Hohelied_5_2,0.4714442789554596,True,True
+mein gott mein hort,11,27,mein Erretter mein Gott,Psalm_18_3,0.34893491864204407,True,True
+auff den ich traue!,11,28,mein Hort auff den ich trawe,Psalm_18_3,0.96,,False
+mein schild und horn meines heils,11,29,Mein Schild vnd Horn meines heils,Psalm_18_3,0.5000977516174316,True,True
+und mein schutz! und/,11,30,mein Erretter mein Gott,Psalm_18_3,1.0,,False
+sagende jch will den herrn loben und anruffen,11,32,JCH wil den HERRN loben vnd anruffen,2 Samuel_22_4,0.3861114978790283,True,True
+so werde ich von meinen feinden erlöset v,11,33,So werde ich von meinen Feinden erlöset werden,2 Samuel_22_4,0.17832934856414795,True,True
+die sein deß herrn heil lieben,11,37,Vnd die dein Heil lieben,Psalm_40_17,0.4894765615463257,True,True
+müßen sagen allewege der herr sey hochgelobet,11,38,müssen sagen allwege Der HERR sey hoch gelobt,Psalm_40_17,0.45590323209762573,True,True
+meine harpfe ist eine klage worden,18,22,Meine Harffe ist eine klage worden,Hiob_30_31,0.13263802230358124,False,True
+der jhn gemacht hat,26,9,der jn gemacht hat,5 Mose_32_15,0.10816572606563568,False,True
+so viel jener,28,33,des so viel ist,2 Chronik_1_9,0.19625061750411987,False,True
+thue nur weg von mir das geplerr deiner lieder,31,15,Thu nur weg von mir das geplerr deiner Lieder,Amos_5_23,0.15242888033390045,True,True
+dann jch mag deines psalterspiels nicht hören,31,16,Denn Jch mag deines Psalterspiles nicht hören,Amos_5_23,0.30047374963760376,True,True
+das wird dem herrn baß gefallen,37,8,Das wird dem HERRN bas gefallen,Psalm_69_32,0.4005711078643799,True,True
+denn ein farr der hörner und klauen hat,37,9,denn ein Farr Der hörner vnd klawen hat,Psalm_69_32,0.40372657775878906,True,True

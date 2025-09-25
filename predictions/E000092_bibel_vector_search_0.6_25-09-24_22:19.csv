@@ -1,0 +1,116 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+30 v 31 meine harffe ist eine klage worden,25,56,Meine Harffe ist eine klage worden,Hiob_30_31,0.508416473865509,True,False
+und meine pfeiffe ein weinen,25,57,vnd meine Pfeiffe ein weinen,Hiob_30_31,0.42929786443710327,True,False
+der hundert schafe hat,28,7,der hundert schaff hat,Lk_15_4,0.2705259919166565,True,True
+und und so er der eines verleuret,28,8,vnnd so er der eynes verleuret,Lk_15_4,0.6183101534843445,True,True
+der nicht lasse die neun und neuntzig in der wüsten,28,9,der nicht lasse die neun vnd neuntzig ynn der wusten,Lk_15_4,0.2745676636695862,True,True
+vnd wenn ers funden hat,28,11,Vnn wenn ers funden hat,Lk_15_5,0.15314415097236633,True,True
+so leget ers auff seine achseln mit freuden,28,12,so legt ers auff seyne achszeln mit freuden,Lk_15_5,0.23149359226226807,True,True
+vnd wenn er heim kömmt/,28,13,vnd wenn er heym kompt,Lk_15_6,0.56,,False
+ruffet er seinen freunden und nachbarn,28,14,rufft er seynen freunden vnd nachparn,Lk_15_6,0.3551039695739746,True,True
+freuet euch mit mir,28,16,frewet euch mit myr,Lk_15_6,0.3395572900772095,True,True
+denn ich habe mein schaf funden,28,17,denn ich habe meyn schaff funden,Lk_15_6,0.31921595335006714,True,True
+für neun und neuntzig gerechten,28,20,fur neun vnd neuntzig gerechten,Lk_15_7,0.3852434754371643,True,True
+die der busse nicht bedürffen,28,21,die der bussze nit bedurffen,Lk_15_7,0.3972987234592438,True,True
+ruffet sie ihren freundinnen,29,7,rufft er seynen freunden vnd nachparn,Lk_15_6,0.36243003606796265,True,True
+freuet euch mit mir,29,9,frewet euch mit myr,Lk_15_6,0.3395572900772095,True,True
+denn ich habe meinen groschen funden,29,10,denn ich habe meyn schaff funden,Lk_15_6,0.32853129506111145,True,True
+den ich verlohren hatte,29,11,die ich erbawet habe,Daniel_4_27,0.09882056713104248,False,True
+also auch sage ich euch,29,12,Also auch sag ich euch,Lk_15_10,0.05526816472411156,False,True
+das wir beschauet haben,30,93,die wir glewbt haben,Eph_1_19,0.17854785919189453,False,True
+die du mir von der welt gegeben hast joh,30,126,die du myr von der welt geben hast,Joh_17_6,0.17451244592666626,False,True
+suchet in der schrifft,30,143,Suchet ynn der schrifft,Joh_5_37,0.3076314926147461,True,False
+ihr meynt ihr habt das ewige leben drinnen/,30,144,denn yhr meynet yhr habt das lebendrynnen,Joh_5_37,0.61,,False
+und sie ists die von mir zeuget,30,145,vnd sie ists die von myr zeuget,Joh_5_37,0.4162243604660034,True,False
+denn hier haben wirs in einem spiegel und dunckeln wort,30,173,Wyr sehen ytzt durch eyn spiegel ynn eynem tunckeln wort,Kor1_13_12,0.6659201383590698,True,False
+dort aber von angesicht zu angesicht,30,174,denne aber von angesicht zu angesicht,Kor1_13_12,0.3198496699333191,True,False
+und seyd gewurtzelt und erbauet in jhm,30,244,vnd seyt gewurtzelt vnd erbawet ynn yhm,Kol_2_7,0.6463429927825928,True,False
+will auch nicht weissagen,30,295,wil auch nicht gnedig sein,Hesekiel_9_10,0.17382106184959412,False,False
+so muß es geschehen,30,300,das es geschehen sollt,Apg_26_22,0.18518564105033875,False,False
+wo dein gesetz nicht were mein trost gewesen,30,355,WO dein Gesetz nicht mein trost gewest were,Psalm_119_92,0.2980037331581116,True,False
+so wäre ich vergangen in meinem elend psal,30,356,So were ich vergangen in meinem Elende,Psalm_119_92,0.38669803738594055,True,False
+sihe umb trost war mir sehr bange,30,360,SJhe vmb trost war mir seer bange,Jesaja_38_17,0.5314741730690002,True,False
+du aber hast dich meiner seelen herrlich angenommen,30,361,Du aber hast dich meiner Seele hertzlich angenomen,Jesaja_38_17,0.4914223849773407,True,False
+daß sie nicht verdürbe,30,362,das sie nicht verdörbe,Jesaja_38_17,0.10651715099811554,True,False
+daß man seinen klang höre,30,392,das man seinen klang höre,2 Mose_28_35,0.013282070867717266,False,False
+wann er aus und ein gehet/,30,393,wenn er aus vnd ein gehet in das Heilige fur dem HERRN,2 Mose_28_35,0.91,,False
+in das heilige vor dem herrn/,30,394,wenn er aus vnd ein gehet in das Heilige fur dem HERRN,2 Mose_28_35,0.77,,False
+auff daß er nicht sterbe,30,395,auff das er nicht sterbe,2 Mose_28_35,0.02419525757431984,False,False
+warlich warlich ich sage euch,30,412,warlich warlich ich sage euch,Joh_8_33,2.1560322429302337e-13,False,False
+so ihr den vater etwas bitten werdet in meinem nahmen,30,413,so yhr den vater etwas bitten werdet  ynn meynem namen,Joh_16_23,0.19008401036262512,True,False
+so wird ers euch geben,30,414,so wirt ers euch geben,Joh_16_23,0.17605197429656982,True,False
+warlich warlich ich sage euch,30,416,warlich warlich ich sage euch,Joh_8_33,2.1560322429302337e-13,False,False
+was ihr bitten werdet in meinem namen/,30,417,Was jr mir sagt,1 Mose_34_11,0.84,,False
+das wil ich thun,30,418,das wil ich geben,1 Mose_34_11,0.16128093004226685,False,False
+das wil ich thun,30,421,das wil ich geben,1 Mose_34_11,0.16128093004226685,False,False
+und ob ich hingienge euch die stätte zubereiten,30,424,vnd ob ich hyn gehe euch die stett zu bereytten,Joh_14_3,0.5796303749084473,True,False
+will ich doch wieder kommen,30,425,will ich dochwidder komen,Joh_14_3,0.22749406099319458,True,False
+und euch zu mir nehmen,30,426,vnnd euch zu myr nemen,Joh_14_3,0.3252926468849182,True,False
+ja es ist noch nie keine weissagung aus menschlichen willen herfürbracht,33,39,Denn es ist noch nie keyn weyssagung aus menschlichem willen erfur bracht,Petr2_1_21,0.37811991572380066,True,True
+sondern die heiligen männer gottes haben geredet,33,40,sondern die heyligen menschen Gottis haben geredt,Petr2_1_21,0.21623103320598602,True,True
+getrieben von dem heiligen geist,33,41,getrieben von dem heyligen geyst,Petr2_1_21,0.3395114541053772,True,True
+jhr seits nicht die da reden,33,44,denn yhr seyt es nicht die da reden,Mt_10_19,0.21900925040245056,True,True
+sondern des vaters geist/,33,45,sondernn ewers  vaters geyst ist es,Mt_10_19,0.66,,False
+der in euch redet,33,46,der durch euch redet,Mt_10_19,0.133384570479393,True,True
+wie noch auff heutigen tag geschiehet,41,59,wie es heutes tages gehet,Esra_9_7,0.1588716208934784,False,True
+wer euch höret der höret mich,41,83,Wer euch horet der horet mich,Lk_10_16,0.4153479337692261,True,True
+und wer mich höret/,41,84,der veracht mich wer aber mich veracht,Lk_10_16,0.73,,False
+der höret den der mich gesand hat,41,85,der veracht den der mich gesand hat,Lk_10_16,0.34725767374038696,True,True
+vnd wer auch das wort gottes nicht würde hören,41,93,Vnd wer meine wort nicht hören wird,5 Mose_18_19,0.43129369616508484,True,True
+welches er in desselben namen reden würde,41,94,Die er in meinem Namen reden wird,5 Mose_18_19,0.46885058283805847,True,True
+von deme wolle es der herr fodern,41,95,von dem wil ichs foddern,5 Mose_18_19,0.4536169767379761,True,True
+so sahe esaias den herrn sitzen auff einem hohen stuel esa,43,121,sahe ich den HERRN sitzen auff eim hohen vnd erhaben Stuel,Jesaja_6_1,0.5411723852157593,True,True
+6 v 1 jeremias sahe einen siedenden topff und einen wackern stab,43,122,sahe ich den HERRN sitzen auff eim hohen vnd erhaben Stuel,Jesaja_6_1,0.9069924354553223,True,True
+aber meine wort vergehen nicht,46,56,aber meyn wort werden nit vergehen,Lk_21_32,0.1872226893901825,False,True
+wie gefiel es euch,50,5,wie es jm gefiel,Jeremia_18_4,0.17555665969848633,False,True
+denn daß ich itzt nicht sage,51,30,da fur sage ich nicht,Joh1_5_16,0.12821996212005615,False,True
+ult denn gleich wie der regen und schnee vom himmel fället,52,12,DEnn gleich wie der Regen vnd Schnee vom Himel fellet,Jesaja_55_10,0.3643972873687744,True,True
+und nicht wider dahin kömmt,52,13,vnd nicht wider dahin kompt,Jesaja_55_10,0.3998088538646698,True,True
+sondern feuchtet die erden/,52,14,Sondern feuchtet die Erden,Jesaja_55_10,0.66,,False
+und macht sie fruchtbar,52,15,vnd machet sie fruchtbar vnd wachsend,Jesaja_55_10,0.498435378074646,True,True
+das du mir gegeben hast,55,11,das du mir geboten hast,5 Mose_26_13,0.09054833650588989,False,True
+also heilig ist der tag,56,24,denn der Tag ist heilig,Nehemia_8_11,0.1619516760110855,False,True
+es ist schon die axt den bäumen an die wurtzel gelegt,56,62,Es ist schon die axt denbawmen an die wurtzel gelegt,Lk_3_9,0.2159094661474228,True,True
+und ist 8 jahr sein kostgänger gewesen,56,119,da er war sechzig jar alt,1 Chronik_2_21,0.6104167699813843,True,True
+daß er anno 35,56,121,da er war sechzig jar alt,1 Chronik_2_21,0.5767608880996704,True,True
+wie solches noch uff den heutigen tag,56,126,wie es stehet heutiges tages,5 Mose_29_27,0.19986216723918915,False,True
+da man höret die stimme des danckens,57,73,Da man höret die stim des Danckens,Psalm_26_7,0.2912437617778778,True,True
+und da man predigt alle seine wunder,57,74,Vnd da man prediget alle deine Wunder,Psalm_26_7,0.33689019083976746,True,True
+der da spricht jch hatte viel bekümmerniß in meinem hertzen,58,38,Jch hatte viel Bekümmernisse in meinem hertzen,Psalm_94_19,0.43601536750793457,True,True
+aber deine tröstung ergetzten meine seele im 94 psalm v,58,39,Aber deine Tröstung ergetzeten meine Seele,Psalm_94_19,0.66115403175354,True,True
+19 desgleichen herr wo dein gesetz nicht wäre mein trost gewesen,58,40,WO dein Gesetz nicht mein trost gewest were,Psalm_119_92,0.4592810273170471,True,True
+so wäre ich vergangen in meinem elende,58,41,So were ich vergangen in meinem Elende,Psalm_119_92,0.21525895595550537,True,True
+ich wil ihn sättigen mit langen leben,58,59,Jch wil jn settigen mit langem Leben,Psalm_91_16,0.3505071699619293,True,True
+und wil ihm zeigen mein heil psal,58,60,Vnd wil jm zeigen mein Heil,Psalm_91_16,0.4534452557563782,True,True
+fürchte dich nicht ich hab dich erlöset,58,63,Fürcht dich nicht Denn ich habe dich erlöset,Jesaja_43_1,0.30093252658843994,True,True
+ich habe dich bey deinem namen geruffen,58,64,Jch habe dich bey deinem namen geruffen,Jesaja_43_1,0.1465575248003006,True,True
+du bist mein so du durchs wasser gehest,58,65,Denn so du durch Wasser gehest,Jesaja_43_2,0.4236319661140442,True,True
+sollen dich die ströme nicht ersäuffen,58,66,das dich die Ströme nicht sollen erseuffen,Jesaja_43_2,0.1858009397983551,True,True
+und so du durchs feuer gehest/,58,67,Denn so du durch Wasser gehest,Jesaja_43_2,0.73,,False
+wil ich bey dir seyn,58,68,wil ich dir thun,Rut_3_11,0.14347025752067566,False,True
+denn ich bin bey dir,58,70,denn ich bin bey dir,Jesaja_43_5,3.175079556910765e-13,False,True
+daß ich dir helffe,58,71,das ich euch helffe,Jeremia_42_11,0.03795000538229942,False,True
+tamen sperabo in eum,58,81,darumb hoffe ich noch,Klagelieder_3_21,0.3193563222885132,True,True
+so wolte ich doch auff ihn hoffen,58,83,darumb hoffe ich noch,Klagelieder_3_21,0.4567195177078247,True,True
+sie sind vergänglich der rost und motten können sie fressen,59,32,da sie widder rost noch motten fressen,Mt_6_20,0.753633975982666,True,True
+er der herr sendet seine rede auff erden,59,59,Er sendet seine Rede auff Erden,Psalm_147_15,0.5436052680015564,True,True
+sein wort läufft schnell psal,59,60,Sein Wort leufft schnell,Psalm_147_15,0.2032046765089035,True,True
+wo die sünde mächtig worden ist,60,23,wo aber die sund vberhand genommen hat,Röm_5_20,0.5416238903999329,True,True
+da ist die gnade noch viel mächtiger worden,60,24,da hat auch die gnade noch meh vberhand genomen,Röm_5_20,0.622718334197998,True,True
+jch habe kinder aufferzogen,61,12,Jch habe Kinder aufferzogen vnd erhöhet,Jesaja_1_2,0.4151858687400818,True,True
+und sie sind von mir abgefallen,61,13,Vnd sie sind von mir abgefallen,Jesaja_1_2,0.1850883662700653,True,True
+ein ochse kennet seinen herrn,61,14,Ein Ochse kennet seinen Herrn,Jesaja_1_3,0.31014060974121094,True,True
+und ein esel die krippe seines herrn,61,15,vnd ein Esel die krippe seines Herrn,Jesaja_1_3,0.4929802119731903,True,True
+aber jsrael kennets nicht,61,16,Aber Jsrael kennets nicht,Jesaja_1_3,0.207401305437088,True,True
+und mein volck vernimmts nicht,61,17,vnd mein Volck vernimpts nicht,Jesaja_1_3,0.46154627203941345,True,True
+o wehe des sündigen volcks/,61,18,O Weh des sundigen Volcks,Jesaja_1_4,0.89,,False
+des volcks von grosser missethat,61,19,des Volcks von grosser missethat,Jesaja_1_4,0.031195838004350662,True,True
+aber sie wollens nicht hören,61,51,Aber sie wollens nicht hören,Jesaja_42_20,0.04448636248707771,False,True
+daß er einen hunger ins land schickte,61,58,Das ich einen Hunger ins Land schicken werde,Amos_8_11,0.37103980779647827,True,True
+nicht nach brod sondern nach dem wort des herrn zuhören,61,59,Sondern nach dem wort des HERRN zu hören,Amos_8_11,0.4696601927280426,True,True
+von einem meer zum andern,61,61,vnd von einem meer ins ander,Hesekiel_47_8,0.06127462908625603,False,True
+von mitternacht gegen morgen umblauffen,61,62,von Mitternacht gegen Morgen,Amos_8_12,0.19184790551662445,False,True
+so wird euch geholffen,64,76,so würde euch geholffen,Jesaja_30_15,0.15674924850463867,False,True
+der gerechte schlage mich freundlich,64,86,Der Gerechte schlahe mich freundlich vnd straff mich,Psalm_141_5,0.4328176975250244,True,True
+das wird mir so wohl thun,64,87,Das wird mir so wol thun,Psalm_141_5,0.1914026439189911,True,True
+als ein balsam auff meinem häupte psal,64,88,als ein Balsam auff meinem heubt,Psalm_141_5,0.2340022325515747,True,True

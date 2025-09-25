@@ -1,0 +1,75 @@
+Predigt,Paragraph,Satz,Fundstelle,Vers,Ähnlichkeit,Dopplung
+und mit psalmen ihme jauchzen,7,4,Psalm_95_2,vnd mit psalmen jm jauchzen,89.29,False
+dann der herr ist groß und hoch zu loben,7,5,Psalm_96_4,denn der herr ist gros vnd hoch zu loben,92.5,True
+"ja er ist unser gott,",7,6,Psalm_95_7,Denn er ist vnser Gott,74.42,False
+und wir das volck seiner weyde,7,7,Psalm_95_7,vnd wir das volck seiner weide,93.33,False
+und schaafe seiner heerde,7,8,Psalm_95_7,vnd schafe seiner hende,87.5,False
+lobet den herrn in seinem heiligthum,8,0,Psalm_150_1,halelu ia lobet den herrn in seinem heiligthum,87.8,False
+lobet ihn in der veste seiner macht,8,1,Psalm_150_1,lobet jn in der feste seiner macht,92.75,False
+lobet ihn in seinen thaten,8,2,Psalm_150_2,lobet jn in seinen thatten,92.31,True
+lobet ihn in seiner grossen herrligkeit,8,3,Psalm_150_2,lobet jn in seiner grossen herrligkeit,96.1,False
+lobet ihn mit posaunen,8,4,Psalm_150_3,lobet jn mit posaunen,93.02,True
+lobet ihn mit psalter und harpffen,8,5,Psalm_150_3,lobet jn mit psalter vnd harffen,90.91,True
+lobet ihn mit paucken und reigen,8,6,Psalm_150_4,lobet jn mit paucken vnd reigen,92.06,True
+lobet ihn mit saiten und pfeiffen,8,7,Psalm_150_4,lobet jn mit seiten vnd pfeiffen,89.23,True
+lobet ihn mit hellen cymbaln,8,8,Psalm_150_5,lobet jn mit hellen cymbeln,90.91,True
+lobet ihn mit wohlklingenden cymbaln,8,9,Psalm_150_5,lobet jn mit wolklingenden cymbeln,91.43,False
+alles was odem hat,8,10,Psalm_150_6,alles was odem hat,100.0,False
+lobe den herrn halleluja,8,11,Psalm_150_6,lobe den herrn halelu ia,91.67,False
+und bey der predigt von dem nahmen des herrn,10,2,1 Mose_12_8,vnd predigte von dem namen des herrn,85.0,True
+pharao aber der könig in egypten,11,10,5 Mose_11_3,an pharao dem könig in egypten,83.87,True
+jch will dem herrn singen,11,17,Psalm_13_7,jch wil dem herrn singen,97.96,True
+dann er hat eine herrliche that gethan,11,18,2 Mose_15_21,denn er hat eine herrliche that gethan,97.37,True
+roß und wagen hat er ins meer gestürtzet,11,19,2 Mose_15_1,ross vnd wagen hat er ins meer gestürtzt,92.5,False
+der herr ist meine stärcke und lobgesang,11,20,2 Mose_15_2,der herr ist mein stercke vnd lobsang,90.91,True
+ich will ihn preisen,11,21,2 Mose_15_2,jch wil jn preisen,84.21,False
+er ist meines vatters gott,11,22,2 Mose_15_2,er ist meines vaters gott,98.04,False
+ich will ihn erheben etc.,11,23,2 Mose_15_2,Jch wil jn erheben,74.42,False
+loco citato v. 1.,11,24,2 Mose_15_2,Vnd ist mein Heil,29.41,False
+"2. und mirjam nahm darauf eine paucke in ihre hand,",11,25,2 Mose_15_2,Aarons schwester nam eine Paucken in jre hand,60.42,False
+und alle weiber folgeten ihr nach hinaus mit paucken am reigen,11,26,2 Mose_15_20,vnd alle weiber folgeten jr nach hin aus mit paucken am reigen,95.16,True
+gelobet in seinen thaten,12,6,Psalm_150_2,lobet jn in seinen thatten,88.0,True
+gelobet in seiner grossen herrlichkeit,12,7,Psalm_150_2,lobet jn in seiner grossen herrligkeit,89.47,True
+der herr erhöre dich in der noth etc,17,17,Psalm_20_2,der herr erhöre dich in der not,92.54,True
+57 u 15 da also spricht der hohe und erhabene,17,23,Jesaja_57_15,denn also spricht der hohe vnd erhabene,83.33,True
+daß er erquicke den geist der gedemüthigten,17,31,Jesaja_57_15,auff das ich erquicke den geist der gedemütigeten,84.78,False
+und das hertz der zerschlagenen,17,32,Jesaja_57_15,vnd das hertz der zurschlagenen,93.55,False
+in der hütte des stiffts,17,41,2 Mose_27_21,in der hütten des stiffts,97.96,False
+das hätte ich gern,17,49,Psalm_27_4,das hette ich gerne,91.89,True
+und da die bauleute den grund legten am tempel des herrn,19,4,Esra_3_10,vnd da die bawleute den grund legten am tempel des herrn,96.43,True
+stunden die priester angezogen,19,5,Esra_3_10,stunden die priester angezogen,100.0,True
+"mit drometen, und die leviten,",19,6,2 Chronik_20_14,beide das erste vnd das letzte,53.33,False
+samt den kindern assaph,19,7,2 Chronik_20_14,aus den kindern assaph,88.89,True
+herr hilf mir so wollen wir lieder singen,20,2,Jesaja_38_20,herr hilff mir so wollen wir meine lieder singen,92.13,True
+er sang von gantzem herzten,20,7,2 Könige_23_25,der so von gantzem hertzen,86.79,True
+mit harpffen und psaltern,22,41,Psalm_98_5,mit harffen vnd psalmen,87.5,True
+lobet jhn in seiner grossen herrlichkeit,26,10,Psalm_150_2,lobet jn in seiner grossen herrligkeit,94.87,True
+als in dem lande canaan,26,22,1 Mose_42_7,aus dem lande canaan,88.37,True
+und dancket dem herrn,26,27,1 Chronik_16_41,zu dancken dem herrn,87.8,True
+dann seine güte währet ewiglich,26,28,1 Chronik_16_41,das seine güte weret ewiglich,90.0,True
+die du an uns beweisest,27,19,Psalm_40_6,die du an vns beweisest,95.65,True
+dir ist nichts gleich,27,20,Psalm_40_6,dir ist nichts gleich,100.0,True
+die nacht ist vergangen,29,12,Jeremia_8_20,die erndte ist vergangen,85.11,True
+gebt unserm gott die ehre,30,1,5 Mose_32_3,gebt vnserm gott allein die ehre,84.21,True
+"jhr, die ihr gottes macht bekennt,",30,2,5 Mose_32_3,der dich gemacht hat,55.56,False
+gebt unserm gott die ehre,30,3,5 Mose_32_3,gebt vnserm gott allein die ehre,84.21,True
+"die falschen götzen macht zu spott,",30,4,5 Mose_32_3,der dich gemacht hat,54.55,False
+der herr ist gott der herr ist gott!,30,5,5 Mose_32_3,Denn es ist ein verkerete Art,49.23,False
+gebt unserm gott die ehre,30,6,5 Mose_32_3,gebt vnserm gott allein die ehre,84.21,True
+lobet ihn mit paucken und reigen,32,2,Psalm_150_4,lobet jn mit paucken vnd reigen,92.06,True
+lobet ihn mit saiten und pfeiffen,32,3,Psalm_150_4,lobet jn mit seiten vnd pfeiffen,89.23,True
+lobet ihn mit hellen cymbeln,32,4,Psalm_150_5,lobet jn mit hellen cymbeln,94.55,True
+lobet ihm mit wohlklingenden cymbeln,32,5,Psalm_150_5,lobet jn mit wolklingenden cymbeln,91.43,True
+thut nur weg von mir das geplerr eurer lieder,36,44,Amos_5_23,thu nur weg von mir das geplerr deiner lieder,93.33,True
+dann ich mag eures psalterspiels nicht hören,36,45,Amos_5_23,denn jch mag deines psalterspiles nicht hören,87.64,False
+sungen mit cymbeln psaltern und harpffen,37,10,2 Chronik_29_25,mit cimbeln psaltern vnd harffen,83.33,True
+und als hörete man eine stimme zu loben und zu dancken dem herrn,37,15,2 Chronik_5_13,als höret man eine stimme zu loben vnd zu dancken dem herrn,94.31,False
+fürwahr solch lob ist lieblich und schön,38,0,Psalm_147_1,solch lob ist lieblich vnd schön,86.11,True
+der du wohnest unter dem lob jsrael,40,1,Psalm_22_4,der du wonest vnter dem lob  jsrael,94.29,True
+wie ihr gehöret habt,46,1,1 Mose_44_10,wie jr geredt habt,84.21,True
+oder auf dem felde gehen,46,9,Daniel_4_29,so auff dem felde gehen,89.36,True
+darum jsrael vergiß mein nicht,46,17,Jesaja_44_21,jsrael vergiss mein nicht,83.64,True
+den nahmen des herrn,49,32,Psalm_113_1,lobet den namen des herrn,84.44,True
+gebt unserm gott die ehre,50,6,5 Mose_32_3,gebt vnserm gott allein die ehre,84.21,True
+alles was othem hat,55,0,Psalm_150_6,alles was odem hat,91.89,True
+lobe den herrn halleluja,55,1,Psalm_150_6,lobe den herrn halelu ia,91.67,True

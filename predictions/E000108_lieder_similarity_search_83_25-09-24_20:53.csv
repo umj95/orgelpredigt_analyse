@@ -1,0 +1,5 @@
+Predigt,Paragraph,Satz,Fundstelle,Vers,Ähnlichkeit,Dopplung
+i lobet den herrn,11,0,724,lo bet den herren,88.24,True
+lobet den herrn es,14,4,724,lo bet den herren,85.71,True
+denn er ist der herr der herrligkeit,15,27,405,dis ist der herr der herrlichkeit,84.06,False
+und die schellen klingen,30,4,435,und die schellen klingen,100.0,True

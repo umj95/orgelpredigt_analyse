@@ -1,0 +1,28 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+lobet ihn in seinen thaten,6,2,Lobet jn in seinen Thatten,Psalm_150_2,0.49506837129592896,True,True
+lobet ihn in seiner grossen herrlichkeit,6,3,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.29271209239959717,True,True
+"lobet ihn mit posaunen,",6,4,Lobet jn in seinen Thatten,Psalm_150_2,0.99,,False
+lobet ihn mit psalter und harpffen,6,5,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.7396529316902161,True,True
+lobet ihn mit paucken und reihen,6,6,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6611704230308533,True,True
+lobet ihn mit saiten und pfeiffen,6,7,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6475036144256592,True,False
+musica est praeludium vitae aeternae,7,0,das ende aber das ewige leben,Röm_6_22,0.6693715453147888,True,True
+die music ist ein vorschmack des ewigen lebens,7,1,das ende aber das ewige leben,Röm_6_22,0.6280737519264221,True,True
+heilig heilig heilig ist der herr zebaoth,15,16,heilig ist der HERR Zebaoth,Jesaja_6_3,0.282040536403656,True,True
+alle lande sind seiner ehre voll,15,17,Alle land sind seiner Ehren vol,Jesaja_6_3,0.14844581484794617,True,True
+meine seele verlanget und sehnet sich nach den vorhöffen des herrn,23,12,Meine Seele verlanget vnd sehnet sich nach den Vorhöfen des HERRN,Psalm_84_3,0.5136051177978516,True,True
+mein leib und seel freuen sich in dem lebendigen gott,23,13,Mein leib vnd seele frewen sich in dem lebendigen Gott,Psalm_84_3,0.2683945298194885,True,True
+wohl denen die in deinem hause wohnen,23,14,WOl denen die in deinem Hause wonen,Psalm_84_5,0.16763880848884583,True,True
+die loben dich immerdar.,23,15,Die loben dich jmerdar,Psalm_84_5,0.65,,False
+ein tag in deinen vorhöfen ist besser,23,16,Denn ein tag in deinen Vorhöfen ist besser denn sonst tausent,Psalm_84_11,0.32388025522232056,True,True
+dann sonst tausend ich will lieber der thür hüten in meines gottes hauß,23,17,Jch wil lieber der Thür hüten in meines Gottes hause,Psalm_84_11,0.5767704248428345,True,True
+dann lange wohnen in den hütten der gottlosen,23,18,denn lange wonen in der Gottlosen Hütten,Psalm_84_11,0.3209729492664337,True,True
+lobet ihn mit paucken und reihen,24,7,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6611704230308533,True,True
+lobet ihn mit saiten und pfeiffen,24,8,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6475036144256592,True,True
+bringet nicht mehr speißopffer so vergeblich,42,20,Bringet nicht mehr Speisopffer so vergeblich,Jesaja_1_13,0.1680746078491211,True,True
+das rauchwerck ist mir ein greuel,42,21,Das Reuchwerg ist mir ein grewel,Jesaja_1_13,0.2665400505065918,True,True
+"der neumond und sabbath,",42,22,Der Newmonden vnd Sabbath,Jesaja_1_13,0.78,,False
+"da ihr zusamen kommt und mühe und angst habt,",42,23,vnd mühe vnd angst habt,Jesaja_1_13,0.76,,False
+der mag ich nicht,42,24,der mag ich nicht,Jesaja_1_13,2.0205011437828685e-13,False,True
+meine seele ist feind euren neumonden und jahrzeiten,42,25,Meine Seele ist feind ewren Newmonden vnd Jarzeiten,Jesaja_1_14,0.516423761844635,True,True
+ich bin derselben überdrüssig,42,26,ich bin der selbigen vberdrüssig,Jesaja_1_14,0.35486575961112976,True,True
+ich bins müde zu leyden,42,27,ich bins müde zu leiden,Jesaja_1_14,0.38309064507484436,True,True

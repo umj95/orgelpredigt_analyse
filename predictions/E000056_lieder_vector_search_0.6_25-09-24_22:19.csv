@@ -1,0 +1,44 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+lobet ihn in seiner grossen herrlichkeit,4,3,lob ihn zu aller zeit in seiner herrlichkeit,692,0.4301731288433075,True,True
+lobet ihn mit posaunen,4,4,lobt ihn mit harffen,724,0.17470256984233856,False,True
+lobet ihn mit psalter und harpfen,4,5,lobt ihn mit klang und schalle,692,0.34559759497642517,True,True
+lobet ihn mit pauken und reigen,4,6,lobt ihn mit klang und schalle,692,0.34370946884155273,True,True
+lobet ihn mit saiten und pfeifen,4,7,lobt ihn mit klang und schalle,692,0.3139539062976837,True,True
+lobet ihn mit hellen cymbeln,4,8,lobt ihn mit groffemschalle,616,0.43559151887893677,True,True
+lobet ihn mit wolklingenden cymbeln,4,9,lobt ihn mit groffemschalle,616,0.409079372882843,True,True
+als eine elende magd,5,18,als ein arger sündenenecht,281,0.29997900128364563,True,False
+und hohen werke uns zu schwach und ungeschikkt befinden,5,35,wir so sündlich schwach und kranck,362,0.5850602388381958,True,False
+als erkennen wir vorher unsere schwachheit und untüchtigkeit,5,37,wir so sündlich schwach und kranck,362,0.6345465183258057,True,False
+so wollen wir hier im eingange,10,1,so wollen wir hier,314,0.19541707634925842,False,True
+da so viel hundert tausend männer,10,41,dazu viel tausend menschen,1090,0.16896876692771912,False,True
+eine jungfrau geblieben als joseph benachrichtiget war,10,126,die maria genannt joseph nie hat erkannt,389,0.6799992918968201,True,False
+und errettung von ihren feinden,10,192,und giebt den feinden ihren lohn,635,0.3512004017829895,True,False
+wie nun die leiblich-volle,10,217,wie du bift gnaden voll,1154,0.6958370804786682,True,False
+mancher singet seine stimme zu üben,16,116,drum jederman sein lob klingt,657,0.7515759468078613,True,True
+und preisbar zu machen,16,117,und macht es werth,657,0.47395509481430054,True,True
+das ist die göttliche woltahten werden nicht auf einerley weise gepriesen werden,20,45,so ist aud gottes meynung nicht,923,0.6402876377105713,True,True
+wenn der akker-mann hinter ihnen pfeifet,20,137,wann sie im nest ihn angeruffen haben,674,0.6400012373924255,True,True
+wenn er im xxxii,20,161,wann es in noth gesessen,867,0.5443849563598633,True,True
+7 seines buchs spricht,20,162,spricht zion in ihrer noth,867,0.7449641227722168,True,True
+wie ein rubin in feinem golde leuchtet,20,163,wie reines gold im feur,940,0.5287429690361023,True,True
+und wie ein schmaragd in feinem golde,20,165,wie reines gold im feur,940,0.5578548908233643,True,True
+was im alten testamente als ein levitisches,21,46,wie der alte as dam denckt,1181,0.7444526553153992,True,True
+wie die opfer alten testaments üblich gewesen,21,48,wie der alte as dam denckt,1181,0.5309900641441345,True,True
+psalm xlvii 7 lobsinget zu ehren seinem namen,22,15,zu lobe seinem namen,469,0.776604413986206,True,True
+in dieser unserer johannis-kirche zwey orgeln,22,24,in diesen deinen tempel,466,0.8995689153671265,True,True
+gehet es zu geschwind,25,6,dem ist geschwind geholffen,923,0.3315829634666443,True,True
+so ist keine andacht darbey,25,7,so ist aud gottes meynung nicht,923,0.359615296125412,True,True
+und redet untereinander von psalmen und lob-gesängen,25,40,und mit psalmen des herren lob und ruhm erhöhn,1047,0.5807520151138306,True,True
+und geistlichen liedern singet und spielet dem herrn,25,41,und mit psalmen des herren lob und ruhm erhöhn,1047,0.6060804724693298,True,True
+in euerem herzen. lobet den herrn in seinem heiligtuhme/,25,42,in seiner herrs lichkeit,692,0.69,,False
+lobet ihn in der veste seiner macht.,25,43,lob ihn zu aller zeit in seiner herrlichkeit,692,0.63,,False
+lobet ihn in seinen tahten/,25,44,lobt ihn mit klang und schalle,692,0.76,,False
+lobet ihn in seiner grossen herrligkeit,25,45,lob ihn zu aller zeit in seiner herrlichkeit,692,0.4461842179298401,True,True
+lobet ihn mit posaunen,25,46,lobt ihn mit harffen,724,0.17470256984233856,False,True
+lobet ihn mit pfalter und harpfen,25,47,lobt ihn mit klang und schalle,692,0.3179874122142792,True,True
+lobet ihn mit pauken und reigen,25,48,lobt ihn mit klang und schalle,692,0.34370946884155273,True,True
+lobet ihn mit saiten und pfeifen,25,49,lobt ihn mit klang und schalle,692,0.3139539062976837,True,True
+lobet ihn mit hellen cymbeln,25,50,lobt ihn mit groffemschalle,616,0.43559151887893677,True,True
+lobet ihn mit wolklingenden cymbeln,25,51,lobt ihn mit groffemschalle,616,0.409079372882843,True,True
+daß sich kirch und stadt,30,1,daß du land kirch und häuser,970,0.42052820324897766,True,True
+leg unserm ruhm-geschrey ein gnädig amen bey,30,3,dvater unsern wunsch herr gott,970,0.6787075996398926,True,True

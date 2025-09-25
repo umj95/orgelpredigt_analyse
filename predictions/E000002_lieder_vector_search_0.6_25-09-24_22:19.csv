@@ -1,0 +1,36 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+| sontags vocem jucunditatis,0,10,es schallet der posaunen klang,602,0.9674723148345947,True,False
+wilt du denn ewiglich zoernen,7,5,wilt du ewig denn verstoffen,1145,0.05569837987422943,False,True
+daß man nicht wissen koennen,14,19,daß ich nicht wissen kan,1184,0.19299031794071198,False,True
+die finstere menschen vnd lügen lehre,15,6,lacht der finstern erden klufft,591,0.6619253158569336,True,True
+auffsetze vnd teuscherey auß dieser lande kirchen gentzlichen auß steubern,15,7,nur daß ihr den geist erhebt von den lüsten dieser erden,591,0.8291698694229126,True,True
+sollen billich exhibirn vnnd wiedmen,27,4,in klarheit wird erscheinen,84,0.8535979986190796,True,True
+mit demütiger gehorsamer bitte/,27,5,und bitte vich du wollit hinfort,84,0.99,,False
+dieselbe wolten ferner vnd durch gottes verleihen,27,6,dieselbe seelen thür erft gott nur aufzumachen,84,0.7033424377441406,True,True
+zierde vnd vermehrung des heiligen gottesdiensts vnd christlicher rechtgleubiger andacht,38,2,um christliche gedult und zufrie denheit in zugeschicktem kreutz und trübsal,1142,0.6382027268409729,True,True
+vnd zu beförderung vnd nutz einer gantzen christlichen versamlung allhier gemeinet vnd vollbracht worden,38,3,um christliche gedult und zufrie denheit in zugeschicktem kreutz und trübsal,1142,0.7998225092887878,True,True
+euch befohlen seyn lassen,38,10,laß dirs befohlen seyn,119,0.14018990099430084,False,True
+singet dem herrn alle welt,48,14,lobt den herren alle heyden,1198,0.4697696268558502,True,True
+singet dem herrn/ vnd lobet seinen namen/,48,15,lobt den herren alle heyden,1198,0.74,,False
+psalm 117 lobet den herrn alle heiden,48,16,lobt den herren alle heyden,1198,0.7078683972358704,True,True
+daß er die ἀταξίαμ,50,5,daß ihm der todesschweis,551,0.47523126006126404,True,True
+so werden wir seyn,51,3,so werden wir crhöret,799,0.17779064178466797,False,True
+gott ist ein geist,54,15,gott ist ein geist,1188,2.8553748991980155e-13,False,True
+wie nach solchs geschehen soll,56,32,wie solches soll ergehen,389,0.15553760528564453,False,False
+lobe den herrn meine seele,58,6,lob mein seel den herren,644,0.14206412434577942,False,True
+lobet jhn mit paucken vnnd reigen,59,14,liefs mit bocken hin pazieren,229,0.6147019863128662,True,True
+lobet jhn mit seiten vnd pfeiffen,59,15,liefs mit bocken hin pazieren,229,0.7307565212249756,True,True
+welcher den glauben erwecket,71,30,der diesen glauben fasset,356,0.1615716516971588,False,True
+wird dem gedechtnis der menschen gedienet,76,1,des menschen sohn verrathen wird,500,0.4353291988372803,True,True
+dasselbige erwecket vnd gestercket,76,2,zerknirschtes hertz betrubter geist,500,0.748004138469696,True,True
+daß es bleibet jmmer vnd ewiglich,92,9,das bleibt in ewigkeit,1009,0.1669939011335373,False,True
+denn so er spricht,92,16,so spricht er zu,935,0.18854603171348572,False,True
+wie in einem schlauch,93,5,als wie in einer fluthe,613,0.15382081270217896,False,True
+denn sein ist das meer,93,16,denn sein ist das meer,1151,3.52014370343795e-13,True,True
+vnd er hats gemacht,93,17,und er hats gemachtf,1151,0.4935087263584137,True,True
+heilig heilig heilig ist der herr zebaoth,96,4,oheilig heilig heilig ist der herr zebaoth,1091,0.0550813302397728,False,True
+jederzeit hier zeitlich vnd dort ewiglich,107,4,hie zeitlich und dort ewiglich,422,0.17201092839241028,False,True
+lobet jhn mit posaunen ,108,4,liefs mit bocken hin pazieren,229,0.5656214952468872,True,True
+lobet jhn mit psalter vnd harpffen,108,5,mit psalter harff und geigen,682,0.5777682065963745,True,True
+lobet jhn mit paucken vnd reyhen ,108,6,liefs mit bocken hin pazieren,229,0.49407124519348145,True,True
+lobet jhn mit seyten vnd pfeiffen,108,7,liefs mit bocken hin pazieren,229,0.5431410074234009,True,True

@@ -1,0 +1,66 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+und mit der spitzen an den himmel gerühret,15,5,die rüret mit der spitzen an den Himel,1 Mose_28_12,0.5591878294944763,True,True
+daran die engel gottes auf und nieder gestiegen,15,6,Vnd sihe die Engel Gottes stiegen dran auff vnd nieder,1 Mose_28_12,0.4979708790779114,True,True
+und wil dich behüten,15,22,vnd wil dich behüten,1 Mose_28_15,0.28140538930892944,True,False
+wo du hinzeuchst und wil dich wieder her bringen in diß land,15,23,vnd wil dich wider her bringen in dis Land,1 Mose_28_15,0.5012445449829102,True,False
+denn ich wil dich nicht lassen,15,24,Denn ich wil dich nicht lassen,1 Mose_28_15,0.04329077526926994,True,False
+biß daß ich thue alles/,15,25,vnd euch erynnern  alles des,Joh_14_25,0.56,,False
+was ich dir geredt habe ,15,26,das ich euch gesagt habe,Joh_14_25,0.11116472631692886,False,False
+hebr i 1 nehmlich bald durch gesichte,18,9,vnd dasselb  bald auff nympt mit freuden,Mt_13_20,0.7728786468505859,True,True
+bald durch träume bald durch rätzel,18,10,vnd dasselb  bald auff nympt mit freuden,Mt_13_20,0.7050230503082275,True,True
+ist ja auch nichts anders denn gotteshaus,21,13,Hie ist nichts anders denn Gotteshause,1 Mose_28_17,0.4161635935306549,True,True
+und hie ist die pforte des himmels wohl denen,21,14,Vnd hie ist die Pforte des Himels,1 Mose_28_17,0.6271048188209534,True,True
+die köstlicher denn gold,28,20,Sie sind köstlicher denn Gold,Psalm_19_11,0.326449990272522,True,True
+und viel feines goldes,28,21,vnd viel feines goldes,Psalm_19_11,0.2999657392501831,True,True
+jm friede wieder den alten adam,36,14,vnd sprachen zu dem alten Man,Richter_19_22,0.6090768575668335,True,True
+wieder den alten adam,36,15,vnd sprachen zu dem alten Man,Richter_19_22,0.49873390793800354,True,True
+lobet ihn in seinen thaten,46,2,Lobet jn in seinen Thatten,Psalm_150_2,0.49506837129592896,True,True
+lobet ihn in seiner grossen herrlichkeit,46,3,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.29271209239959717,True,True
+lobet ihn mit posaunen/,46,4,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.82,,False
+lobet ihn mit seyten und pfeiffen,46,7,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.7015289068222046,True,True
+lobet ihn mit hellen cymbeln/,46,8,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.73,,False
+lobet ihn mit wohlklingenden cymbeln,46,9,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.6790561676025391,True,True
+wie einer von schlaff erweckt,48,10,wie einer vom schlaff erweckt wird,Sacharja_4_1,0.05795148015022278,False,True
+erwecke dich herr warum schläffestu,48,17,ERwecke dich HERR warumb schleffestu? Wache auff,Psalm_44_24,0.654869556427002,True,True
+wache auff und verstosse uns nicht so gar,48,18,vnd verstosse vns nicht so gar,Psalm_44_24,0.6971148252487183,True,True
+wenn er sich zurufft,49,5,wenn er hin feret,Prediger_5_14,0.11103932559490204,False,True
+25 quale fuerit nemo adhuc rectè definivit wie solch jnstrument ausgesehen,60,15,das niemand zelen noch beschreiben kan,1 Könige_3_8,0.970924973487854,True,True
+hat noch niemand recht beschrieben,60,16,das niemand zelen noch beschreiben kan,1 Könige_3_8,0.490787148475647,True,True
+lobet ihn in seinen thaten,67,2,Lobet jn in seinen Thatten,Psalm_150_2,0.49506837129592896,True,True
+lobet ihn in seiner grossen herrlichkeit,67,3,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.29271209239959717,True,True
+sondern in sancto loco,77,5,nemlich an heiliger stet,3 Mose_14_13,0.5920792818069458,True,True
+an der heiligen stäte,77,6,nemlich an heiliger stet,3 Mose_14_13,0.4499000608921051,True,True
+lobet ihn in seinen thaten,78,3,Lobet jn in seinen Thatten,Psalm_150_2,0.49506837129592896,True,True
+lobet ihn in seiner grossen herrlichkeit,78,4,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.29271209239959717,True,True
+der sie gemacht hat,80,14,die er gemacht hat,5 Mose_26_19,0.15921799838542938,False,True
+ehre und macht bringet her dem herrn die ehre seinem nahmen,80,32,Bringet her dem HERRN die Ehre seinem Namen,Psalm_96_8,0.6702764630317688,True,True
+bringet geschenck und kommt in seine vorhöfe,80,33,Bringet Geschencke vnd kompt in seine Vorhöfe,Psalm_96_8,0.5546880960464478,True,True
+betet an dem herrn im heiligen schmuck,80,34,Betet an den HERRN in heiligem Schmuck,Psalm_96_9,0.4096696674823761,True,True
+herr mein gott du bist sehr herrlich,82,59,HERR mein Gott du bist seer herrlich,Psalm_104_1,0.23253971338272095,True,True
+du bist schön und prächtig geschmückt,82,60,Du bist schön vnd prechtig geschmückt,Psalm_104_1,0.15043701231479645,True,True
+licht ist dein kleid,82,61,LJecht ist dein Kleid,Psalm_104_2,0.34635186195373535,True,True
+lobet ihn mit seyten und pfeiffen,86,3,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.7015289068222046,True,True
+lobet ihn mit hellen cymbeln/,86,4,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.73,,False
+lobet ihn mit wohlklingenden cymbeln,86,5,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.6790561676025391,True,True
+ingleichen lobet ihn mit hellen cymbeln,104,29,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.5228795409202576,True,True
+lobet ihn mit wolklingenden cymbeln,104,30,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.48332107067108154,True,True
+lobet ihn mit seyten und pfeiffen,117,15,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.7015289068222046,True,True
+lobet ihn mit hellen cymbeln/,117,16,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.73,,False
+lobet ihn mit wohlklingenden cymbeln ,117,17,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.6790561676025391,True,True
+und ward besser mit ihm,125,32,das besser mit dir werde,1 Samuel_16_16,0.482368141412735,True,True
+und mit seiner hand spielte,125,34,er mit seiner hand spiele,1 Samuel_16_16,0.220657080411911,True,True
+thue nur weg von mir das geplerr deiner lieder,139,84,Thu nur weg von mir das geplerr deiner Lieder,Amos_5_23,0.15242888033390045,True,False
+denn ich mag deines psalterspiels nicht hören,139,85,Denn Jch mag deines Psalterspiles nicht hören,Amos_5_23,0.3023354113101959,True,False
+ein neues lied singen,142,28,Singet jm ein newes Lied,Psalm_33_3,0.31444913148880005,True,True
+und es gut machen auf seytenspielen mit schalle,142,29,Machts gut auff Seitenspielen mit schalle,Psalm_33_3,0.4884466826915741,True,True
+singet dem herrn und lobet seinen nahmen,146,26,Singet dem HERRN vnd lobet seinen Namen,Psalm_96_2,0.45915108919143677,True,True
+lobet den herrn mit harffen und psalmen,146,32,Lobet den HERRN mit Harffen,Psalm_98_5,0.6300387382507324,True,True
+mit drometen und posaunen/,146,33,Mit Drometen vnd Posaunen,Psalm_98_6,0.86,,False
+jauchtzet für dem herrn dem könige,146,34,Jauchzet fur dem HERRN dem Könige,Psalm_98_6,0.4125203490257263,True,True
+sein ruhm ist an der welt ende,146,42,sein Rhum ist an der Welt ende,Jesaja_42_10,0.148384228348732,False,True
+es jauchtzen die in felsen wohnen,146,49,Es jauchtzen die in Felsen wonen,Jesaja_42_11,0.24846293032169342,True,True
+und ruffen von den höhen der berge,146,50,vnd ruffen von den höhen der Berge,Jesaja_42_11,0.2646673917770386,True,True
+daß ich so sage,148,3,ich sage es denn,1 Könige_17_1,0.14691978693008423,False,True
+wie ein zurissen kleid im winter,148,10,Das ist wie ein zurissen Kleid im winter,Sprüche_25_20,0.25773948431015015,True,True
+wer einem bösen hertzen lieder singet,148,12,Wer eim bösen hertzen Lieder singet,Sprüche_25_20,0.21641790866851807,True,True
+beides grosse und kleine,152,3,beide vnter grossen vnd kleinen,Ester_1_20,0.054939016699790955,False,True

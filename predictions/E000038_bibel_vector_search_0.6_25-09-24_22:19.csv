@@ -1,0 +1,43 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+hochwohlgebohrner herr sehr gnädiger herr,12,0,vnfreunttlich storrig schender vnkeusch,Tim2_3_3,0.7233943939208984,True,True
+sehr gnädige frau ewer ewer excellenz excellenz,12,2,vnfreunttlich storrig schender vnkeusch,Tim2_3_3,0.8668649792671204,True,True
+auf geist und gemüthe,15,1,vnd fiengen an zu schlahen,Richter_20_31,0.5360491275787354,True,True
+auf leib und geblüte,15,3,vnd fiengen an zu schlahen,Richter_20_31,0.553614616394043,True,True
+lobet ihn in seinen thaten,21,2,Lobet jn in seinen Thatten,Psalm_150_2,0.49506837129592896,True,True
+lobet ihn in seiner großen herrlichkeit,21,3,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.3112165033817291,True,True
+lobet ihn mit posaunen;,21,4,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.92,,False
+lobet ihn mit säyten und pfeiffen,21,7,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.6875120401382446,True,True
+lobet ihn mit hellen cymbeln;,21,8,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.87,,False
+lobet ihn mit wohlklingenden cymbeln,21,9,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.6790561676025391,True,True
+als ihre eigene haben moduliren oder pfeiffen hören,29,14,sie hörens oder lassens,Hesekiel_3_11,0.614665687084198,True,True
+was für einen gebrauch oder nutzen sein hörendes ohr habe,29,16,sie hörens oder lassens,Hesekiel_3_11,0.6347072124481201,True,True
+bis auf die zeiten,33,16,bis an die zeit,Richter_18_30,0.06635421514511108,False,True
+als daß sie aus selbstgefälligkeit singen und spielen sollten,43,6,das sie gerne singen vnd spielen werden,Hesekiel_33_32,0.5935303568840027,True,True
+und wenn sie auch gott unter dem singen und spielen eine besondere süßigkeit seiner gnade schmecken und genüssen läßet,43,7,das sie gerne singen vnd spielen werden,Hesekiel_33_32,0.9537577629089355,True,True
+ihr töchter der welt,44,4,jr seid Kinder des tods,1 Samuel_26_16,0.5021612644195557,True,True
+20 heißt und redet untereinander von psalmen und lobgesängen und geistlichen liedern,46,35,vnd redetvnternander von psalmen vnd lobsengen vnd geystlichen lieden,Eph_5_17,0.68809574842453,True,True
+singet und spielet dem herrn in eurem herzen,46,36,singet vnd spielt dem herrn ynn ewren hertzen,Eph_5_17,0.5345169305801392,True,True
+das thut alles in dem namen des herrn jesu,54,9,das thut alles ynn dem namen des herrn Jhesu,Kol_3_17,0.38982531428337097,True,True
+und danket gott und dem vater durch ihn,54,10,vnnd danckt Gott dem vater durch yhn,Kol_3_17,0.6782599687576294,True,True
+du sollt das nicht anrühren,54,16,du sollt nit todten,Jak_2_11,0.18375225365161896,False,True
+thue nur weg das geplerr deiner lieder,55,18,Thu nur weg von mir das geplerr deiner Lieder,Amos_5_23,0.46859240531921387,True,True
+denn ich mag deines psalterspiels nicht hören,55,19,Denn Jch mag deines Psalterspiles nicht hören,Amos_5_23,0.3023354113101959,True,True
+und alle eure lieder in wehklagen verwandeln ,57,15,vnd alle ewre Lieder in wehklagen,Amos_8_10,0.6373405456542969,True,True
+"etc. und will ihnen ein trauren schaffen,",57,16,vnd wil jnen ein Trawren schaffen,Amos_8_10,0.95,,False
+wie man über einen einigen sohn hat,57,17,wie man vber einem einigen Son hat,Amos_8_10,0.14678941667079926,True,True
+und sollen ein jämmerlich ende nehmen,57,18,vnd sollen ein jemerlich ende nemen,Amos_8_10,0.3433760106563568,True,True
+also lautet wenn der herr die gefangenen zion erlösen wird,61,27,Wenn der HERR die Gefangen Zion erlösen wird,Psalm_126_1,0.5480160117149353,True,True
+so werden wir seyn wie die träumende,61,28,So werden wir sein wie die Trewmende,Psalm_126_1,0.4431234300136566,True,True
+denn wird unser mund voll lachens und unsere zunge voll rühmens seyn,61,29,Denn wird vnser mund vol lachens vnd vnser zunge vol rhümens sein,Psalm_126_2,0.2633577585220337,True,True
+da wird man sagen unter den heiden,61,30,Da wird man sagen vnter den Heiden,Psalm_126_2,0.4555816650390625,True,True
+der herr hat großes an ihnen gethan,61,31,Der HERR hat Grosses an vns gethan,Psalm_126_3,0.6104416251182556,True,True
+der herr hat großes an uns gethan;,61,32,Der HERR hat Grosses an vns gethan,Psalm_126_3,0.73,,False
+des sind wir fröhlich,61,33,Des sind wir frölich,Psalm_126_3,0.37788641452789307,True,True
+werden mit freuden ernten,61,35,Werden mit freuden erndten,Psalm_126_5,0.40416961908340454,True,True
+sie gehen hin und weinen,61,36,Sie gehen hin vnd weinen,Psalm_126_6,0.20671015977859497,True,True
+und tragen edlen saamen,61,37,vnd tragen edlen Samen,Psalm_126_6,0.6318033337593079,True,True
+denn die erlösete des herrn werden wiederkommen,61,62,Die Erlöseten des HERRN werden wider komen,Jesaja_35_10,0.6465454697608948,True,True
+und gen zion kommen mit jauchzen,61,63,vnd gen Zion komen mit jauchtzen,Jesaja_35_10,0.4180307686328888,True,True
+ewige freude wird über ihrem haupte seyn,61,64,ewige Freude wird vber jrem Heubte sein,Jesaja_35_10,0.6054021120071411,True,True
+freude und wonne werden sie ergreiffen,61,65,freude vnd wonne werden sie ergreiffen,Jesaja_35_10,0.29273346066474915,True,True
+und schmerz und seufzen wird weg müssen heist es jes,61,66,vnd schmertz vnd seufftzen wird weg müssen,Jesaja_35_10,0.5878990292549133,True,True

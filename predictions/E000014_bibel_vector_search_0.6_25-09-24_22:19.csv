@@ -1,0 +1,37 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+die gnade unsers herrn jesu christi,5,0,Die gnade vnsers herrn Jhesu Christ,Kor2_13_13,0.40138426423072815,True,True
+die liebe gottes und die gemeinschaft des heiligen geistes seye mit uns allen,5,1,vnd die liebe Gottis vnd die gemeynschafft des heyligengeystis sey mit euch allenAMEN,Kor2_13_13,0.5585570931434631,True,True
+erkennet daß der herr gott ist,6,4,ERkennet das der HERR Gott ist,Psalm_100_3,0.47091928124427795,True,True
+er hat uns gemacht,6,5,er hat vns gemacht,Psalm_100_3,0.32893016934394836,True,True
+und nicht wir selbst,6,6,vnd nicht wir selbs,Psalm_100_3,0.3020398020744324,True,True
+zu seinem volk und zu schaafen seiner weide,6,7,zu seinem Volck vnd zu Schafen seiner weide,Psalm_100_3,0.48942774534225464,True,True
+gehet zu seinen thoren ein mit danken,6,8,zu seinen Vorhöfen mit loben,Psalm_100_4,0.622531533241272,True,True
+zu seinen vorhöfen mit loben,6,9,zu seinen Vorhöfen mit loben,Psalm_100_4,0.026469623669981956,True,True
+christen zu heißen und zu seyn – noch mehr,7,4,zum gehorsam vnnd zur besprengung des bluts Jhesu Christi,Petr1_1_2,0.9061822891235352,True,True
+auf erden für alles gott und dem vater unsers herrn jesu christi zu danken,7,6,zum gehorsam vnnd zur besprengung des bluts Jhesu Christi,Petr1_1_2,0.6967612504959106,True,True
+daß wir auf erden erkennen seinen weg,8,2,Das wir auff Erden erkennen seinen Weg,Psalm_67_3,0.18009275197982788,True,True
+und unter allen heiden sein heil,8,3,Vnter allen Heiden sein Heil,Psalm_67_3,0.5125229358673096,True,True
+das ist ein köstlich ding,10,1,das ist ein köstlich ding,Psalm_147_1,1.553659815817926e-13,False,True
+dem herrn danken und lobsingen deinem namen du höchster,10,2,dem HERRN dancken Vnd lobsingen deinem Namen du Höhester,Psalm_92_2,0.42515820264816284,True,True
+denn herr du lässest mich frölich singen von deinen werken,10,6,DEnn HERR du lessest mich frölich singen von deinen Wercken,Psalm_92_5,0.3851592540740967,True,True
+es ist ein köstlich ding,12,7,das ist ein köstlich ding,Psalm_147_1,0.021617203950881958,False,True
+daß wir ihn suchen sollen,15,5,ob wir möchten hew finden,1 Könige_18_5,0.3808830976486206,True,True
+ob wir ihn fühlen und finden möchten,15,6,ob wir möchten hew finden,1 Könige_18_5,0.3819006085395813,True,True
+das wird dichs lehren,15,28,das wird dichs leren,Hiob_12_7,0.04047608748078346,True,False
+"und die vögel unter dem himmel,",15,29,vnd die Vogel vnter dem Himel,Hiob_12_7,0.53,,False
+die werden dirs sagen,15,30,die werden dirs sagen,Hiob_12_7,2.013414256282417e-13,True,False
+zu dem himmlischen jerusalem,16,19,zu dem hymlischen Jerusalem,Hebr_12_22,0.11498384177684784,False,True
+"und zu der menge vieler tausend engel,",16,20,vnd zu der mengevieler tausent engele,Hebr_12_22,0.64,,False
+und zu der gemeine der erstgebohrnen,16,21,vnd zu der gemeyne der erstgebornen,Hebr_12_23,0.6003096103668213,True,True
+"die im himmel angeschrieben sind,",16,22,die ym hymel angeschrieben sind,Hebr_12_23,0.84,,False
+und zu den geistern der vollkommenen gerechten ebr,16,23,vnd zu dengeystern der volkomenen gerechten,Hebr_12_23,0.7645136117935181,True,True
+gehe aus deinem vaterland,19,2,Gehe aus deinem Vaterland,1 Mose_12_1,0.3392478823661804,True,True
+"und aus deiner freundschaft,",19,3,vnd von deiner Freundschafft,1 Mose_12_1,0.59,,False
+und aus deines vaters hause,19,4,vnd aus deines Vatershause,1 Mose_12_1,0.3641473352909088,True,True
+in ein land das ich dir zeigen will,19,5,Jn ein Land das ich dir zeigen wil,1 Mose_12_1,0.18695896863937378,True,True
+die lehrer werden leuchten,22,9,Die Lerer aber werden leuchten,Daniel_12_3,0.3283308744430542,True,True
+wie des himmels glanz,22,10,wie des Himels glantz,Daniel_12_3,0.3136647343635559,True,True
+und die viele zur gerechtigkeit weisen,22,11,vnd die so viel zur Gerechtigkeit weisen,Daniel_12_3,0.36673885583877563,True,True
+wie die sterne immer und ewiglich,22,12,wie die Sternen jmer vnd ewiglich,Daniel_12_3,0.14702852070331573,True,True
+daß güte und treue einander begegnen,25,2,Das Güte vnd Trewe einander begegen,Psalm_85_11,0.6909424066543579,True,True
+gerechtigkeit und friede sich küssen,25,3,Gerechtigkeit vnd Friede sich küssen,Psalm_85_11,0.22638043761253357,True,True

@@ -1,0 +1,66 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+und cornet-baß samt dreyen sternen und dem tremulanten,0,13,mit wellen sturm und rauber lufft gefiritten,1217,0.7487116456031799,True,False
+lobt den herrn in seinem heiligthum,5,0,obet gott unsern hennen in seinem heiligthum,682,0.40281587839126587,True,True
+lobt ihn in der feste seiner macht,5,1,lobt ihn im firmamen te,682,0.47474998235702515,True,True
+lobt ihn in seinen thaten/,5,2,lobt ihn im firmamen te,682,0.47,,False
+lobt ihn in seiner grosen herrligkeit,5,3,lob ihn zu aller zeit in seiner herrlichkeit,692,0.4163786768913269,True,True
+lobt ihn mit posaunen,5,4,lobt ihn mit harffen,724,0.1648671180009842,False,True
+lobt ihn mit psalter und harffen,5,5,lobt ihn mit klang und schalle,692,0.2710491418838501,True,True
+lobt ihn mit pauken und reigen,5,6,lobt ihn mit klang und schalle,692,0.34960466623306274,True,True
+lobt ihn mit seiten und pfeiffen,5,7,lobt ihn mit klang und schalle,692,0.35907837748527527,True,True
+nicht an mich gläuben,8,26,ruhr mich nicht an,584,0.08275638520717621,False,True
+weder engel noch fürstenthum,8,98,weder engel reich noch starcke,364,0.31169408559799194,True,True
+noch gewalt/ weder gegenwertiges noch zukünftiges/,8,99,das ist und zukunfftig ist,364,0.86,,False
+noch keine andere creatur scheiden von der liebe gottes,8,100,so wird uns denn nun nichts trennen von des hichsten liebestreu,364,0.6815884709358215,True,True
+die da ist in christo jesu,8,101,die in christo jesu ist,364,0.05223312973976135,True,True
+wo christenleute wohnen in häusern groß und klein,8,174,wo christenleute wohnen in hausern groß und klein,641,0.05032819136977196,False,False
+da sie selber nicht können/,8,175,da fie selber nicht können für feinden sicher seyn,641,0.74,,False
+für feinden sicher seyn/,8,176,da fie selber nicht können für feinden sicher seyn,641,0.72,,False
+wo nicht ein englisch lager,8,177,wo nicht ein englisch lager umherwird auffges schlagen,641,0.26789379119873047,True,False
+umher wird aufgeschlagen in steter hut und wacht,8,178,in steter hut und wach,641,0.4570326805114746,True,False
+schutz und fried im lande,8,181,schuß und fried im lande,683,0.25928500294685364,True,False
+heil in unserm stande/,8,182,heyl in unserm etande,683,0.89,,False
+ist ja herr christ,8,183,ift ja herr christ,683,0.23133140802383423,True,False
+dein segen mitten unter den feinden,8,184,dein segen mitten untern feinden rettest du die deinen,683,0.21829023957252502,True,False
+er ruft mich an,8,192,er ruffe mich an,990,0.015660565346479416,True,False
+so wil ich ihn schützen etc,8,193,ich wil ihn wol behuten,990,0.532766580581665,True,False
+der sechste ein bürger oder handwerksman,8,204,als heyland oder held,402,0.7108574509620667,True,False
+der siebende ein baur oder akerman,8,205,als heyland oder held,402,0.6972091197967529,True,False
+nicht mit gold oder silber,8,228,das ist nicht gold noch silber,287,0.16688279807567596,False,False
+wo das nicht wäre,9,2,wo dieses wäre nicht geschehn,233,0.14893276989459991,False,True
+gewaltig schreien und thönen,9,58,sie fluchen und schandiren,967,0.41412633657455444,True,True
+die schreien und thönen zwar alle gewaltig,9,60,sie fluchen und schandiren,967,0.4095788300037384,True,True
+der an den weg fellt,9,77,die an den wegen,1219,0.4318772256374359,True,True
+und sind die so es hören,9,78,sind die es hören,1219,0.3013465702533722,True,True
+was gott von uns wil gethan und gelassen haben,9,157,was gott nicht von uns haben wil,1244,0.39269790053367615,True,True
+daß wer gott liebet,9,168,denen die gott lieben,926,0.16189712285995483,False,True
+20 21 und wir demnach daher unser leben bessern,9,173,daß weil wir das leben nüken,74,0.5982601642608643,True,True
+aus tiefer noth schrey ich zu dir,9,184,aus tieffer noth schrey ich zu dir,596,0.07429634779691696,False,True
+und immer daran müsse gebessert und gestimmet werden,9,200,und darinnen stets wachen und baten,1076,0.5019527673721313,True,True
+13 17 gehorchet euren lehrern,9,261,und thun nach deinen lehren,616,0.9524181485176086,True,False
+und folget ihnen denn sie wachen über euer seelen,9,262,und thun nach deinen lehren,616,0.6239301562309265,True,False
+die welt erzittert ob dem tod,10,46,die welt erzittert ob den tod,791,0.01861063949763775,False,True
+was mein gott wil,11,48,was mein gott wil,771,2.2379038726316747e-13,True,True
+das gescheh allzeit sein will der ist der beste,11,49,sein will der ift der beste,771,0.52229243516922,True,True
+3 8 mit dem winde verglichen wird,11,55,gleich wie der wind die spreuen,1019,0.9092211127281189,True,True
+als der wind zur orgel,11,57,gleich wie der wind die spreuen,1019,0.5204832553863525,True,True
+denn der gibt zeugniß unserm geist,11,80,weil er uns den glauben schenckt,368,0.40374553203582764,True,True
+daß wir gottes kinder seyn,11,81,daß wir als gottes kinder,621,0.15345218777656555,False,True
+gib uns ins hertz der liebe brunst,11,93,gib uns ins hertz der liebe brunst,622,8.14480115838602e-14,True,True
+lehr uns den vater kennen wol,11,94,den vater uns wol kennen lehr,622,0.23164330422878265,True,True
+etc das manual oder handclavir an der geistlichen orgel ist der glaube,11,119,is ist die hand,923,0.8635738492012024,True,True
+als welcher die hand,11,120,is ist die hand,923,0.3786066174507141,True,True
+ehr und ruhm beförderung seines wahren diensts,12,8,den heilgen geist und troster werth mitrechtem dienst fie lobt und chrt,642,0.6214934587478638,True,True
+eiferiger andacht und ziemenden geistlichen freude gebrauchen und ihnen dienen lassen,12,9,den heilgen geist und troster werth mitrechtem dienst fie lobt und chrt,642,0.6339868307113647,True,True
+dir sey es befohlen,14,49,dir sey es heimgestellt,71,0.3368157148361206,True,True
+dir sey es gantz,14,50,dir sey es heimgestellt,71,0.5646197199821472,True,True
+und gar/ neben uns/,14,51,und was wir offt bes gebn,1154,0.73,,False
+und was wir seyn,14,52,und was wir offt bes gebn,1154,0.12926051020622253,False,True
+o heilige brunst süsser trost,14,54,du heilige brunst süsser troft,609,0.37036648392677307,True,True
+hilf uns nur frölich und getrost in deinem dienst beständig bleiben,14,55,nun hilff uns frolich und getrost in deinem dienst beständig bleis ben,609,0.23947200179100037,True,True
+die trübsal uns nicht abtreiben,14,56,die trübsal uns nicht abtreiben,609,2.5844501235286477e-13,True,True
+o herr durch deine krafft uns bereit,14,57,d herr durch dein krafft uns bercit,609,0.425312340259552,True,True
+und stärck des fleisches blödigkeit,14,58,und stärck des fleisches blds digkeit,609,0.22372475266456604,True,True
+daß wir hier ritterlich ringen,14,59,daß wir hie ritterlich ringen,609,0.04716825485229492,True,True
+durch tod und leben zu dir dringen,14,60,durch tod und leben zu dir dringen,609,2.7789234672073726e-13,True,True
+amen das ist es werde wahr,15,0,amen das werde wahr,683,0.06954855471849442,False,True

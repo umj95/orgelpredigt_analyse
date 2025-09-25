@@ -1,0 +1,93 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+keine woche kein tag,2,11,da keine nacht noch tag mehr ist,133,0.4071892499923706,True,False
+keine stunde ja keine minute ist vorüber gegangen,2,12,da keine nacht noch tag mehr ist,133,0.5560852289199829,True,False
+o jesu christe sohn des allerhöchsten,3,0,o jesu christe  sohn des allerhöchsten,725,8.730827340394307e-14,True,True
+gieb du die gnade allen frommen christen,3,1,gib du die gnade allen frommen christen,725,0.07992012798786163,True,True
+angestimmet werden nichts als die allerkläglichsten lamenten,7,14,nichts denn lauter eitelkeit,1171,0.674686849117279,True,True
+nichts als trauerlieder höret man an solchen orten,7,15,nichts ist hier denn lauter weinen,1171,0.6055038571357727,True,True
+als an einem sonst gewöhnlichen tage der freude ihres hertzens,7,29,als er der herzens freude pflag un seinem groffen hochzeittag,1116,0.7135111093521118,True,True
+und wenn die feyertage in trauer tage verwandelt werden,7,30,und wenn rückt der tod herbey,1116,0.6226778030395508,True,True
+viele fröhlige gesänge damahls haben hören können,19,4,hergegen der viel spra chen deuten kan,1268,0.7129059433937073,True,True
+und ob gleich in den kirchenversammlungen,19,5,und da er in dem tempel fand,1268,0.7373265027999878,True,True
+mit alten und jungen,20,17,den alten mit den jungen,1095,0.13998077809810638,False,True
+dem herrn ein neu lied zu singen,25,12,dir gott ticht ich ein neues lied,161,0.44645076990127563,True,True
+aufmuntert singet dem herrn ein neu lied,25,13,dir gott ticht ich ein neues lied,161,0.6208677291870117,True,True
+singet dem herrn ein neues lied,25,14,dir gott ticht ich ein neues lied,161,0.47233647108078003,True,True
+neue lieder zu dichten,28,5,dir gott ticht ich ein neues lied,161,0.6216704249382019,True,True
+ein neues lied das einen neuen jnhalt in sich faßt,28,7,dir gott ticht ich ein neues lied,161,0.5797328948974609,True,True
+was er uns giebt,29,7,was bas uns gebricht,667,0.2730438709259033,True,True
+gutes dencken gutes dichten,29,35,gutes dencken thun und dichten,1112,0.3568969964981079,True,True
+mußt du herr ja selbst in uns verrichten,29,36,must du selbst in uns verrichten,1112,0.16709551215171814,True,True
+alsdenn wenn ich in nöthen beth und sing,33,3,wann ich in ndthen bat und sing,864,0.2366434931755066,True,True
+so wird mein herz recht guter ding,33,4,so wird mein herh recht guter ding dein geist bezeugt,864,0.28663840889930725,True,True
+zwingt die saiten in cythara,34,0,zwingt die sensen in cythara,741,0.2266588807106018,True,True
+und lasst die süsse musica,34,1,und lafst die süss se musica gank frendenreich erschallen,741,0.5054448843002319,True,True
+"ganz freudenreich erschallen, daß ich möge mit jesulein dem wunderschönen bräutgam mein,",34,2,dem wunderschönen bräutgam nrein,741,0.99,,False
+jn steter liebe wallen,34,3,in steter liebe wallen,741,0.5527294874191284,True,True
+singet springet jubiliret triumphiret,34,4,singer springet jubiliret triumphiret,741,0.19591876864433289,True,True
+danckt dem herren groß ist der könig der ehren,34,5,danckt dem herren groß ist der könig der ehren,741,2.5965866826474504e-13,True,True
+dem heiligen johanni den jesus lieb hatte,35,5,der liebe herre jesus christ für dich aus lieb gestorben ist,1051,0.6179816126823425,True,True
+da wir betrachten wollen,35,36,da wir gott werden schauen,719,0.267752468585968,True,True
+das ist das rechte osterlamm,37,20,hie ist das rechte osterlamm,574,0.13094860315322876,False,True
+für unsere sünde geopfert.,37,21,für unsre sund ge geben,574,0.84,,False
+durch dessen theures blut,37,23,durch sein theures blut,649,0.15199586749076843,False,True
+und die drauf wohneten,37,42,und das darinnen lebte,499,0.2707287073135376,True,True
+auf einem andern ort,42,9,und auch in anderm land,961,0.4716533422470093,True,True
+an einem andern orte der welt,42,11,und auch in anderm land,961,0.4295720160007477,True,True
+massen wir zwölf patriarchen,43,24,der heiligen zwölffboten zahl,642,0.8117790222167969,True,True
+zwölf stämme jsrael zwölf säulen an mosis altar,43,25,der heiligen zwölffboten zahl,642,0.8835159540176392,True,True
+nicht allein als der jüden,43,51,nicht nur der jüden bloß allein,459,0.16480210423469543,False,False
+vorüber gehen,45,13,zu fahren hin und her,641,0.559328556060791,True,True
+und wie sie christo,46,14,und wie ein christ,842,0.19495971500873566,False,True
+ein festes schloß der gerechte läuft dahin,48,3,das gerechte thun der frommen steht gewiß,770,0.6770445108413696,True,True
+gewürdiget worden denn was kan seliger,49,7,was zum abgrund zichen kan,253,0.6414828300476074,True,True
+was kan heylsamer was kan tröstlicher seyn,49,8,was zum abgrund zichen kan,253,0.627903163433075,True,True
+und woher vom himmel,49,11,und doch vom himmel kommen,625,0.16799555718898773,False,True
+davon waren diese sänger,55,10,ja sagten diese zween,1236,0.5899655222892761,True,True
+erkauft mit seinem blut,55,40,mit seinem blut entrichtet,224,0.1731623113155365,False,True
+einem manne der heißt jesus christus,56,15,der jesus christus heißt,932,0.19012987613677979,False,True
+weder trübsal noch angst,59,13,kein angst noch trubsal,1004,0.1113414540886879,False,True
+"weder verfolgung, hunger, noch blösse,",59,14,weder leben noch der tod,1035,0.77,,False
+"weder gefährlichkeit, noch schwerd,",59,15,weder leben noch der tod,1035,0.71,,False
+weder tod noch leben,59,16,weder leben noch der tod,1035,0.03761561959981918,False,True
+die güte eines liedes,64,0,der herr der herrlichkeit,374,0.7229334712028503,True,True
+immer am ersten aus dem verfasser,64,2,vom anfang immer wieder fort,374,0.46526217460632324,True,True
+und allbereit seligen himmelsbürger,67,8,und mit der himmelsgnaden ruhr,99,0.6965399980545044,True,True
+heißt es nach dem ausgange der kinder jsrael,69,3,was von der kinder tische fällt,1224,0.7642715573310852,True,True
+allwo es abgesungen ward,72,3,hat fie all tiberwunden,875,0.410122275352478,True,True
+daß wir nicht gar aus sind,76,8,daß wir nicht sind hin gerafft,445,0.18210455775260925,False,True
+sich und seinem vater,81,6,seine schaaf und eigenthum,664,0.3891984224319458,True,True
+zu erstlingen und zu seinem eigenthum erkauft,81,7,seine schaaf und eigenthum,664,0.49455028772354126,True,True
+daß ihr allerliebste in gott,82,2,so gebt ihr liebsten,1064,0.4091762900352478,True,True
+ob denn auch ihr,82,4,hattst du es auch,450,0.18270941078662872,False,True
+auch die glieder sowohl der allbereit triumphirenden,86,7,auch die wolcken schutten segen,391,0.7710354328155518,True,True
+was der gütige gott,87,17,was er der treue gott,1251,0.13206790387630463,False,True
+jch will jetzo nicht noch einmahl erwehnen,91,5,jch soll nicht seyn verlohren,1048,0.3409905433654785,True,True
+damit ja nicht etwan,91,7,damit fie nicht evtrincke,232,0.11722533404827118,False,True
+so wird man gewiß,93,7,so wird von euch gethan,1214,0.18218623101711273,False,True
+gewiß mit den liedern,94,0,berworffen mit den riefen,1069,0.5673782825469971,True,True
+so sässen wir gewiß,108,16,so wir heut gethan,143,0.12643787264823914,False,True
+mit andächtigen singen und beten solches schöne orgelwerck,111,3,und sing mit groffem schalle,747,0.7194602489471436,True,True
+lobet jhn mit psalter und harfen,111,13,mit psalter harff und geigen,682,0.4086318612098694,True,True
+"lobet jhn mit paucken und reigen,",111,14,lobt ihn mit pauck und reigen lobt ihn ohn mah und ziel,692,0.63,,False
+lobet jhn mit saiten und pfeifen.,111,15,lobt ihn mit klang und schalle,692,0.79,,False
+lobet jhn mit hellen cymbeln,111,16,mit hellem cymbelthon wikcymbeln,692,0.597891092300415,True,True
+lobet jhn mit wolklingenden cymbeln,111,17,mit hellem cymbelthon wikcymbeln,692,0.6482481360435486,True,True
+"alles was odem hat,",111,18,auch was sich nur kan regen,692,0.79,,False
+lobe den herrn halleluja,111,19,lobt gott den herrn,673,0.5052083730697632,True,True
+halleluja lobet den herrn,111,20,lobt gott den herrn,673,0.5185248851776123,True,True
+ach warum konnte denn,113,12,warum doch das daß du,793,0.41802510619163513,True,True
+"dein steinernes und hocherhabenes haus,",113,13,daruber hat dich sund und tod,793,0.94,,False
+nicht errettet werden warum mußte dein zornfeuer,113,14,warum behieltst du nicht dein recht,793,0.6817671656608582,True,True
+und stiegen bis an den himmel,113,29,und auf gen himmel steiger,104,0.1609715074300766,False,True
+und sich vor deinem zorn zufürchten,113,52,und vor deinem zorn erschreckt,293,0.14047808945178986,False,True
+die du uns verheissen,114,5,mit dem du uns verchrft,109,0.16630147397518158,False,True
+deren hertz du unser gott,115,5,daß du unser gott,728,0.1847715675830841,False,True
+der unsere freud und wonne ist,118,1,der unser heyl und fursprechr ist,859,0.18287889659404755,False,True
+zu deinem preiß öffters anstimmen mögen,119,15,obes deinem wahn behagt,1137,0.6748653650283813,True,True
+gott sohn gott heiliger geist,121,1,gott vater sohn heiligem geist,357,0.15427860617637634,False,True
+und biß an den himmel angestiegen,121,19,und auf gen himmel steiger,104,0.125179260969162,False,True
+der ohndem groß und herrlich ist,122,16,der so groß und herrlich ist,365,0.13711890578269958,False,True
+die du an uns gethan,122,22,die du an mir gethon,371,0.10465757548809052,False,True
+der unsere freude und trost ist,122,47,der unser heyl und fursprechr ist,859,0.13095854222774506,False,True
+vater sohn und heiliger geist,122,102,vater sohn und heilger geist,363,0.17929139733314514,False,False

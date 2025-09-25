@@ -1,0 +1,58 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+lobet jhn mit pauggen vnd reigen,5,31,Lobet jn mit Paucken vnd Reigen,Psalm_150_4,0.3544217646121979,True,False
+lobet jhn mit saiten vnnd pfeiffen,5,32,Lobet jn mit Paucken vnd Reigen,Psalm_150_4,0.5361926555633545,True,False
+lobet jhn mit hellen cymbeln,5,33,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.17765183746814728,True,False
+lobet jhn mit wolklingenden cymbeln,5,34,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.20634467899799347,True,False
+vnd den armen gegeben werden,14,27,vnnd den armen  geben werden,Mt_26_9,0.11781850457191467,False,True
+das ein heißt er singen,15,18,er wird singen ein Lied,Jeremia_25_30,0.39667999744415283,True,True
+das ander heißt er spilen:,15,19,er wird singen ein Lied,Jeremia_25_30,0.93,,False
+durch das singen verstehet er die music,15,20,er wird singen ein Lied,Jeremia_25_30,0.5376095175743103,True,True
+fried auff erden vnd den menschen ein wolgefallen,19,17,vnd den menschen eyn wolgefallen,Lk_2_14,0.5012247562408447,True,True
+vnter den menschen haben gesungen,19,18,vnd den menschen eyn wolgefallen,Lk_2_14,0.4704119563102722,True,True
+da sie den lobgesang gesprochen haben,19,24,vnd da sie den lobesang gesprochen hatten,Mk_14_25,0.13720160722732544,False,True
+von welchem seind herkommen die in hütten wohneten vnnd viehe zogen,21,10,Von dem sind her komen die in Hütten woneten vnd vieh zogen,1 Mose_4_20,0.4634886682033539,True,True
+wehe denen die des morgens früh auff seind,25,8,WEh denen die des morgens früe auff sind,Jesaja_5_12,0.24679775536060333,True,True
+des sauffens sich fleissigen/,25,9,des Sauffens sich zu vleissigen,Jesaja_5_12,0.79,,False
+sitzen biß in die nacht,25,10,vnd sitzen bis in die nacht,Jesaja_5_12,0.19723039865493774,True,True
+daß sie der wein erhitzigt,25,11,das sie der Wein erhitzt,Jesaja_5_12,0.2734737992286682,True,True
+vnd sehen nicht auff das werck des herrn,25,14,Vnd sehen nicht auff das werck des HERRN,Jesaja_5_13,0.2796921133995056,True,True
+vnd schawen nicht auff das geschäfft seiner händ,25,15,vnd schawen nicht auff das geschefft seiner Hende,Jesaja_5_13,0.11528213322162628,True,True
+wohin sie will,26,25,wo sie hin wil,5 Mose_21_14,0.07878339290618896,False,True
+daß du mit jhnen weissagest,28,12,das du mit jnen weissagest,1 Samuel_10_6,0.24433031678199768,True,True
+da würst du ein anderer mann werden,28,13,Da wirstu ein ander Man werden,1 Samuel_10_6,0.23982277512550354,True,True
+da sagt er bringt mit her ein spilmann,28,37,SO bringet mir nu einen Spielman,2 Könige_3_15,0.4879189729690552,True,True
+vnd da der spilmann auff der saiten spilet,28,38,Vnd da der Spielman auff der seiten spielet,2 Könige_3_15,0.22455573081970215,True,True
+kam die hand des herrn auff jhn,28,39,kam die hand des HERRN auff jn,2 Könige_3_15,0.18412531912326813,True,True
+sie werden fellen alle gute bäum,28,44,vnd werdet fellen alle gute Bewme,2 Könige_3_19,0.33739936351776123,True,True
+verstopffen alle wasserbrunnen vnd alle gute ecker mit stämmen verderben,28,45,vnd werdet allen guten Acker mit steinen verderben,2 Könige_3_19,0.6091408133506775,True,True
+der auff der harpffen wol spielen künde,31,19,der auff der Harffen wol spielen künde,1 Samuel_16_16,0.07633667439222336,False,True
+vnd spilet mit seiner hand,31,32,vnd spielet mit seiner hand,1 Samuel_16_23,0.03144729882478714,True,True
+so erquicket sich saul,31,33,so erquickt sich Saul,1 Samuel_16_23,0.43173497915267944,True,True
+vnd war besser mit jhm,31,34,vnd ward besser mit jm,1 Samuel_16_23,0.136115163564682,True,True
+vnd als er gefraget war,32,12,vnd wenn er todtet  ist,Mk_9_30,0.18819990754127502,False,True
+vnd durch dieses gesang hat er des keysers hertz also beweget,32,31,das er hatt durch seyn fleysch auff gehaben,Eph_2_14,0.9136980772018433,True,True
+daß er jhn wider auff freyen fuß gestellet hat,32,32,das er hatt durch seyn fleysch auff gehaben,Eph_2_14,0.4152989685535431,True,True
+wann ich nicht josaphat den könig in juda ansehe,32,49,wenn ich nicht Josaphat den könig Juda ansehe,2 Könige_3_14,0.16354820132255554,True,True
+ich wolt dich nicht ansehen noch achten,32,50,Jch wolt dich nicht ansehen noch achten,2 Könige_3_14,0.10224808752536774,True,True
+er sagt bringt mir her einen spilmann,32,54,SO bringet mir nu einen Spielman,2 Könige_3_15,0.5371407866477966,True,True
+vnnd da der spilmann auff der saiten spilet,32,55,Vnd da der Spielman auff der seiten spielet,2 Könige_3_15,0.21746143698692322,True,True
+kam die hand des herrn auff jhn,32,56,kam die hand des HERRN auff jn,2 Könige_3_15,0.18412531912326813,True,True
+erstlich was man sing,34,7,wie die Leute singen,Hiob_36_24,0.5848166942596436,True,True
+zum andern wie man sing,34,8,wie die Leute singen,Hiob_36_24,0.4107941687107086,True,True
+thue weg von mir,36,11,fern von mir wegthun,Hesekiel_43_9,0.17738968133926392,False,True
+dieses ist nicht recht,40,14,das kein Recht ist,Jesaja_59_15,0.18258732557296753,False,True
+maria hat das gute theil erwöhlet,41,16,Maria hat eyn gutt teyl er welet das soll nicht von yhr genommen werden,Lk_10_42,0.7058960199356079,True,True
+thue nun weg von mir das geplärr deiner lieder,41,50,Thu nur weg von mir das geplerr deiner Lieder,Amos_5_23,0.3923608660697937,True,True
+dann ich mag dein psalterspil nicht hören,41,51,Denn Jch mag deines Psalterspiles nicht hören,Amos_5_23,0.4573798179626465,True,True
+welche in der kirchen wol kan geduldet werden,44,7,die man im Gottesdienst pflegt zu brauchen,Jeremia_52_18,0.6713556051254272,True,True
+in welchen neben dem eigentlichen vnd notwendigen gottesdienst,44,9,die man im Gottesdienst pflegt zu brauchen,Jeremia_52_18,0.7411234974861145,True,True
+das er nicht verstehet,44,16,das er nicht weis,Hiob_18_11,0.13171760737895966,False,True
+die an dem marckt sitzen,45,7,die an dem marckt sitzen,Mt_11_15,2.738490586639414e-13,True,True
+vnd ruffen gegen jhren gesellen,45,8,vnnd ruffen gegen yhren gesellen,Mt_11_15,0.10640397667884827,True,True
+vnd sprechen wir haben euch gepfiffen,45,9,vnd sprachen Wir haben an dir gesündiget,Richter_10_10,0.1613583266735077,False,True
+johannes ist kommen aß vnd tranck nicht,45,13,Johannes ist komen assz nit vnnd tranck nit,Mt_11_17,0.28003206849098206,True,True
+so sagt jhr er hab gehabt den teuffel,45,14,szo sagen sie er hat den  teuffell,Mt_11_17,0.3256857991218567,True,True
+des menschen sohn ist kommen jsset vnnd trincket/,45,15,Johannes ist komen assz nit vnnd tranck nit,Mt_11_17,0.98,,False
+so sagen sie sihe,45,16,so do sagen sie seyenApostel,Offb_2_2,0.19707107543945312,False,True
+mit paucken vnnd raien,46,20,mit paucken vnd harffen,Jesaja_30_32,0.23268473148345947,True,True
+mit saiten vnd pfeiffen,46,21,mit paucken vnd harffen,Jesaja_30_32,0.4728531241416931,True,True

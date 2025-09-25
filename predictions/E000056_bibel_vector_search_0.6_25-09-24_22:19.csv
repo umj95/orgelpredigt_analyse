@@ -1,0 +1,58 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+hallelujah lobet den herrn in seinem heiligtuhme,4,0,Halelu ia Lobet den HERRN in seinem Heiligthum,Psalm_150_1,0.35322892665863037,True,True
+lobet ihn in der feste seiner macht,4,1,Lobet jn in der Feste seiner Macht,Psalm_150_1,0.4519751965999603,True,True
+lobet ihn in seinen tahten/,4,2,Lobet jn in seinen Thatten,Psalm_150_2,0.72,,False
+lobet ihn in seiner grossen herrlichkeit,4,3,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.29271209239959717,True,True
+lobet ihn mit psalter und harpfen,4,5,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.7528928518295288,True,True
+lobet ihn mit pauken und reigen/,4,6,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.76,,False
+lobet ihn mit saiten und pfeifen,4,7,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6581570506095886,True,True
+lobet ihn mit hellen cymbeln,4,8,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.513329803943634,True,True
+lobet ihn mit wolklingenden cymbeln,4,9,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.48332107067108154,True,True
+lasset uns dem herrn singen,10,49,Lasst vns dem HERRN singen,2 Mose_15_21,0.361767053604126,True,False
+denn er hat eine herrliche taht getahn.,10,50,Denn er hat eine herrliche That gethan,2 Mose_15_21,0.44,,False
+mann und rosse hat er ins meer gestürtzet,10,51,Man vnd Ross hat er ins Meer gestürtzt,2 Mose_15_21,0.3926929533481598,True,False
+bis an ihren tod,10,111,bis an seinen tod,2 Chronik_26_21,0.1708938181400299,False,False
+erkennete er sie nicht,10,130,vnd erkennet  sie nicht,Mt_1_25,0.2583235502243042,True,False
+biß sie ihren ersten sohn gebahr matth,10,131,bisz sie yhren ersten son gepar,Mt_1_25,0.35584017634391785,True,False
+26 du wirst nicht heraus kommen,10,147,du wirst nit von dannen erausz komen,Mt_5_26,0.35747796297073364,True,False
+bis du auch den lezzten heller bezahlest,10,148,bis du auch den letzten heller bezalest,Mt_5_26,0.3585239350795746,True,False
+lasset uns dem herrn singen,10,184,Lasst vns dem HERRN singen,2 Mose_15_21,0.361767053604126,True,False
+denn er hat eine herrliche taht getahn.,10,185,Denn er hat eine herrliche That gethan,2 Mose_15_21,0.44,,False
+mann und rosse hat er ins meer gestürzet etc,10,186,Man vnd Ross hat er ins Meer gestürtzt,2 Mose_15_21,0.559991717338562,True,False
+und redet untereinander singet und spielet,14,5,vnd spricht je einer zum andern,Hesekiel_33_30,0.5989378690719604,True,True
+λαλοῦντες ἑαυτοῖς oder untereinander redende sind entweder die betende,14,6,vnd spricht je einer zum andern,Hesekiel_33_30,0.7058725357055664,True,True
+laß dir wol gefallen die rede meines mundes,14,14,Las dir wolgefallen die rede meines mundes,Psalm_19_15,0.2390584945678711,True,True
+und das gespräch meines herzens/,14,15,Vnd das gesprech meines hertzen fur dir,Psalm_19_15,0.97,,False
+herr mein hort und mein erlöser,14,16,HERR mein Hort Vnd mein Erlöser,Psalm_19_15,0.27311450242996216,True,True
+was erbar was gerecht,14,21,was redlich was gerecht,Phil_4_8,0.3864555358886719,True,True
+was keusch was züchtig,14,22,was keusch was lieblich,Phil_4_8,0.15536169707775116,True,True
+46 seqq und der christen,16,35,die Priester vnd Propheten,Jeremia_13_13,0.8812825679779053,True,True
+apostel-geschicht iv 24 lieder,16,36,die Priester vnd Propheten,Jeremia_13_13,0.9800480008125305,True,True
+es sey denn mit heydnischen wort-blumen,16,102,sondern mit klugen worten des heyligen geysts,Kor1_2_13,0.6097288131713867,True,True
+allein geistliche sachen wollen in geistliche worte eingekleidet seyn,16,104,vnd richten geystliche sachen geystlich,Kor1_2_13,0.8098440170288086,True,True
+und mit geistlichen worten vorgetragen seyn,16,105,sondern mit klugen worten des heyligen geysts,Kor1_2_13,0.6310043931007385,True,True
+daß sie nicht ausschweiffen,17,20,das sie sich nicht stossen,Jeremia_31_9,0.14402976632118225,False,True
+singet dem herrn und lobet seinen namen,20,19,Singet dem HERRN vnd lobet seinen Namen,Psalm_96_2,0.2723560035228729,True,True
+wie sie bereit verstrichen war,20,66,wie sie es gemacht hatte,1 Mose_27_17,0.39425233006477356,True,True
+oder gesungen oder geschlagen werden,20,190,oder geschlagen oder dürre,3 Mose_22_22,0.1456710696220398,False,True
+sondern das alte testament,21,31,vber den alten testament,Kor2_3_14,0.29970037937164307,True,True
+was im alten testamente üblich gewesen,21,33,vber den alten testament,Kor2_3_14,0.5146546363830566,True,True
+was im alten testamente als ein levitisches,21,46,vber den alten testament,Kor2_3_14,0.6352319717407227,True,True
+wie die opfer alten testaments üblich gewesen,21,48,vber den alten testament,Kor2_3_14,0.5361544489860535,True,True
+alle lande lobsingen dir,22,16,Alle Land bete dich an,Psalm_66_4,0.2830408215522766,True,True
+lobsinge deinem namen. sela/,22,17,vnd lobsinge dir Lobsinge deinem Namen,Psalm_66_4,0.57,,False
+denn es ist ein köstlich ding,22,19,das ist ein köstlich ding,Psalm_147_1,0.18080469965934753,False,True
+durch die gnade gottes,22,22,durch den geyst gottis,Mt_12_26,0.18042007088661194,False,True
+die da sehen das ihr sehet,25,18,die da sehen das yhr sehet,Lk_10_23,0.167192280292511,False,True
+euere zunge soll in den pfeifen das zünglein,25,25,sollen dein sein vnd genent werden,1 Mose_48_6,0.5522327423095703,True,True
+soll euer gemüt seyn,25,27,sollen dein sein vnd genent werden,1 Mose_48_6,0.29693835973739624,True,True
+und geistlichen liedern singet und spielet dem herrn,25,41,singet vnd spielt dem herrn ynn ewren hertzen,Eph_5_17,0.7304765582084656,True,True
+in euerem herzen. lobet den herrn in seinem heiligtuhme/,25,42,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.75,,False
+lobet ihn in der veste seiner macht.,25,43,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.79,,False
+lobet ihn in seinen tahten/,25,44,Lobet jn in seinen Thatten,Psalm_150_2,0.72,,False
+lobet ihn in seiner grossen herrligkeit,25,45,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.298035204410553,True,True
+lobet ihn mit pfalter und harpfen,25,47,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6912603974342346,True,True
+lobet ihn mit pauken und reigen/,25,48,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.76,,False
+lobet ihn mit saiten und pfeifen,25,49,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6581570506095886,True,True
+lobet ihn mit hellen cymbeln,25,50,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.513329803943634,True,True
+lobet ihn mit wolklingenden cymbeln,25,51,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.48332107067108154,True,True

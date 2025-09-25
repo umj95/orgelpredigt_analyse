@@ -1,0 +1,57 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+diß ist die endliche erklärung davids,5,2,DJS sind die letzten wort Dauids,2 Samuel_23_1,0.7230274081230164,True,True
+des manns lieblich mit psalmen jsrael,5,3,lieblich mit Psalmen Jsrael,2 Samuel_23_1,0.3274625241756439,True,True
+daß er nicht weißt,5,15,das er nicht weis,Hiob_18_11,0.09260889887809753,False,False
+herr mein gott groß sind deine wunder und deine gedancken,5,28,HERR mein Gott gros sind deine Wunder vnd deine Gedancken,Psalm_40_6,0.3671416938304901,True,False
+die du an uns beweisest:,5,29,Die du an vns beweisest,Psalm_40_6,0.73,,False
+dir ist nichts gleich,5,30,Dir ist nichts gleich,Psalm_40_6,0.05777508392930031,True,False
+ich will sie verkündigen/,5,31,Jch wil sie verkündigen vnd dauon sagen,Psalm_40_6,0.75,,False
+und davon sagen wiewohl sie nicht zu zehlen sind,5,32,wiewol sie nicht zu zelen sind,Psalm_40_6,0.5994118452072144,True,False
+du hast mich mich unweisen,7,5,du habst mich gesand,Joh_17_21,0.13802848756313324,False,True
+er aber sprach zu ihnen,13,2,Zu jenen aber sprach er,Hesekiel_9_5,0.1946222484111786,False,True
+jhr aber nicht also,13,5,yhr aber nicht also,Lk_22_26,0.1495359241962433,True,True
+und der fürnehmste wie ein diener,13,7,vnnd der furnemst wie der diener,Lk_22_26,0.6916543245315552,True,True
+der zu tische sitzet,13,9,die zu tissch sitzen,Lk_14_10,0.15702541172504425,False,True
+und ich will euch das reich bescheiden,13,14,vnnd ich will euch das reych bescheyden,Lk_22_29,0.43810856342315674,True,True
+wie mirs mein vatter bescheiden hat,13,15,wie myr meyn vater bescheyden hatt,Lk_22_29,0.47576773166656494,True,True
+daß ihr essen und trincken solt über meinem tisch in meinem reich,13,16,das yhr essen vnd trincken sollt vber meynem tissch ynn meynem reych,Lk_22_30,0.7163318991661072,True,True
+und sitzen auff stühlen,13,17,vnd sitzen auff stulen,Lk_22_30,0.508283793926239,True,True
+und richten die zwölff geschlechte jsrael,13,18,vnnd richten die zwelff geschlecht von Jsrael,Lk_22_30,0.7503084540367126,True,True
+sie seye ein verschlossener garten,15,80,Du bist ein verschlossen Garten,Hohelied_4_12,0.518680214881897,True,False
+eine verschlossene quelle ein versigelter born,15,81,Ein verschlossen Quelle ein versiegelter Born,Hohelied_4_12,0.3497633934020996,True,False
+jhr aber nicht also,15,100,yhr aber nicht also,Lk_22_26,0.1495359241962433,False,False
+der soll ernidriget werden,20,50,der soll erhohet werden,Lk_14_11,0.06686443090438843,False,True
+die ersten werden die letzten seyn,20,51,vnd sind ersten die werden die letzten seyn,Lk_13_28,0.1785212904214859,False,True
+was will am dürren werden,20,94,was will am durren werden?,Lk_23_28,0.14125214517116547,False,True
+durch schalckheit der menschen und teuscherey,20,118,durch schalckeyt der menschen vnnd teuscherey,Eph_4_13,0.1758299618959427,True,False
+damit sie uns erschleichen zu verführen,20,119,damit sie vns erschleychen zuverfuren,Eph_4_13,0.4937763214111328,True,False
+wehe solchen die böses gut,20,166,WEh denen die Böses gut,Jesaja_5_21,0.3889957070350647,True,False
+und gutes böse heissen,20,167,vnd Gutes böse heissen,Jesaja_5_21,0.48843514919281006,True,False
+die aus finsternus liecht,20,168,Die aus Finsternis liecht,Jesaja_5_21,0.3196004033088684,True,False
+und aus liecht finsternus machen,20,169,vnd aus Liecht finsternis machen,Jesaja_5_21,0.4551750123500824,True,False
+die aus sauer süß/,20,170,Die aus Sawr süsse,Jesaja_5_21,0.82,,False
+und aus süß sauer machen,20,171,vnd aus Süsse sawr machen,Jesaja_5_21,0.5484111905097961,True,False
+daß er genöthiget wird,20,212,das er gecreutziget werde,Mt_26_2,0.15890926122665405,False,False
+warum lassen wir uns nicht lieber vervortheilen,20,215,denn wir werden vns nicht setzen,1 Samuel_16_11,0.5281068086624146,True,False
+warum lassen wir uns nicht lieber unrecht thun,20,216,denn wir werden vns nicht setzen,1 Samuel_16_11,0.6012796759605408,True,False
+siehe doch wie fein und lieblich es ist,20,220,Sihe wie fein vnd lieblich ists,Psalm_133_1,0.4534970819950104,True,False
+wann brüder einträchtig beyeinander wohnen,20,221,Das Brüder eintrechtig bey einander wonen,Psalm_133_1,0.5003078579902649,True,False
+wie ich euch gesagt habe,21,27,da ich euch gesagt habe,Joh_15_19,0.1284337341785431,False,True
+der zu tische sitzet,21,44,die zu tissch sitzen,Lk_14_10,0.15702541172504425,False,True
+und euch zu aposteln und liechtern der welt gesetzet hat,21,54,vnnd hast vns Gotte gemacht zu konigen vnd priestern,Offb_5_10,0.6455885171890259,True,True
+auff daß die heiligen durch euch zugerichtet werden zum werck des amts,21,55,vnnd hast vns Gotte gemacht zu konigen vnd priestern,Offb_5_10,0.7008614540100098,True,True
+jhr aber nicht also ,22,9,yhr aber nicht also,Lk_22_26,0.1495359241962433,False,True
+jhr aber nicht also ,22,19,yhr aber nicht also,Lk_22_26,0.1495359241962433,False,True
+jhr aber nicht also,23,12,yhr aber nicht also,Lk_22_26,0.1495359241962433,False,True
+daß treue auff erden wachse,23,21,der do lebendig macht die todten,Röm_4_17,0.7927601933479309,True,True
+und gerechtigkeit vom himmel schaue ,23,22,Vnd Gerechtigkeit vom Himel schawe,Psalm_85_12,0.4229995906352997,True,True
+sondern daß er diene,23,30,sondern das er diene,Mk_10_45,0.04144572839140892,False,True
+sie sollen mit jhm essen und trincken über seinem tisch,30,3,das yhr essen vnd trincken sollt vber meynem tissch ynn meynem reych,Lk_22_30,0.5804829001426697,True,True
+sitzen auff stühlen und richten die zwölff geschlecht jsrael,30,4,vnd sitzen auff stulen,Lk_22_30,0.7794519066810608,True,True
+also herr wann trübsaal da ist,30,34,HERR wenn Trübsal da ist,Jesaja_26_16,0.5405023097991943,True,True
+sucht man dich/ und wann du sie züchtigest/,30,35,So suchet man dich,Jesaja_26_16,0.83,,False
+so ruffen sie ängstiglich,30,36,So ruffen sie engstiglich,Jesaja_26_16,0.25086531043052673,True,True
+aber wann das lamm mitten im stul weyden wird die auserwehlten,30,86,denn das lamb mitten ym stuel,Offb_7_17,0.6515964269638062,True,True
+die thränen von ihren augen abwischen/,30,87,vnnd Gott wirt abwasschen alle threnen von yhren augen,Offb_7_17,0.92,,False
+und sie leiten zu dem lebendigen wasserbronnen,30,88,wirt sie weyden vnd leytten zu den lebendigen wasser brunnen,Offb_7_17,0.5459213852882385,True,True
+darinnen das vorige gewesen,33,10,denn der vorige war,Daniel_11_13,0.16258400678634644,False,True

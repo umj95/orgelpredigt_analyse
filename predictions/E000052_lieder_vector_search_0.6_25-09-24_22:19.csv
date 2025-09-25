@@ -1,0 +1,59 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+herrn reinhold nagel schöppenmeister,7,0,reinem herren wolffg mofel,1102,0.7140378952026367,True,True
+herrn reinhold maraun vice-schöppenmeister,7,1,reinem herren wolffg mofel,1102,0.9779202938079834,True,True
+lobet ihn in seiner grossen herrlichkeit,18,3,lob ihn zu aller zeit in seiner herrlichkeit,692,0.4301731288433075,True,True
+lobet ihn mit posaunen,18,4,lobt ihn mit harffen,724,0.17470256984233856,False,True
+lobet ihn mit psalter und harffen,18,5,lobt ihn mit klang und schalle,692,0.2964758574962616,True,True
+lobet ihm mit paucken und reigen,18,6,lobt ihn mit klang und schalle,692,0.30540984869003296,True,True
+lobet ihn mit säyten und pfeiffen,18,7,lobt ihn mit klang und schalle,692,0.25525861978530884,True,True
+lobet ihn mit hellen cymbeln,18,8,lobt ihn mit groffemschalle,616,0.43559151887893677,True,True
+lobet ihn mit wohlklingenden cymbeln,18,9,lobt ihn mit groffemschalle,616,0.4192377030849457,True,True
+sing und klinge deine treue,21,26,sing und klinge deine treue,652,2.1876371428340008e-13,True,True
+meines lebens einges ziel/,21,27,mei nes lebens einges ziel,652,0.4,,False
+auff der harff und säyten-spiel,21,28,auf der harff und sente friel,652,0.7132322788238525,True,True
+den mund zum lobe dein,24,1,deffn unsern mund zum lobe dein,608,0.37655144929885864,True,True
+bereit das hertz zur andacht fein/,24,2,das herz andachtig mache fein,608,0.92,,False
+den glauben mehr stärck den verstand,24,3,den glauben mehr stärck den verstand,608,2.5593359354557366e-13,True,True
+was man liebet lobet man,25,27,was du bes ichist zu hassen,127,0.30380961298942566,True,True
+was man lobet liebet man,25,28,was du bes ichist zu hassen,127,0.3469579517841339,True,True
+zwingt die säyten in cithara,25,31,zwingt die sensen in cythara,741,0.25186893343925476,True,True
+und last die süsse musica gantz freudenreich erschallen,25,32,und lafst die süss se musica gank frendenreich erschallen,741,0.252244770526886,True,True
+varietate unitas aus viel stimmen ein chor,25,60,aus lauter gnaden gib,106,0.9693474173545837,True,True
+aus viel pfeiffen eine harmonie,25,61,aus lauter gnaden gib,106,0.7590543627738953,True,True
+psalter und paucken tantzete david für grosser freude für dem herrn her,25,92,gott sey lob ehr und pretz im hohen him melsthrone für seine groffe gnad,409,0.8595966696739197,True,False
+stille schweiget und seines vorigen anliegens vergisset,25,102,vergaß er cottes heyl und da er das vergessen,803,0.7095988392829895,True,False
+so ermuntert auch der klang einer schönen orgel die lehrer freudig des herrn werck zu verrichten und ihre stimme zu erheben wie eine posaune,25,150,so hört es gott alss,654,0.9565365314483643,True,False
+so wüste er nicht,27,36,so ist er darzu nicht erkorn,320,0.19521421194076538,False,True
+und seinen geist zu besänfftigen,32,11,und seinen geist auffgeben,1039,0.18495547771453857,False,True
+so spricht der apostel in unserm text,35,15,als die apostel schreiben so werden wir,602,0.5100817680358887,True,True
+die orgeln aus den kirchen abzuschaffen,36,7,die schiz der kirchen nimmt man hin,1078,0.7169252038002014,True,True
+welche lieber mit jenem scythen könig ein pferd wiehern,36,9,wie gern sie wolten werden frey bon solcher groffen büberen,1078,0.7554314136505127,True,True
+ps xlvii v 6,36,28,s v b  mel,1127,1.111478328704834,True,True
+ehre sey gott in der höhe,38,8,gott in der höhe sey nun ehr,416,0.19285064935684204,False,True
+35 bedencket ubi sunt gaudia,38,21,ubi funt gaudia nirgend mehr,435,0.9612516164779663,True,True
+nirgends mehr denn da/,38,22,ubi funt gaudia nirgend mehr,435,0.7,,False
+da die engel singen die nova cantica,38,23,denn da da die engel fingen nova cantica,435,0.22545526921749115,True,True
+und die schellen klingen,38,24,und die schellen klingen,435,6.953041387005449e-14,True,True
+in regis curia eya wärn wir da,38,25,in regis curia eya,435,0.4732441306114197,True,True
+weicht ihr trauergeister denn mein freuden meister,38,50,weicht ihr trauergeiffer denn mein freuden meister jesus trit berein,926,0.34233763813972473,True,True
+jesus tritt herein denen die gott lieben,38,51,denen die gott lieben,926,0.5172131061553955,True,True
+muß auch ihr betrüben lauter zucker seyn,38,52,muß auch ihr betrüben lauter zucker seyn,926,7.545116061883489e-14,True,True
+duld ich schon hier spott und hohn,38,53,duld ich schon hie spott und hohn,926,0.022241830825805664,True,True
+dennoch bleibst du auch im leyde,38,54,dennoch bleibst du auch im leide,926,0.11698491871356964,True,True
+so offt ich muß in den streit,38,76,so offt ich mug in den streit,227,0.3154717683792114,True,True
+meinen glauben täglich mehr und des geistes schwerdt verehr,38,77,meinen glauben täglich mehr,227,0.3253183364868164,True,True
+damit ich den feind kan schlagen,38,78,damit ich den feind kan schlagen,227,2.160695667524637e-13,True,True
+alle pfeile von mir jagen,38,79,alle pfeile von mir jagen,227,1.8474447232436075e-13,True,True
+noli me tangere,38,162,ruhr mich nicht an,584,0.1385548710823059,False,False
+da der heiligen zwölff bohten zahl,47,83,der heiligen zwölffboten zahl,642,0.31426742672920227,True,True
+und die lieben propheten all,47,84,und die lieben propheten all,642,5.393446038631615e-14,True,True
+die theuren märtrer allzumahl dich loben herr mit grossem schall,47,85,die theuren märtrer allzumal loben dich,642,0.42590513825416565,True,True
+mit den seraphinen prangen,47,87,da die seraphinen prangen,1040,0.5115529298782349,True,True
+und das hohe lied anfangen,47,88,und das hohe lied anfangen,1040,2.089804566375586e-13,True,True
+lobet ihn in seiner grossen herrlichkeit,48,3,lob ihn zu aller zeit in seiner herrlichkeit,692,0.4301731288433075,True,True
+lobet ihn mit posaunen,48,4,lobt ihn mit harffen,724,0.17470256984233856,False,True
+lobet ihn mit psalter und harffen,48,5,lobt ihn mit klang und schalle,692,0.2964758574962616,True,True
+lobet ihm mit paucken und reigen,48,6,lobt ihn mit klang und schalle,692,0.30540984869003296,True,True
+lobet ihn mit säyten und pfeiffen,48,7,lobt ihn mit klang und schalle,692,0.25525861978530884,True,True
+lobet ihn mit hellen cymbeln,48,8,lobt ihn mit groffemschalle,616,0.43559151887893677,True,True
+lobet ihn mit wohlklingenden cymbeln,48,9,lobt ihn mit groffemschalle,616,0.4192377030849457,True,True

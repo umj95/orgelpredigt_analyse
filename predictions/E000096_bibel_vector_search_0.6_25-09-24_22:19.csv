@@ -1,0 +1,44 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+sanctus sanctus sanctus est dominus noster zebaoth,6,9,heilig ist der HERR Zebaoth,Jesaja_6_3,0.5179486274719238,True,True
+das ist: heilig/ heilig/,6,10,vnd sprach Heilig heilig,Jesaja_6_3,0.82,,False
+heilig ist unser gott der herr zebaoth,6,11,heilig ist der HERR Zebaoth,Jesaja_6_3,0.33677172660827637,True,True
+esa 6 für diese herrliche gnad und wolthat,6,12,vnd fur seiner herrlichen Maiestat,Jesaja_2_10,0.8495127558708191,True,True
+für diese herrliche wolthat und gutthat,6,13,vnd fur seiner herrlichen Maiestat,Jesaja_2_10,0.6645783185958862,True,True
+von nun an biß in ewigkeit,6,16,von nu an bis in ewigkeit,Jesaja_9_6,0.09424350410699844,False,True
+lobet jhn in seinen thaten,7,10,Lobet jn in seinen Thatten,Psalm_150_2,0.23463529348373413,True,True
+lobet jhn in seiner grossen herrlichkeit,7,11,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.10972755402326584,True,True
+lobet jhn mit posaunen,7,12,Lobet jn mit Posaunen,Psalm_150_3,0.3979509770870209,True,True
+lobet jhn mit psaltern und harpffen/,7,13,Lobet jn mit Psalter vnd Harffen,Psalm_150_3,0.85,,False
+lobet jhn mit paucken und reigen,7,14,Lobet jn mit Paucken vnd Reigen,Psalm_150_4,0.492218017578125,True,True
+lobet jhn mit seiten und pfeiffen,7,15,Lobet jn mit Seiten vnd Pfeiffen,Psalm_150_4,0.5355197191238403,True,True
+lobet jhn mit cymbeln,7,16,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.5512956976890564,True,True
+lobet jhn mit wolklingenden cymbeln,7,17,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.20634467899799347,True,True
+gedencket an ewre lehrer,23,21,Gedenckt an ewre furgenger,Hebr_13_6,0.49271219968795776,True,True
+die euch das wort gottes gesagt haben,23,22,die euch das wort Gotis gesagt haben,Hebr_13_6,0.2438819408416748,True,True
+wo dis evangelium geprediget wird in der gantzen welt,23,34,wo ditz euangelium  prediget wirt ynn der gantzen welt,Mt_26_13,0.23310065269470215,True,True
+da wird man auch sagen zu jhren gedächtnüs,23,35,da wirt man auch sagen,Mt_26_13,0.3986966013908386,True,True
+42 jch wil meine ehre keinem andern geben,23,51,vnd wil meine Ehre keinem andern geben,Jesaja_42_8,0.47708436846733093,True,True
+noch meinem ruhm den götzen,23,52,noch meinen Rhum den Götzen,Jesaja_42_8,0.3044217824935913,True,True
+so sollen wir jhre thaten,23,55,so wöllen wir jn deuten,Daniel_2_4,0.1568000167608261,False,True
+8 durch mich regiren die könige,25,13,Durch mich regiern die Könige,Sprüche_8_15,0.48545321822166443,True,True
+und die rathherrn setzen das recht,25,14,vnd die Ratherrn setzen das Recht,Sprüche_8_15,0.4623677134513855,True,True
+durch mich regiren die fürsten und alle regenten auff erden,25,15,Durch mich regiern die Könige,Sprüche_8_15,0.5766498446464539,True,True
+und sol bey jhn seyn,26,12,Das sol bey jm sein,5 Mose_17_19,0.607490062713623,True,True
+und sol darinnen lesen sein lebelang,26,13,vnd sol drinnen lesen sein leben lang,5 Mose_17_19,0.7173835039138794,True,True
+hats einen guten koch,29,75,hie ist gutt seyn,Lk_9_33,0.39124390482902527,True,False
+der kan gute suppen kochen,29,76,hie ist gutt seyn,Lk_9_33,0.7751390933990479,True,False
+lobet jhn in seinen thaten,29,146,Lobet jn in seinen Thatten,Psalm_150_2,0.23463529348373413,True,False
+lobet jhn in seiner grossen herrlichkeit,29,147,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.10972755402326584,True,False
+lobet jhn mit posaunen,29,148,Lobet jn mit Posaunen,Psalm_150_3,0.3979509770870209,True,False
+denn er ist freundlich,33,30,Denn er ist freundlich,Psalm_106_1,0.09037475287914276,False,True
+david spielete und das gantze hauß jsrael vor dem herrn her,34,23,spielete Dauid vnd das gantze Haus Jsrael fur dem HERRN her mit allerley Seitenspiel von tennen holtz,2 Samuel_6_5,0.7459196448326111,True,True
+mit harpffen und und psaltern und paucken und schelln und cymbelln,34,25,mit Harffen vnd Psaltern vnd Paucken vnd Schellen vnd Cimbaln,2 Samuel_6_5,0.47708630561828613,True,True
+lasset das wort gottes reichlich unter euch wohnen,34,76,Last das wort Gottis ynn euch wonen reychlich,Kol_3_16,0.7500237226486206,True,True
+in aller weißheit lehret und ermahnet euch selbst mit psalmen,34,77,mit psalmen vnd lobsengen vnd geystlichen lyden ynn der gnade,Kol_3_16,0.7928411364555359,True,True
+lobgesängen und geistlichen liedern,34,78,mit psalmen vnd lobsengen vnd geystlichen lyden ynn der gnade,Kol_3_16,0.7603708505630493,True,True
+ey nun jhr jungen und alten,36,49,beide jung vnd alt,Jesaja_20_4,0.5006737112998962,True,True
+jhr alten und jungen,36,50,beide jung vnd alt,Jesaja_20_4,0.3728780746459961,True,True
+singende heilig ist unser gott,40,26,vnd heilig sein ewrem Gott,4 Mose_15_40,0.5425719618797302,True,True
+heilig ist unser gott,40,27,vnd heilig sein ewrem Gott,4 Mose_15_40,0.5154925584793091,True,True
+heilig ist unser gott,40,28,vnd heilig sein ewrem Gott,4 Mose_15_40,0.5154925584793091,True,True
+und alle die darinnen wohnen ,40,40,vnd an allen die drinnen wonen,Habakuk_2_8,0.172633558511734,False,True

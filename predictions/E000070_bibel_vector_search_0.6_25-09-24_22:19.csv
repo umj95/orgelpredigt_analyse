@@ -1,0 +1,95 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+singet ihm ein neues lied,5,2,Singet jm ein newes Lied,Psalm_33_3,0.3962419033050537,True,True
+machets gut auf säitenspiel mit schalle,5,3,Machts gut auff Seitenspielen mit schalle,Psalm_33_3,0.32069048285484314,True,True
+denn des herrn wort ist warhafftig,5,4,DEnn des HERRN wort ist warhafftig,Psalm_33_4,0.45080456137657166,True,True
+lieblich mit psalmen jsrael,6,1,lieblich mit Psalmen Jsrael,2 Samuel_23_1,0.05123903602361679,False,True
+singet ihm ein neues lied,6,19,Singet jm ein newes Lied,Psalm_33_3,0.3962419033050537,True,True
+machets gut auf säitenspiel mit schalle,6,20,Machts gut auff Seitenspielen mit schalle,Psalm_33_3,0.32069048285484314,True,True
+denn des herrn wort ist warhafftig,6,21,DEnn des HERRN wort ist warhafftig,Psalm_33_4,0.45080456137657166,True,True
+denn was wüsten wir von der gnädigen vergebung der sünden,12,4,das wir vns von den sünden bekereten,Daniel_9_13,0.651221752166748,True,True
+was wüsten wir von der auferstehung unsers fleisches,12,6,das wir vns von den sünden bekereten,Daniel_9_13,0.7187116742134094,True,True
+wenn er saget denn es must alles erfüllet werden,12,9,denn es mus alles erfullet werden,Lk_24_43,0.5120030045509338,True,True
+was von mir geschrieben ist im gesetz mosis,12,10,was von mir geschrieben ist ym gesetz Mosi,Lk_24_43,0.13854050636291504,True,True
+in den propheten und in den psalmen,12,11,ynn den propheten vnnd ynn den psalmen,Lk_24_43,0.2531217336654663,True,True
+und schellen und cymbeln,15,4,vnd fiengen an zu schlahen,Richter_20_31,0.62650066614151,True,True
+mit jauchtzen und posaunen,15,5,vnd fiengen an zu schlahen,Richter_20_31,0.5457220077514648,True,True
+psalmen und lieder singen,15,15,Ein Psalm zu singen,Psalm_30_1,0.5857149362564087,True,True
+psalmen und cymbeln musiciren und aufmachen müssen,15,17,Ein Psalm zu singen,Psalm_30_1,0.8934721946716309,True,True
+lobet ihn in seinen thaten,18,21,Lobet jn in seinen Thatten,Psalm_150_2,0.49506837129592896,True,True
+lobet ihn in seiner grossen herrlichkeit,18,22,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.29271209239959717,True,True
+lobet ihn mit psalter und harffen,18,24,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.7324175834655762,True,True
+lobet ihn mit paucken und reihen,18,25,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6611704230308533,True,True
+lobet ihn mit säiten und pfeiffen,18,26,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6686854362487793,True,True
+lobet ihn mit hellen cymbeln,18,27,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.513329803943634,True,True
+lobet ihn mit wolklingenden cymbeln,18,28,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.48332107067108154,True,True
+also ists geschrieben und also muste christus leiden und auferstehen von den toden am dritten tage,22,27,Also ists geschrieben vnnd also muste Christus leyden vnnd auffer stehen von den todten am dritten tage,Lk_24_45,0.1931658536195755,False,True
+und predigen lassen buß und vergebung der sünden unter allen völckern/,22,28,pus vnd vergebung der sunde vnter allen volckern,Lk_24_46,0.84,,False
+und anheben zu jerusalem,22,29,vnnd anheben zu Jerusalem,Lk_24_46,0.2613377571105957,True,True
+der wird den tod nicht sehen ewiglich,23,58,der wirt den tod nit sehen ewiglich,Joh_8_50,0.19632335007190704,False,False
+und mit seiner hand gespielet,29,23,er mit seiner hand spiele,1 Samuel_16_16,0.3105670213699341,True,True
+und ward besser mit ihm,29,25,das besser mit dir werde,1 Samuel_16_16,0.482368141412735,True,True
+denn also ist geschrieben,32,0,denn es ist geschrieben,Mt_26_30,0.13664020597934723,False,True
+und hat sie aus dem mittel gethan,32,7,vnnd hatt sie aus dem mittel than,Kol_2_14,0.4210582375526428,True,True
+und an das creutz gehäftet,32,8,vnd an das creutz gehefftet,Kol_2_14,0.4310457408428192,True,True
+es ist alles vollbracht,32,15,das schon alles vollnbracht war,Joh_19_27,0.1878703236579895,False,True
+von zion wird das gesetz ausgehen,35,18,Denn von Zion wird das Gesetz ausgehen,Jesaja_2_3,0.33356723189353943,True,True
+und des herrn wort von jerusalem,35,19,vnd des HERRN wort von Jerusalem,Jesaja_2_3,0.3918622136116028,True,True
+denn wir verkündigen und vermahnen alle menschen mit aller weisheit,35,23,den wyr verkundigen vnd vermanen alle menschen vnnd leren alle menschen mit aller weyszheyt,Kol_1_28,0.7343542575836182,True,True
+auf daß wir darstellen einen jeglichen menschen vollkommen in christo jesu,35,24,auff das wyr darstellen eynen yglichenmenschen volkomen ynn Christo Jhesu,Kol_1_28,0.5536566972732544,True,True
+der wird seelig werden,36,19,der wird vnrein sein,3 Mose_11_31,0.19745391607284546,False,True
+die eheleute an ihren lieben ehegatten,38,12,dazu seine Erben vnd seine Freunde,1 Könige_16_11,0.5618636608123779,True,True
+die freunde an ihren lieben angehörigen,38,13,dazu seine Erben vnd seine Freunde,1 Könige_16_11,0.4626913368701935,True,True
+darnach aber das gericht,38,21,darnach aber das gerichte,Hebr_9_27,0.04749646410346031,False,True
+denn deine toden werden leben,44,3,ABer deine Todten werden leben,Jesaja_26_19,0.3550405502319336,True,True
+und mit dem leichnam auferstehen,44,4,Vnd mit dem Leichnam aufferstehen,Jesaja_26_19,0.6647565960884094,True,True
+die ihr liegt unter der erden,44,6,die jr ligt vnter der Erden,Jesaja_26_19,0.5868285894393921,True,True
+und wer da lebet und gläubet an mich,44,12,vnd wer do lebt vnd  glewbt an mich,Joh_11_25,0.5164408087730408,True,True
+und er wird mich hernach aus der erden auferwecken,46,8,vnd er wird mich hernach aus der Erden auffwecken,Hiob_19_25,0.19006706774234772,False,True
+und werde dar nach mit dieser meiner haut umgeben werden,46,9,Vnd werde darnach mit dieser meiner haut vmbgeben werden,Hiob_19_26,0.45140790939331055,True,True
+und werde in meinem fleisch gott sehen,46,10,vnd werde in meinem fleisch Gott sehen,Hiob_19_26,0.2778191864490509,True,True
+denselben werde ich mir sehen,46,11,Den selben werde ich mir sehen,Hiob_19_27,0.05869226157665253,True,True
+er solte einen mann suchen und herbey bringen lassen,51,6,das sie einen Man suchen,1 Samuel_16_16,0.6218771934509277,True,True
+der auf der harffen wohl spielen konnte,51,7,der kan wol auff Seitenspiel,1 Samuel_16_18,0.6115822792053223,True,True
+wenn nun der böse geist über saul kam,51,9,Wenn nu der geist Gottes vber Saul kam,1 Samuel_16_23,0.47506141662597656,True,True
+so nahm david die harffen,51,10,So nam Dauid die Harffen,1 Samuel_16_23,0.4210566282272339,True,True
+und spielet mit seiner hand,51,11,er mit seiner hand spiele,1 Samuel_16_16,0.17262430489063263,True,True
+so erquicket sich saul,51,12,so erquickt sich Saul,1 Samuel_16_23,0.43173497915267944,True,True
+und ward besser mit ihm,51,13,das besser mit dir werde,1 Samuel_16_16,0.482368141412735,True,True
+nicht verlohren werden sondern das ewige leben haben,52,14,nicht verloren werden sondern das ewige leben haben,Joh_3_16,0.134078249335289,False,True
+wo das nicht wäre,56,1,wo aber das nicht were,Joh_14_2,0.17423638701438904,False,True
+psalm singet siehe wie fein und lieblich ists,57,13,Sihe wie fein vnd lieblich ists,Psalm_133_1,0.7189879417419434,True,True
+daß brüder einträchtig beyeinander wohnen,57,14,Das Brüder eintrechtig bey einander wonen,Psalm_133_1,0.24790912866592407,True,True
+wie der köstliche balsam ist,57,15,Wie der köstlich Balsam ist,Psalm_133_2,0.15316423773765564,True,True
+etc denn daselbst verheist der herr seegen und leben immer und ewiglich,57,16,Denn daselbs verheisst der HERR Segen vnd Leben jmer vnd ewiglich,Psalm_133_3,0.6414347887039185,True,True
+einer zum andern spricht,60,4,vnd spricht je einer zum andern,Hesekiel_33_30,0.1947643756866455,False,True
+die angst meines hertzens ist groß,61,4,Die angst meines hertzen ist gros,Psalm_25_17,0.09710314869880676,False,True
+psalm ach herr straff mich nicht in deinem zorn,61,17,HERR straffe mich nicht in deinem zorn,Psalm_38_2,0.36622896790504456,True,True
+und züchtige mich nicht in deinem grimm,61,18,Vnd züchtige mich nicht in deinem grim,Psalm_38_2,0.11123515665531158,True,True
+der auf dem stuhl sitzt,62,6,der auff dem stuel sitzt,Offb_6_16,0.05381651967763901,True,True
+und für dem zorn des lambs,62,7,vnd fur dem zorn des lambs,Offb_6_16,0.5040278434753418,True,True
+denn es ist kommen der grosse tag seines zorns,62,8,denn es ist komen der grosse tag seynes zorns,Offb_6_17,0.2249174416065216,True,True
+und wer kan bestehen,62,9,vnd wer kan bestehen?,Offb_6_17,0.34283238649368286,True,True
+daß wer gott liebet,64,9,das wer Got liebet,Joh1_4_20,0.36301302909851074,True,True
+daß er auch seinen bruder liebe,64,10,das der auch seynen bruder liebe,Joh1_4_20,0.32583245635032654,True,True
+aus der tieffe ruff ich herr zu dir,65,9,Aus der tieffen Ruffe ich HERR zu dir,Psalm_130_1,0.32389307022094727,True,True
+aus tieffer noth schrey ich zu dir,65,11,Aus der tieffen Ruffe ich HERR zu dir,Psalm_130_1,0.3495100736618042,True,True
+das königliche priesterthum das heilige volck,66,5,daskoniglich priesterthum das heylige volck,Petr1_2_9,0.47313326597213745,True,True
+das volck des eigenthums,66,6,das volck des eygenthums,Petr1_2_9,0.6325632333755493,True,True
+dienet dem herrn mit furcht,67,4,Dienet dem HERRN mit furcht,Psalm_2_11,0.4894995391368866,True,True
+und freuet euch mit zittern,67,5,Vnd frewet euch mit zittern,Psalm_2_11,0.47246435284614563,True,True
+sondern wir werden dermaleins auch mit englischer und vollkommener stimme,68,12,wir aber wollen anhallten am gepett vnd am ampt des wortt Gottis,Apg_6_4,0.8782142400741577,True,True
+wollen wir aber gewiß und warhafftig zu solcher himmlischen music dermahleins gelangen,68,14,wir aber wollen anhallten am gepett vnd am ampt des wortt Gottis,Apg_6_4,0.8082812428474426,True,True
+gott mein hertz ist bereit,73,23,Gott mein hertz ist bereit,Psalm_57_8,0.054701998829841614,True,True
+daß ich singe und lobe,73,24,Das ich singe vnd lobe,Psalm_57_8,0.44977641105651855,True,True
+denn es hat alle ding seine zeit,74,1,Denn es hat alles furnemen seine zeit,Prediger_3_17,0.16641871631145477,False,True
+wehe denen die des morgens früh auf seynd,74,9,WEh denen die des morgens früe auff sind,Jesaja_5_12,0.3103794455528259,True,True
+des sauffens sich zu befleissigen,74,10,des Sauffens sich zu vleissigen,Jesaja_5_12,0.26895684003829956,True,True
+und sitzen bis in die nacht,74,11,vnd sitzen bis in die nacht,Jesaja_5_12,0.19627439975738525,True,True
+daß sie der wein oder ander starck getränck erhitze/,74,12,das sie der Wein erhitzt,Jesaja_5_12,0.89,,False
+und haben psalter harffen,74,13,Vnd haben Harffen Psalter,Jesaja_5_13,0.6873084306716919,True,True
+und sehen nicht auf die wercke des herrn,74,15,Vnd sehen nicht auff das werck des HERRN,Jesaja_5_13,0.4453856945037842,True,True
+so hätte er gesagt,75,27,das er sagen würde,1 Mose_43_7,0.17860105633735657,False,True
+lieber frommer gott deine augen ferner offen seyn auf das flehen deines knechts und deines volcks jsrael,79,11,Das deine Augen offen seien auff das flehen deines Knechts vnd deines volcks Jsrael,1 Könige_8_52,0.481116384267807,True,True
+daß du sie hörest in allem darum sie dich anruffen,79,12,das du sie hörest in allem,1 Könige_8_52,0.28040143847465515,True,True
+heilig heilig ist der herr zebaoth,79,25,heilig ist der HERR Zebaoth,Jesaja_6_3,0.21979397535324097,True,True
+alle lande sind seiner ehren voll,79,26,Alle land sind seiner Ehren vol,Jesaja_6_3,0.1574212908744812,True,True

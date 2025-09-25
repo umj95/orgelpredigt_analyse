@@ -1,0 +1,22 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+herrn johann pösneckern herrn johann gollern,3,0,aus herrn johann arnds gebat,785,0.7289875149726868,True,True
+herrn johann otten herrn johann enderes,3,1,aus herrn johann arnds gebat,785,0.594886064529419,True,True
+cornets herrn johann günthern,3,2,aus herrn johann arnds gebat,785,0.655142605304718,True,True
+herrn johann wirth herrn johann hübnern,3,3,aus herrn johann arnds gebat,785,0.7097675800323486,True,True
+und were zu wüntschen,10,4,und bemu hen sich darueben,1117,0.4250026345252991,True,True
+sondern jederzeit alles wohl gemacht habe,16,6,doch ists zum besten stets gemeynt,659,0.4815358519554138,True,True
+ja was noch mehr ist,16,25,ja das noch mehr,533,0.18594017624855042,False,True
+der muß mit seinen göttlichen fingern das clavir unseres hertzens schlagen,16,32,es wird uns unser siegesheld mit seinem schuß behüten,954,0.6743366122245789,True,True
+allein ein gewaltiger defect befindet sich hierinnen,17,67,nur in dem grande bleis ben,1159,0.6859078407287598,True,False
+zu fluchen und zu schwehren,17,69,zu reden und zu schrei ben,1159,0.4016672670841217,True,False
+einer liegt mit petri schwieger am fieber kranck marc,19,11,wer aber christi bund mit frevelmuth verach,1194,0.9299430251121521,True,True
+1 v 30 der andere ist mit des capernaitischen haubtmannsknecht gichtbrüchtig matth,19,12,wer aber christi bund mit frevelmuth verach,1194,1.0595335960388184,True,True
+muß er schmertzen haben,19,18,muft er gecreukigt werden,918,0.22113165259361267,True,True
+muß er leid tragen,19,20,muft er gecreukigt werden,918,0.36038437485694885,True,True
+wann jhr nun an einem jedwedern tag nur ein gliedmaß vor euch nehmet,20,11,wann du nur schnaubest,982,0.6564533114433289,True,True
+und daß könt jhr gar leichtlich thun,20,13,und läßt sich leicht verjühnen,982,0.37218785285949707,True,True
+heilig heilig heilig ist gott der herr zebaoth,30,18,oheilig heilig heilig ist der herr zebaoth,1091,0.10297293215990067,False,True
+in grosser anzahl mit allerhand instrumenten und grünen palmzweigen entgegen gelauffen,32,2,auf arm und fein und grosse starcke pochen,674,0.8727922439575195,True,True
+als er den grossen ungeheuren riesen goliath mit einer schleuder erleget hatte,32,4,so grosse gnad hat er noch nie gegönnet dem gokenvolck,674,0.7413578629493713,True,True
+daß der tag kommen sey,34,24,es kommt der tag,868,0.13632617890834808,False,True
+und alles was jhr habt,38,16,und alles was ach hab,69,0.18653328716754913,False,True

@@ -1,0 +1,64 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+herrn heinrich zernecke herrn gabriel gottfried schumann,2,8,dherr hilff herr laß wolgelingen,671,0.7849211692810059,True,False
+herrn gottfried reyger herrn carl ludwig schumann,2,9,dherr hilff herr laß wolgelingen,671,0.5771178603172302,True,False
+ubi sunt gaudia nirgend mehr denn da,4,0,ubi funt gaudia nirgend mehr,435,0.1501954048871994,True,True
+"da die engel singen,",4,1,denn da da die engel fingen nova cantica,435,0.77,,False
+nova cantica und die schellen klingen,4,2,denn da da die engel fingen nova cantica,435,0.7397439479827881,True,True
+in regis curia eja,4,3,in regis curia eya,435,0.11537095159292221,True,True
+die du zuschlagen hast,8,6,den hast du wegge schlagen,661,0.15412184596061707,False,True
+die engel singen nova cantica,8,11,denn da da die engel fingen nova cantica,435,0.38232895731925964,True,True
+"das ist, neue lieder und die schellen klingen/",8,12,und die schellen klingen,435,0.83,,False
+in regis curia das ist,8,13,in regis curia eya,435,0.4884786009788513,True,True
+und also im himmel,11,17,und dort im himmel,993,0.11179225146770477,False,True
+lobet ihn mit psalter und harffen,16,19,lobt ihn mit klang und schalle,692,0.2964758574962616,True,True
+lobet ihn mit paucken und reigen,16,20,lobt ihn mit klang und schalle,692,0.3203814923763275,True,True
+lobet ihn mit saiten und pfeiffen,16,21,lobt ihn mit klang und schalle,692,0.30888593196868896,True,True
+lobet ihn mit hellen cymbeln,16,22,lobt ihn mit groffemschalle,616,0.43559151887893677,True,True
+lobet ihn mit wohlklingenden cymbeln,16,23,lobt ihn mit groffemschalle,616,0.4192377030849457,True,True
+daß ich das ewige leben ererbe,19,11,daß ich werd ewig leben,694,0.13092869520187378,False,True
+thue das so wirst du leben,19,21,thue das so wirst du leben,1273,1.5627870362817237e-13,False,True
+und da er ihn sahe,19,34,und da er ihn erblicket,1230,0.03620109334588051,False,False
+und sahe ihn gieng er vorüber,19,37,und da er ihn erblicket,1230,0.3970022201538086,True,False
+"ein samariter aber reisete,",19,38,er ward ein knecht,1230,0.98,,False
+und kam dahin und da er ihn sahe,19,39,und da er ihn erblicket,1230,0.27511897683143616,True,False
+und sprach zu ihm,19,48,und sprach zu ihnen,461,0.18213289976119995,False,False
+will ich dirs bezahlen,19,50,soll ich dir denn ja bezahlen,229,0.11503370106220245,False,False
+welcher in seiner kirchenund ketzerhistorie sich als ein anderer cham besonders darinnen hervor gethan hat,20,3,leuchtt und heißt seine kirch und christenkrone stets,1156,1.0147124528884888,True,True
+seine geistliche mutter unsere rechtgläubige evangelischlutherische kirche beydes in lehre und ceremonien auf das ärgste zu schänden und zu lästern,20,4,leuchtt und heißt seine kirch und christenkrone stets,1156,0.8038901686668396,True,True
+2 c 2 §,23,1,a s b s,557,1.0382533073425293,True,True
+9 p 164 a,23,2,a s b s,557,0.9427667856216431,True,True
+er hat eines jeden gläubigen christen seine arteriam oder lufftröhre gleichsam zu einer orgelpfeiffen gemacht,26,3,prufe sich ein jeder christ,535,0.8228155374526978,True,True
+und ihm gefallen lassen,28,8,und läßt mich ihm gefallen,1269,0.1925322413444519,False,True
+und kriegens nicht zu sehen,39,13,und kan nicht sehen,894,0.15875616669654846,False,True
+und wolten das hören,39,14,und wol len dis nicht hören,743,0.30424338579177856,True,True
+und kriegens nicht zu hören,39,15,und wol len dis nicht hören,743,0.20820429921150208,True,True
+das hätte ich gern,44,6,das hatt ich gern,765,0.103092260658741,False,True
+du solt deinen nechsten lieben ,53,20,deinen nechsten solt du lieben,714,0.141771137714386,False,True
+hohe und niedrige reiche und arme,54,11,hoch und nieder arm und reich,257,0.14770908653736115,False,True
+die andere klein eine von zinn,55,7,ein woch der andern hers,133,0.5551185011863708,True,True
+"die andere von holtz,",55,8,ein woch der andern hers,133,0.7,,False
+eine rund die andere viereckigt,55,9,ein woch der andern hers,133,0.7729179263114929,True,True
+und hätte der liebe nicht,57,19,und hatte nicht der liebe sinn,1177,0.1285097450017929,False,True
+nichts ist,57,25,das gar nichts ist,985,0.17702391743659973,False,True
+nun so gehe denn hin,58,0,nun so komm doch mitgegangen,441,0.1315458118915558,False,True
+ich will dem herrn will ich singen,58,8,dem herren wil ich singen,1105,0.14148831367492676,True,True
+dem herrn dem gott israel will ich spielen,58,9,dem herren wil ich singen,1105,0.6507666110992432,True,True
+du solt deinen nechsten lieben,58,14,deinen nechsten solt du lieben,714,0.141771137714386,True,True
+den du lieben solst,58,16,deinen nechsten solt du lieben,714,0.35779446363449097,True,True
+das habt ihr mir gethan,58,44,das hast du mir ges gunt,1031,0.08820277452468872,False,True
+noch eins hab ich euch zu sagen,61,0,ich hab euch noch zu sagen,1245,0.18402869999408722,False,True
+ubi sunt gaudia nirgend mehr denn da,62,0,ubi funt gaudia nirgend mehr,435,0.1501954048871994,True,True
+"da die engel singen,",62,1,denn da da die engel fingen nova cantica,435,0.77,,False
+nova cantica und die schellen klingen,62,2,denn da da die engel fingen nova cantica,435,0.7397439479827881,True,True
+in regis curia eja,62,3,in regis curia eya,435,0.11537095159292221,True,True
+herr joh christian schlüter ist allbereit anno 1736,69,10,herr jesu christ mit hülfferschein allen,954,0.7608015537261963,True,True
+auch mit freudiger ermunterung der seelen dazu einstimmen,71,24,verheisset ferner auch darzu in diesem elend gute ruh,1106,0.8364933729171753,True,True
+und also im glauben,71,25,und so im glauben,1000,0.05722243711352348,False,True
+gloria sey dir gesungen,76,0,gloria sen dir gesungen,1119,0.1959315985441208,True,True
+mit menschenund englischen zungen,76,1,mit menschenund englischen zungen,1119,2.0927767711061834e-13,True,True
+mit harffen und mit cymbeln schon,76,2,mit harffen und mit cymbeln schon,1119,2.753709803585136e-13,True,True
+von zwölf perlen sind die pforten,76,3,von zwölf perlen sind die pforten in deiner stadt,1119,0.40286117792129517,True,True
+an deiner stadt wir sind consorten der engel,76,4,wir sind consorten der engel hoch um deinen thron,1119,0.5477247834205627,True,True
+hoch um deinen thron.,76,5,vater hilff von deinem thron,1119,0.79,,False
+kein aug hat je gespührt,76,6,kein aug hat je gespürt,1119,0.09509225934743881,True,True
+solche freude des sind wir froh,76,8,deß sind wir froh,1119,0.37566113471984863,True,True

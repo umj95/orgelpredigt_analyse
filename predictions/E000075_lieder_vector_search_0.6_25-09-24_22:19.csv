@@ -1,0 +1,51 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+jm jahr christi 1676,0,12,herr jesu chrift jcsu christ,785,0.8809215426445007,True,False
+gedruckt zu coburg durch johann-conrad mönchen,0,13,aus herrn johann arnds gebat,785,0.9869431257247925,True,False
+und geruhigen adleralters zum freundlichen abschiede,1,9,en flecken kam und freundlich nen abschied nahm,1235,0.6835237145423889,True,True
+lobet jhn mit psalter und harffen,3,5,mit psalter harff und geigen,682,0.35632723569869995,True,True
+lobet jhn mit paucken und reigen,3,6,herr mit seuffhen und mit flehen,1155,0.45610710978507996,True,True
+lobet jhn mit saiten und pfeiffen,3,7,herr mit seuffhen und mit flehen,1155,0.5334374904632568,True,True
+sey lob und ehr mit hohem preiß ,3,30,sey lob und ehr mit hohem preiß,357,9.589744498711764e-14,False,False
+das thet hasaël und nahm geschenck mit sich und allerley guts 40,4,16,teuffel und hölle sich brüsten und schnaubon,1114,0.8390958905220032,True,True
+cameeln last wann der alte tobias mit seinem sohn und weibe erwegen,4,17,teuffel und hölle sich brüsten und schnaubon,1114,0.9673810005187988,True,True
+ein artzt ist uns gegeben,5,5,ein arkt ist uns gegeben,720,0.14785875380039215,True,True
+der selber ist das leben/,5,6,der selber ist das le ben,720,0.49,,False
+christus für uns gestorben,5,7,christus für uns gestorben,720,1.440905771435408e-13,True,True
+daß er euch solche gnade erzeiget hat,5,38,so vict er euch befohlen hat,648,0.41512531042099,True,False
+auch viel predigten gehalten und gar viel gutes durch seine wunderwerck den leuten desselbigen orts erwiesen,8,3,mit grosser freud wiedrum zusammen bringens und prachtiglich mit vielem triumphiren in hims mel fuhren,1011,0.9071130156517029,True,True
+daß wir angemahnet werden,8,93,daß wir wurdn erldset,549,0.12779539823532104,False,False
+weil gottes zorn anbricht,10,5,weil gottes zorn entglommen,204,0.0913110077381134,False,True
+und dein frolocken ein ende hat,11,41,und deine frucht ist meis ner kehlen süffe,1164,0.5264008641242981,True,True
+deßwegen hetten billig die schrifftgelehrten solches auch mit danck erkennen sollen,12,6,hilff dr davon dis thaten auch die schas cher,504,1.0066319704055786,True,True
+aber sie redeten gar schimpfflich darvon/,12,7,sprach er da weib,504,0.87,,False
+nenneten jesum einen gottslästerer,12,8,und nennt sich eis nen gottessohn,502,0.630066454410553,True,True
+wie das evangelium mit mehrern ausweiset,12,10,wie der prophet auch meldet,502,0.6695559024810791,True,True
+sondern gebeten man wolte ihm doch vergönnen,12,27,daß du ihm folt wol gerathen,1146,0.5070968270301819,True,True
+daß er sie zu magdeburg machen dürffte,12,28,daß er ihm mdg furcht einjagen,1146,0.5844168663024902,True,True
+als er nun gefraget wurde,12,29,als er nun ausgeführet war,507,0.1650770753622055,False,True
+tag und nacht geplerret und geheulet,12,56,beschirmt und schuket tag und nacht den,898,0.1884714961051941,False,True
+wollt ihr hier nicht mitsingen,12,88,wilt du es hier nicht stimmen,850,0.17980295419692993,False,True
+es soll zwar alles,13,38,es muß ja alles,1237,0.13168543577194214,False,True
+das fröliche nun freut euch lieben christen gemein ,13,67,mel nun freut euch lieben christn gemein,991,0.18306638300418854,False,True
+sonderlich werden die cherubim und seraphim singen immer mit hoher stimm,13,89,auch cherubim und seraphim singen immer mit hoher stinum,642,0.13033103942871094,True,True
+heilig ist unser gott,13,90,heilig ist unser gott heilig ist unser gott heilig ist unser gott,642,0.3361275792121887,True,True
+heilig ist unser gott,13,91,heilig ist unser gott heilig ist unser gott heilig ist unser gott,642,0.3361275792121887,True,True
+heilig ist unser gott der herre zebaoth,13,92,oheilig heilig heilig ist der herr zebaoth,1091,0.3290367126464844,True,True
+lob ehre und weißheit und danck,13,94,lob ehr und weifheit,1091,0.4482690989971161,True,True
+und preiß/ und krafft/,13,95,und ist uns spinnen feind,1091,0.94,,False
+und stärcke sey unserm gott von ewigkeit zu ewigkeit.,13,96,und ewiglich uns laben,1091,0.64,,False
+amen singet die christenschaar,13,97,nies mand christum seinn heyland nennt,1108,0.5536333322525024,True,True
+amen singet die christenschaar,13,99,nies mand christum seinn heyland nennt,1108,0.5536333322525024,True,True
+amen singet die christenschaar,13,101,nies mand christum seinn heyland nennt,1108,0.5536333322525024,True,True
+und laßt die süße musica gantz freudenreich erschallen,15,1,und lafst die süss se musica gank frendenreich erschallen,741,0.2466994822025299,True,True
+singet klinget jubiliret triumphiret,15,2,singer springet jubiliret triumphiret,741,0.4575098156929016,True,True
+danckt dem herren groß ist der könig der ehren,15,3,danckt dem herren groß ist der könig der ehren,741,2.5965866826474504e-13,True,True
+du lieber frommer gott,16,7,hab danck du lieber fromnier gott,133,0.18133707344532013,False,True
+gloria sey dir gesungen mit menschenund englischen zungen,18,0,mit menschenund englischen zungen,1119,0.8000508546829224,True,True
+mit harffen und mit cymbeln schön,18,1,mit harffen und mit cymbeln schon,1119,0.3880561590194702,True,True
+von zwölff perlen sind die pforten an deiner stadt,18,2,von zwölf perlen sind die pforten in deiner stadt,1119,0.05536477640271187,True,True
+wir sind consorten der engel hoch ümb deinen thron,18,3,wir sind consorten der engel hoch um deinen thron,1119,0.039155684411525726,True,True
+kein aug hat ie gespührt,18,4,kein aug hat je gespürt,1119,0.408418208360672,True,True
+kein ohr hat mehr gehört solche freude/,18,5,kein ohr hat je ges hort solche freude,1119,0.37,,False
+deß sind wir froh,18,6,deß sind wir froh,1119,1.5919462471349066e-13,True,True
+jo jo ewig in dulci jubilo,18,7,jo jo e wig in dulci jubilo,1119,0.4219352602958679,True,True

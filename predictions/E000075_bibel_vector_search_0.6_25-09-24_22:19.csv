@@ -1,0 +1,52 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+gott mein hertz ist bereit,2,0,Gott mein hertz ist bereit,Psalm_57_8,0.054701998829841614,True,True
+mein hertz ist bereit,2,1,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,True
+daß ich singe und lobe,2,2,Das ich singe vnd lobe,Psalm_57_8,0.44977641105651855,True,True
+wache auf meine ehre,2,3,Wach auff meine Ehre,Psalm_57_9,0.5148943662643433,True,True
+lobet jhn in seinen thaten,3,2,Lobet jn in seinen Thatten,Psalm_150_2,0.23463529348373413,True,True
+lobet jhn in seiner großen herrligkeit,3,3,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.12335952371358871,True,True
+lobet jhn mit posaunen,3,4,Lobet jn mit Posaunen,Psalm_150_3,0.3979509770870209,True,True
+lobet jhn mit psalter und harffen,3,5,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6809012293815613,True,True
+lobet jhn mit paucken und reigen,3,6,Lobet jn mit Paucken vnd Reigen,Psalm_150_4,0.492218017578125,True,True
+lobet jhn mit saiten und pfeiffen,3,7,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.568131685256958,True,True
+lobet jhn mit hellen cymbeln,3,8,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.17765183746814728,True,True
+lobet jhn mit wohlklingenden cymbeln,3,9,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.4383847415447235,True,True
+und gehe dem manne gottes entgegen,4,13,vnd gehe dem man Gottes entgegen,2 Könige_8_8,0.2938154339790344,True,True
+und frage den herrn durch ihn/,4,14,vnd frage den HERRN durch jn,2 Könige_8_8,0.63,,False
+und sprich ob ich von dieser kranckheit möge genesen,4,15,vnd sprich Ob ich von dieser kranckheit müge genesen?,2 Könige_8_8,0.31781142950057983,True,True
+wie dort mirjam aaronis schwester eine paucke in die hand nahm,5,55,Aarons schwester nam eine Paucken in jre hand,2 Mose_15_20,0.550518810749054,True,False
+und alle weiber folgeten ihr mit paucken und reigen,5,56,vnd alle Weiber folgeten jr nach hin aus mit paucken am Reigen,2 Mose_15_20,0.5507948398590088,True,False
+gott thue meine lippen auf,7,0,HERR thu meine Lippen auff,Psalm_51_17,0.17250396311283112,False,True
+werden alle in dir singen eins ümbs ander,8,37,Werden alle in dir singen eins vmbs ander,Psalm_87_7,0.09323406964540482,False,True
+machets gut auf saitenspiel mit schalle,8,55,Machts gut auff Seitenspielen mit schalle,Psalm_33_3,0.29814231395721436,True,True
+nehmet die psalmen und gebet her die paucken,8,58,Nemet die Psalmen vnd gebet her die Paucken,Psalm_81_3,0.4123521149158478,True,True
+liebliche harffen mit psaltern,8,59,Lieblich Harffen mit Psaltern,Psalm_81_3,0.5014545917510986,True,True
+nemlich assaph den ersten,8,69,nemlich Assaph den ersten,1 Chronik_16_5,0.07040189206600189,True,False
+assaph aber mit hellen cymbeln,8,71,Assaph aber mit hellen Cimbalen,1 Chronik_16_5,0.20551948249340057,True,False
+benaja aber u jehasiel die priester mit drommeten,8,72,Benaja aber vnd Jehasiel die Priester mit Drometen,1 Chronik_16_6,0.29799050092697144,True,False
+und ließ die leviten mit allen die unter assaph,8,74,Vnd die Leuiten mit allen die vnter Assaph,2 Chronik_5_12,0.6283749938011169,True,False
+heman/ jedithun und ihren kindern und brüdern waren/,8,75,Heman Jedithun vnd jren kindern vnd brüdern waren,2 Chronik_5_12,0.62,,False
+angezogen mit leinwand singen mit cymbaln,8,76,angezogen mit Linwand sungen mit Cymbaln,2 Chronik_5_12,0.10391310602426529,True,False
+psaltern und harffen und stehen gegen morgen des altars,8,77,Psaltern vnd Harffen vnd stunden gegen morgen des Altars,2 Chronik_5_12,0.6008924245834351,True,False
+einer zum andern spricht,10,3,vnd spricht je einer zum andern,Hesekiel_33_30,0.1947643756866455,False,True
+aber wisset ihr nicht,11,9,disen aber wissen wyr nicht,Joh_9_27,0.18874491751194,False,True
+das jauchzen der frölichen ausseyn,11,18,das jauchtzen der Frölichen ist aus,Jesaja_24_8,0.47780951857566833,True,True
+und die freude der harffen ein ende haben,11,19,vnd die freude der Harffen hat ein ende,Jesaja_24_8,0.3140691816806793,True,True
+und in den fenstern singen,11,32,vnd werden in den Fenstern singen,Zephanja_2_14,0.4352019727230072,True,True
+und die raben auf den balcken schreyen solten,11,33,vnd die Raben auff den balcken,Zephanja_2_14,0.6811803579330444,True,True
+voll lebendiges wasser wer nun gott mit psalmen,13,76,von des leyb wer den fliessen flusz des lebendigen wassers,Joh_7_38,0.8012785911560059,True,True
+der kan mit freuden wasser schöpffen aus dem heylbrunnen,13,78,von des leyb wer den fliessen flusz des lebendigen wassers,Joh_7_38,0.6665374040603638,True,True
+heilig ist unser gott,13,90,vnd heilig sein ewrem Gott,4 Mose_15_40,0.5154925584793091,True,True
+heilig ist unser gott,13,91,vnd heilig sein ewrem Gott,4 Mose_15_40,0.5154925584793091,True,True
+amen singet die christenschaar,13,97,yhr aber seyt Christi,Kor1_3_23,0.6904378533363342,True,True
+amen singet die christenschaar,13,99,yhr aber seyt Christi,Kor1_3_23,0.6904378533363342,True,True
+weißheit bleibt bey jesu immerdar,13,100,vnd bleibe daselbs ewiglich,1 Samuel_1_22,0.6906356811523438,True,True
+amen singet die christenschaar,13,101,yhr aber seyt Christi,Kor1_3_23,0.6904378533363342,True,True
+die krafft bleibt jesu immerdar,13,102,vnd bleibe daselbs ewiglich,1 Samuel_1_22,0.6065119504928589,True,True
+thut nur weg von ihm das geplerr eurer lieder,14,7,Thu nur weg von mir das geplerr deiner Lieder,Amos_5_23,0.44350752234458923,True,True
+dann er mag eures psalterspiels nicht hören,14,8,Denn Jch mag deines Psalterspiles nicht hören,Amos_5_23,0.4561229646205902,True,True
+deine augen ferner offen seyn auf das flehen deines knechts,16,8,Das deine Augen offen seien auff das flehen deines Knechts vnd deines volcks Jsrael,1 Könige_8_52,0.45972388982772827,True,True
+daß du sie hörest in allem,16,10,das du sie hörest in allem,1 Könige_8_52,0.0232235100120306,True,True
+darumb sie dich anruffen,16,11,darumb sie dich anruffen,1 Könige_8_52,2.546643722723535e-13,True,True
+so wollen wir nicht von dir weichen,16,18,so wollen wir dich nicht tödten,Jeremia_38_25,0.15070666372776031,False,True
+laß uns leben so wollen wir deinen namen anruffen,16,19,Las vns leben so wöllen wir deinen Namen anruffen,Psalm_80_19,0.11903516948223114,False,True

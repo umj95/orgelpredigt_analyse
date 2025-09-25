@@ -1,0 +1,54 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+weder mit augen gesehen,7,17,hat auch kein Auge gesehen,Jesaja_64_4,0.2120552361011505,True,True
+noch mit ohren gehöret hat,7,18,noch mit Ohren gehöret,Jesaja_64_4,0.4804736375808716,True,False
+laß mich hören freude und wonne,8,4,Las mich hören freude vnd wonne,Psalm_51_10,0.27274489402770996,True,True
+daß die gebeine frölich werden,8,5,Das die Gebeine frölich werden,Psalm_51_10,0.4350287616252899,True,True
+die du zuschlagen hast,8,6,die du zeschlagen hast,Psalm_51_10,0.0782785713672638,True,True
+die engel singen nova cantica,8,11,vnd singen wie eyn new lied,Offb_14_3,0.5956242084503174,True,True
+das ist neue lieder und die schellen klingen,8,12,vnd singen wie eyn new lied,Offb_14_3,0.6868791580200195,True,True
+singet ihm ein neues lied,16,16,Singet jm ein newes Lied,Psalm_33_3,0.3962419033050537,True,True
+machets gut auf säitenspielen mit schalle,16,17,Machts gut auff Seitenspielen mit schalle,Psalm_33_3,0.3305794596672058,True,True
+lobet ihn mit psalter und harffen,16,19,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.7324175834655762,True,True
+lobet ihn mit paucken und reigen:,16,20,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.87,,False
+lobet ihn mit saiten und pfeiffen,16,21,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6475036144256592,True,True
+die da sehen das ihr sehet,19,2,die da sehen das yhr sehet,Lk_10_23,0.167192280292511,False,True
+denn ich sage euch,19,3,denn ich sage euch,Lk_3_8,2.0129853187979274e-13,False,True
+viel propheten und könige wolten sehen,19,4,viel propheten vnd konige wolten sehen das yhr sehet,Lk_10_24,0.3664175570011139,True,True
+daß ich das ewige leben ererbe,19,11,das ich das ewige leben ererbe?,Lk_10_25,0.19627410173416138,False,True
+von gantzer seele von allen kräfften,19,16,von gantzer seel von allen krefften,Lk_10_27,0.026579858735203743,True,True
+und von gantzem gemüthe,19,17,vnd von gantzem gemute,Lk_10_27,0.5139607787132263,True,True
+du hast recht geantwortet,19,20,du hast recht geantwortet,Lk_10_28,1.305667000298799e-13,False,True
+thue das so wirst du leben,19,21,so werdet yhr lebenn,Röm_8_13,0.18754754960536957,False,True
+es war ein mensch,19,26,Es war eyn mensch,Lk_10_30,0.22348612546920776,True,True
+der gieng von jerusalem hinab gen jericho,19,27,der gieng von Jerusalem hynab gen Jericho,Lk_10_30,0.19264686107635498,True,True
+und zog heraus zween groschen,19,46,vnd zog er aus zween grosschen,Lk_10_35,0.6113385558128357,True,False
+und gab sie dem wirthe,19,47,vnd gab sie dem wirt,Lk_10_35,0.3529268801212311,True,False
+pflege sein und so du was mehr wirst darthun,19,49,pflege seyn vnd so du was mehr wirst dar thun,Lk_10_35,0.3347526788711548,True,False
+das gemeine volck stummer zu machen,25,11,die Gemeine zu beruffen,4 Mose_10_2,0.6171310544013977,True,True
+sondern die gemeine zum frölichen mitsingen zu ermuntern,25,13,die Gemeine zu beruffen,4 Mose_10_2,0.7949830889701843,True,True
+die da sehen das ihr sehet,36,6,die da sehen das yhr sehet,Lk_10_23,0.167192280292511,False,True
+denn ich sage euch,36,8,denn ich sage euch,Lk_3_8,2.0129853187979274e-13,False,True
+sie habens nicht gesehen,37,13,das sie es nicht sehen,Lk_8_10,0.18477363884449005,False,True
+und den augen lieblich die sonne zu sehen,38,7,vnd den augen lieblich die Sonne zu sehen,Prediger_11_7,0.17745617032051086,False,True
+zu schauen die schönen gottesdienste des herrn,44,8,Zu schawen die schöne Gottesdienst des HERRN,Psalm_27_4,0.4398617744445801,True,True
+und seinen tempel zu besuchen,44,9,vnd seinen Tempel zubesuchen,Psalm_27_4,0.48690468072891235,True,True
+thue nur weg von mir das geplerr deiner lieder,48,10,Thu nur weg von mir das geplerr deiner Lieder,Amos_5_23,0.15242888033390045,True,True
+denn ich mag deines psalterspiels nicht hören,48,11,Denn Jch mag deines Psalterspiles nicht hören,Amos_5_23,0.3023354113101959,True,True
+von gantzer seelen von allen kräfften,53,7,von gantzer seel von allen krefften,Lk_10_27,0.04444434493780136,True,True
+und von gantzem gemüthe,53,8,vnd von gantzem gemute,Lk_10_27,0.5139607787132263,True,True
+du solt deinen nechsten lieben ,53,20,DU solt deinen Nehesten lieben,3 Mose_19_18,0.13941116631031036,False,True
+ey es ist ein köstlich ding,54,18,das ist ein köstlich ding,Psalm_147_1,0.1522703468799591,False,True
+mit spielen auf der harffen,54,21,Mit spielen auff der Harffen,Psalm_92_4,0.22852137684822083,True,True
+denn herr du lässest mich frölich singen von deinen wercken,54,22,DEnn HERR du lessest mich frölich singen von deinen Wercken,Psalm_92_5,0.2521439492702484,True,True
+sonst heist es wenn ich mit menschenund mit engelzungen redete,57,18,WEnn ich mit menschen vnd mit engel zungen redet,Kor1_13_1,0.419168621301651,True,True
+und hätte der liebe nicht/,57,19,vnd hette die liebe nicht,Kor1_13_1,0.46,,False
+so wäre ich ein dönend ertz,57,20,so were ich eyn dohnend ertz,Kor1_13_1,0.4696723222732544,True,True
+nun so gehe denn hin,58,0,So gehe nu hin,2 Mose_3_10,0.19539114832878113,False,True
+ich will dem herrn will ich singen,58,8,wil ich singen Dem HERRN dem Gott Jsrael wil ich spielern,Richter_5_3,0.37897050380706787,True,True
+dem herrn dem gott israel will ich spielen,58,9,wil ich singen Dem HERRN dem Gott Jsrael wil ich spielern,Richter_5_3,0.5096250176429749,True,True
+du solt deinen nechsten lieben,58,14,DU solt deinen Nehesten lieben,3 Mose_19_18,0.13941116631031036,False,True
+als dich selbst so ist nun die liebe des gesetzes erfüllung,58,15,szo ist nu die liebe des gesetzs erfullung,Röm_13_10,0.5747988224029541,True,True
+"den du lieben solst,",58,16,Vnd wenn die Sonne vntergangen,3 Mose_22_7,0.83,,False
+denn er ist sein geschöpffe,58,18,denn es ist seine narung,3 Mose_22_7,0.1894547939300537,False,True
+für solche deine gnade und barmhertzigkeit opffern wir dir billig danck,71,7,so wöllen wir barmhertzigkeit an dir thun,Richter_1_24,0.7844133377075195,True,True
+und verpflichten uns auch ins künftige dich dafüt zu loben,71,8,so wöllen wir barmhertzigkeit an dir thun,Richter_1_24,0.825130820274353,True,True

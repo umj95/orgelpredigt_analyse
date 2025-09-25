@@ -1,0 +1,105 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+so am dritten osterfeyertage zu erklären verordnet,0,2,am dritten sonntage in der fasten,1224,0.5609747767448425,True,False
+an gedachtem dritten osterfeyertage,0,4,am dritten sonntage in der fasten,1224,0.4609490633010864,True,False
+und was er zusaget,5,5,und was er thut,1047,0.12163993716239929,False,True
+und was er zusaget,6,22,und was er thut,1047,0.12163993716239929,False,False
+sey lob und ehr mit hohem preiß,7,4,sey lob und ehr mit hohem preiß,357,9.589744498711764e-14,False,True
+der den tod überwand,11,1,der er den tod über wandt,589,0.3494372069835663,True,True
+und solches um so viel desto mehr,13,0,und zwar um so viels mehr,956,0.12454398721456528,False,True
+mit jauchtzen und posaunen,15,5,mit jauchken und mit freuden,574,0.17315131425857544,False,True
+lobet ihn in seiner grossen herrlichkeit,18,22,lob ihn zu aller zeit in seiner herrlichkeit,692,0.4301731288433075,True,True
+lobet ihn mit posaunen,18,23,lobt ihn mit harffen,724,0.17470256984233856,False,True
+lobet ihn mit psalter und harffen,18,24,lobt ihn mit klang und schalle,692,0.2964758574962616,True,True
+lobet ihn mit paucken und reihen,18,25,lobt ihn mit klang und schalle,692,0.2794699966907501,True,True
+lobet ihn mit säiten und pfeiffen.,18,26,lobt ihn mit klang und schalle,692,0.39,,False
+lobet ihn mit hellen cymbeln,18,27,lobt ihn mit groffemschalle,616,0.43559151887893677,True,True
+lobet ihn mit wolklingenden cymbeln,18,28,lobt ihn mit groffemschalle,616,0.409079372882843,True,True
+hernach aus faulheit nicht treiben,21,6,so sond nicht faul,1279,0.5188230276107788,True,True
+und machet uns getrost,22,13,und uns betruber mache,143,0.12463640421628952,False,True
+also groß sind deine sünden,23,13,groß sind deine himmelsgaben,138,0.35540175437927246,True,True
+du kanst keine gnade bey gott erlangen/,23,14,v mein get euer gott,138,0.9,,False
+deine sünden sind grösser,23,15,groß sind deine himmelsgaben,138,0.36815908551216125,True,True
+daß wir dafür die gnade gottes nicht sehen können,23,30,daß wir nicht kontn genesen ohn gottes trost,351,0.4771879315376282,True,True
+daß wir anders nicht meynen als sitzen wir schon auf des satans sieb,23,34,daß wir nicht kontn genesen ohn gottes trost,351,0.731834352016449,True,False
+der den tod überwand,24,1,der er den tod über wandt,589,0.3494372069835663,True,True
+als wenn david seine harffen genommen,29,22,wann etwan ihm die wolle wird genommen,1232,0.7472095489501953,True,True
+und sich da nicht lang säume,29,55,und länger nicht ergohen,1082,0.1905575692653656,False,True
+das gantz gesetz hat er erfüllt,31,0,das ganz gesek hat er erfüllt,356,0.46234118938446045,True,True
+damit seins vaters zorn gestillt,31,1,damit seins vaters zorn geftillt,356,0.17849375307559967,True,True
+der über uns gieng alle,31,2,der über uns gieng alle,356,5.2416404550115203e-14,True,True
+es ist alles vollbracht,32,15,das ist alles ab geschafft,386,0.09463586658239365,False,True
+denn wer glaubt und getaufft wird,36,18,wer glauben thut und wird getaufft,468,0.16073498129844666,False,True
+der wird seelig werden,36,19,der wird zu schanden,876,0.235656276345253,True,True
+wer aber nicht glaubt,36,20,wer aber nicht glaubt,604,1.7094184683215385e-13,False,True
+der wird verdammt werden,36,21,der wird zu schanden,876,0.24635711312294006,True,True
+da wird durchaus nichts anders daraus,38,5,da wird nun nichts anders draus,754,0.19001972675323486,False,True
+welches ja mit schmertzen müssen erfahren die eltern an ihren lieben kindern,38,10,väter die recht herzlich lieben ihre kinder,1146,0.6755920052528381,True,True
+die kinder an ihren lieben eltern,38,11,väter die recht herzlich lieben ihre kinder,1146,0.35210275650024414,True,True
+die eheleute an ihren lieben ehegatten,38,12,liebsten kinder und verwandten,1040,0.49093759059906006,True,True
+die freunde an ihren lieben angehörigen,38,13,liebsten kinder und verwandten,1040,0.3170543909072876,True,True
+weil du vom tod erstanden bist,40,0,weil du rom tod erstanden bist,997,0.3000216484069824,True,True
+werd ich im grab nicht bleiben,40,1,werd ich im grab nicht bleiben,997,2.0505653923995337e-13,True,True
+mein höchster trost dein auffarth ist,40,2,mein höchster trost dein aufs fahrt ist,997,0.15773393213748932,True,True
+todsfurcht kan sie vertreiben,40,3,todsfurcht kan sie vertreiben,997,3.9928097720492994e-13,True,True
+denn wo du bist da komm ich hin,40,4,denn wodu bist da komm ich hin,997,0.16326995193958282,True,True
+daß ich stets bey dir leb und bin,40,5,daß ich stets bey dir leb und bin,997,2.2504742481447432e-13,True,True
+drum fahr ich hin mit freuden,40,6,drum fahr ich hin mit freuden,997,4.1573813619119604e-13,True,True
+wenn ich gleich sterb so sterb ich dir,43,0,wann ich gleich sterb,997,0.3865344524383545,True,True
+ein ewges leben hast du mir mit deinem tod erworben,43,1,ein ewges leben hast mir mit dei nem tod erworben,997,0.15171119570732117,True,True
+muß ich gleich sterben/,43,2,darum ob ich gleich sterbe,132,0.42,,False
+so werde ich dennoch nicht verderben,43,3,dennoch ich nicht verderbe,132,0.18180236220359802,False,True
+ob mich der tod nimmt hin,43,4,ob mich der tod nimmt hin,1007,6.611481110849193e-14,True,True
+ist sterben mein gewinn,43,5,sterben ist mein gewinn,1009,0.10647118091583252,True,True
+und christus ist mein leben,43,6,und christus ist mein leben,1007,4.3830600769938916e-14,True,True
+dem thu ich mich ergeben,43,7,dem thu ich mich ergeben,1041,3.986586993680319e-13,False,True
+ich sterb gleich heut oder morgen,43,8,ich sterb heut oder morgen,1007,0.036770254373550415,True,True
+mein seel wird er versorgen,43,9,mein seel wird er versorgen,1007,5.957214566478311e-14,True,True
+das ist mein trost,44,0,das ist mein leib,716,0.09279602766036987,False,True
+das ist mein trost,44,7,das ist mein leib,716,0.09279602766036987,False,True
+vergebung der sünden leben und seeligkeit,44,8,leben und se ligkeit,1031,0.4952201843261719,True,True
+denn christus ist die auferstehung,44,9,da christus ist die sonne,1031,0.45294320583343506,True,True
+wer an ihn gläubet,44,10,wer hilfft ihm auf,798,0.14168047904968262,True,True
+der wird leben/ ob er gleich stürbe/,44,11,der wird nicht sterben,1044,0.73,,False
+und wer da lebet und gläubet an mich/,44,12,und wer auch ftirbet,1044,0.83,,False
+der wird nimmehr sterben,44,13,der wird nicht sterben,1044,0.1541244238615036,False,True
+das ist mein trost,44,14,das ist mein leib,716,0.09279602766036987,False,True
+leben und seeligkeit,44,23,leben und se ligkeit,1031,0.0542498342692852,False,True
+das ist mein trost zu allerzeit,45,0,das ist mein trost zu aller zeit,1003,0.008926699869334698,True,True
+in allem creutz und traurigkeit,45,1,jn allem creuß und traurigkeit,1003,0.12739551067352295,True,True
+ich weiß das ich am jüngsten tag,45,2,ich weiß daß ich am jungsten tag,1003,0.18039968609809875,True,True
+ohn alle klag werd auferstehen aus meinem grab,45,3,ohn alle klag werd aufferstehn aus meinem grab,1003,0.04843384772539139,True,True
+also hat gott die welt geliebet,52,11,so hat gott die welt geliebet,362,0.06843536347150803,False,True
+wo das nicht wäre,56,1,wo dieses wäre nicht geschehn,233,0.14893276989459991,False,True
+darum lassets alles ehrlich und ordentlich zugehen,57,10,damit ich rein und sauber sey,330,0.5645027756690979,True,True
+weil gottes zorn anbricht,60,6,weil gottes zorn entglommen,204,0.0913110077381134,False,True
+führe mich aus meinen nöthen,61,5,fuhre mich aus meinen nithen,291,0.16425985097885132,False,True
+und züchtige mich nicht in deinem grimm,61,18,und zucht michnicht in deinem grimm,191,0.11397182196378708,False,True
+was gott von uns will gethan und gelassen haben,63,6,was gott nicht von uns haben wil,1244,0.4047849476337433,True,True
+daß wer gott liebet,64,9,denen die gott lieben,926,0.16189712285995483,False,True
+daß er auch seinen bruder liebe/,64,10,denen die gott lieben,926,0.85,,False
+und wir demnach daher unser leben bessern,64,12,daß weil wir das leben nüken,74,0.490079790353775,True,True
+aus der tieffe ruff ich herr zu dir,65,9,aus tieffer noth schrey ich zu dir,596,0.29408323764801025,True,True
+aus tieffer noth schrey ich zu dir,65,11,aus tieffer noth schrey ich zu dir,596,8.198049037582214e-14,True,True
+und immer daran müste gebessert und gestimmet werden,66,11,und darinnen stets wachen und baten,1076,0.49027562141418457,True,True
+heute so ihr seine stimme höret,66,18,heute so ihr seine stimme haret,1152,0.11059623956680298,False,True
+die welt erzittert ob dem tod,67,11,die welt erzittert ob den tod,791,0.01861063949763775,False,True
+mit säiten und pfeiffen,69,7,mit spiessen und mit stangen,501,0.1819237321615219,False,True
+deo non voce sed chorde cantandum,73,7,kein wörtlein aber je sus redt,502,0.6645456552505493,True,True
+das fröliche nun freut euch lieben christen gemein ,75,12,mel nun freut euch lieben christn gemein,991,0.18306638300418854,False,True
+gott will ich lassen rathen,77,0,gott wil ich lassen rathen,44,0.010178809054195881,True,True
+denn er all ding vermag;,77,1,der alle ding ver mag,44,0.7,,False
+er segne meine thaten,77,2,er segne meine thaten,44,7.909722410468639e-14,True,True
+mein fürnehmen und sach,77,3,mein fürnehmen und sach,44,6.358898596483392e-14,True,True
+denn ich ihm heimgestellt/,77,4,deun ich ihm heimgestellt mein leib,44,0.61,,False
+mein leib mein seel,77,5,mein leib mein seel,900,6.323056905540095e-14,False,True
+mein leben/ und was er mir sonst geben/,77,6,und alles was ich hab,44,0.56,,False
+er machs wies ihm gefällt,77,7,er machs wies ihm gefällt,44,2.320858891353972e-13,False,True
+ist in der ersten kirchen am gebräuchlichsten gewesen,78,11,der erste war ein ordensmann,1270,0.6832503080368042,True,True
+dir sey es wiederum zu ehren,79,4,daß fie zu gottes ehren,598,0.705123245716095,True,True
+und deinem einigen wahrem dienst übergeben/,79,5,zur rechten hand ihn stellt,598,0.96,,False
+gewidmet und consecriret wir sagen dir auch von grund unsers hertzens,79,6,und uns zu reichsges nossen verordnet für und für,598,0.7539125084877014,True,True
+heilig heilig ist der herr zebaoth,79,25,oheilig heilig heilig ist der herr zebaoth,1091,0.07888913154602051,False,True
+so zwingt die säiten in cithara,80,0,zwingt die sensen in cythara,741,0.396307110786438,True,True
+und lasst die süsse musica gantz freudenreich erschallen,80,1,und lafst die süss se musica gank frendenreich erschallen,741,0.23387566208839417,True,True
+singet klinget jubiliret triumphiret,80,2,singer springet jubiliret triumphiret,741,0.4575098156929016,True,True
+danckt dem herren groß ist der könig der ehren,80,3,danckt dem herren groß ist der könig der ehren,741,2.5965866826474504e-13,True,True

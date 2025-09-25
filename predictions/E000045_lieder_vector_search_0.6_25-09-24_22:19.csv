@@ -1,0 +1,86 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+so ungereimt es ihnen fürkäme,5,16,daß es so unserthalben thut,381,0.521439790725708,True,False
+so ungereimt wäre es,5,18,daß es so unserthalben thut,381,0.3955817222595215,True,False
+lobet ihn in seiner grossen herrlichkeit,30,9,lob ihn zu aller zeit in seiner herrlichkeit,692,0.4301731288433075,True,True
+lobet ihn mit posaunen,30,10,lobt ihn mit harffen,724,0.17470256984233856,False,True
+lobet ihn mit psalter und harffen,30,11,lobt ihn mit klang und schalle,692,0.2964758574962616,True,True
+lobet ihn mit paucken und geigen,30,12,lobt ihn mit klang und schalle,692,0.2354050576686859,True,True
+lobet ihn mit sayten und harffen,30,13,lobt ihn mit klang und schalle,692,0.23387011885643005,True,True
+lobet ihn mit hellen cymbeln,30,14,lobt ihn mit groffemschalle,616,0.43559151887893677,True,True
+lobet ihn mit wohlklingenden cymbeln,30,15,lobt ihn mit groffemschalle,616,0.4192377030849457,True,True
+nun dancket alle gott,30,31,nun dancket alle gott,515,2.499743034095614e-13,False,False
+zu singen und zu spielen im hause des herrn mit cymbeln,30,36,daß man dem herren danck und sing,655,0.7383414506912231,True,False
+i c 10 § 1,31,5,cn in der sce,649,0.9826085567474365,True,True
+seq,31,6,cn in der sce,649,0.9912588596343994,True,True
+18 wenn man recht ansiehet die poëtische kunst,33,22,doch wann ihrs recht betrachtet,1047,0.8127074837684631,True,True
+die in den psalmen davids und andere heiligen männer gottes ihren gedichten steckt,33,23,und mit psalmen des herren lob und ruhm erhöhn,1047,0.7881395220756531,True,True
+so werden wir genöthiget,63,5,so werden wir crhöret,799,0.16732807457447052,False,True
+daß wir nicht nöthig gehabt haben,66,1,daß wir nicht sind hin gerafft,445,0.16711552441120148,False,True
+wenn ich in nöthen bet und sing,69,0,wann ich in ndthen bat und sing,864,0.08327163755893707,True,True
+so wird mein hertz recht guter ding,69,1,so wird mein herh recht guter ding dein geist bezeugt,864,0.31781214475631714,True,True
+seraphim stunden über ihn,70,2,es stunden zween seraph bey ihm daran,712,0.5683466196060181,True,True
+ein jeglicher hatte sechs flügel,70,3,sechs flügel sah man einen jeden han,712,0.44036436080932617,True,True
+mit zween deckten sie ihr antlitz,70,4,mit zween bedeckten sie ihre fisse gar,712,0.22544898092746735,True,True
+mit zween deckten sie ihre füsse,70,5,mit zween bedeckten sie ihre fisse gar,712,0.18251416087150574,True,True
+und mit zween flogen sie,70,6,und mit den andern zween sie flogen frey,712,0.3641524314880371,True,True
+heilig heilig heilig ist der herr zebaoth,70,8,oheilig heilig heilig ist der herr zebaoth,1091,0.0550813302397728,False,True
+immer und ewiglich jes,70,20,immer und in ewigkeit,372,0.1446450650691986,False,True
+ut cantu eum exciperent,73,17,dazu ihn hertzlich ruffen an,620,0.5564485788345337,True,True
+hebr cantabant reciproce per vices,73,18,singt gegn einander  dem herren mit dancken,724,0.6483324766159058,True,True
+ad mutuo cantandum qvasi per responsoria alternatim canendo,73,20,singt gegn einander  dem herren mit dancken,724,0.7414356470108032,True,True
+i e ps 113,73,29,s ja ich geh,196,0.8929993510246277,True,True
+conferatur calvorii tractatus de musica ecclesiastica p,73,35,p gerhard  der psalm,944,1.1208596229553223,True,True
+die kein mensch sagen kan,74,17,die kein mensch aus kan sagen,383,0.025141455233097076,False,True
+heilig heilig heilig ist der herr zebaoth,74,23,oheilig heilig heilig ist der herr zebaoth,1091,0.0550813302397728,False,True
+gott verleiht uns dazu den geist der gnaden,79,61,gott heilger geist macht solchs bekandt uns,449,0.49668505787849426,True,True
+daß er durch die psalmen meyne eigentlich die psalmen davids und andere im psalter,81,13,die man von mir geschrieben findt in moses und propheten lehr,604,0.9859315156936646,True,True
+durch die lobgesänge die andern gesänge in der schrift hin und wieder von den propheten gemacht,81,14,die man von mir geschrieben findt in moses und propheten lehr,604,0.8273009061813354,True,True
+sed musicorum instrumentorum sonitus vocem humanam sit comitatus,83,4,ach kont ich singen,898,0.7948421239852905,True,True
+ita augustinus psallere est non simpliciter canere sed ad musicum instrumentum,83,5,ach kont ich singen,898,0.9471378326416016,True,True
+da sie das osterlamm mit einander gegessen math,84,3,wann geist und fleisch hie streiten,1273,0.8727107048034668,True,True
+so paulus und silas mit einander gesungen so laut,84,5,daß wir getrost und all in ein mit luft und licbe singen,358,0.737797737121582,True,True
+25 welche im gefängniß ohne psalter und dergleichen instrumenta gesungen sind,84,7,daß wir getrost und all in ein mit luft und licbe singen,358,1.0407230854034424,True,True
+quippe qvi circa laudem dei potissimum occupentur,85,2,wann wir mit preiß den gott der götter ehren,673,0.7532894611358643,True,True
+aut petitionem alicujus boni,87,2,oder sonsten mir noch fehlet,138,0.6147949695587158,True,True
+redet zu einander und unter einander von und aus psalmen,89,2,und singet schwingend für und für,1188,0.6567601561546326,True,True
+daß es geschehen soll,89,13,daß es ja mög geschehen,326,0.15160587430000305,False,True
+etiam ex psalmis davidis sumpsisse,90,7,drum trauret auch der freuden quell,819,0.8035563826560974,True,True
+testatur joh buxtorffius in synagoga judaica cap,90,8,joh fridericus gerzog zu sachsen,819,0.9668835997581482,True,True
+interpretes utuntur voce psalmi loco hebraicae hebr,92,2,daß ich dir psalmen sing im höhern chor,1180,1.0235569477081299,True,True
+convivii gratia convenerint id qvod &amp,94,27,halt genehm und nim für lieb mit gott und dem,899,0.9357975721359253,True,True
+dicatur das wort hebr,98,5,das wort ward fleisch,417,0.6248964071273804,True,True
+die an mich gläuben,113,14,die sich zu mir gelencket,369,0.16973944008350372,False,True
+und daß sie ihm nachfolgen können,114,30,daß sie ihm kunten folgen nach,461,0.16280138492584229,False,True
+ergetze dich nicht daran,120,16,kehr dich nicht dran,935,0.10294549912214279,False,True
+laß dich nicht gelüsten,120,20,laß dich je nicht bethdren,215,0.12230382859706879,False,True
+und ihm zur unehre gereicht,120,35,und ihm zur ehr erbauet,775,0.19747622311115265,False,True
+wie gott dem hiob vorhielte,122,19,wie gott dem hülffe leiste,902,0.17112253606319427,False,True
+geist und leben ist,122,68,trost und leben heyl,595,0.25040796399116516,True,True
+also muß auch ein christ,122,74,so bleibt ein christ,782,0.43505606055259705,True,True
+und mein geist freuet sich gottes meines heylandes,125,1,und mein geift freuet sich sottes meines heylandes,633,0.17204447090625763,False,True
+lobe den herrn meine seele,125,5,lob mein seel den herren,644,0.14206412434577942,False,True
+lobet ihn mit paucken und reigen,127,24,lobt ihn mit klang und schalle,692,0.3203814923763275,True,True
+lobet ihn mit sayten und pfeiffen,127,25,lobt ihn mit klang und schalle,692,0.27344560623168945,True,True
+lobet ihn mit hellen cymbeln,127,26,lobt ihn mit groffemschalle,616,0.43559151887893677,True,True
+lobet ihn mit wohlklingenden cymbeln,127,27,lobt ihn mit groffemschalle,616,0.4192377030849457,True,True
+57 s,138,11,s hat nun de,918,1.0449604988098145,True,True
+exemplo davidis hymnis spiritualibus celebrandi nomen summi numinis,141,24,dem heilgen geist mit namen die göttlich krafft,877,0.8905133605003357,True,True
+cujus poemata sacra gustrovii prodierunt hoc titulo,141,26,dem heilgen geist mit namen die göttlich krafft,877,0.8197875618934631,True,True
+1719 p 157 &amp,141,35,p i spener d,580,1.3386121988296509,True,True
+an 1712 p 1000,141,36,p i spener d,580,1.085443377494812,True,True
+jesus christus unser heyland ,141,58,esus christus unser heyland,714,0.11883893609046936,False,True
+christus der uns selig macht ,141,62,christus der uns selig macht,479,2.8137897827712477e-13,False,True
+gott hat das evangelium gegeben,141,74,gdtt hat das evangelium gegeben,1077,0.328238844871521,True,True
+daß wir werden fromm ,141,75,daß wir werden fromm,1077,2.1595361133011637e-13,True,True
+es ist das heyl uns kommen her ,141,84,mel es ist das heyl uns kommen her,1042,0.12300620973110199,False,True
+da der gemeine mann nicht wohl mit singen können,144,3,weil menschenschuß nicht helffen kan,1123,0.4660573899745941,True,True
+6 hinc est qvod vatiniano pontificii odio lutheranorum cantiones proseqvuntur,148,0,und offt betrübet die gemein der christen,639,1.0682168006896973,True,True
+hinc qvod eas imitati sunt antizelia partibus suis indulgenti,148,2,so fürchten gott uus ihrer feinde rachen,639,0.995695173740387,True,True
+fließig beygewohnet ja wenn du wirst fortfahren durch trostlieder dich aufzurichten,155,3,wird dich gar bald erfreuen sey du nur treus und halt dabey starck an mit glaubgem schreven,483,0.8283268809318542,True,True
+23 p m 72,159,3,a s b s,557,1.1939489841461182,True,True
+s,159,4,a s b s,557,0.6800270080566406,True,True
+wenn ich in nöhten bet und sing,160,2,wann ich in ndthen bat und sing,864,0.09508314728736877,True,True
+so wird mein hertz recht guter ding,160,3,so wird mein herh recht guter ding dein geist bezeugt,864,0.31781214475631714,True,True
+daß sie uns keine dienste mehr thun können,162,5,daß wir nicht meister suschen mehr,609,0.5640898942947388,True,True
+heilig heilig heilig ist der herr zebaoth,162,10,oheilig heilig heilig ist der herr zebaoth,1091,0.0550813302397728,False,True
+daß sie ihm hinfort,162,39,daß er sie tilg,279,0.17170991003513336,False,True

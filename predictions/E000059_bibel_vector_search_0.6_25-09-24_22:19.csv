@@ -1,0 +1,62 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+die hatte er erwehlet,18,15,das er gekaufft hatte,2 Samuel_12_3,0.1762179136276245,False,False
+unsere zeichen sahen wir nicht,21,14,Vnsere Zeichen sehen wir nicht,Psalm_74_9,0.39547812938690186,True,True
+und kein prophet prediget mehr ,21,15,vnd kein Prophet prediget mehr,Psalm_74_9,0.19276881217956543,True,True
+der pharisäer stund und betet bey sich selbst also,24,6,der phariseer stund vnd bettet bey sich selbs also,Lk_18_10,0.5333848595619202,True,True
+jch dancke dir gott/,24,7,ich danck dyr Gott,Lk_18_10,0.98,,False
+daß ich nicht bin wie andere leute,24,8,das ich nit bynn wie ander leutt,Lk_18_10,0.28228533267974854,True,True
+räuber ungerechte ehebrecher oder auch wie dieser zöllner,24,9,rewber vnrechte ehebrecher odder auch wie diser zolner,Lk_18_10,0.48743367195129395,True,True
+jch faste zwier in der wochen,24,10,Jch faste zwyr ynn der wochen,Lk_18_11,0.581659197807312,True,True
+und gebe den zehenden von allem,24,11,vnd geb den zehenden von allem das ich habe,Lk_18_11,0.6211894750595093,True,True
+denn wer sich selbst erhöhet,26,5,Denn wer sich selb erhohet,Lk_14_11,0.44964101910591125,True,True
+der soll erniedriget werden,26,6,der soll ernydrigt werden,Lk_14_11,0.07442571967840195,True,True
+und wer sich selbst erniedriget/,26,7,vnd wer sich selb ernydrigt,Lk_14_11,0.8,,False
+der soll erhöhet werden,26,8,der soll erhohet werden,Lk_14_11,0.2751186490058899,True,True
+lobet ihn in seinen thaten,27,2,Lobet jn in seinen Thatten,Psalm_150_2,0.49506837129592896,True,True
+lobet ihn in seiner grossen herrligkeit,27,3,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.298035204410553,True,True
+lobet ihn mit posaunen:,27,4,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.85,,False
+lobet ihn mit psalter und harffen:,27,5,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.91,,False
+lobet ihn mit paucken und reigen:,27,6,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.79,,False
+lobet ihn mit säyten und pfeiffen,27,7,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.6875120401382446,True,True
+lobet ihn mit hellen cymbeln:,27,8,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.79,,False
+lobet ihn mit wohlklingenden cymbeln,27,9,besprenget er desselben gleychen mit blutt,Hebr_9_21,0.6790561676025391,True,True
+daß moses rühmet wo ist so ein herrlich volck,29,11,Denn wo ist so ein herrlich Volck,5 Mose_4_7,0.5213322043418884,True,True
+zu dem die götter sich so nahe thunals,29,12,zu dem Götter also nahe sich thun,5 Mose_4_7,0.3081468641757965,True,True
+der herr unser gott/,29,13,als der HERR vnser Gott,5 Mose_4_7,0.87,,False
+so offt wir ihn anruffen,29,14,so offt wir jn anruffen?,5 Mose_4_7,0.43752142786979675,True,True
+das ich gebauet habe,29,31,das ich gebawet habe,1 Könige_8_43,0.046265557408332825,False,True
+lobet ihn in seinen thaten,32,14,Lobet jn in seinen Thatten,Psalm_150_2,0.49506837129592896,True,True
+lobet ihn in seiner grossen herrligkeit,32,15,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.298035204410553,True,True
+noch zu jerusalem werdet den vater anbethen,45,14,noch zu Jerusalem werdet den vater anbeten,Joh_4_19,0.05530332773923874,False,True
+auf in den tempel giengen,50,0,vnd gieng ynn den tempel,Mk_11_11,0.13995535671710968,False,True
+so ums jahr christi 655,53,12,das der tag Christi furhanden sey,Thess2_2_2,0.9322175979614258,True,True
+geschehen ums jahr christi 757,53,13,das der tag Christi furhanden sey,Thess2_2_2,0.9523956775665283,True,True
+der kans nicht lassen,61,27,vnd kans nicht lassen,Hiob_34_31,0.08835265785455704,False,True
+daß ers nicht gläubet,61,32,das es jn nicht tödtet,3 Mose_20_4,0.18369223177433014,False,True
+was dort in ewigkeit unsere verrichtung seyn soll,71,23,vnd was wir thun sollen,Jeremia_42_3,0.6486361026763916,True,True
+woran wir uns ewig ergötzen sollen,71,25,vnd was wir thun sollen,Jeremia_42_3,0.48951074481010437,True,True
+last uns mit dancken vor sein angesicht kommen,92,3,Lasset vns mit dancken fur sein Angesichte komen,Psalm_95_2,0.7073983550071716,True,True
+und mit psalmen ihm jauchzen,92,4,Vnd mit Psalmen jm jauchzen,Psalm_95_2,0.7007953524589539,True,True
+so sollen wir dencken,92,6,so wöllen wir jn deuten,Daniel_2_4,0.18835747241973877,False,True
+die vom morgen biß zum abend,92,26,vom morgen bis gegen abend,Hesekiel_48_8,0.12401105463504791,False,True
+und alles was drinnen ist,92,31,mit allem das drinnen ist,Amos_6_8,0.19276471436023712,False,True
+so dancken wir,92,64,so wöllen wir thun,4 Mose_32_31,0.16394460201263428,False,False
+er sende jhnen hülffe vom heiligthum,94,9,Er sende dir hülffe vom Heiligthum,Psalm_20_3,0.3901516795158386,True,True
+und stärcke sie aus zion,94,10,Vnd stercke dich aus Zion,Psalm_20_3,0.6550072431564331,True,True
+er gebe jhnen/ was jhr hertz begehret/,94,11,Er gebe dir was dein Hertz begeret,Psalm_20_5,0.95,,False
+und erfülle alle jhre anschläge,94,12,Vnd erfülle all deine anschlege,Psalm_20_5,0.5101138353347778,True,True
+– ich habe ietzt mit freuden gesehen dein volck,94,22,vnd habe jtzt mit freuden gesehen dein Volck das hie vorhanden ist,1 Chronik_29_17,0.5567516088485718,True,True
+daß es dir freywillig gegeben hat,94,24,das es dir freiwillig gegeben hat,1 Chronik_29_17,0.25735965371131897,True,True
+herr gott unser väter/,94,25,HERR Gott vnser veter,1 Chronik_29_18,0.96,,False
+bewahre ewiglich solchen sinn und gedancken im hertzen deines volcks,94,26,beware ewiglich solchen sinn vnd gedancken im hertzen deins Volcks,1 Chronik_29_18,0.5130648612976074,True,True
+zu welchen ihr kommet,100,24,zu welchem du komen bist,Rut_2_12,0.11970255523920059,False,True
+denn er wolte nicht,102,10,denn er wuste nicht,1 Mose_38_16,0.18365700542926788,False,True
+hier will ich wohnen,104,14,Hie wil ich wonen,Psalm_132_14,0.11638142168521881,False,True
+findet man in dem wercke grosse und kleine,106,12,gros vnd klein haben,5 Mose_25_13,0.5968455076217651,True,True
+daß es heisset sie verbrennen dein heiligthum,111,25,Sie verbrennen dein Heiligthum,Psalm_74_7,0.46858805418014526,True,True
+sie entweihen die wohnung deines namens zu boden,111,26,Sie entweihen die Wonunge deines Namens zu boden,Psalm_74_7,0.3277701735496521,True,True
+sie sprechen in ihren hertzen:,111,27,Sie sprechen in jrem hertzen,Psalm_74_8,0.49,,False
+lasset uns sie plündern,111,28,lasst vns sie plündern,Psalm_74_8,0.19234484434127808,True,True
+sie verbrennen alle häuser gottes im lande,111,29,Sie verbrennen alle heuser Gottes im Lande,Psalm_74_8,0.18074610829353333,True,True
+und das ist der weg,113,17,Vnd da ist der weg,Psalm_50_23,0.26999348402023315,True,True
+daß ich ihm zeige das heyl gottes,113,18,das ich jm zeige das heil Gottes,Psalm_50_23,0.38799306750297546,True,True

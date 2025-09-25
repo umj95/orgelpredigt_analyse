@@ -1,0 +1,36 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+hosianna in der höhe,6,2,hosianna in der höhe,387,3.1094424994895786e-13,True,True
+jch will dem herrn will ich singen,7,0,dem herren wil ich singen,1105,0.37244004011154175,True,True
+dem herrn dem gott jsrael will ich spielen,7,1,dem herren wil ich singen,1105,0.5284736752510071,True,True
+was vor grosses der herr an jhnen gethan,7,27,was muk der herr doch meynen,1242,0.6104448437690735,True,False
+ich will dem herrn will ich singen,7,31,dem herren wil ich singen,1105,0.14148831367492676,True,False
+dem herrn dem gott jsrael will ich spielen,7,32,dem herren wil ich singen,1105,0.5284736752510071,True,False
+dem herrn will ich singen,7,38,dem herren wil ich singen,1105,0.035259734839200974,False,False
+dem herrn will ich singen scheinet,7,48,dem herren wil ich singen,1105,0.06727525591850281,False,False
+schrey und sprach hosianna dem sohn david,12,3,hosianna davids sohne der fol hoch gelobet seya,387,0.6444117426872253,True,True
+hosianna in der höhe,12,5,hosianna in der höhe,387,3.1094424994895786e-13,True,True
+von sich stellete auf die hönische verspottung seiner unhöflichen gemahlin der michal,13,9,kommt mit macht auf dein bett geflogen zu seiner engel güldne schaar,887,0.9158496260643005,True,True
+dermassen innerlich erfreuet daß er nicht allein mit geläufftigem spielen auf seiner harffe,13,23,des freut er sich in fei nem sinn,497,0.8311468958854675,True,True
+worunter die wallfische die grösten,13,67,das die rohen sunder plagt,770,0.7203052043914795,True,False
+wir hingen auff mit schweren muth,15,0,wir hiengen auf mit schwerem muth,891,0.04562883451581001,False,True
+die orgeln und die harffen gut,15,1,die harffen und die orgeln gut,891,0.0077364277094602585,False,True
+daß er ein orgellwerck eingerichtet und verfertiget habe,16,8,er baut ein sc schloß und vestes haus,782,0.7365027666091919,True,True
+zwingt die saiten in cythara,20,0,zwingt die sensen in cythara,741,0.2266588807106018,True,True
+und lasst die süsse musica gantz freudenreich erschallen,20,1,und lafst die süss se musica gank frendenreich erschallen,741,0.23387566208839417,True,True
+singet springet jubiliret triumphiret,20,2,singer springet jubiliret triumphiret,741,0.19591876864433289,True,True
+danckt dem herren groß ist der könig der ehren,20,3,danckt dem herren groß ist der könig der ehren,741,2.5965866826474504e-13,True,True
+und jauchtzet gott mit frölichem schall,21,1,und jauchhet gott mitsüffem schall,596,0.18594643473625183,False,True
+und jauchtzet gott mit frölichem schall,21,11,und jauchhet gott mitsüffem schall,596,0.18594643473625183,False,True
+und jauchtzet gott mit frölichem schall,25,1,und jauchhet gott mitsüffem schall,596,0.18594643473625183,False,True
+dem sohn david gelobet sey der da kömmt in den nahmen des herrn,26,19,well david hier thn far den herrnerkenner durch was berstand wird er genannt sein sohn,1279,0.6889709234237671,True,True
+singen also an hiermit dem herrn messiam welchen sie nennen τὸν υἱόν δαβίδ dem sohn david,26,20,well david hier thn far den herrnerkenner durch was berstand wird er genannt sein sohn,1279,0.6898241639137268,True,True
+du bist mein sohn,26,43,du bist mein hirt,199,0.0999467521905899,False,True
+obgleich das werck den meister allbereit selbst gelobet,26,106,der meister übertrifft auch seinen junger,534,0.8760332465171814,True,True
+zusagen mein hertz ist bereit,30,81,mein dhr herr sen bereit,207,0.4117954671382904,True,True
+gott mein hertz ist bereit,30,82,mein dhr herr sen bereit,207,0.3115207850933075,True,True
+wach auff mein hertz und singe,31,0,wach auf mein herz und singe,1262,0.10000158101320267,False,True
+den schöpffer aller dinge,31,1,der schöpffer aller ding,406,0.18171097338199615,False,True
+consolationem eine hertzenserqvickung und gedencket bey sich,32,1,geußt ein heilsam del hinein und dater ihm hat die wunden,1273,0.6968225240707397,True,True
+dabey ein einfältiger sich zuerinnern wiederum seines hausstandes,32,44,daß ein dieb in sein haus brechen wolte,1088,0.7272268533706665,True,True
+wenn das corpus eines hauses recht formiret seyn soll,32,45,wann ein hausherr grundlich wissen solte,1088,0.7284661531448364,True,True
+die schaffe tragen zu tausend und hundert tausend,32,61,hast du es hundert und noch tausendmal versehen,282,0.610720694065094,True,True

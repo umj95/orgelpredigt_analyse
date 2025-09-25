@@ -1,0 +1,5 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+dieß ist der tag,20,30,das ist der tag,1 Mose_7_11,0.10775734484195709,False,False
+– geht zu seinen thoren ein mit danken,25,3,zu seinen Vorhöfen mit loben,Psalm_100_4,0.6939122676849365,True,True
+zu seinen vorhöfen mit loben,25,4,zu seinen Vorhöfen mit loben,Psalm_100_4,0.026469623669981956,True,True
+wie er damals war,54,12,wie er gewesen ist,Prediger_12_7,0.19096574187278748,False,True

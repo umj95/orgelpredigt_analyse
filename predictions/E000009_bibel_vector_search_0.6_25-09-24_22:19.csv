@@ -1,0 +1,10 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+das ist ein köstlich ding,12,1,das ist ein köstlich ding,Psalm_147_1,1.553659815817926e-13,True,True
+solch lob ist lieblich und schön,12,2,Solch lob ist lieblich vnd schön,Psalm_147_1,0.32690149545669556,True,True
+das ist ein köstlich ding,12,11,das ist ein köstlich ding,Psalm_147_1,1.553659815817926e-13,False,True
+das ist eine köstliche sache,12,29,das ist ein köstlich ding,Psalm_147_1,0.03039001300930977,True,True
+ein solches lob ist lieblich und schön,12,30,Solch lob ist lieblich vnd schön,Psalm_147_1,0.41270849108695984,True,True
+wenn ich euch,14,32,wenn ich zu euch keme,Kor1_14_6,0.19346334040164948,False,True
+und diese kraft und diese stärke sollte selbst das trägste gemüth nicht empfinden,22,19,auch nicht mit solcher Macht,Daniel_11_4,0.6915349960327148,True,True
+unterhaltet eure gemeinschaftliche andacht durch psalmen,23,5,mit psalmen vnd lobsengen vnd geystlichen lyden ynn der gnade,Kol_3_16,0.8062443733215332,True,True
+lobgesänge und geistvolle lieder,23,6,mit psalmen vnd lobsengen vnd geystlichen lyden ynn der gnade,Kol_3_16,0.8355001211166382,True,True

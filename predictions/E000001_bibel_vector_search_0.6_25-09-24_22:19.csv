@@ -1,0 +1,29 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+lobet jhn in seinen thaten,4,2,Lobet jn in seinen Thatten,Psalm_150_2,0.23463529348373413,True,True
+lobet jhn in seiner grossen herrligkeit,4,3,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.12097544223070145,True,True
+lobet jhn mit posaunen,4,4,Lobet jn mit Posaunen,Psalm_150_3,0.3979509770870209,True,True
+lobet jhn mit psaltern vnd harpffen,4,5,Lobet jn mit Psalter vnd Harffen,Psalm_150_3,0.45952439308166504,True,True
+lobet jhn mit paucken vnd reygen,4,6,Lobet jn mit Paucken vnd Reigen,Psalm_150_4,0.4273560047149658,True,False
+lobet jhn mit seiten vnd pfeiffen,4,7,Lobet jn mit Seiten vnd Pfeiffen,Psalm_150_4,0.29613280296325684,True,False
+lobet jhn mit hellen cymbaln,4,8,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.27680113911628723,True,False
+lobet jhn mit wolklingenden cymbaln,4,9,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.3117891252040863,True,False
+alles was othem hat/,4,10,ALles was Odem hat,Psalm_150_6,0.96,,False
+lobe den herren halleluia,4,11,Lobe den HERRN Halelu ia,Psalm_150_6,0.6553324460983276,True,False
+vnd durch günstiges bewilligen vnd zuthun vnserer von gott für gesetzten christlichen obrigkeit,5,7,durch gemeynen dienst zu bessern den leyb Christi,Eph_4_11,0.6544678211212158,True,True
+vnd zu mehrer vbung des offentlichen wahren gottesdiensts,5,9,durch gemeynen dienst zu bessern den leyb Christi,Eph_4_11,0.7686378955841064,True,True
+das ist ein köstlich ding,10,2,das ist ein köstlich ding,Psalm_147_1,1.553659815817926e-13,True,True
+solches lob ist lieblich vnd schön,10,3,Solch lob ist lieblich vnd schön,Psalm_147_1,0.25835272669792175,True,True
+sollen loben den namen des herrn,11,7,Sollen loben den Namen des HERRN,Psalm_148_13,0.3959202766418457,True,True
+denn sein name allein ist hoch,11,8,Denn sein Name allein ist hoch,Psalm_148_13,0.06300751119852066,True,True
+sein lob gehet so weit himmel vnd erden ist,11,9,Sein Lob gehet so weit Himel vnd Erden ist,Psalm_148_13,0.309825599193573,True,True
+lobet jhn mit seiten vnd pfeiffen,14,2,Lobet jn mit Seiten vnd Pfeiffen,Psalm_150_4,0.29613280296325684,True,True
+lobet jhn mit wolklingenden cymbaln,14,3,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.3117891252040863,True,True
+vnd redet vnter einander von psalmen vnd lobgesängen vnd geistlichen liedern,18,12,vnd redetvnternander von psalmen vnd lobsengen vnd geystlichen lieden,Eph_5_17,0.45652735233306885,True,True
+singet vnd spielet dem herrn in ewren hertzen,18,13,singet vnd spielt dem herrn ynn ewren hertzen,Eph_5_17,0.046345680952072144,True,True
+so bringet mir nun einen spielmann,53,20,SO bringet mir nu einen Spielman,2 Könige_3_15,0.11332936584949493,False,True
+der kans nicht lassen,62,15,vnd kans nicht lassen,Hiob_34_31,0.08835265785455704,False,True
+vnd zum theil auch grauitetische harmoniam vnd resonantz machen vnd geben,63,6,zu gleychem todt so werden wyr auch der aufferstehung gleych seyn,Röm_6_5,0.9844031929969788,True,True
+daß sie vnsere gute werck sehen,63,26,das sie ewere gute werck sehen,Mt_5_16,0.1802397221326828,False,True
+so lang wir hie auff erden leben,64,53,so lange wir leben,Jesaja_38_20,0.1548444628715515,False,False
+heilig heilig heilig ist der herr zebaoth,64,58,heilig ist der HERR Zebaoth,Jesaja_6_3,0.282040536403656,True,False
+alle land seind seiner ehren voll,64,59,Alle land sind seiner Ehren vol,Jesaja_6_3,0.1602257490158081,True,False

@@ -1,0 +1,84 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+lasse keine seele der reichen oder armen,20,10,weder reich noch arm,Rut_3_10,0.383973628282547,True,True
+hohen oder niedrigen ohne trost und heil,20,11,weder reich noch arm,Rut_3_10,0.6386111974716187,True,True
+heilig heilig heilig ist gott der herr zebaoth,22,2,heilig ist der HERR Zebaoth,Jesaja_6_3,0.3462023138999939,True,True
+und alle landen sind seiner ehre voll,22,3,Alle land sind seiner Ehren vol,Jesaja_6_3,0.2876371443271637,True,True
+laß mich hören deine stimme,23,0,Las mich deine stimme hören,Hohelied_8_13,0.0464307926595211,False,True
+laß mich hören deine stimme ,23,7,Las mich deine stimme hören,Hohelied_8_13,0.0464307926595211,False,True
+die stimme deines gebeths,23,8,noch deine stimme hören,2 Mose_4_9,0.4946422278881073,True,True
+die stimme deines flehens,23,9,noch deine stimme hören,2 Mose_4_9,0.5367729663848877,True,True
+du bist mein täublein,23,16,Du bist mein volck,Jesaja_51_16,0.1433609426021576,False,False
+laß mich hören deine stimme,23,18,Las mich deine stimme hören,Hohelied_8_13,0.0464307926595211,False,False
+jch wil mich mit dir verloben in ewigkeit,24,1,Jch wil mich mit dir verloben in ewigkeit,Hosea_2_21,0.09169881790876389,False,True
+ich wil mich mit dir vertrauen in gerechtigkeit und gericht/,24,2,Ja im Glauben wil ich mich mit dir verloben,Hosea_2_22,0.8,,False
+ja im glauben wil ich mich mit dir verloben,24,4,Ja im Glauben wil ich mich mit dir verloben,Hosea_2_22,0.09933783113956451,True,True
+und du wirst den herrn erkennen ,24,5,Vnd du wirst den HERRN erkennen,Hosea_2_22,0.38147807121276855,True,True
+laß mich hören deine stimme,24,9,Las mich deine stimme hören,Hohelied_8_13,0.0464307926595211,False,True
+laß mich hören deine stimme,24,13,Las mich deine stimme hören,Hohelied_8_13,0.0464307926595211,False,True
+lobe den herrn meine seele,24,18,vnd die meinem Herrn vbel wöllen,1 Samuel_25_26,0.3759183883666992,True,True
+lobe den herrn meine seele,24,20,vnd die meinem Herrn vbel wöllen,1 Samuel_25_26,0.3759183883666992,True,False
+und vergiß nicht was er dir guts gethan hat,24,21,Vnd vergiss nicht was er mir Guts gethan hat,Psalm_103_2,0.3490722179412842,True,False
+der dir alle deine sünde vergibt/,24,22,DEr dir alle deine Sünde vergib,Psalm_103_3,0.57,,False
+und heilet alle deine gebrechen,24,23,Vnd heilet alle deine Gebrechen,Psalm_103_3,0.4003619849681854,True,False
+der dein leben vom verderben erlöset,24,24,Der dein Leben vom verderben erlöset,Psalm_103_4,0.08427274972200394,True,False
+und dich kröhnet mit gnade und barmhertzigkeit,24,25,Der dich krönet mit Gnade vnd Barmhertzigkeit,Psalm_103_4,0.546187698841095,True,False
+die stunden von ferne,25,5,die stunden von fernen,Lk_17_12,0.011944865807890892,False,True
+sprach er zu ihnen,25,9,zu den sprach er,Apg_19_2,0.1847575306892395,False,True
+da er sahe daß er gesund worden war,25,13,da er sahe das er gesund worden war,Lk_17_15,0.0073820799589157104,False,True
+jch hebe meine augen auf zu den bergen,26,18,Jch hebe meine augen auff zu den Bergen,Psalm_121_1,0.16641394793987274,True,True
+von welchen mir hülffe kommt,26,19,Von welchen mir Hülffe kompt,Psalm_121_1,0.4303699731826782,True,True
+meine hülffe kommt vom herrn,26,20,Meine Hülffe kompt vom HERRN,Psalm_121_2,0.5756890773773193,True,True
+jch sitze oder stehe,26,28,Jch sitze oder stehe auff so weissestu es,Psalm_139_2,0.5573763847351074,True,True
+du verstehest meine gedancken von ferne psalm cxxxix,26,30,Du verstehest meine Gedancken von ferne,Psalm_139_2,0.44745388627052307,True,True
+laß mich hören deine stimme ,27,1,Las mich deine stimme hören,Hohelied_8_13,0.0464307926595211,False,True
+thue nur weg von mir das geplerr deiner lieder,27,19,Thu nur weg von mir das geplerr deiner Lieder,Amos_5_23,0.15242888033390045,True,True
+denn ich mag deines psalterspiels nicht hören,27,20,Denn Jch mag deines Psalterspiles nicht hören,Amos_5_23,0.3023354113101959,True,True
+wenn mir angst ist,27,29,Wenn mir angst ist,Psalm_18_7,0.07840368151664734,True,True
+so ruffe ich den herrn an,27,30,so ruffe ich den HERRN an,Psalm_18_7,0.17993849515914917,True,True
+und schreye zu meinen gott,27,31,vnd schrey zu meinem Gott,Psalm_18_7,0.36130252480506897,True,True
+so erhöret er meine stimme von seinem tempel,27,32,So erhöret er meine stimme von seinem Tempel,2 Samuel_22_7,0.062489911913871765,False,True
+jch habe dich erhöret zur gnädigen zeit es,27,40,jch hab dich erhöret zur gnedigen Zeit,Jesaja_49_8,0.10517861694097519,False,True
+lobet ihn mit hellen cymbeln,30,9,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.513329803943634,True,True
+lobet ihn mit wolklingenden cymbeln,30,10,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.48332107067108154,True,True
+als es in voriger zeit gewesen,31,25,denn zur vorigen zeit war,Jesaja_8_23,0.18016958236694336,True,True
+daß dennoch auch in voriger zeit,31,27,denn zur vorigen zeit war,Jesaja_8_23,0.42115509510040283,True,True
+hält sichs doch also in den dingen,32,4,Hat sichs doch auch so ynn den dingen,Kor1_14_7,0.5110852122306824,True,True
+die da lauten und doch nicht leben,32,5,die da lautten vnnd doch nicht leben,Kor1_14_7,0.19485728442668915,True,True
+es sey eine pfeiffe oder eine harffe,32,6,es sey ein scheps oder schaf,3 Mose_3_6,0.13668036460876465,False,True
+wenn sie nicht unterschiedliche stimmen von sich geben,32,7,wenn sie nicht vnterschiedlichen hall von sich geben,Kor1_14_7,0.30752646923065186,True,True
+der mensch siehet was vor augen ist,33,10,Ein Mensch sihet was fur augen ist,1 Samuel_16_7,0.3056526184082031,True,True
+aber gott siehet das hertz an,33,11,der HERR aber sihet das hertz an,1 Samuel_16_7,0.47723791003227234,True,True
+was in dem menschen war,33,20,was ym menschen war,Joh_2_25,0.11233093589544296,False,True
+geschickt sey zu allerley werck,40,4,geschickt sey zu allerley Werck,2 Mose_35_31,0.04166582226753235,False,True
+künstlich zu arbeiten an gold,40,5,künstlich zu erbeiten am gold,2 Mose_35_32,0.3615417182445526,True,True
+holtz zimmern zu machen allerley künstliche arbeit,40,7,holtz zimmern zu machen allerley künstlich erbeit,2 Mose_35_33,0.36390018463134766,True,True
+wenn der geist gottes über saul kam,43,4,Wenn nu der geist Gottes vber Saul kam,1 Samuel_16_23,0.49720439314842224,True,True
+so nahm david die harffen,43,5,So nam Dauid die Harffen,1 Samuel_16_23,0.4210566282272339,True,True
+und spielete mit seiner hand,43,6,er mit seiner hand spiele,1 Samuel_16_16,0.20910516381263733,True,True
+und ward besser mit ihm,43,8,das besser mit dir werde,1 Samuel_16_16,0.482368141412735,True,True
+denn du bist erwürget,43,44,denn du bist frembd,2 Samuel_15_19,0.09089961647987366,False,True
+14 denn herr wenn trübsahl da ist,44,55,HERR wenn Trübsal da ist,Jesaja_26_16,0.4528535008430481,True,True
+so sucht man dich,44,56,So suchet man dich,Jesaja_26_16,0.1315818876028061,True,True
+wenn du sie züchtigest,44,57,Wenn du sie züchtigest,Jesaja_26_16,0.17154312133789062,True,True
+so ruffen sie ängstlich esa,44,58,So ruffen sie engstiglich,Jesaja_26_16,0.3781576156616211,True,True
+des abends morgens und mittags wil ich klagen und heulen,44,66,Des abends morgens vnd mittags wil ich klagen vnd heulen,Psalm_55_18,0.166141077876091,False,True
+so wird er meine stimme hören,44,67,das er meine stimme höre,Hiob_9_16,0.1335674524307251,False,True
+es kommt die zeit,44,71,Es wird die zeit komen,Hosea_13_13,0.14817966520786285,False,True
+es kommt die zeit,44,81,Es wird die zeit komen,Hosea_13_13,0.14817966520786285,False,False
+daß die todten werden die stimme des sohnes gottes hören,44,88,das die todten werden die stym des son Gottis horen,Joh_5_24,0.2943647801876068,True,False
+und die sie hören werden,44,89,vnnd die sie horen werden,Joh_5_24,0.1776616871356964,True,False
+der auf dem stuhl sitzt,44,94,der auff dem stuel sitzt,Offb_6_16,0.05381651967763901,True,False
+und vor dem zorn des lammes apoc,44,95,vnd fur dem zorn des lambs,Offb_6_16,0.8564376831054688,True,False
+des spitz bis an den himmel reiche,45,27,des spitze bis an den Himel reiche,1 Mose_11_4,0.16052792966365814,False,True
+diejenigen welche ehemahlen den ersten tempel gesehen hatten,47,7,die das vorige Haus gesehen hatten,Esra_3_12,0.4841080904006958,True,True
+und sahen auch den andern tempel,47,8,die das vorige Haus gesehen hatten,Esra_3_12,0.7293750643730164,True,True
+daß er gütig ist,47,18,Das er gütig ist,2 Chronik_7_3,0.1817103624343872,False,True
+lobet den herrn denn er ist freundlich,48,5,Lobet den HERRN Denn der HERR ist freundlich,Psalm_135_3,0.41454869508743286,True,True
+lobsinget seinem nahmen denn er ist lieblich,48,6,Lobsinget seinem Namen Denn er ist lieblich,Psalm_135_3,0.3813402056694031,True,True
+denn in dir ist alles,48,34,vnd ist alles dein,1 Chronik_29_16,0.31407737731933594,True,True
+und du bist alles und in allen,48,35,vnd ist alles dein,1 Chronik_29_16,0.5054548978805542,True,True
+der herr hebe sein angesicht über dich,48,54,Der HERR hebe sein Angesicht vber dich,4 Mose_6_26,0.40301239490509033,True,True
+und gebe dir frieden,48,55,Vnd gebe dir Friede,4 Mose_6_26,0.5002754926681519,True,True
+wil ich sie doch nicht hören,49,5,wil ich sie doch nicht hören,Hesekiel_8_18,1.7188133511966686e-13,False,True
+fürchtet euch nicht stehet fest,49,28,Fürchtet euch nicht stehet fest,2 Mose_14_13,0.14307095110416412,True,True
+und sehet zu was für ein heil der herr heute an euch thun wird ,49,29,vnd sehet zu was fur ein Heil der HERR heute an euch thun wird,2 Mose_14_13,0.3584279417991638,True,True

@@ -1,0 +1,90 @@
+Predigt,Paragraph,Satz,Fundstelle,Vers,Ähnlichkeit,Dopplung
+der herr zebaoth,1,6,Jeremia_11_17,denn der herr zebaoth,86.49,True
+als ein knecht des herrn,4,5,Psalm_134_1,alle knechte des herrn,86.96,True
+er sang von gantzem hertzen,25,21,2 Könige_23_25,der so von gantzem hertzen,90.57,True
+der gott jsrael etc,28,26,Esra_6_22,der gott jsrael ist,89.47,False
+und soll an euch kleben bleiben,29,13,Maleachi_2_3,vnd sol an euch kleben bleiben,95.08,True
+was verkündigest du meine rechte,30,15,Psalm_50_16,was verkündigestu meine rechte,96.77,False
+und nimmst meinen bund in deinen mund,30,16,Psalm_50_16,vnd nimpst meinen bund in deinen mund?,93.33,False
+so du doch zucht hassest,30,17,Psalm_50_17,so du doch zucht hassest,100.0,True
+und wirfest meine worte hinter dich,30,18,Psalm_50_17,vnd wirffest meine wort hinder dich,91.43,False
+denn so spricht gott,30,29,Amos_7_11,denn so spricht amos,85.0,False
+der herr zebaoth: thue weg von mir das geplerr deiner lieder;,30,30,Amos_5_23,Thu nur weg von mir das geplerr deiner Lieder,75.47,False
+denn ich mag deines psalterspiels nicht hören,30,31,Amos_5_23,denn jch mag deines psalterspiles nicht hören,95.56,True
+o wehe des sündigen volcks,30,37,Jesaja_1_4,o weh des sundigen volcks,94.12,True
+des volcks von grosser missethat,30,38,Jesaja_1_4,des volcks von grosser missethat,100.0,False
+des boßhaftigen saamens der schädlichen kinder,30,39,Jesaja_1_4,des boshafftigen samens der schedlichen kinder,93.48,False
+die den herrn verlassen,30,40,Jesaja_1_4,die den herrn verlassen,100.0,True
+den heiligen in jsrael lästern,30,41,Jesaja_1_4,den heiligen in jsrael lestern,96.67,False
+und jauchzen dem hort unsers heyls,31,12,Psalm_95_1,vnd jauchzen dem hort vnsers heils,91.18,True
+"ps. 95, 1. und ps.",31,13,Psalm_95_1,Denn in seiner Hand ist,34.15,False
+100 1 jauchzet dem herrn alle welt,31,14,Psalm_98_4,jauchzet dem herrn alle welt,90.32,True
+dienet dem herrn mit freuden,31,15,Psalm_100_2,dienet dem herrn mit freuden,100.0,True
+und sprechen heilig heilig,36,15,Jesaja_6_3,vnd sprach heilig heilig,88.0,True
+und giengen in ihres gottes haus,37,6,Richter_9_27,vnd giengen in jres gottes haus,92.06,True
+das nicht stille seyn kan,38,7,Jesaja_57_20,das nicht stille sein kan,96.0,False
+alle lande sind seiner ehren voll,50,17,Jesaja_6_3,alle land sind seiner ehren vol,96.88,True
+17 sagt sihe ich wil richten zwischen schaaf und schaaf,59,7,Hesekiel_34_17,sihe jch wil richten zwisschen schaf vnd schaf,85.15,True
+und zwischen widdern und böcken,59,8,Hesekiel_34_17,vnd zwisschen widdern vnd böcken,92.06,False
+daß meine schaafe essen müssen,59,13,Hesekiel_34_19,das meine schafe essen müssen,94.92,True
+was ihr mit euren füssen zertreten habt,59,14,Hesekiel_34_19,was jr mit ewren füssen zutretten habt,88.31,True
+und trincken was ihr mit euren füssen trübe gemacht habt,59,15,Hesekiel_34_19,vnd trincken was jr mit ewren füssen trüb gemacht habt,92.73,True
+so spricht der herr,59,16,2 Könige_22_16,so spricht der herr,100.0,True
+herr jch wil meine schaafe erretten aus ihrem maul,59,17,Hesekiel_34_10,jch wil meine schafe erretten aus jrem maul,90.32,True
+daß sie fort nicht mehr fressen sollen,59,18,Hesekiel_34_10,das sie sie furt hin nicht mehr fressen sollen,85.71,True
+denn so spricht der herr,59,19,Jesaja_45_18,denn so spricht der herr,100.0,True
+"herr: sihe, jch wil mich meiner heerde selbst annehmen und so fort.",59,20,Hesekiel_34_12,sihe jch wil mich meiner Herde selbs annemen,77.48,False
+jch wil sie erretten von allen oertern,59,21,Hesekiel_34_12,vnd wil sie erretten von allen örtern,88.0,True
+dahin sie zerstreuet waren,59,22,Hesekiel_34_12,dahin sie zerstrewet waren,96.15,False
+zur zeit da es trübe und finster war,59,23,Hesekiel_34_12,zur zeit da es trüb vnd finster war,95.77,False
+und die veste verkündigen seiner hände werck,68,5,Psalm_19_2,vnd die feste verkündiget seiner hende werck,90.91,True
+du solt das nicht kosten,76,30,Jeremia_40_16,du solt das nicht thun,86.96,False
+du solt das nicht anrühren,76,31,Jeremia_40_16,du solt das nicht thun,83.33,True
+und mond im thal ajalon,80,13,Josua_10_12,vnd mond im tal aialon,88.89,True
+denn im grundtext heists:,80,14,Josua_10_12,den könig zu Lachis,50.0,False
+sonne schweige stille. etliche ziehen auch hieher was ps.,80,15,Josua_10_12,Vnd schlugen sie mit der scherffe des schwerts,46.6,False
+"19, 1. stehet: die himmel erzehlen die ehre gottes,",80,16,Psalm_19_2,DJe Himel erzelen die Ehre Gottes,66.67,False
+und die veste verkündigen seiner hände werck,80,17,Psalm_19_2,vnd die feste verkündiget seiner hende werck,90.91,True
+wenn der herr die gefangenen zion erlösen wird,88,27,Psalm_126_1,wenn der herr die gefangen zion erlösen wird,97.78,False
+so werden wir seyn wie die träumende,88,28,Psalm_126_1,so werden wir sein wie die trewmende,91.67,False
+"dann wird unser mund voll lachens,",88,29,Psalm_126_1,Denn wird vnser mund vol lachens vnd vnser zunge vol rhümens sein,58.59,False
+und unsere zunge voll rühmens seyn.,88,30,Psalm_126_1,Denn wird vnser mund vol lachens vnd vnser zunge vol rhümens sein,58.0,False
+da wird man sagen unter den heyden,88,31,Psalm_126_2,da wird man sagen vnter den heiden,94.12,True
+der herr hat grosses an ihnen gethan,88,32,Psalm_126_2,der herr hat grosses an jnen gethan,95.77,False
+deß sind wir frölich,88,33,Psalm_126_3,des sind wir frölich,95.0,False
+herr wende unser gefängniß,88,34,Psalm_126_4,herr wende vnser gefengnis,88.46,True
+wie du die wasser gegen mittage trocknest,88,35,Psalm_126_4,wie du die wasser gegen mittage trockenest,98.8,False
+die mit thränen säen,88,36,Psalm_126_5,die mit threnen seen,90.0,True
+werden mit freuden erndten,88,37,Psalm_126_5,werden mit freuden erndten,100.0,True
+sie gehen hin und weinen,88,38,Psalm_126_6,sie gehen hin vnd weinen,95.83,True
+und tragen edlen saamen,88,39,Psalm_126_6,vnd tragen edlen samen,93.33,True
+und kommen mit freuden,88,40,Psalm_126_6,vnd komen mit freuden,93.02,True
+und bringen ihre garben«,88,41,Psalm_126_6,vnd bringen jre garben,86.96,True
+und nimmst meinen bund in deinen mund,89,7,Psalm_50_16,vnd nimpst meinen bund in deinen mund?,93.33,True
+so du doch zucht hassest,89,8,Psalm_50_17,so du doch zucht hassest,100.0,True
+und wirfest meine worte hinter dich,89,9,Psalm_50_17,vnd wirffest meine wort hinder dich,91.43,False
+wenn du einen dieb siehest,89,10,Psalm_50_18,wenn du einen dieb sihest,98.04,True
+so läuffest du mit ihm;,89,11,Psalm_50_18,so leuffestu mit jm,80.95,False
+und hast gemeinschafft mit den ehebrechern,89,12,Psalm_50_18,vnd hast gemeinschafft mit den ehebrechern,97.62,True
+dein maul lässest du böses reden,89,13,Psalm_50_19,dein maul lessestu böses reden,93.55,True
+und deine zunge treibet falschheit,89,14,Psalm_50_19,vnd deine zunge treibet falscheit,95.52,True
+du sitzest und redst wider deinen bruder,89,15,Psalm_50_20,du sitzest vnd redest wider deinen bruder,96.3,True
+deiner mutter sohn verläumdest du«,89,16,Psalm_50_20,deiner mutter son verleumbdestu,89.23,True
+mache dich auf werde licht,92,44,Jesaja_60_1,mache dich auff werde liechte,94.55,False
+denn dein licht kommt,92,45,Jesaja_60_1,denn dein liecht kompt,93.02,False
+und die herrlichkeit des herrn gehet auf über dir,92,46,Jesaja_60_1,vnd die herrligkeit des herrn gehet auff vber dir,91.84,False
+von gantzer seelen von allen kräften,97,15,5 Mose_6_5,von gantzer seele von allem vermügen,83.33,True
+der es mercket und lässet solch vornehmen nicht gelingen,99,12,1 Samuel_2_3,der es merckt vnd lesst solch furnemen nicht gelingen,89.91,True
+"1. sam. 2, 3.",99,13,1 Samuel_2_3,vnd sprach zu jm,34.48,False
+so höret nun und mercket auf,99,14,Jeremia_13_15,so höret nu vnd merckt auff,90.91,True
+und trotzet nicht denn der herr hats geredet,99,15,Jeremia_13_15,vnd trotzt nicht denn der herr hats geredt,95.35,True
+gebet dem herrn eurem gott die ehre,99,16,Jeremia_13_16,gebt dem herrn ewrem gott die ehre,95.65,True
+ehe denn es finster werde,99,17,Jeremia_13_16,ehe denn es finster werde,100.0,True
+und ehe eure füsse sich an den dunckeln bergen stossen,99,18,Jeremia_13_16,vnd ehe ewre füsse sich an den tunckeln bergen stossen,94.44,True
+daß ihr des lichts wartet,99,19,Jeremia_13_16,das jr des liechts wartet,88.0,True
+so ers doch gar finster und dunckel machen wird,99,20,Jeremia_13_16,so ers doch gar finster vnd tunckel machen wird,95.74,False
+gott ich will dir ein neu lied singen,100,2,Psalm_144_9,gott ich wil dir ein newes lied singen,93.33,True
+und mit ihnen gott loben,100,9,Psalm_104_33,vnd meinen gott loben,84.44,True
+und von der sünde,102,9,Daniel_8_13,vnd von der sünden,91.43,True
+lobe den herrn meine seele,102,15,Psalm_103_2,lobe den herrn meine seele,100.0,True
+und was in mir ist,102,16,Psalm_103_1,vnd was in mir ist,94.44,True

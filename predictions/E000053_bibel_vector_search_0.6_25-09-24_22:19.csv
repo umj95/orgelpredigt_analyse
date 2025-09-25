@@ -1,0 +1,121 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+jch bin verstummet und stille,6,0,Jch bin verstummet vnd still,Psalm_39_3,0.6239835023880005,True,True
+und schweige der freuden,6,1,vnd schweige der freuden,Psalm_39_3,0.567857563495636,True,True
+jch bin verstummet und still,6,109,Jch bin verstummet vnd still,Psalm_39_3,0.5087633728981018,True,False
+und schweige der freuden,6,110,vnd schweige der freuden,Psalm_39_3,0.567857563495636,True,False
+mein hertz ist entbrannt in meinem leibe,8,14,Mein hertz ist entbrant in meinem Leibe,Psalm_39_4,0.15997007489204407,True,True
+und wenn ich daran gedencke,8,15,Vnd wenn ich dran gedencke,Psalm_39_4,0.26736193895339966,True,True
+an den wassern zu babel saßen wir,10,72,AN den wassern zu Babel sassen wir,Psalm_137_1,0.5322635769844055,True,True
+und weineten wenn wir an zion gedachten,10,73,vnd weineten Wenn wir an Zion gedachten,Psalm_137_1,0.33604303002357483,True,True
+unsere harffen hiengen wir an die weyden,10,74,Vnsere Harffen hiengen wir an die Weiden,Psalm_137_2,0.45705515146255493,True,True
+die drinnen sind denn daselbst hiessen uns singen,10,75,Denn daselbs hiessen vns singen,Psalm_137_3,0.600806713104248,True,True
+der herr hats gegeben,12,43,Der HERR hats gegeben,Hiob_1_21,0.45667901635169983,True,True
+der herr hats genommen,12,44,der HERR hats genomen,Hiob_1_21,0.41881704330444336,True,True
+nicht allein mit leiblichen,13,7,nicht allein zur gewönlicher zeit,3 Mose_15_25,0.4349633455276489,True,True
+"sondern auch geistlichen güthern,",13,8,sondern auch vber die gewönlichen zeit,3 Mose_15_25,0.62,,False
+nicht allein in der zeit,13,9,nicht allein zur gewönlicher zeit,3 Mose_15_25,0.15124577283859253,True,True
+laß meine seele leben,20,29,Las meine Seele leben,Psalm_119_175,0.2691790759563446,True,True
+daß sie dich lobe,20,30,das sie dich lobe,Psalm_119_175,0.0505530945956707,True,True
+darum daß diß volck zu mir nahet mit seinen munde,20,42,Darumb das dis Volck zu mir nahet mit seinem Munde,Jesaja_29_13,0.3138703405857086,True,True
+und mir seinen lippen mich ehret,20,43,vnd mit seinen Lippen mich ehret,Jesaja_29_13,0.24415168166160583,True,True
+"aber ihr hertz ferne von mir ist,",20,44,Aber jr Hertz ferne von mir ist,Jesaja_29_13,0.54,,False
+und mich fürchten nach menschen gebot,20,45,vnd mich furchten nach Menschengebot,Jesaja_29_13,0.47481769323349,True,True
+die sie lehren so will ich auch mit diesem volck wunderlich umgehen,20,46,So wil ich auch mit diesem Volck wünderlich vmbgehen,Jesaja_29_14,0.7103889584541321,True,True
+auffs wunderlichste und seltsamste,20,47,auffs wünderlichst vnd seltzamst,Jesaja_29_14,0.662634551525116,True,True
+"daß die weißheit seinen weisen untergehe,",20,48,vnd der verstand seiner Klugen verblendet werde,Jesaja_29_14,0.83,,False
+und der verstand seinen klugen verblendet werde,20,49,vnd der verstand seiner Klugen verblendet werde,Jesaja_29_14,0.3759017288684845,True,True
+mein hertz ist bereit,20,60,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,True
+gott mein hertz ist bereit,20,61,Gott mein hertz ist bereit,Psalm_57_8,0.054701998829841614,True,True
+daß ich singe und lobe,20,62,Das ich singe vnd lobe,Psalm_57_8,0.44977641105651855,True,True
+wache auf meine ehre,20,63,Wach auff meine Ehre,Psalm_57_9,0.5148943662643433,True,True
+"wache auf psalter und harffen,",20,64,wach auff Psalter vnd Harffe,Psalm_57_9,0.85,,False
+frühe will ich auffwachen,20,65,Früe wil ich auffwachen,Psalm_57_9,0.37659770250320435,True,True
+herr ich will dir dancken unter den völckern,20,66,HERR ich wil dir dancken vnter den Völckern,Psalm_57_10,0.42156994342803955,True,True
+ich will dir lobsingen unter den leuten ps,20,67,Jch wil dir lobsingen vnter den Leuten,Psalm_57_10,0.4066469967365265,True,True
+und was in mir ist,22,57,Vnd was in mir ist,Psalm_103_1,0.15998992323875427,False,True
+von nun an biß in ewigkeit,22,87,von nu an bis in ewigkeit,Jesaja_9_6,0.09424350410699844,False,True
+hält sichs doch auch also in den dingen,25,6,Hat sichs doch auch so ynn den dingen,Kor1_14_7,0.36735981702804565,True,True
+die da lauten und doch nicht leben,25,7,die da lautten vnnd doch nicht leben,Kor1_14_7,0.19485728442668915,True,True
+es sey eine pfeiffe oder harffe,25,8,es sey ein scheps oder schaf,3 Mose_3_6,0.12976285815238953,False,True
+wenn sie nicht unterschiedliche stimmen von sich geben,25,9,wenn sie nicht vnterschiedlichen hall von sich geben,Kor1_14_7,0.30752646923065186,True,True
+da er schreibet nun aber lieben brüder,25,34,Nu aber lieben bruder,Kor1_14_6,0.7051403522491455,True,True
+wenn ich zu euch käme,25,35,wenn ich zu euch keme,Kor1_14_6,0.051956020295619965,True,True
+und redete mit zungen,25,36,vnd redet mit zungen,Kor1_14_6,0.507144570350647,True,True
+jch lebe aber doch nun nicht ich,36,30,ich lebe aber doch nu nicht ich,Gal_2_20,0.18841812014579773,True,True
+sondern christus lebet in mir,36,31,sondern Christus lebet ynn mir,Gal_2_20,0.14237235486507416,True,True
+denn was ich itzt lebe in fleisch,36,32,Denn was ich lebe ym fleysch,Gal_2_20,0.34524205327033997,True,True
+"das lebe ich in den glauben des sohnes gottes,",36,33,das lebe ich ynn dem glawben des sons Gottis,Gal_2_20,0.61,,False
+der mich geliebet hat,36,34,der mich gesand hat,Joh_4_31,0.060512833297252655,False,True
+wie dort bey jenen vater des von einen sprachlosen geist besessenen sohnes marc,36,38,wie es diesem Man Mose gehet,2 Mose_32_23,0.963774561882019,True,True
+iv ob wir schon nicht wissen wie,36,40,Denn wir wissen nicht,2 Mose_32_23,0.4544110894203186,True,True
+wer an mich gläubet,37,4,wer an mich glewbet,Joh_6_44,0.05953316390514374,False,True
+das ewige leben giebet,37,29,ergreyff das ewige leben,Tim1_6_11,0.15130826830863953,False,True
+aber man weiß nicht,38,23,disen aber wissen wyr nicht,Joh_9_27,0.15461939573287964,False,True
+als die aus den todten lebendig sind,38,86,als die da aus den todten lebendig sind,Röm_6_13,0.044101960957050323,False,True
+von hertzen stets betete,39,134,vnd betet von hertzen stets,Psalm_35_13,0.14692486822605133,False,True
+die du erlöset hast,39,142,die du erlöset hast,Nehemia_1_10,6.096083246488401e-14,False,True
+jch will predigen die gerechtigkeit in der grossen gemeine,39,154,JCh wil predigen die Gerechtigkeit in der grossen Gemeine,Psalm_40_10,0.12500368058681488,True,True
+siehe ich will mir meinen mund nicht stopffen lassen,39,155,Sihe Jch wil mir meinen Mund nicht stopffen lassen,Psalm_40_10,0.362508624792099,True,True
+so du mit deinen munde bekennest jesum,39,158,vnd so man mit dem mund bekennet,Röm_10_10,0.3233805298805237,True,True
+denn so man von hertzen gläubet,39,163,Denn so man von hertzen glewbt,Röm_10_10,0.13239435851573944,True,True
+so wird man gerecht,39,164,so wirt man rechtfertig,Röm_10_10,0.2413151115179062,True,True
+und so man mit den munde bekennet,39,165,vnd so man mit dem mund bekennet,Röm_10_10,0.2720659375190735,True,True
+jhre lehrer und anführer zum bösen müssen gestürzet werden über einen felß,39,178,Jre Lerer müssen gestürtzt werden vber einen Fels,Psalm_141_6,0.8550199270248413,True,True
+so wird man denn meine lehre hören,39,179,So wird man denn meine Lere hören,Psalm_141_6,0.14358054101467133,True,True
+daß sie lieblich sey,39,180,das sie lieblich sey,Psalm_141_6,0.035836685448884964,True,True
+wie dort aqvila und priscilla den apollinem,39,182,Da yhn aber Aquila vnd Priscilla horeten,Apg_18_25,0.6400342583656311,True,True
+der den weg des herrn unterweiset war,39,183,diser war vnterweyset den weg des hern,Apg_18_24,0.4481455087661743,True,True
+und mit fleiß von den herrn lehrete,39,185,vnd leret mit vleys von dem herrn,Apg_18_24,0.7136302590370178,True,True
+zu sich nahmen und ihm den weg gottes noch fleißiger auslegeten,39,186,namen sie yhn zu sich vnd legten yhm den weg Gottis noch vleyssiger aus,Apg_18_25,0.4964868426322937,True,True
+erfüllet mit aller erkänntniß,39,196,erfullet mit aller erkentnis,Röm_15_14,0.193359375,False,False
+höret er dich nicht,39,210,wird er euch nicht erhören,Micha_3_4,0.13276247680187225,False,False
+höret er die nicht,39,214,das er nicht höre,Jesaja_59_1,0.13808377087116241,True,False
+höret er die nicht,39,216,das er nicht höre,Jesaja_59_1,0.13808377087116241,True,False
+wer nur reines hertzens ist,39,223,Wer nur reines hertzen ist,Psalm_73_1,0.07563452422618866,False,False
+sed a davide excogitatum fuisse von gott nicht gelehret,39,387,sondern von Gott geporen sindt,Joh_1_13,0.6096229553222656,True,False
+sondern von david erdacht worden,39,388,sondern von Gott geporen sindt,Joh_1_13,0.6298651099205017,True,False
+welche sagen sie erkennen gott,39,537,sie sagen sie erkennen Got,Tit_1_15,0.4567023515701294,True,False
+aber mit den wercken verläugnen sie es,39,538,aber mit den wercken verleucken sie es,Tit_1_15,0.07820188999176025,True,False
+welches er selbst gemacht,46,31,die er gemacht hat,Psalm_7_16,0.19034762680530548,False,True
+erkennet daß der herr gott ist,46,57,ERkennet das der HERR Gott ist,Psalm_100_3,0.47091928124427795,True,True
+er hat uns gemacht,46,58,er hat vns gemacht,Psalm_100_3,0.32893016934394836,True,True
+denn wir sind sein werck geschaffen in christo jesu zu guten wercken,46,69,geschaffen durch Jhesum Christ zu guten wercken,Eph_2_10,0.5541549324989319,True,True
+daß wir darinnen wandeln sollen,46,71,das wyr drynnen wandeln sollen,Eph_2_10,0.4240613579750061,True,True
+der herr ist meine stärcke und lobgesang,47,106,DER HERR ist mein stercke vnd Lobsang,2 Mose_15_2,0.5126603841781616,True,True
+und ist mein heil,47,107,Vnd ist mein Heil,2 Mose_15_2,0.39114436507225037,True,True
+da wir bey den fleischtöpffen saßen,47,114,da wir bey den Fleischtöpffen sassen,2 Mose_16_3,0.27351483702659607,True,True
+und hatten die fülle brod zu essen,47,115,vnd hatten die fülle Brot zu essen,2 Mose_16_3,0.34684544801712036,True,True
+denn ihr habt uns darum ausgeführet in diese wüste,47,116,Denn jr habt vns darumb ausgefürt in diese wüsten,2 Mose_16_3,0.35939663648605347,True,True
+daß ihr die gemeinde hungers sterben lasset,47,117,das jr diese gantze Gemeine hungers sterben lasset,2 Mose_16_3,0.5283468961715698,True,True
+daß er nicht sehen kan,47,127,das er doch nicht sehen wird,Hesekiel_12_13,0.1519850343465805,False,True
+die er selber gemacht,47,132,die er gemacht hat,Psalm_7_16,0.1626577526330948,False,True
+daß er unsre noth weder sehen,47,145,das er doch nicht sehen wird,Hesekiel_12_13,0.19778603315353394,False,True
+sie müssen inne werden,47,151,sie müssen verstöret werden,Hosea_7_13,0.19946645200252533,False,True
+laß mich hören deine stimme cant,47,210,Las mich deine stimme hören,Hohelied_8_13,0.1421269178390503,False,True
+du hast mir mein hertz genommen,47,219,Du hast mir das hertz genomen,Hohelied_4_9,0.23997855186462402,True,True
+meine schwester liebe braut,47,220,meine Schwester liebe Braut,Hohelied_4_9,0.20909948647022247,True,True
+vernimm mein schreyen mein könig und mein gott,47,249,Vernim mein schreien mein könig vnd mein Gott,Psalm_5_3,0.37724101543426514,True,True
+denn ich will vor dir beten,47,250,Denn ich wil fur dir beten,Psalm_5_3,0.1311429888010025,True,True
+herr frühe wollest du meine stimme hören,47,251,HERR früe woltestu meine stim hören,Psalm_5_4,0.5156489610671997,True,True
+und das gespräch meines hertzens vor dir,47,254,Vnd das gesprech meines hertzen fur dir,Psalm_19_15,0.5103410482406616,True,True
+herr mein hort und mein erlöser,47,255,HERR mein Hort Vnd mein Erlöser,Psalm_19_15,0.27311450242996216,True,True
+so erhöret er mich von seinen heiligen berge,47,263,So erhöret er mich von seinem heiligen Berge,Psalm_3_5,0.10990443825721741,False,True
+jsrael freue sich deß,47,268,Jsrael frewe sich des,Psalm_149_2,0.42819592356681824,True,True
+der ihn gemacht hat,47,269,den er gemacht hatte,1 Mose_2_8,0.09201894700527191,False,True
+die kinder zion seyn fröhlich über ihren könige,47,270,Die kinder Zion seien frölich vber jrem Könige,Psalm_149_2,0.5407291650772095,True,True
+"sie sollen loben seinen nahmen in reigen,",47,271,Sie sollen loben seinen Namen im Reigen,Psalm_149_3,0.51,,False
+mit paucken und harffen sollen sie ihm spielen,47,272,Mit Paucken vnd Harffen sollen sie jm spielen,Psalm_149_3,0.3717786967754364,True,True
+denn der herr hat wohlgefallen an seinen volck,47,273,Denn der HERR hat wolgefallen an seinem Volck,Psalm_149_4,0.44308173656463623,True,True
+der schreyet abba lieber vater,47,285,der schreyet Abba lieber vater,Gal_4_6,0.1884455382823944,False,True
+denn dein knecht deine magd höret,47,297,denn dein Knecht höret,1 Samuel_3_9,0.12669581174850464,False,True
+was haben die augen,47,338,welches doch augen hat,Jesaja_43_8,0.1985175609588623,False,True
+daß du mich gedemüthiget hast,48,17,das du mich gedemütiget hast,Psalm_119_71,0.015232588164508343,True,True
+daß ich deine rechte lerne,48,18,Das ich deine Rechte lerne,Psalm_119_71,0.20234881341457367,True,True
+daß ich die gedult habe,48,36,das ich das gethan habe,2 Samuel_24_10,0.10252504050731659,False,True
+daß du mich demüthigest,48,39,das du mich ausstössest,2 Samuel_13_16,0.07969541847705841,False,True
+der anmuthige posaunenbaß wird gehöret,48,158,das die gemeyne dauon gepessert werde,Kor1_14_5,0.8670338988304138,True,True
+und die wohllautende mixtur geschlagen werden,48,160,das die gemeyne dauon gepessert werde,Kor1_14_5,0.9141853451728821,True,True
+doch in der hoffnung,48,181,doch ynn der hoffnung,Röm_8_24,0.20408551394939423,True,True
+die hoffnung aber die man siehet,48,182,die hoffnung aber die man sihet,Röm_8_24,0.07721763104200363,True,True
+ist nicht hoffnung denn wenn wie kan man das hoffen,48,183,ist nicht hoffnung denn wie kan man des hoffen,Röm_8_24,0.06299719959497452,True,True
+das man siehet so wir aber das hoffen,48,184,So wyr aber des hoffenn,Röm_8_25,0.4291728138923645,True,True

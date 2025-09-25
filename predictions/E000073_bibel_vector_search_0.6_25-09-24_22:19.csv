@@ -1,0 +1,59 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+lobet jhn in seinen thaten,3,2,Lobet jn in seinen Thatten,Psalm_150_2,0.23463529348373413,True,True
+lobet jhn in seiner grossen herrligkeit,3,3,Lobet jn in seiner grossen Herrligkeit,Psalm_150_2,0.12097544223070145,True,True
+lobet jhn mit posaunen,3,4,Lobet jn mit Posaunen,Psalm_150_3,0.3979509770870209,True,True
+lobet jhn mit psalter und harffen.,3,5,Lobet jn mit Psalter vnd Harffen,Psalm_150_3,0.98,,False
+lobet jhn mit paucken und reigen,3,6,Lobet jn mit Paucken vnd Reigen,Psalm_150_4,0.492218017578125,True,True
+lobet jhn mit seiten und pfeiffen,3,7,Lobet jn mit Seiten vnd Pfeiffen,Psalm_150_4,0.5355197191238403,True,True
+lobet jhn mit hellen cymbeln,3,8,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.17765183746814728,True,True
+lobet jhn mit wohlklingenden cymbeln,3,9,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.4383847415447235,True,True
+zu einem pfarrer anno 1563,4,43,in einem rügigem alter,1 Mose_25_8,0.8609893321990967,True,False
+anno 1568 den 27,4,45,in einem rügigem alter,1 Mose_25_8,1.000150203704834,True,False
+ruffe mich an in der noth,8,32,Vnd ruffe Mich an in der Not,Psalm_50_15,0.4851197302341461,True,True
+so will ich dich erretten,8,33,So wil ich dich erretten,Psalm_50_15,0.15790411829948425,True,True
+aber es halff nichts,10,17,Aber es halff jn nichts,2 Chronik_28_21,0.12430822849273682,False,True
+o welch eine tieffe des reichthums,10,43,O wilche eyn tieffe des reychtumbs,Röm_11_32,0.6763142347335815,True,True
+beyde der weißheit und erkäntnüs gottes/,10,44,beyde der weyszheyt vnnd der erkentnis Gottis,Röm_11_32,0.91,,False
+wie gar unbegreifflich sind seine gerichte,10,45,wie gar vnbegreyfflich sind seyne gericht,Röm_11_32,0.4367420971393585,True,True
+weder hohes noch tieffes,10,63,noch hohes noch tieffes,Röm_8_39,0.3174654245376587,True,True
+noch keine andere creatur scheiden mag von der liebe gottes,10,64,noch keyn ander creatur mag vns scheyden von der liebe gotis,Röm_8_39,0.3112848997116089,True,True
+lobet ihn mit psalter und harpffen,11,5,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.7396529316902161,True,True
+lobet ihn mit paucken und reihen,11,6,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6611704230308533,True,True
+lobet ihn mit säiten und pfeiffen,11,7,gepunden mit grabtuchern an fussen vnd  henden,Joh_11_41,0.6686854362487793,True,True
+singet ihm ein neues lied,12,42,Singet jm ein newes Lied,Psalm_33_3,0.3962419033050537,True,True
+macht es gut auf säitenspielen mit schalle,12,43,Machts gut auff Seitenspielen mit schalle,Psalm_33_3,0.2957850694656372,True,True
+die sänger sungen laut,12,91,Vnd die Senger sungen laut,Nehemia_12_42,0.4287753403186798,True,True
+und man hörete die freude jerusalem ferne,12,92,Vnd man höret die freude Jerusalem ferne,Nehemia_12_43,0.4023513197898865,True,True
+daß durch die liebliche jnstrumentalmusic,14,64,durch den heyligen geyst vom hymel gesand,Petr1_1_12,0.8170633912086487,True,True
+der unruhige trauergeist vom könig saul getrieben worden,14,65,durch den heyligen geyst vom hymel gesand,Petr1_1_12,0.6851077675819397,True,True
+wenn er denn gefraget war,14,75,da er geporn war,Hebr_11_22,0.1694563329219818,False,True
+redet unter einander von psalmen und lobgesängen und geistlichen liedern,15,21,vnd redetvnternander von psalmen vnd lobsengen vnd geystlichen lieden,Eph_5_17,0.6747725009918213,True,True
+singet und spielet dem herrn in eurem hertzen,15,22,singet vnd spielt dem herrn ynn ewren hertzen,Eph_5_17,0.4608590602874756,True,True
+weder kirchen noch predig,17,10,weder schaf noch ochsen,Richter_6_4,0.45438194274902344,True,True
+weder sacramenten noch gesang,17,11,weder schaf noch ochsen,Richter_6_4,0.5447300672531128,True,True
+weder orgel und dergleichen,17,12,weder schaf noch ochsen,Richter_6_4,0.6334446668624878,True,True
+nicht verlohren werden sondern das ewige leben haben,20,13,nicht verloren werden sondern das ewige leben haben,Joh_3_16,0.134078249335289,False,True
+von gantzer seele von allen kräfften,21,5,von gantzer seel von allen krefften,Lk_10_27,0.026579858735203743,True,True
+und von gantzem gemüth,21,6,vnd von gantzem gemute,Lk_10_27,0.5102112889289856,True,True
+herr wenn ich nur dich hab,21,9,Wenn ich nur dich habe,Psalm_73_25,0.2392616868019104,True,True
+so frag ich nichts nach himmel und erden,21,10,so frage ich nichts nach Himel vnd Erden,Psalm_73_25,0.2691326439380646,True,True
+das ist das gesetz und die propheten,23,5,das ist das gesetz vnnd die propheten,Mt_7_12,0.14472079277038574,False,True
+seelig sind die sanfftmüthigen,24,8,Selig sind die senfftmutigen,Mt_5_5,0.5757771730422974,True,True
+denn sie werden das erdreich besitzen,24,9,denn sie werden das erdreych besitzen,Mt_5_5,0.015602881088852882,True,True
+weil er noch lebet,24,22,weil er noch lebet,1 Mose_25_6,2.283336009416964e-13,False,True
+denn nachdem er bewähret ist,25,27,denn nach dem er bewerdt ist,Jak_1_11,0.09741152822971344,True,True
+wird er die krone des lebens empfangen,25,28,wirt er die krone des lebens empfahen,Jak_1_11,0.2615737318992615,True,True
+so sehet nun zu,27,16,So sehet nu zu,Esra_4_22,0.14679467678070068,False,True
+wie jhr fürsichtig wandelt,27,17,wie yhr fursichtiglich wandelt,Eph_5_13,0.34154677391052246,True,True
+nicht als die unweisen,27,18,nicht als die vnweysen,Eph_5_13,0.21717028319835663,True,True
+sondern als die weisen,27,19,sondern als die weysen,Eph_5_13,0.2724272906780243,True,True
+denn es ist böse zeit,27,21,Denn es ist eine böse zeit,Amos_5_13,0.08584410697221756,False,True
+herr gedencke nicht der sünde meiner jugend,28,7,Gedenck nicht der sünde meiner Jugent,Psalm_25_7,0.5282641649246216,True,True
+und meiner ubertrettung gedencke aber meiner nach deiner barmhertzigkeit,28,8,vnd meiner Vbertrettung Gedenck aber mein nach deiner Barmhertzigkeit,Psalm_25_7,0.299659788608551,True,True
+wie sand am meer,29,3,wie sand am meer,1 Mose_41_49,3.17104903533455e-13,False,True
+soll sie doch schneeweiß werden,30,8,sol sie doch schneweis werden,Jesaja_1_18,0.4536963403224945,True,True
+und wenn sie gleich ist wie rosinfarbe,30,9,Vnd wenn sie gleich ist wie rosinfarbe,Jesaja_1_18,0.12489406764507294,True,True
+soll sie doch wie wolle werden,30,10,sol sie doch wie wolle werden,Jesaja_1_18,0.2316858172416687,True,True
+also sollen wir auch alle,31,3,also sollen auch wir,Röm_6_4,0.14805646240711212,False,True
+sive edam sive bibam,31,23,oder reudicht oder schebicht,3 Mose_22_22,0.30100059509277344,True,True
+sive vigilem sive dormiam,31,24,oder reudicht oder schebicht,3 Mose_22_22,0.4045800566673279,True,True

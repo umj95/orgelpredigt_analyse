@@ -1,0 +1,40 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+singet ihm ein neues lied,9,43,Singet jm ein newes Lied,Psalm_33_3,0.3962419033050537,True,True
+machet es gut auf säitenspielen mit schalle,9,44,Machts gut auff Seitenspielen mit schalle,Psalm_33_3,0.30816978216171265,True,True
+nehmet die psalmen und gebet her die paucken,9,46,Nemet die Psalmen vnd gebet her die Paucken,Psalm_81_3,0.4123521149158478,True,True
+liebliche harpffen mit psaltern,9,47,Lieblich Harffen mit Psaltern,Psalm_81_3,0.5092025399208069,True,True
+lobet den herrn mit harpffen,9,49,Lobet den HERRN mit Harffen,Psalm_98_5,0.46280866861343384,True,True
+mit harpffen und psalmen,9,50,Mit Harffen vnd Psalmen,Psalm_98_5,0.6119687557220459,True,True
+lobet ihn mit hellen cymbeln,9,57,Lobet jn mit hellen Cymbeln,Psalm_150_5,0.513329803943634,True,False
+lobet ihn mit wolklingenden cymbeln,9,58,Lobet jn mit wolklingenden Cymbeln,Psalm_150_5,0.48332107067108154,True,False
+mit harpffen und psaltern,9,70,mit Harffen mit Psalter,1 Chronik_13_8,0.5286936163902283,True,False
+mit paucken und cymbaln,9,71,mit Paucken mit Cimbeln,1 Chronik_13_8,0.47016769647598267,True,False
+daß seine barmhertzigkeit ewiglich währet,9,97,vnd seine barmhertzigkeit ewiglich weret,2 Chronik_7_3,0.160469651222229,False,False
+und die leviten stunden mit den säitenspielen david,9,117,Vnd die Leuiten stunden mit den Seitenspielen Dauid,2 Chronik_29_26,0.5979421734809875,True,False
+und die priester mit den trommeten,9,118,vnd die Priester mit den Drometen,2 Chronik_29_26,0.42981886863708496,True,False
+und das gesang der sänger,9,122,vnd der gesang der Senger,2 Chronik_29_28,0.3927834928035736,True,False
+und das trommeten der trommeter,9,123,vnd das drometen der Drometer,2 Chronik_29_28,0.7580377459526062,True,False
+währet alles bis das brandopffer ausgerichtet war,9,124,weret alles bis das Brandopffer ausgericht war,2 Chronik_29_28,0.2656444311141968,True,False
+und die sänger sungen laut,10,8,Vnd die Senger sungen laut,Nehemia_12_42,0.4427637755870819,True,True
+und man hörete die freude jerusalem ferne,10,9,Vnd man höret die freude Jerusalem ferne,Nehemia_12_43,0.4023513197898865,True,True
+und in den fenstern singen,12,81,vnd werden in den Fenstern singen,Zephanja_2_14,0.4352019727230072,True,True
+und die raben auf den balcken,12,82,vnd die Raben auff den balcken,Zephanja_2_14,0.5236649513244629,True,True
+herr ich will dir dancken unter dem völckern,16,4,HERR ich wil dir dancken vnter den Völckern,Psalm_57_10,0.477144718170166,True,True
+darumb gedencke ich an dich,18,51,so denck ich an dich,Psalm_63_7,0.1336916983127594,False,True
+und sey doch nicht also still,22,48,Vnd sey doch nicht so still,Psalm_83_2,0.37173330783843994,True,True
+gott halte doch nicht so innen,22,49,Gott halt doch nicht so inne,Psalm_83_2,0.2320144772529602,True,True
+ps 57 mein hertz ist bereit,24,8,Gott mein hertz ist bereit,Psalm_57_8,0.52071613073349,True,True
+gott mein hertz ist bereit,24,9,Gott mein hertz ist bereit,Psalm_57_8,0.054701998829841614,True,True
+daß ich singe und lobe,24,10,Das ich singe vnd lobe,Psalm_57_8,0.44977641105651855,True,True
+daß nit allein bey gar vielen der gottesdienst so gar kalt und schläfferig ist,25,2,denn vnser Gott ist eyn vertzeerig fewr,Hebr_12_29,0.8169445991516113,True,True
+da die wenigste einen rechten göttlichen eiver und ernst von sich lassen spüren,25,3,denn vnser Gott ist eyn vertzeerig fewr,Hebr_12_29,0.8013986349105835,True,True
+cum musica enim mores hominum mutantur,25,19,wie die Leute singen,Hiob_36_24,0.6109507083892822,True,True
+denn mit der music verändern sich die sitten der menschen,25,20,wie die Leute singen,Hiob_36_24,0.6927233934402466,True,True
+thue nur weg von mir das geplerr deiner lieder,25,60,Thu nur weg von mir das geplerr deiner Lieder,Amos_5_23,0.15242888033390045,True,True
+denn ich mag deines psalterspiels nicht hören,25,61,Denn Jch mag deines Psalterspiles nicht hören,Amos_5_23,0.3023354113101959,True,True
+daß sie doch nicht verstehen,25,99,denn sie verstehen es  nicht,Mt_13_13,0.16036826372146606,False,True
+frevel muthwillen büberey gelächter und schwatzwerck,25,116,mitleydig bruderlich hertzlich freuntlich,Petr1_3_8,0.8872776031494141,True,True
+von dem heilsamen fünfffachen zweck und geziemenden gebrauch zu beobachten,26,68,lüstig an zusehen vnd gut zu essen,1 Mose_2_9,0.9314783811569214,True,True
+der herr der gott vom himmel lasse ihm dieses gnädiglich gefallen,26,69,Vnd Gott der HERR lies auffwachsen aus der Erden allerley Bewme,1 Mose_2_9,0.6277183294296265,True,True
+clavibus und 8 registern,32,3,vnd acht stuffen hin auff,Hesekiel_40_37,0.9615673422813416,True,True
+als principal 8 f,32,4,vnd acht stuffen hin auff,Hesekiel_40_37,0.95747309923172,True,True

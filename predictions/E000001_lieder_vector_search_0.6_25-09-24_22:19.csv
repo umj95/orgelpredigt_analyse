@@ -1,0 +1,23 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+lobet jhn mit posaunen,4,4,liefs mit bocken hin pazieren,229,0.5656214952468872,True,True
+lobet jhn mit psaltern vnd harpffen,4,5,mit psalter harff und geigen,682,0.591283917427063,True,True
+lobet jhn mit paucken vnd reygen,4,6,liefs mit bocken hin pazieren,229,0.6024903655052185,True,False
+lobet jhn mit seiten vnd pfeiffen,4,7,liefs mit bocken hin pazieren,229,0.7307565212249756,True,False
+lobet jhn mit hellen cymbaln,4,8,mit hellem cymbelthon wikcymbeln,692,0.534916877746582,True,False
+lobet jhn mit wolklingenden cymbaln,4,9,mit hellem cymbelthon wikcymbeln,692,0.6232955455780029,True,False
+daß sie den herrn,9,6,daß sie den held,399,0.16668879985809326,False,True
+die alten mit den jungen,11,6,den alten mit den jungen,1095,0.04588513448834419,False,True
+von welcher cantorey an dem andern flügel vnserer orgel außwendig also geschrieben stehet,29,10,was dorten für des höchsten thron die engelschaaren klingen,1189,0.9757699966430664,True,True
+sondern halten darfür daß wir nur so viel desto mehr vrsach haben,44,2,denn so viel wir chrifti haben,1181,0.696357011795044,True,True
+also daß niemand sich desselbigen mit billigkeit zubeschwehren vnd zubeklagen hat,48,4,daß niemand soll seyn verlohren,299,0.7147617340087891,True,True
+wie es auch niemand dahin deuten soll,48,5,daß niemand soll seyn verlohren,299,0.35542818903923035,True,True
+bringet es die erfahrung selbst mit,50,5,vater das bringt die zusag mit,1124,0.5725630521774292,True,True
+da seye die hand des herrn auff elisaeum den propheten kommen,53,27,non welchen der propheten hand geschrieben hat,1220,0.7455581426620483,True,True
+für augen gesehen würdt,60,6,für thren augen stehen,585,0.4214765429496765,True,True
+vom tod aufferstanden vnd gen himmel gefahren,61,28,hrift fuhr gen himmel,601,0.3954106569290161,True,True
+durch seinen lieben sohn,62,11,durch seinen lieben sohn,832,2.038896530992887e-13,False,True
+vnnd mit vnsern lippen oder leffzen,63,12,amen mit mund und herken sprecht,682,0.6977250576019287,True,True
+vnnd andern musicalischen jnstrumenten,63,14,samt andern in strument,682,0.70630943775177,True,True
+neid vnd haß zanck vnd hader,64,2,zanck hader streit gefan gen an,699,0.5931417942047119,True,True
+oder aber in fressen vnd sauffen,64,3,oder muh und plag,699,0.6598062515258789,True,True
+heilig heilig heilig ist der herr zebaoth,64,58,oheilig heilig heilig ist der herr zebaoth,1091,0.0550813302397728,False,False

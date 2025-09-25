@@ -1,0 +1,62 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+von m gottfried kretschmarn,0,8,durch den herren jefunt christ,1234,0.7832546234130859,True,False
+xv conciliorum beatus d,10,1,der heiligen zwölffboten zahl,642,0.6902546882629395,True,True
+es dancke dir und lobe dich das volck in guten thaten,17,1,es dancke gott und lobe dich das volck in guten thaten,747,0.0722259134054184,True,True
+das land bringt frucht und bessert sich,17,2,das land bringt frucht und bessert sich dein wort ist wol gerathen,747,0.21989706158638,True,True
+jch dancke dir gott,24,7,ch danck dir gott,56,0.16914372146129608,False,True
+lobet ihn in seiner grossen herrligkeit,27,3,lob ihn zu aller zeit in seiner herrlichkeit,692,0.4461842179298401,True,True
+lobet ihn mit posaunen,27,4,lobt ihn mit harffen,724,0.17470256984233856,False,True
+lobet ihn mit psalter und harffen,27,5,lobt ihn mit klang und schalle,692,0.2964758574962616,True,True
+lobet ihn mit paucken und reigen,27,6,lobt ihn mit klang und schalle,692,0.3203814923763275,True,True
+lobet ihn mit säyten und pfeiffen,27,7,lobt ihn mit klang und schalle,692,0.25525861978530884,True,True
+lobet ihn mit hellen cymbeln,27,8,lobt ihn mit groffemschalle,616,0.43559151887893677,True,True
+lobet ihn mit wohlklingenden cymbeln,27,9,lobt ihn mit groffemschalle,616,0.4192377030849457,True,True
+die erste nennt er sanctuarium,27,16,der erste war ein ordensmann,1270,0.7126666307449341,True,True
+das ich gebauet habe,29,31,das ich erwählet habe,765,0.18593186140060425,False,True
+da es zwar ausser zweifel directè,35,30,for dürfft das nicht veridtoys geht hin,1274,0.6681185960769653,True,True
+eigentlich andeutet spiritum physicum,35,31,dis ths geistlich wandelt,1274,0.8679546117782593,True,True
+so auf christi opffer gezielet,38,8,dem christus solches giebt,1272,0.502930760383606,True,True
+als ein schattenwerck billig abgeschaffet worden,38,10,da ein schrifftgelebrter sparet,1272,0.6745305061340332,True,True
+es kömmt die zeit,45,12,es kömmt die zeit,1120,8.252502414068941e-14,False,True
+kein zweiffel ist es,51,30,da ist kein zweiffel am,397,0.16869130730628967,False,True
+bey verfertigung der kirchenordnung,53,10,die schiz der kirchen nimmt man hin,1078,0.9401596188545227,True,True
+so ums jahr christi 655,53,12,darum komm lieber herre christ,1078,0.8909513354301453,True,True
+r vid lundius loco citato lib,54,0,n wo er flichen solt,205,1.0183308124542236,True,True
+4 c 4 n,54,1,a s b s,557,0.9315122365951538,True,True
+11 p m 746,54,2,n wo er flichen solt,205,1.3487424850463867,True,True
+b,54,3,a s b s,557,0.5530939698219299,True,True
+x d mayeri musaeum p,60,0,p j spener d,1073,0.7754091024398804,True,True
+7 p m 25,60,2,p j spener d,1073,1.0122904777526855,True,True
+fröliche testament sondern unter das alte faule,64,0,den sauerteig der alten bösen zeit,1233,0.8610033988952637,True,True
+wiedrum zur vernunfft und sanfftmuth gebracht worden,66,23,gegeiffelt und gekrönet  zum tod ve urtheilt ward,468,0.5485615134239197,True,True
+daß ein historicus bey anführung etlicher exempel,69,3,meynt daß es ohngeschr geschicht,655,0.8664560317993164,True,True
+wenn ich in nöthen beth und sing,76,0,wann ich in ndthen bat und sing,864,0.15673129260540009,True,True
+so wird mein hertz recht guter ding,76,1,so wird mein herh recht guter ding dein geist bezeugt,864,0.31781214475631714,True,True
+jch dancke dir gott,89,3,ch danck dir gott,56,0.16914372146129608,False,True
+lobe den herrn meine seele,91,13,lob mein seel den herren,644,0.14206412434577942,False,True
+nun dancket alle gott,91,15,nun dancket alle gott,515,2.499743034095614e-13,False,True
+der grosse dinge thut an allen enden,91,16,der seine wunder überall und grosse dinge that,648,0.6170549988746643,True,True
+der uns von mutterleib an lebendig erhält,91,17,der uns von mutterleibe an frisch und gesund erhilt,648,0.3911702036857605,True,True
+und thut uns alles guts,91,18,und thut uns alles guts,648,5.90347811867814e-14,True,True
+daß hier der ort,91,23,hier ist der ort,418,0.1112433522939682,False,True
+kommt herzu last uns dem herrn frolocken,92,2,dimmt herzu lapt uns dem herrn frolocken,1151,0.35945776104927063,True,True
+last uns mit dancken vor sein angesicht kommen,92,3,laffer uns mit dancken für sein angesicht kom,1151,0.38235801458358765,True,True
+und mit psalmen ihm jauchzen,92,4,men und mit psalmen ihm jauchzen,1151,0.1560809314250946,True,True
+so sollen wir dencken,92,6,so mussen wir verschmachten,977,0.18905141949653625,False,True
+die vom morgen biß zum abend,92,26,vom morgen zur abendwach,133,0.14129365980625153,True,True
+von mitternacht biß zum mittag gehöret würde,92,27,vom morgen zur abendwach,133,0.5997098684310913,True,True
+damit ich die herrliche thaten/,92,28,so mach uns o herr gott,133,0.88,,False
+und alles was drinnen ist,92,31,und was drinnen ist,1089,0.1447182148694992,False,True
+jch dancke dir gott,92,56,ch danck dir gott,56,0.16914372146129608,False,False
+die jhm solchen dienst nicht lei,107,4,gank zu sei nem dienst erkiest,1272,0.5918304920196533,True,True
+gerechtfertiget sondern wie der heuchlerische pharisäer,113,3,gleich wie des hirtens freude,110,0.8740226030349731,True,True
+aaa seelenschatz p 4,117,0,ohn unterlaß ergoken p,526,1.0676710605621338,True,True
+conc 14 § 49,117,1,ohn unterlaß ergoken p,526,1.2506052255630493,True,True
+allein zu dir herr jesu christ,119,2,allein an dich herr jesu christe,1019,0.03368063271045685,False,True
+so dancke dir und lobe dich das volck in guten thaten,123,0,es dancke gott und lobe dich das volck in guten thaten,747,0.2264777421951294,True,True
+das land bringe frucht und bessere sich,123,1,das land bringt frucht und bessert sich dein wort ist wol gerathen,747,0.23217636346817017,True,True
+dein wort sey wohlgerathen!,123,2,dein wort die hut und weide ist,747,0.85,,False
+uns seegne vater und der sohn/,123,3,uns segne vater und der sohn uns segne gott der heilge geist,747,0.73,,False
+uns seegne gott der heilige geist/,123,4,uns segne vater und der sohn uns segne gott der heilge geist,747,0.74,,False
+dem alle welt die ehre thut,123,5,dem alle welt die ehre thut,747,2.7309526710352083e-13,True,True
+für jhm ietzt und ins künfftige euch fürchtet allermeist,123,6,für ihm sich fürchtet allermeist,747,0.6033505797386169,True,True

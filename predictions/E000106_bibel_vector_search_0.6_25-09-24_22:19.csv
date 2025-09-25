@@ -1,0 +1,56 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+lobet den herrn mit harffen,1,2,Lobet den HERRN mit Harffen,Psalm_98_5,0.4746301770210266,True,True
+mit harffen und psalmen,1,3,Mit Harffen vnd Psalmen,Psalm_98_5,0.5841590166091919,True,True
+jauchzet für dem herrn dem könige,1,5,Jauchzet fur dem HERRN dem Könige,Psalm_98_6,0.40525779128074646,True,True
+versichert von dem messia dem gotte jacob,1,15,Es sprach der Man der von dem Messia des Gottes Jacob versichert ist,2 Samuel_23_1,0.4551241397857666,True,False
+lieblich mit psalmen in jsrael,1,16,lieblich mit Psalmen Jsrael,2 Samuel_23_1,0.12460263073444366,True,False
+und mit seiner hand gespielet,2,6,er mit seiner hand spiele,1 Samuel_16_16,0.3105670213699341,True,True
+und ward besser mit ihm,2,8,das besser mit dir werde,1 Samuel_16_16,0.482368141412735,True,True
+wie doch solches habe geschehen können,2,31,wie jtzt geschehen ist,Richter_13_23,0.19786874949932098,False,False
+gebet gotte was gottes ist,2,111,vnd gotte was gottis ist,Mk_12_17,0.18915021419525146,False,False
+so wirst du sehen,4,8,So wird man sehen,1 Mose_37_20,0.16370496153831482,False,True
+gebühret die majestät und gewalt,4,24,dir gebürt die Maiestet vnd gewalt,1 Chronik_29_11,0.7100684642791748,True,True
+herrligkeit sieg und danck,4,25,herrligkeit sieg vnd danck,1 Chronik_29_11,0.3892841339111328,True,True
+dann alles/ was im himmel und auf erden ist/,4,26,Denn alles was in Himel vnd Erden ist,1 Chronik_29_11,0.46,,False
+das ist dein dein ist das reich,4,27,das ist dein Dein ist das Reich,1 Chronik_29_11,0.17564699053764343,True,True
+dein ist reichthumb und ehre für dir,4,28,Dein ist reichtum vnd ehre fur dir,1 Chronik_29_12,0.4055519700050354,True,True
+jch will über den himmel steigen,4,55,Jch wil in den Himel steigen,Jesaja_14_13,0.32680773735046387,True,True
+und meinen stuel über die sterne gottes erhöhen,4,56,vnd meinen Stuel vber die sterne Gottes erhöhen,Jesaja_14_13,0.23066164553165436,True,True
+so werden eure augen aufgethan werden,4,60,so werden ewre augen auff gethan,1 Mose_3_5,0.33696994185447693,True,True
+und werdet seyn wie gott,4,61,vnd werdet sein wie Gott,1 Mose_3_5,0.43349510431289673,True,True
+und wissen was gut oder böse ist,4,62,vnd wissen was gut vnd böse ist,1 Mose_3_5,0.1568494290113449,True,True
+auch hiervon sage ich,4,67,das rede  ich also,Joh_12_50,0.18017970025539398,False,True
+aaronis schwester eine paucken in ihre hand,4,103,Aarons schwester nam eine Paucken in jre hand,2 Mose_15_20,0.2953256070613861,True,True
+und alle weiber folgeten ihr nach hinaus mit paucken am reigen,4,104,vnd alle Weiber folgeten jr nach hin aus mit paucken am Reigen,2 Mose_15_20,0.4496884047985077,True,True
+lasset uns dem herrn singen,4,106,Lasst vns dem HERRN singen,2 Mose_15_21,0.361767053604126,True,True
+dann er hat eine herrliche that gethan/,4,107,Denn er hat eine herrliche That gethan,2 Mose_15_21,0.48,,False
+mann und roß hat er ins meer gestürtzt,4,108,Man vnd Ross hat er ins Meer gestürtzt,2 Mose_15_21,0.4341350197792053,True,True
+jch will vor dem herrn spielen,4,115,Jch wil fur dem HERRN spielen,2 Samuel_6_21,0.5676506757736206,True,False
+der mich vor deinem vater erwehlet hat,4,116,der mich erwelet hat fur deinem Vater,2 Samuel_6_21,0.4478033483028412,True,False
+und will noch geringer werden denn also,4,117,Vnd wil noch geringer werden,2 Samuel_6_22,0.37493276596069336,True,False
+mit harffen und psaltern,4,120,mit Harffen mit Psalter,1 Chronik_13_8,0.5655126571655273,True,False
+mit paucken mit cymbalen,4,121,mit Paucken mit Cimbeln,1 Chronik_13_8,0.31601911783218384,True,False
+zu halten die einweihung in freuden,4,134,zu halten Einweihung in freuden,Nehemia_12_27,0.06747649610042572,True,False
+mit dancken mit singen,4,135,mit dancken mit singen,Nehemia_12_27,8.885862152422513e-14,True,False
+drommeten harffen geigen psalter,5,4,drometen harffen geigen psalter,Daniel_3_15,0.16941878199577332,True,True
+lauten und allerley saitenspiel habe bestellen lassen,5,5,lauten vnd allerley Seitenspiel,Daniel_3_15,0.755407452583313,True,True
+des sauffens sich zu befleißigen,5,8,des Sauffens sich zu vleissigen,Jesaja_5_12,0.3831074833869934,True,True
+und säßen biß in die nacht,5,9,vnd sitzen bis in die nacht,Jesaja_5_12,0.3898259699344635,True,True
+daß sie der wein erhitze,5,10,das sie der Wein erhitzt,Jesaja_5_12,0.35613757371902466,True,True
+und hätten harffen psalter,5,11,Vnd haben Harffen Psalter,Jesaja_5_13,0.6969306468963623,True,True
+paucken pfeiffen und wein in ihrem wolleben,5,12,Paucken Pfeiffen vnd wein in jrem Wolleben,Jesaja_5_13,0.6711052060127258,True,True
+psalm gott mein hertz ist bereit,9,8,Gott mein hertz ist bereit,Psalm_57_8,0.26846444606781006,True,True
+mein hertz ist bereit,9,9,Gott mein hertz ist bereit,Psalm_57_8,0.2153489589691162,True,True
+daß ich singe und lobe,9,10,Das ich singe vnd lobe,Psalm_57_8,0.44977641105651855,True,True
+wache auf meine ehre,9,11,Wach auff meine Ehre,Psalm_57_9,0.5148943662643433,True,True
+vernimm mein schreyen mein könig und mein gott,9,28,Vernim mein schreien mein könig vnd mein Gott,Psalm_5_3,0.37724101543426514,True,True
+dann ich will vor dir beten,9,29,Denn ich wil fur dir beten,Psalm_5_3,0.3791179358959198,True,True
+psalm jch wil singen von der gnade des herrn ewiglich,10,48,JCH wil singen von der Gnade des HERRN ewiglich,Psalm_89_2,0.25073176622390747,True,True
+und seine wahrheit verkündigen mit meinem mund für und für,10,49,Vnd seine Warheit verkündigen mit meinem munde fur vnd fur,Psalm_89_2,0.4291449785232544,True,True
+hoch auf dem berg sinai,10,121,vnd steig auff den berg Sinai,2 Mose_34_4,0.19527804851531982,False,True
+so offt ihr demnach,13,11,so rhümet man es denn,Sprüche_20_14,0.24805587530136108,True,True
+so erinnert euch dieses darbey,13,13,so rhümet man es denn,Sprüche_20_14,0.6699221134185791,True,True
+der alle ding erschaffen hat,13,44,der alle ding geschaffen hatt,Eph_3_9,0.04817546159029007,False,True
+euch und eure kinder,14,9,du vnd deine Kinder,1 Mose_45_10,0.15664449334144592,False,True
+jhr seyd die gesegneten des herrn,14,10,Jr seid die gesegneten des HERRN,Psalm_115_15,0.46417203545570374,True,True
+und von deiner hand haben wir dirs gegeben,14,16,vnd von deiner Hand haben wir dirs gegeben,1 Chronik_29_14,0.12078503519296646,False,True
