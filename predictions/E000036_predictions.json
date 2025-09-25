@@ -53,6 +53,6 @@
         "task": "bibel",
         "method": "similarity_search",
         "fuzziness": 83,
-        "file": "/home/janosch/Projects/Personal/ma-project/predictions/E000036_bibel_similarity_search_83_25-09-25_18:08.csv"
+        "file": "predictions/E000036_bibel_similarity_search_83_25-09-25_18:08.csv"
     }
 ]
