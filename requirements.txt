@@ -3,3 +3,4 @@ networkx
 folium
 scipy
 matplotlib
+rapidfuzz
