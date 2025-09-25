@@ -13,6 +13,7 @@ print(sys.path)
 
 pg = st.navigation([st.Page("pages/Startseite.py"),
                     st.Page("pages/Orgelpredigt_Analyse.py"), 
-                    st.Page("pages/Orgelpredigt_Vergleich.py")])
+                    st.Page("pages/Orgelpredigt_Vergleich.py"),
+                    st.Page("pages/Quellen_Analyse.py")])
 
 pg.run()

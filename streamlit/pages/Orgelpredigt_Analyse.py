@@ -37,7 +37,7 @@ print("WORKING DIR:", os.getcwd())
 print("SYS.PATH:", sys.path)
 
 st.set_page_config(
-    page_title="Orgelpredigt_Analyse",
+    page_title="Orgelpredigt-Analyse",
     page_icon=None,
     layout="wide",
     initial_sidebar_state="auto",
@@ -348,7 +348,7 @@ quote_distribution_chunked.update_layout(barmode='stack')
 ################################
 
 def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int, preds: list) -> str:
-    """Takes a sentence dictionary and returns an html <p>-tag with appropriate child tags
+    """Takes a sentence dictionary and returns an html <span>-tag with appropriate child tags
         Args:
             sentence: The dict containing the keys "words" (list), "types" (list) and "references" (list of lists)
             par_nr: The number of the paragraph
@@ -402,26 +402,24 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int, preds: list)
                     final += f'rgba({colors[i]}) {intervals[i]}%, '
                 else:
                     final += f'rgba({colors[i]}) 100%'
-            
-            print(final)
 
             attr = f'style="background-image: linear-gradient(to right,{final}); border-radius: 5px; padding: 2px;">'
         
         return attr
 
     def add_tooltip(tooltips: list) -> str:
-        tooltip = '<span class="tooltiptext">'
+        tooltip = '<div class="tooltiptext"><div class="info-box">'
         for elem in tooltips:
-            if elem[1] == "manual":
-                tooltip += f'<b>Manuelle Auszeichnung</b></br>'
+            if elem[0] == "manual":
+                tooltip += f'<h4>Manuelle Auszeichnung</h4>'
             if isinstance(elem[1], str):
                 if is_id(elem[1]):
-                    tooltip += f'<a href="https://orgelpredigt.ur.de/{elem[1]}" target="_blank">{get_short_info(elem[1])}</a></br>'
+                    tooltip += f'<a href="https://orgelpredigt.ur.de/{elem[1]}" target="_blank">{get_short_info(elem[1])}</a>'
                 else:
-                    tooltip += f'{elem[1]}</br>'
+                    tooltip += f'{elem[1]}'
             else:
-                tooltip += f'elem[1] is a list!</br>'
-        tooltip += '</span>'
+                tooltip += f'elem[1] is a list!'
+        tooltip += '</div></div>'
         return tooltip
 
     tag = f'<span class="orgelpredigt_span" id="{par_nr}-{sentence_nr}">'
@@ -444,38 +442,38 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int, preds: list)
             multiple_machine = "multi_machine"
             for pred in preds:
                 pred_collection.append([pred["pred_type"], pred["similarity"]])
-                if pred["pred_type"] == "bibel":
-                    tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Lutherbibel "
-                else:
-                    tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Crüger, <i>Praxis Pietatis Melica</i> "
+            #    if pred["pred_type"] == "bibel":
+            #        tooltip_add = "<h4>Maschinelle Auszeichnung</h4>Lutherbibel "
+            #    else:
+            #        tooltip_add = "<h4>Maschinelle Auszeichnung</h4>Crüger, <i>Praxis Pietatis Melica</i> "
 
             tag += f'<span class="machine_tooltip {multiple_machine}" '
             tag += inline_style(pred_collection)
             
             for pred in preds:
                 if pred["pred_type"] == "bibel":
-                    tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Lutherbibel "
+                    tooltip_add = "<h4>Maschinelle Auszeichnung</h4>Lutherbibel "
                     page = f'{pred["ref_id"]}'
                 else:
-                    tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Crüger, <i>Praxis Pietatis Melica</i> "
-                    page = f'<a href="https://www.digitale-sammlungen.de/en/view/bsb10589853?page={pred["ref_id"]}" target="_blank">S. {pred["ref_id"]}</a>'
+                    tooltip_add = "<h4>Maschinelle Auszeichnung</h4>Crüger, <i>Praxis Pietatis Melica</i> "
+                    page = f'<a href="https://www.digitale-sammlungen.de/en/view/bsb10589853?page={pred["ref_id"]}" target="_blank">S.&nbsp;{pred["ref_id"]}</a>'
                 sim = (1-pred["similarity"])*100 if pred["similarity"] < 1 else pred["similarity"]
-                tooltips.append(["machine", f"{tooltip_add}{page}: „{pred["text"]}“ (Ähnlichkeit: {sim:.0f}%)"])
+                tooltips.append(["machine", f"{tooltip_add}{page}:&nbsp;„{pred["text"]}“ (Ähnlichkeit:&nbsp;{sim:.0f}%)"])
         else:
             for pred in preds:
                 if pred["pred_type"] == "bibel":
                     tooltip_add = "Lutherbibel "
                     page = f'{pred["ref_id"]}'
                 else:
-                    tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Crüger, <i>Praxis Pietatis Melica</i> "
-                    page = f'<a href="https://www.digitale-sammlungen.de/en/view/bsb10589853?page={pred["ref_id"]}" target="_blank">S. {pred["ref_id"]}</a>'
+                    tooltip_add = "<h4>Maschinelle Auszeichnung</h4>Crüger, <i>Praxis Pietatis Melica</i> "
+                    page = f'<a href="https://www.digitale-sammlungen.de/en/view/bsb10589853?page={pred["ref_id"]}" target="_blank">S.&nbsp;{pred["ref_id"]}</a>'
 
                 tag += f'<span class="{pred["model"]} machine_{pred["pred_type"]} machine_tooltip {multiple_machine}" '
                 style = inline_style([[pred["pred_type"], pred["similarity"]]]) 
                 tag += style
 
                 sim = (1-pred["similarity"])*100 if pred["similarity"] < 1 else pred["similarity"]
-                tooltips.append(["machine", f"{tooltip_add}{page}: „{pred["text"]}“ (Ähnlichkeit: {sim:.0f}%)"])
+                tooltips.append(["machine", f"{tooltip_add}{page}:&nbsp;„{pred["text"]}“(Ähnlichkeit:&nbsp;{sim:.0f}%)"])
 
 
     # create spans for manual tags
@@ -508,11 +506,9 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int, preds: list)
             if type.strip() == current_tag[-1]:
                 tag += f' {word}'
             else:
-                #tag += f'<span class="{type.strip()} manual_tooltip">{add_tooltip(thisref)}{word}'
                 tag += f'<span class="{type.strip()} manual_tooltip">{word}'
                 current_tag.append(type.strip())
         else:
-            #tag += f'<span class="{type.strip()} manual_tooltip">{add_tooltip(thisref)}{word}'
             tag += f'<span class="{type.strip()} manual_tooltip">{word}'
             current_tag.append(type.strip())
     
@@ -619,97 +615,85 @@ with tab2:
                     color: skyblue;
                 }}
                 /* Tooltip container */
-                .manual_tooltip {{
+                .manual_tooltip, .machine_tooltip {{
                     position: relative;
                     display: inline-block;
                     cursor: pointer;
                 }}
-                /* Tooltip text */
-                .manual_tooltip .tooltiptext {{
-                    font-weight: normal;
-                    max-width: 200px;
-                    background-color: #555;
-                    color: #fff;
-                    text-align: center;
-                    padding: 5px 0;
-                    border-radius: 6px;
-                    visibility: hidden;
 
-                    /* Position the tooltip text */
+                /* Tooltip content */
+                .tooltiptext {{
+                    display: flex;
+                    gap: 0.5rem;
                     position: absolute;
-                    z-index: 1;
-                    bottom: 125%;
-                    left: 50%;
-                    margin-left: -60px;
-
-                    /* Fade in tooltip */
+                    top: 120%;
+                    left: 0; /* default: align left */
+                    background: #f9f9f9;
+                    padding: 0.75rem 1rem;
+                    border-radius: 8px;
+                    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
                     opacity: 0;
-                    transition: opacity 0.3s;
+                    pointer-events: none;
+                    transition: opacity 0.25s ease-in-out;
+                    max-width: calc(100vw - 20px); /* never overflow window */
+                    overflow-x: auto; /* allow scrolling if too wide */
+                    white-space: nowrap;
+                    z-index: 1000;
+                    margin: 0.25rem 0;
+                    font-size: 0.85rem;
                 }}
 
                 /* Tooltip arrow */
-                .manual_tooltip .tooltiptext::after {{
+                .tooltiptext::before {{
                     content: "";
                     position: absolute;
-                    top: 100%;
-                    left: 50%;
-                    margin-left: -5px;
-                    border-width: 5px;
+                    top: -8px;
+                    left: 20px; /* default arrow position */
+                    border-width: 8px;
                     border-style: solid;
-                    border-color: #555 transparent transparent transparent;
+                    border-color: transparent transparent #f9f9f9 transparent;
                 }}
 
-                /* Show the tooltip text when you mouse over the tooltip container */
+                /* Show tooltip on hover */
                 .manual_tooltip:hover .tooltiptext {{
-                    visibility: visible;
                     opacity: 1;
-                }} 
-                /* Tooltip container */
-                .machine_tooltip {{
-                    position: relative;
-                    display: inline-block;
-                    cursor: pointer;
+                    pointer-events: auto;
                 }}
-                /* Tooltip text */
-                .machine_tooltip .tooltiptext {{
-                    max-width: 200px;
-                    background-color: #555;
-                    color: #fff;
-                    text-align: center;
-                    padding: 1em;
-                    border-radius: 6px;
-                    visibility: hidden;
-
-                    /* Position the tooltip text */
-                    position: absolute;
-                    z-index: 1;
-                    bottom: 125%;
-                    left: 50%;
-                    margin-left: -60px;
-
-                    /* Fade in tooltip */
-                    opacity: 0;
-                    transition: opacity 0.3s;
-                }}
-
-                /* Tooltip arrow */
-                .machine_tooltip .tooltiptext::after {{
-                    content: "";
-                    position: absolute;
-                    top: 100%;
-                    left: 50%;
-                    margin-left: -5px;
-                    border-width: 5px;
-                    border-style: solid;
-                    border-color: #555 transparent transparent transparent;
-                }}
-
-                /* Show the tooltip text when you mouse over the tooltip container */
                 .machine_tooltip:hover .tooltiptext {{
-                    visibility: visible;
                     opacity: 1;
-                }} 
-            </style>
+                    pointer-events: auto;
+                }}
+
+                /* Individual info boxes */
+                .info-box {{
+                    flex: 0 0 auto;
+                    background: #fff;
+                    border: 1px solid #ddd;
+                    border-radius: 6px;
+                    padding: 0.5rem;
+                    width: 12rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start  ;
+                    white-space: normal;
+                    color: #5B5B66;
+                }}
+
+                /* Name */
+                .info-box h4 {{
+                    margin: 0;
+                    font-size: 0.95rem;
+                    font-weight: bold;
+                    color: #333;
+                }}
+
+                /* Line of text */
+                .info-box p {{
+                    margin: 0.25rem 0;
+                    font-size: 0.85rem;
+                    color: #555;
+                }}
+                </style>
                 """, unsafe_allow_html=True)
 
     if human:
@@ -754,42 +738,6 @@ with tab2:
             </style>
             """, unsafe_allow_html=True)
     
-    #if machine:
-    #    st.markdown(f"""
-    #        <style>
-    #            span.machine_lieder {{
-    #                background-color: {color_map["musikwerk"]}; 
-    #                color: white;
-    #                border-radius: 5px; 
-    #                padding: 2px;
-    #            }}
-    #            span.machine_orgelpredigt {{
-    #                background-color: {color_map["orgelpredigt"]}; 
-    #                border-radius: 5px; 
-    #                padding: 2px;
-    #            }}
-    #            span.machine_literatur {{
-    #                background-color: {color_map["literatur"]}; 
-    #                border-radius: 5px; 
-    #                padding: 2px; 
-    #            }}
-    #            span.machine_quelle {{
-    #                background-color: {color_map["quelle"]}; 
-    #                border-radius: 5px; 
-    #                padding: 2px; 
-    #            }}
-    #            span.machine_bibel {{
-    #                background-color: {color_map["bibel"]}; 
-    #                /*border: 5px solid black;*/
-    #                border-radius: 5px; 
-    #                padding: 2px; 
-    #            }}
-    #            /*span.multi_machine {{
-    #                background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-    #            }}*/
-    #            
-    #        </style>
-    #        """, unsafe_allow_html=True)
     if not human:
         st.markdown(f"""
             <style>
@@ -811,7 +759,7 @@ with tab2:
 
     for i in range(len(sermon.chunked)):
         #create a new div for each paragraph
-        paragraph_text = f'<div class="parmarker">Paragraph {i}</div><p class="orgelpredigt_p" id="{i}">'
+        paragraph_text = f'<div class="parmarker">Paragraph {i}</div><p class="orgelpredigt_p" id="par-{i}">'
         # go over each sentence
         for j in range(len(sermon.chunked[i])):
             # see if any predictions apply and put them in a list of dicts
