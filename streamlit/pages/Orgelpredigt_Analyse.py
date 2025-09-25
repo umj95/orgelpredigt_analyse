@@ -14,7 +14,6 @@ repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if repo_root not in sys.path:
     sys.path.insert(0, repo_root)
 
-print(">>> SYS.PATH:", sys.path)  # (optional, for debugging)
 
 import streamlit as st
 from core.utils import Sermon, get_short_info
@@ -28,13 +27,10 @@ import pandas as pd
 import folium
 import json
 import re
-from pathlib import Path
 
 # root directory path
 ROOT = Path(__file__).resolve().parents[2]
 
-print("WORKING DIR:", os.getcwd())
-print("SYS.PATH:", sys.path)
 
 st.set_page_config(
     page_title="Orgelpredigt-Analyse",
@@ -372,16 +368,14 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int, preds: list)
             bg_color = color_map[tagtype]
             bg_color.append(opacity)  # type: ignore
             color_str = ", ".join([str(i) for i in bg_color])
-            attr = f'style="background-color: rgb({color_str}); color: {colors[tagtype] if opacity > 0.3 else "#5B5B66"}; border-radius: 5px; padding: 2px;">'
+            attr = f'style="background-color: rgb({color_str}); color: {colors[tagtype] if opacity > 0.3 else "#5B5B66"}; border-radius: 5px; padding: 2px;"'
         
         else:
             tagtypes = [x[0] for x in preds]
             certs = [x[1] for x in preds]
-            print(f"len certs: {len(certs)}")
 
             step = 100 / len(certs)  # Calculate the step size
             intervals = [int(i * step) for i in range(len(certs) + 1)]
-            print(f"len intervals: {len(intervals)}")
 
             colors = []
             # create list of colours
@@ -403,121 +397,90 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int, preds: list)
                 else:
                     final += f'rgba({colors[i]}) 100%'
 
-            attr = f'style="background-image: linear-gradient(to right,{final}); border-radius: 5px; padding: 2px;">'
+            attr = f'style="background-image: linear-gradient(to right,{final}); border-radius: 5px; padding: 2px;"'
         
         return attr
 
     def add_tooltip(tooltips: list) -> str:
-        tooltip = '<div class="tooltiptext"><div class="info-box">'
+        if len(tooltips) == 0:
+            print("==== Empty tooltip-list====")
+        tooltip = '<span class="tooltiptext"><span class="info-box">'
         for elem in tooltips:
-            if elem[0] == "manual":
-                tooltip += f'<h4>Manuelle Auszeichnung</h4>'
-            if isinstance(elem[1], str):
-                if is_id(elem[1]):
-                    tooltip += f'<a href="https://orgelpredigt.ur.de/{elem[1]}" target="_blank">{get_short_info(elem[1])}</a>'
-                else:
-                    tooltip += f'{elem[1]}'
-            else:
-                tooltip += f'elem[1] is a list!'
-        tooltip += '</div></div>'
-        return tooltip
-
+            tooltip += f'{elem}'
+            print(tooltip)
+        return tooltip + '</span></span>'
+    
+    # initiate the tag
     tag = f'<span class="orgelpredigt_span" id="{par_nr}-{sentence_nr}">'
-
-    current_tag = []
 
     words = sentence["words"]
     types = sentence["types"]
     refs = sentence["references"]
 
-    multiple_machine = ""
-    machine_and_manual = ""
+    multi_machine = ""
     tooltips = []
+    tooltip_open = False
+    tooltip_add = "hallo"
 
     # create spans for detected automatic tags
     pred_nr = len(preds)        # how many predictions exist for this sentence?
-    if pred_nr > 0:
-        if pred_nr > 1:
-            pred_collection = []
-            multiple_machine = "multi_machine"
-            for pred in preds:
-                pred_collection.append([pred["pred_type"], pred["similarity"]])
-            #    if pred["pred_type"] == "bibel":
-            #        tooltip_add = "<h4>Maschinelle Auszeichnung</h4>Lutherbibel "
-            #    else:
-            #        tooltip_add = "<h4>Maschinelle Auszeichnung</h4>Crüger, <i>Praxis Pietatis Melica</i> "
-
-            tag += f'<span class="machine_tooltip {multiple_machine}" '
-            tag += inline_style(pred_collection)
-            
-            for pred in preds:
-                if pred["pred_type"] == "bibel":
-                    tooltip_add = "<h4>Maschinelle Auszeichnung</h4>Lutherbibel "
-                    page = f'{pred["ref_id"]}'
-                else:
-                    tooltip_add = "<h4>Maschinelle Auszeichnung</h4>Crüger, <i>Praxis Pietatis Melica</i> "
-                    page = f'<a href="https://www.digitale-sammlungen.de/en/view/bsb10589853?page={pred["ref_id"]}" target="_blank">S.&nbsp;{pred["ref_id"]}</a>'
-                sim = (1-pred["similarity"])*100 if pred["similarity"] < 1 else pred["similarity"]
-                tooltips.append(["machine", f"{tooltip_add}{page}:&nbsp;„{pred["text"]}“ (Ähnlichkeit:&nbsp;{sim:.0f}%)"])
-        else:
-            for pred in preds:
-                if pred["pred_type"] == "bibel":
-                    tooltip_add = "Lutherbibel "
-                    page = f'{pred["ref_id"]}'
-                else:
-                    tooltip_add = "<h4>Maschinelle Auszeichnung</h4>Crüger, <i>Praxis Pietatis Melica</i> "
-                    page = f'<a href="https://www.digitale-sammlungen.de/en/view/bsb10589853?page={pred["ref_id"]}" target="_blank">S.&nbsp;{pred["ref_id"]}</a>'
-
-                tag += f'<span class="{pred["model"]} machine_{pred["pred_type"]} machine_tooltip {multiple_machine}" '
-                style = inline_style([[pred["pred_type"], pred["similarity"]]]) 
-                tag += style
-
-                sim = (1-pred["similarity"])*100 if pred["similarity"] < 1 else pred["similarity"]
-                tooltips.append(["machine", f"{tooltip_add}{page}:&nbsp;„{pred["text"]}“(Ähnlichkeit:&nbsp;{sim:.0f}%)"])
-
-
-    # create spans for manual tags
-    if types[0] != "":
-        if pred_nr > 0:
-            machine_and_manual = "mach_and_man"
-        current_tag.append(types[0].strip())
-        tag += f'<span class="{types[0].strip()} {machine_and_manual} manual_tooltip">'
-        for ref in set(flatten(refs)):
-            tooltips.append(["manual", ref])
     
+    # if theres automatic predictions create a span and add tooltip info
+    if pred_nr > 0:
+        pred_collection = []
+        multi_machine = " multi_machine" if pred_nr > 1 else ""
+        for pred in preds:
+            pred_collection.append([pred["pred_type"], pred["similarity"]])
+            
+            if pred["pred_type"] == "bibel":
+                tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Lutherbibel "
+                page = f'{pred["ref_id"]}'
+            else:
+                tooltip_add = "<b>Maschinelle Auszeichnung</b><br/>Crüger, <i>Praxis Pietatis Melica</i> "
+                page = f'<a href="https://www.digitale-sammlungen.de/en/view/bsb10589853?page={pred["ref_id"]}" target="_blank">S.&nbsp;{pred["ref_id"]}</a>'
+
+            sim = (1-pred["similarity"])*100 if pred["similarity"] < 1 else pred["similarity"]
+            
+            tooltips.append(f'<span class="tooltip_content">{tooltip_add}{page}:&nbsp;„{pred["text"]}“ (Ähnlichkeit:&nbsp;{sim:.0f}%)</span>')
+
+        tag += f'<span class="tooltip{multi_machine}" {inline_style(pred_collection)}>'
+        tooltip_open = True
+
+    # create spans for manual tags if there is a type != ""
+    first_type = ""
+    for i in types:
+        if (len(i) != 0):
+            first_type = i
+            print(f"First type: {first_type}")
+            break
+
+    if first_type != "":
+        tooltip_add = "<b>Manuelle Auszeichnung</b></br>"
+        for ref in set(flatten(refs)):
+            if is_id(ref):      # turn it into a link if its an id
+                info = f'<a href="https://orgelpredigt.ur.de/{ref}" target="_blank">{get_short_info(ref)}</a>'
+            else:
+                info = ref
+            
+            tooltips.append(f'<span class="tooltip_content">{tooltip_add}{info}</span>')
+        
+        if tooltip_open == False:
+            tag += f'<span class="{first_type.strip()} tooltip">'
+            tooltip_open = True
+    
+    print(f"tag before tooltips added: {tag}")
+
     # add tooltip if applicable
     if len(tooltips) > 0:
         tag += add_tooltip(tooltips)
 
-    for word, type, ref in zip(words, types, refs):
+    print(f"tag after tooltip added: {tag}")
 
-        if len(ref) > 0:
-            thisref = ref[-1]
-        else:
-            thisref = ''
+    for word in words:
+        tag += f' {word}'
 
-        if type == "":
-            if len(current_tag) == 0:
-                tag += f' {word}'
-            else:
-                tag += f'</span> {word}'
-                current_tag.pop()
-        elif len(current_tag) > 0:
-            if type.strip() == current_tag[-1]:
-                tag += f' {word}'
-            else:
-                tag += f'<span class="{type.strip()} manual_tooltip">{word}'
-                current_tag.append(type.strip())
-        else:
-            tag += f'<span class="{type.strip()} manual_tooltip">{word}'
-            current_tag.append(type.strip())
-    
-    if len(current_tag) != 0:
+    if tooltip_open:
         tag += '</span>'
-    
-    if pred_nr > 0:
-        for i in range(pred_nr):
-            tag += '</span>'
 
     return f'{tag}</span>'
 
@@ -530,7 +493,7 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int, preds: list)
 def create_checkboxes(options):
     selected_options = {}
     for option in options:
-        selected_options[option] = st.checkbox(option)
+        selected_options[option[0]] = st.checkbox(option[0], key=option[1])
     return selected_options
 
 st.title(f"{str(sermon)} – Analyse")
@@ -581,17 +544,27 @@ with tab2:
 
     csv_list = []
 
+    method_translation = {
+        "similarity_search": "stringbasiert",
+        "vector_search": "vektorbasiert"
+    }
+    def fuzz_transl(nr):
+        if nr > 1:
+            return (100-nr)/100
+        else:
+            return nr
+
     # create checkboxes for all machine annotations found
     if predictions:
         options = []
         files = {}
         types = {}
         for pred in predictions:
-            identifier = f"Maschinelle Annotation – Typ: {pred["task"]}, Methode: {pred["method"]}, Unschärfe: {pred['fuzziness']}, Datum: {pred['date']}"
+            identifier = f"Maschinelle Annotation – **Typ:** {pred["task"]}, **Methode:** {method_translation[pred["method"]]} mit Unschärfefaktor {fuzz_transl(pred['fuzziness']):0.2f}"
 
             files[identifier] = pred['file']
             types[identifier] = pred['task']
-            options.append(identifier)
+            options.append([identifier, pred['file']])
 
         selected = create_checkboxes(options)
         if any(selected.values()):
@@ -609,13 +582,11 @@ with tab2:
                     margin-left: -8em;
                     color: lightgrey;
                 }}
-                span.mach_and_man {{
-                }}
                 a {{
                     color: skyblue;
                 }}
                 /* Tooltip container */
-                .manual_tooltip, .machine_tooltip {{
+                .tooltip {{
                     position: relative;
                     display: inline-block;
                     cursor: pointer;
@@ -655,11 +626,7 @@ with tab2:
                 }}
 
                 /* Show tooltip on hover */
-                .manual_tooltip:hover .tooltiptext {{
-                    opacity: 1;
-                    pointer-events: auto;
-                }}
-                .machine_tooltip:hover .tooltiptext {{
+                .tooltip:hover .tooltiptext {{
                     opacity: 1;
                     pointer-events: auto;
                 }}
@@ -738,22 +705,22 @@ with tab2:
             </style>
             """, unsafe_allow_html=True)
     
-    if not human:
-        st.markdown(f"""
-            <style>
-                .manual_tooltip .tooltiptext{{
-                    visiblity: hidden;
-                }}
-            </style>
-        """, unsafe_allow_html=True)
-    if not machine:
-        st.markdown(f"""
-            <style>
-                .machine_tooltip .tooltiptext{{
-                    visibility: hidden;
-                }}
-            </style>
-        """, unsafe_allow_html=True)
+    #if not human:
+    #    st.markdown(f"""
+    #        <style>
+    #            .tooltip .tooltiptext{{
+    #                visiblity: hidden;
+    #            }}
+    #        </style>
+    #    """, unsafe_allow_html=True)
+    #if not machine:
+    #    st.markdown(f"""
+    #        <style>
+    #            .tooltip .tooltiptext{{
+    #                visibility: hidden;
+    #            }}
+    #        </style>
+    #    """, unsafe_allow_html=True)
 
     sermon_html = f'<div class="orgelpredigt">'
 
@@ -788,6 +755,9 @@ with tab2:
         sermon_html += paragraph_text
 
     sermon_html += "</div>"
+
+    with open("sermontest.html", "w") as f:
+        f.write(sermon_html)
 
     st.header(sermon.volltitel)
     st.html(sermon_html)
