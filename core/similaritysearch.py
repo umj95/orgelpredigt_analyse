@@ -65,7 +65,16 @@ def check_page_proxy(numbers):
 
   return all_same or max_diff_one
 
-def reconsider_match(sent, pages):
+def reconsider_match(sent: str, pages: list) -> list:
+    """Searches for sent in pages and returns the highest match
+
+    Args:
+        sent (str): the sentence to search for
+        pages (list): the pages to look in
+
+    Returns:
+        list: A list of length 2, first a list with sentence and page, then the similarity score (i.e. [["sentence", 123], 0.56])
+    """
     highest_match = 0
     matches = {}
     if type(pages[0]) == int:
@@ -74,10 +83,10 @@ def reconsider_match(sent, pages):
                 verses = json.load(f)
             
             for verse in verses:
-                sim_score = fuzz.ratio(sent, verse)
+                sim_score = fuzz.ratio(sent, verse.lower())
                 if sim_score > highest_match:
                     highest_match = sim_score
-                    matches[sim_score] = [verse, page]
+                    matches[sim_score] = [verse.lower(), page]
     else:
         for page in pages:
             book, chap, vers = page.split("_")
@@ -90,10 +99,10 @@ def reconsider_match(sent, pages):
                 verses.extend(bible[book][chap][key])
 
             for verse in verses:
-                sim_score = fuzz.ratio(sent, verse)
+                sim_score = fuzz.ratio(sent, verse.lower())
                 if sim_score > highest_match:
                     highest_match = sim_score
-                    matches[sim_score] = [verse, page]
+                    matches[sim_score] = [verse.lower(), page]
 
     if highest_match > 0:
         return [matches[highest_match], highest_match]
@@ -101,6 +110,15 @@ def reconsider_match(sent, pages):
         return [["no match", 0], 0.0]
     
 def add_inferred_matches(guessed_hits: pd.DataFrame, id: str) -> pd.DataFrame:
+    """Takes a dataframe, looks for holes between hits in adjacent sentences and adds the highest scoring inbetween guess
+
+    Args:
+        guessed_hits (pd.DataFrame): The df of hits to check
+        id (str): The ID of the sermon
+
+    Returns:
+        pd.DataFrame: The updated hits df
+    """
     sermon = oa.Sermon(id)
     for n in range(3):
         additional_matches = []
@@ -130,11 +148,20 @@ def add_inferred_matches(guessed_hits: pd.DataFrame, id: str) -> pd.DataFrame:
 
         guessed_hits = pd.concat([guessed_hits, new_matches])
         guessed_hits.sort_values(["Paragraph", "Satz"], ascending=True, inplace=True)
-        guessed_hits.reset_index(drop=True)
+        guessed_hits.reset_index(drop=True, inplace=True)
     
     return guessed_hits
 
 def correct_inbetween_matches(df: pd.DataFrame) -> pd.DataFrame:
+    """Corrects hits in df if they are surrounded by hits on a different page
+    and a hit with a similarity score over 60 for them can be found on that page
+
+    Args:
+        df (pd.DataFrame): The df of hits
+
+    Returns:
+        pd.DataFrame: The updated df of hits
+    """
     for i in range(0, len(df) - 3):
         chunk = df.iloc[i:i+3]
         pages = chunk["Fundstelle"].to_list()
@@ -143,7 +170,6 @@ def correct_inbetween_matches(df: pd.DataFrame) -> pd.DataFrame:
         if (all(x==pars[0] for x in pars) and not is_equal(pages)):   # abort if paragraphs change or pages are already the same
             if pages[0] == pages[2]:
                 missing_sent = chunk["Predigt"][chunk.index[1]]
-                #print(missing_sent)
                 match, sim_score = reconsider_match(missing_sent, [pages[0]])
                 if sim_score > 60:
                     verse = match[0]
@@ -163,22 +189,35 @@ def remove_duplicates(df: pd.DataFrame) -> pd.DataFrame:
     Returns:
         pd.DataFrame: The Dataframe with duplicates removed
     """
-    def find_duplicate_satz(df):
+    def find_duplicate_satz(df: pd.DataFrame) -> dict:
+        """Takes a df of hits and returns all instances where par_satz are equal
+
+        Args:
+            df (pd.DataFrame): The Dataframe to check
+
+        Returns:
+            dict: A dict of results of shape: par_satz: [index1, index2]
+        """
         duplicate_indices = {}
         for par_satz, indices in df.groupby(['Paragraph', 'Satz']).groups.items():
             if len(indices) > 1:
-                satz_id = str(par_satz[0]) +  "-" + str(par_satz[1])
+                satz_id = str(par_satz[0]) + "-" + str(par_satz[1])
                 duplicate_indices[satz_id] = list(indices)  # Convert indices to a list
         return duplicate_indices
     
+    new_df = df.copy()
+    
     for satz_id, indices in find_duplicate_satz(df.copy()).items():
-        print(f"working on {satz_id}, indices: {indices}, length of df: {len(df)}")
         matches = []
         satz = [int(x) for x in satz_id.split("-")]
+        # check if a row above exists (always true except first!)
         if indices[0]-1 in df.index:
+            # take the Fundstelle from the row above as the correct one
             check = df["Fundstelle"][indices[0]-1]
+            # look for the same Fundstelle among the duplicates
             matches = df.query(f"Paragraph == {satz[0]} and Satz == {satz[1]} and Fundstelle == '{check}'").index
-        elif indices[0]+1 in df.index:
+        # if the row above doesn't exist, take 
+        elif indices[-1]+1 in df.index:
             check = df["Fundstelle"][indices[-1]+1]
             matches = df.query(f"Paragraph == {satz[0]} and Satz == {satz[1]} and Fundstelle == '{check}'").index
         else:
@@ -188,14 +227,13 @@ def remove_duplicates(df: pd.DataFrame) -> pd.DataFrame:
             match_index = matches[0]
             for i in indices:
                 if i != match_index:
-                    df.drop([i], inplace=True)
+                    new_df.drop([i], inplace=True)
 
-    df.sort_values(by=["Ähnlichkeit"], inplace=True)
-    df.drop_duplicates(subset=['Paragraph','Satz'], keep='last', inplace=True)
-    df.sort_index(inplace=True)
-    df.reset_index(drop=True)
-
-    return df
+    new_df.sort_values(by=["Ähnlichkeit"], inplace=True)
+    new_df.drop_duplicates(subset=['Paragraph','Satz'], keep='last', inplace=True)
+    new_df.sort_index(inplace=True)
+    new_df.reset_index(drop=True, inplace=True)
+    return new_df
 
 
 def find_similarities(task: str, id: str, relevant_texts: list, fuzziness: int, test=False) -> pd.DataFrame:
@@ -229,9 +267,9 @@ def find_similarities(task: str, id: str, relevant_texts: list, fuzziness: int, 
                     for page in relevant_texts:
                         for pagenr, verses in page.items():
                             for verse in verses:
-                                sim_score = fuzz.ratio(query, verse)
+                                sim_score = fuzz.ratio(query, verse.lower())
                                 if sim_score >= fuzziness:
-                                    hits.append([query, i, j, pagenr, verse, float(f"{sim_score:.2f}")])
+                                    hits.append([query, i, j, pagenr, verse.lower(), float(f"{sim_score:.2f}")])
 
         guessed_hits = pd.DataFrame(hits, columns=["Predigt", "Paragraph", "Satz", "Fundstelle", "Vers", "Ähnlichkeit"])     # create dataframe
         guessed_hits['Dopplung'] = guessed_hits.groupby('Satz')['Satz'].transform(lambda x: x.duplicated())
@@ -256,9 +294,9 @@ def find_similarities(task: str, id: str, relevant_texts: list, fuzziness: int, 
                     for page in relevant_texts:
                         for pagenr, verses in page.items():
                             for verse in verses:
-                                sim_score = fuzz.ratio(query, verse)
+                                sim_score = fuzz.ratio(query, verse.lower())
                                 if sim_score >= fuzziness:
-                                    hits.append([query, i, j, pagenr, verse, float(f"{sim_score:.2f}")])
+                                    hits.append([query, i, j, pagenr, verse.lower(), float(f"{sim_score:.2f}")])
 
         guessed_hits = pd.DataFrame(hits, columns=["Predigt", "Paragraph", "Satz", "Fundstelle", "Vers", "Ähnlichkeit"])     # create dataframe
         guessed_hits['Dopplung'] = guessed_hits.groupby('Satz')['Satz'].transform(lambda x: x.duplicated())

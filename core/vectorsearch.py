@@ -24,15 +24,28 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 # %%
-nltk.download('stopwords')
-nltk.download('german')
+#nltk.download('stopwords')
+#nltk.download('german')
 
 german_stop_words = set(stopwords.words('german'))
+em_stopwords = []
+for stopword in german_stop_words:
+    if "i" in stopword:
+        em_stopwords.append(stopword)
+        em_stopwords.append(stopword.replace("i", "j"))
+    elif "u" in stopword:
+        em_stopwords.append(stopword)
+        em_stopwords.append(stopword.replace("u", "v"))
+    else:
+        em_stopwords.append(stopword)
+
+em_stopwords = set(em_stopwords)
 
 orgel_stop_words = {'herr', 'gott', 'gottes', 'jesus', 'jesu', 'christus', 'christi', 'christe', 'christen', 'amen', 'heilig', 'heiliger', 'geist', 'sohn'}
 
-stop_words = german_stop_words.union(orgel_stop_words)
+#stop_words = german_stop_words.union(orgel_stop_words)
 
+# %%
 def flatten(xss):
     return [x for xs in xss for x in xs]
 
@@ -118,7 +131,7 @@ def reconsider_match(sent, pages, retriever):
     else:
         return [["no match", 0], 1]
     
-def add_inferred_matches(guessed_hits: pd.DataFrame, id: str, retriever) -> pd.DataFrame:
+def add_inferred_matches(guessed_hits: pd.DataFrame, id: str, retriever, remove_stopwords:bool=False) -> pd.DataFrame:
     sermon = oa.Sermon(id)
     for n in range(3):
         additional_matches = []
@@ -130,7 +143,12 @@ def add_inferred_matches(guessed_hits: pd.DataFrame, id: str, retriever) -> pd.D
             sents = chunk["Satz"].to_list()
             if all(x==pars[0] for x in pars):   # abort if paragraphs change
                 if sents[1] in sent_add(sents[0]):
-                    missing_sent = " ".join(sermon.chunked[pars[0]][sents[0]+1]["words"])
+                    words = sermon.chunked[pars[0]][sents[0]+1]["words"]
+                    if remove_stopwords:
+                        filtered_words = [word for word in words if word.lower() not in em_stopwords]
+                    else:
+                        filtered_words = words
+                    missing_sent = " ".join(filtered_words)
                     match, sim_score = reconsider_match(missing_sent, [pages[0], pages[1]], retriever)
                     if match[0] != "no match":
                         verse = match[0]
@@ -241,7 +259,7 @@ def page_add(x):
                     f"{book}_{chap}_{int(vers) + 2}"]
         
 #%%
-def find_similarities(task: str, id: str, cosine_cutoff: float, retriever, test=False) -> pd.DataFrame:
+def find_similarities(task: str, id: str, cosine_cutoff: float, retriever, test=False, remove_stopwords:bool=False) -> pd.DataFrame:
     """_summary_
 
     Args:
@@ -266,8 +284,10 @@ def find_similarities(task: str, id: str, cosine_cutoff: float, retriever, test=
                     else:
                         sent_nr += 1
                         words = sermon.chunked[i][j]["words"]
-                        filtered_words = words
-                        #filtered_words = [word for word in words if word.lower() not in stop_words]
+                        if remove_stopwords:
+                            filtered_words = [word for word in words if word.lower() not in em_stopwords]
+                        else:
+                            filtered_words = words
                         query = " ".join(filtered_words)
                         query = re.sub(r'[/.,;:?!]', '', query)
                         matches = retriever.invoke({"query": query})
@@ -293,8 +313,10 @@ def find_similarities(task: str, id: str, cosine_cutoff: float, retriever, test=
                     else:
                         sent_nr += 1
                         words = sermon.chunked[i][j]["words"]
-                        filtered_words = words
-                        #filtered_words = [word for word in words if word.lower() not in stop_words]
+                        if remove_stopwords:
+                            filtered_words = [word for word in words if word.lower() not in em_stopwords]
+                        else:
+                            filtered_words = words
                         query = " ".join(filtered_words)
                         query = re.sub(r'[/.,;:?!]', '', query)
                         matches = retriever.invoke({"query": query})
