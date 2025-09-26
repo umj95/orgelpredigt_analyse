@@ -464,9 +464,9 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int, preds: list)
             
             tooltips.append(f'<span class="tooltip_content">{tooltip_add}{info}</span>')
         
-        if tooltip_open == False:
+        #if tooltip_open == False:
             tag += f'<span class="{first_type.strip()} tooltip">'
-            tooltip_open = True
+        #    tooltip_open = True
     
     print(f"tag before tooltips added: {tag}")
 
