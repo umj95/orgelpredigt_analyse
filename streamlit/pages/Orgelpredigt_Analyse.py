@@ -484,6 +484,35 @@ def sentence_to_html(sentence: dict, par_nr: int, sentence_nr: int, preds: list)
 
     return f'{tag}</span>'
 
+def prediction_heatmap(sermon: Sermon, csv_list: list) -> list:
+    sentences = []
+    color_map = {'lieder':[192, 54, 157], 'bibel':[246, 169, 122]}
+    for i in range(len(sermon.chunked)):
+        for j in range(len(sermon.chunked[i])):
+            bibel = False
+            lied = False
+            for df, task in csv_list:
+                row = df[(df['Paragraph'] == i) & (df['Satz'] == j)]
+                if not row.empty:
+                    row_dict = row.iloc[0].to_dict()
+                    if task == "bibel":
+                        bibel = True
+                        #bibel = row_dict['Ähnlichkeit']
+                    else:
+                        lied = True
+                        #lied = row_dict['Ähnlichkeit']
+        
+            if bibel and lied:
+                elem = f'<span class="sermon_distant" style="background-image: linear-gradient(to bottom,rgba(246, 169, 122) 0%, rgba(192, 54, 157) 100%)"> </span>'
+            elif bibel:
+                elem = f'<span class="sermon_distant" style="background-color: rgb(246, 169, 122)"> </span>'
+            elif lied:
+                elem = f'<span class="sermon_distant" style="background-color: rgb(192, 54, 157)"> </span>'
+            else:
+                elem = f'<span class="sermon_distant" style="background-color: LightGray;"> </span>'
+            sentences.append(elem)
+
+    return sentences
 
 
 ##########################
@@ -499,7 +528,6 @@ def create_checkboxes(options):
 st.title(f"{str(sermon)} – Analyse")
 
 tab1, tab2 = st.tabs(["Überblick", "Predigttext"])
-col1, col2 = st.columns(2, gap="small", vertical_alignment="top", border=False)
 
 with st.sidebar:
     st.header("Information zur Predigt")
@@ -522,6 +550,7 @@ with st.sidebar:
     st.markdown(f"**Funktionen:** {sermon.autor.funktionen}")
 
 with tab1:
+    col1, col2 = st.columns(2, gap="small", vertical_alignment="top", border=False)
     with col1:
         ##### Geographischer Überblick
         st.header("Geographischer Überblick zu Predigt und Biographie des Autors")
@@ -539,8 +568,6 @@ with tab1:
 with tab2:
     human = False
     machine = False
-
-    human = st.checkbox("Manuelle Annotationen")
 
     csv_list = []
 
@@ -566,12 +593,26 @@ with tab2:
             types[identifier] = pred['task']
             options.append([identifier, pred['file']])
 
-        selected = create_checkboxes(options)
-        if any(selected.values()):
-            machine = True
-        for key, val in selected.items():
-            if val == True:
-                csv_list.append([pd.read_csv(ROOT / files[key]), types[key]])
+        col1, col2 = st.columns([0.2, 0.8], gap="small", vertical_alignment="top", border=False)
+        with col1:
+            human = st.checkbox("Manuelle Annotationen")
+            selected = create_checkboxes(options)
+            if any(selected.values()):
+                machine = True
+            for key, val in selected.items():
+                if val == True:
+                    csv_list.append([pd.read_csv(ROOT / files[key]), types[key]])
+        with col2:
+            if len(csv_list) > 0:
+                prediction_heatmap = prediction_heatmap(sermon, csv_list)
+
+                st.markdown("**Heatmap der maschinellen Annotationen**")
+                st.html("".join(prediction_heatmap))
+            else:
+                if not human:
+                    st.markdown("**Bitte wählen Sie eine oder mehrere manuelle oder maschinelle Annotationen aus**")
+
+
 
     st.markdown(f"""
             <style>
@@ -659,6 +700,12 @@ with tab2:
                     margin: 0.25rem 0;
                     font-size: 0.85rem;
                     color: #555;
+                }}
+
+                .sermon_distant {{
+                    height: 1rem;
+                    width: 1rem;
+                    display: inline-block;
                 }}
                 </style>
                 """, unsafe_allow_html=True)
@@ -756,10 +803,6 @@ with tab2:
 
     sermon_html += "</div>"
 
-    with open("sermontest.html", "w") as f:
-        f.write(sermon_html)
-
     st.header(sermon.volltitel)
     st.html(sermon_html)
-
 
