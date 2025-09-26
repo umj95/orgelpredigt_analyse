@@ -401,18 +401,15 @@ ids = [x[0] for x in relevant_sermons]
 source_options = []
 for id in ids:
     sermon = Sermon(id)
-    source_options.extend(sermon.reference)
+    source_options.extend(set(flatten(sermon.reference)))
 
-source_options = flatten(source_options)
 source_options = [x for x in source_options if is_id(x)]
 
 id_counts = Counter(source_options)
-
 # Sort IDs by frequency descending
-sorted_ids = [item[0] for item in id_counts.most_common()]
+sorted_ids = [[item[0], item[1]] for item in id_counts.most_common()]
+options = [{f'{get_short_info(i[0])} (Zitiert in {i[1]} Predigt{"en" if i[1]>1 else ""})' :i[0]} for i in sorted_ids]
 
-# Build final list of dictionaries
-options = [{get_short_info(i): i} for i in sorted_ids]
 keys = []
 for x in options:
     key = [key for key, val in x.items()]
