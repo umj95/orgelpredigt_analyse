@@ -1,0 +1,148 @@
+Predigt,Paragraph,Satz,Vers,Fundstelle,Ähnlichkeit,Validated,Dopplung
+halleluja gelobet sey gott,18,0,r alleluja gelobt fey gott,408,0.5935068726539612,True,True
+singen wir alle aus unseres hertzens grunde,18,1,singen wir all aus unsers herkens grunde denn gott hat heut ges macht solch freud,408,0.49153703451156616,True,True
+"denn gott hat heut gemacht solche freud,",18,2,von gott dem herren felbst dazu erkohren,408,0.8,,False
+der wir vergessen sollen zu keiner stunde,18,3,der wir vergessen foln zu keiner stunde,408,0.08791820704936981,True,True
+was ihm gefält,20,2,was ihn verleket hat,1232,0.08069191128015518,False,True
+a wenn ich nur dich,21,13,wann ich nur dich,768,0.16714994609355927,False,True
+"nur dich, wenn ich nur dich habe,",21,14,wann ich nur dich,768,0.26,,False
+so frage ich nichts nach himmel und erden.,21,15,was frag ich nach dem erb und theil auf dieser welt du,768,0.84,,False
+wenn mir gleich leib und seel verschmacht,21,16,wann mir gleich leib und seel verschmacht,768,0.03634074330329895,False,True
+wer an mich gläubet,23,5,wer sich mir nahet,243,0.1775231957435608,False,True
+der mich gesandt hat,23,15,der mich hat gesandt,1250,0.003046628087759018,False,True
+es ist mit mir gar anders,23,27,es ist mit mir anders worden,196,0.15296322107315063,False,True
+nichts auf der erden,23,33,nichts findet sich ja auf der erden,827,0.1833297312259674,False,False
+habe deine lust an dem herrn,23,46,habe deine lust am herrcn,789,0.0796295553445816,False,False
+mein hertze geht in springen und kan nicht traurig seyn,24,0,mein hertze geht in springen,903,0.5003464818000793,True,True
+jst voller freud und singen,24,1,ift voller freud und singen,903,0.24652299284934998,True,True
+sieht lauter sonnenschein die sonne die mir lachet,24,2,sieht lauter connenschein die sonne,903,0.3271277844905853,True,True
+jst mein herr jesus christ,24,3,mein herr jesu christ,512,0.15407074987888336,False,True
+das was mich singend machet,24,4,das was mich singen machet,903,0.04442167282104492,True,True
+jst was im himmel ist,24,5,ist was im himmel ist,903,0.11600646376609802,True,True
+wo soll ich aber anheben,25,6,wel wo soll ich frehen hin,1028,0.2113032042980194,True,True
+du giebest mir allein,29,4,du hilffst mir allein,929,0.1772790253162384,False,True
+man singet mit freuden in den hütten der gerechten,29,18,man singet in der frommen hutten,671,0.5550318956375122,True,True
+die rechte des herrn behält den sieg,29,19,des herren recht erhält den sieg,671,0.31808406114578247,True,True
+die rechte des herrn ist erhöhet,29,20,des herren rechte schwebet oben,671,0.4002334773540497,True,True
+die rechte des herrn behält den sieg,29,21,des herren recht erhält den sieg,671,0.31808406114578247,True,True
+zwingt die säiten in cithara,30,0,zwingt die sensen in cythara,741,0.2770376205444336,True,True
+und laßt die süsse musica gantz freudenreich erschallen,30,1,und lafst die süss se musica gank frendenreich erschallen,741,0.22514912486076355,True,True
+daß ich möge mit jesulein,30,2,daß ich mi ge mit jejulein,741,0.20917770266532898,True,True
+dem wunderschönen bräutgam mein,30,3,dem wunderschönen bräutgam nrein,741,0.287323534488678,True,True
+jn steter liebe wallen,30,4,in steter liebe wallen,741,0.5527294874191284,True,True
+singet springet jubiliret triumphiret,30,5,singer springet jubiliret triumphiret,741,0.19591876864433289,True,True
+danckt dem herren groß ist der könig der ehren,30,6,danckt dem herren groß ist der könig der ehren,741,2.5965866826474504e-13,True,True
+gebt unserm gott die ehre,32,1,gebt unserm gott die ehre,1111,2.8752521197272785e-13,True,True
+jhr die ihr gottes macht bekennt,32,2,jhr die ihr gottes macht bekennt,1111,6.744338160863395e-13,True,True
+gebt unserm gott die ehre,32,3,gebt unserm gott die ehre,1111,2.8752521197272785e-13,True,True
+die falschen götzen macht zu spott,32,4,die falsche gdken macht zu spott,1111,0.18014337122440338,True,True
+der herr ist gott,32,5,der herr ist gut,669,0.037212878465652466,True,True
+der herr ist gott,32,6,der herr ist gut,669,0.037212878465652466,True,True
+gebt unserm gott die ehre,32,7,gebt unserm gott die ehre,1111,2.8752521197272785e-13,False,True
+und sprach zu ihnen,36,18,und sprach zu ihnen,461,1.9046439772574253e-13,False,True
+und assen das fette,44,21,und speist die dirnen,835,0.4324445128440857,True,True
+und truncken das süsse,44,22,und speist die dirnen,835,0.34902456402778625,True,True
+der ihn gesand hat,44,37,der ihm ver trauet hat,1154,0.09048257768154144,False,True
+thut er es nicht,44,81,den verlasst er nicht,856,0.13262251019477844,False,False
+einen mann der zu lügen verkauft ist,48,1,ein selges end beschere,1149,0.597465991973877,True,True
+rom p m 892,55,1,ohn unterlaß ergoken p,526,1.0650243759155273,True,True
+foed oecon p 572,55,3,ohn unterlaß ergoken p,526,0.9420280456542969,True,True
+mit paucken und reigen,59,18,mit jauchken und mit freuden,574,0.2364940494298935,True,True
+mit säyten und pfeiffen,59,19,mit jauchken und mit freuden,574,0.19709953665733337,True,True
+mit singen und spielen,72,21,mit singen und mit baten,452,0.19658929109573364,False,True
+nun freut euch lieben christen gemein,73,0,mel nun freut euch lieben christn gemein,991,0.10477553308010101,False,True
+"und laßt uns frölich springen,",73,1,und lakt frolich springen,358,0.56,,False
+"daß wir getrost und all in ein,",73,2,daß wir getrost und all in ein mit luft und licbe singen,358,0.49,,False
+"mit lust und liebe singen,",73,3,daß wir getrost und all in ein mit luft und licbe singen,358,0.8,,False
+was gott an uns gewendet hat,73,4,was gott an uns gewendet hat,358,1.917631092980543e-13,True,True
+und seine süße wunderthat,73,5,und feine süsse wunderthat,358,0.3757014870643616,True,True
+gar theur hat ers erworben,73,6,gar theur hat ers erworben,358,8.239028491570377e-14,True,True
+singet springet jubiliret triumphiret,75,0,singer springet jubiliret triumphiret,741,0.19591876864433289,False,True
+danckt dem herren groß ist der könig der ehren,75,1,danckt dem herren groß ist der könig der ehren,741,2.5965866826474504e-13,False,True
+theils mit einem heiligen sabbathswercke,90,3,dusolt heilgen den sabbathtag,705,0.7355117201805115,True,True
+theils mit einer herrlichen sabbathspredigt,90,4,dusolt heilgen den sabbathtag,705,0.8146833181381226,True,True
+sondern dieses eintzig und allein anriehten,95,28,sondern ei nig und allein,341,0.4593687355518341,True,True
+heilig heilig heilig ist gott der herr zebaoth ja,105,10,oheilig heilig heilig ist der herr zebaoth,1091,0.16635015606880188,False,True
+stärcke ist jauchtzet dem gott jacob,113,0,des hülffe der gott jacob iftl den er anrufft zu aller frift,656,0.5028390884399414,True,True
+da hast du nun,115,0,das bist du nun,287,0.16913631558418274,False,True
+"du mir so liebe gemeine zum heiligen geist,",115,1,vergeß ich dein so wolle gott der rechten mein vergessen in meinm leben,891,0.93,,False
+schöne und wohlklingende orgel,115,3,die harffen und die orgeln gut,891,0.5730031132698059,True,True
+wo das nicht ist,116,10,wo det ist da hat es nicht noth,813,0.14134830236434937,False,True
+die wahrheit und das leben,122,0,die warheit und das leben,403,0.1636696457862854,False,True
+mit harfen und mit cimbeln schon,123,1,mit harffen und mit cymbeln schon,1119,0.10735171288251877,True,True
+von zwölf perlen sind die pforten an der stadt,123,2,von zwölf perlen sind die pforten in deiner stadt,1119,0.14857009053230286,True,True
+"da wir sind corsorten der engel,",123,3,wir sind consorten der engel hoch um deinen thron,1119,0.75,,False
+hoch um deinen thron.,123,4,vater hilff von deinem thron,1119,0.79,,False
+kein aug’ hat je gespühret,123,5,kein aug hat je gespürt,1119,0.12469515204429626,True,True
+"kein ohr hat je gehört,",123,6,kein aug hat je gespürt,1119,0.51,,False
+solche freude des sind wir froh,123,7,deß sind wir froh,1119,0.37566113471984863,True,True
+jo jo ewig in dulci jubilo,123,8,jo jo e wig in dulci jubilo,1119,0.4219352602958679,True,True
+mein gott mein gott,128,8,mein gott mein gott,488,1.632664272874229e-13,True,True
+wenn ich in nöthen bet und sing,129,0,wann ich in ndthen bat und sing,864,0.08327163755893707,True,True
+so wird mein hertz recht guter ding,129,1,so wird mein herh recht guter ding dein geist bezeugt,864,0.31781214475631714,True,True
+dein geist bezeugt das solches frey des ewgen lebens vorschmack sey,129,2,daß solches frey des ergen les bens vorschmack sey,864,0.7119461894035339,True,True
+aus tiefer noth schrey ich zu dir,132,9,aus tieffer noth schrey ich zu dir,596,0.07429634779691696,False,True
+mein sünd mich werden kräncken sehr,133,0,mein sund mich werden kränken sehr,997,0.12799376249313354,True,True
+mein gewissen wird mich nagen,133,1,mein gwissen wird mich nagen,997,0.20020288228988647,True,True
+"denn ihr sind viel wie sand am meer,",133,2,denn ihrr sind viel,997,0.76,,False
+doch will ich nicht verzagen,133,3,doch wil ich nicht verzagen,1043,0.009252052754163742,False,True
+gedencken will ich an deinen tod,133,4,ge denckn wil ich an deinen tod,997,0.12208258360624313,True,True
+herr jesu deine wunden roth,133,5,herr jesu deine wunden roth die werden mich crhalten,997,0.42068952322006226,True,True
+und weinen wenn sie an zion gedachten,134,26,und lachen nach dem weinen,1131,0.5536485314369202,True,True
+und wenn wir es eben so mit dem unordentlichen singen machen werden,134,27,und wann wir etwan irrig seynd,1131,0.6172018647193909,True,True
+von welcher man sagen will,135,1,wer davon was wil sagen,1092,0.18671517074108124,False,True
+daß dabei kein pedal vorhanden,135,10,da ist kein zweiffel am,397,0.5189181566238403,True,True
+geliebteste wir sollen uns von unsern jesu mit seinem creutze,135,12,uns mit seinm lieben sohn verehrt,397,0.6546450257301331,True,True
+will ich denn mein elend lindern und erleichtern meine noth,138,0,wil ich denn mein elend lindern,385,0.3789995014667511,True,True
+bey der welt und ihren kindern,138,1,bey der welt und ihren kindern,385,2.0015377701597392e-13,True,True
+fall ich vollends in den koth,138,2,fall ich vollend in den koth daik trost,385,0.304281085729599,True,True
+"da ist trost, der mich betrübt,",138,3,der mich betrabt freude,385,0.62,,False
+freunde die mein unglück liebt,138,4,die mein ungluck liebt,385,0.44645774364471436,True,True
+helffer die mir hertz’leid machen,138,5,helffer die mir herz eid machen,385,0.3902479410171509,True,True
+gute freunde die mein lachen,138,6,gute freunde die mein lachen,385,1.9246374784696874e-13,True,True
+ich will dem herrn will ich singen,139,4,dem herren wil ich singen,1105,0.14148831367492676,False,True
+"dem herrn dem gott jsrael,",139,5,dem herren gott vom himmelreich lob,1105,0.51,,False
+"will ich spielen. denn mein freund ist mein,",139,6,denn der ist mein,1017,0.83,,False
+und ich bin sein,139,7,und ich bin sein,1017,2.0283889856382437e-13,False,True
+verläßt mich welt freund,142,0,verläkt mich welt freund,832,0.14260675013065338,True,True
+haab und guth und was sonst ist auf erden,142,1,haab und gut und was sonst ist auf erden,832,0.22123825550079346,True,True
+so glaub ich doch mit frohen muth,142,2,so glaub ich doch mit freyem muth,832,0.2647116780281067,True,True
+von gott soll mir hülf werden,142,3,von gott soll mir hülff werden,832,0.006873860023915768,True,True
+er will uns weder hier noch dort verlassen,142,4,er wil uns weder hier noch dort verlassen,832,0.012544594705104828,True,True
+wie er uns in wort,142,5,wie er uns im wort,832,0.08314214646816254,True,True
+durch seinen lieben sohn verspricht,142,6,durch seinen lieben sohn,832,0.27502909302711487,True,True
+er träugt uns nicht,142,7,thut er uns doch nicht,731,0.15093860030174255,False,True
+bald sind wir frölich,143,7,wir sind gar bald verlohren,731,0.1742182970046997,False,True
+welche der herr der gerechte richter,144,4,damit der gerechte knecht,519,0.5191222429275513,True,True
+seyd getrost und hoch erfreut,145,0,send getrost und hoch erfreut,591,0.36003267765045166,True,True
+jesus trägt euch meine glieder,145,1,jesus euch meine glieder,591,0.19584128260612488,True,True
+gebt nicht raum der traurigkeit,145,2,gebt nicht stat der traurigkeit sterbt ihr,591,0.4222883880138397,True,True
+sterbt ihr christus ruf euch wieder,145,3,christus rufft euch wieder,591,0.1945522129535675,True,True
+wenn die letzt’ trompet erklingt,145,4,wann die lekte trompt erklingt,591,0.2305760383605957,True,True
+die auch durch die gräber dringt,145,5,die auch durch die graber dringt,591,0.08978944271802902,True,True
+und von allen deinen kräften,147,14,und alle deine wunder,78,0.18697315454483032,False,True
+alles was mensch ist und heist,148,2,ja alles was mensch ist und heift,396,0.1895236074924469,True,True
+"jch will mich gantz verschreiben,",148,3,ich wil mich ganz verschreiben,396,0.87,,False
+dir ewig treu zu bleiben,148,4,dir ewig treu zu bleiben,396,2.0797059007652413e-13,True,True
+du süsse lieb schenck uns deine gunst,150,0,du fusse lieb schenck uns deine gunst,612,0.08059239387512207,True,True
+laß uns empfinden der liebe brunst,150,1,empfinden der liebe brunst,612,0.38394391536712646,True,True
+brunnquell aller güter herrscher der gemühter,152,0,runnquell aller güter herrscher der gemu ther,615,0.29506224393844604,True,True
+lebendiger wind stiller aller schmerzen,152,1,lebendiger wind stiller aller schmer hen,615,0.1292925924062729,True,True
+dessen glantz und kertzen mein gemüth entzündt lehre meine schwachen säyten deine kraft und lob ausbreiten,152,2,lehre meine schwache seyten deine krafft und lob ausbreiten,615,0.5210106372833252,True,True
+mein lebetag will ich dich aus meinem sinn nicht lassen,156,0,mein lebetage wil ich dich aus meinem sinn nicht lassen,478,0.0947699174284935,True,True
+dich will ich stets,156,1,dich wil ich stets,478,0.008476141840219498,True,True
+gleich wie du mich,156,2,gleich wie du mich,478,2.0744820791729346e-13,True,True
+mein höchster ruhm hiemit zu deinem eigenthum beständiglich verschreiben,156,8,mein höchster ruhm hiemit zu deinem eigenthum be standiglich verschreiben,478,0.03677641972899437,False,True
+wenn es auch das herrlichste wäre,159,1,wanns am besten ist,357,0.41280773282051086,True,True
+si tant solatia in hac die lachrymarum,160,6,wann du die todten wirst an jenem tag erwe cken,839,0.6615878939628601,True,True
+quanta conferes in die nuptiarum,160,7,wann du die todten wirst an jenem tag erwe cken,839,0.6472290754318237,True,True
+wenn wir nur daran gläuben,163,23,wann wir nur gebohren werden,1014,0.16924458742141724,False,True
+groß sind herr deine wercke,163,30,groß sind herr deine gaben,970,0.1334303915500641,False,True
+laß deine gnade groß werden,163,99,laß deinen ruhm groß werden,704,0.0864778459072113,False,True
+herr christ dein’ güt wir preisen,166,0,herr christ dein gut wir preisen,454,0.1067676693201065,True,True
+mit danck wir rühmen dich,166,1,mit danck wir rühmen dich,454,2.3281444589025313e-13,True,True
+hilf daß wir mit den weisen dir opfern williglich,166,2,hilff daß wir mit den weisen dir opffern williglich,454,0.04499749466776848,True,True
+und leben nach gebühr,166,3,und leben nach gebühr,454,5.488717119694897e-13,True,True
+so wird uns wohl gelingen,166,4,so wirds uns wol gelingen,454,0.130888432264328,True,True
+daß wir dort ewig singen,166,5,daß wir dort ewig fingen,454,0.19804221391677856,True,True
+herr gott dich loben wir,166,6,herr gott dich loben wir,969,6.076573706020882e-14,False,True

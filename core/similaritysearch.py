@@ -141,7 +141,8 @@ def add_inferred_matches(guessed_hits: pd.DataFrame, id: str) -> pd.DataFrame:
                                             verse, 
                                             float(f"{sim_score:.2f}"), 
                                             False])
-                    
+                    print(f"inferred match, simscore {sim_score}")
+
         new_matches = pd.DataFrame(additional_matches, columns=["Predigt", "Paragraph", "Satz", 
                                                         "Fundstelle", "Vers", 
                                                         "Ähnlichkeit", "Dopplung"])
@@ -172,6 +173,7 @@ def correct_inbetween_matches(df: pd.DataFrame) -> pd.DataFrame:
                 missing_sent = chunk["Predigt"][chunk.index[1]]
                 match, sim_score = reconsider_match(missing_sent, [pages[0]])
                 if sim_score > 60:
+                    print(f"corrected a hit, simscore: {sim_score}")
                     verse = match[0]
                     page = match[1]
                     new_data = [missing_sent, pars[1], sents[1], page, verse, float(f"{sim_score:.2f}"), False]
@@ -250,7 +252,7 @@ def find_similarities(task: str, id: str, relevant_texts: list, fuzziness: int, 
         pd.Dataframe: a dataframe with found passages
     """
     if task == "lieder":
-        print(f"Starting with {id} (lieder)")
+        print(f"Starting with {id} (lieder), fuzziness: {fuzziness}")
         sermon = oa.Sermon(id)
 
         # perform classification
@@ -277,7 +279,7 @@ def find_similarities(task: str, id: str, relevant_texts: list, fuzziness: int, 
         guessed_hits = remove_duplicates(guessed_hits).reset_index(drop=True)
 
     else:
-        print(f"Starting with {id} (bibel)")
+        print(f"Starting with {id} (bibel), fuzziness: {fuzziness}")
         sermon = oa.Sermon(id)
 
         # perform classification
