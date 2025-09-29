@@ -415,7 +415,7 @@ for x in options:
     key = [key for key, val in x.items()]
     keys.extend(key)
 
-st.markdown("Welches Lied soll analysiert werden? Bitte aus dem Dropdown-Menü auswählen.")
+st.markdown("Was soll analysiert werden? Bitte aus dem Dropdown-Menü auswählen.")
 st.markdown("Für die Lieder 'In dulci jubilo', 'Wie schön leuchtet der Morgenstern' und 'Ach Gott, wie manches Herzeleid', sowie für Conrad Dieterichs 'Ulmische Orgelpredigt' kann auch der Volltext mit hervorgehobenen Zitaten angezeigt werden")
 
 sources = ["In dulci jubilo", "Wie schön leuchtet der Morgenstern", "Ach Gott, wie manches Herzeleid", "Ulmische Orgelpredigt"]
