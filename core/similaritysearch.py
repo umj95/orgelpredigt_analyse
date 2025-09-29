@@ -6,7 +6,7 @@ import pandas as pd
 import os
 import json
 
-from numpyencoder import NumpyEncoder
+#from numpyencoder import NumpyEncoder
 from pathlib import Path
 
 # root directory path
@@ -236,6 +236,16 @@ def remove_duplicates(df: pd.DataFrame) -> pd.DataFrame:
     new_df.sort_index(inplace=True)
     new_df.reset_index(drop=True, inplace=True)
     return new_df
+
+def remove_single_verse_hits(df: pd.DataFrame) -> pd.DataFrame:
+    def filter_group(group):
+        sents = set(group["Satz"])
+        mask = group["Satz"].apply(lambda x: (x-1 in sents) or (x+1 in sents))
+        return group[mask]
+
+    filtered_df = df.groupby("Paragraph", group_keys=False).apply(filter_group)
+    
+    return filtered_df
 
 
 def find_similarities(task: str, id: str, relevant_texts: list, fuzziness: int, test=False) -> pd.DataFrame:
