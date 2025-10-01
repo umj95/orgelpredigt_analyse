@@ -15,15 +15,16 @@ homogenous, historical, and only partially canonised text corpora.
 
 ## Pythonmodule
 Das Projekt wurde mit Python 3.12.11 entwickelt. Die entscheidenden Pythonmodule für Datenaufbereitung, Analyse und Visualisierung waren:
-- beautifulsoup4 4.13.4
-- chromadb 1.0.16
-- folium 0.20.0
-- langchain_core 0.3.76
-- langchain_community 0.3.27
-- pandas 2.3.0
-- plotly 6.1.2
-- rapidfuzz 3.13.0
-- streamlit 1.46.0
+- beautifulsoup4 (4.13.4)
+- chromadb (1.0.16)
+- folium (0.20.0)
+- langchain_core (0.3.76)
+- langchain_community (0.3.27)
+- pandas (2.3.0)
+- plotly (6.1.2)
+- rapidfuzz (3.13.0)
+- streamlit (1.46.0)
+
 Alle weiteren für die Reproduktion der Ergebnisse notwendigen Module können der Datei pyproject.toml entnommen werden. 
 
 ## Datensätze
