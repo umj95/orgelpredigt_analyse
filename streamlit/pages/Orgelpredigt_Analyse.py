@@ -502,13 +502,13 @@ def prediction_heatmap(sermon: Sermon, csv_list: list) -> list:
                         #lied = row_dict['Ähnlichkeit']
         
             if bibel and lied:
-                elem = f'<span class="sermon_distant" style="background-image: linear-gradient(to bottom,rgba(246, 169, 122) 0%, rgba(192, 54, 157) 100%)"> </span>'
+                elem = f'<span class="sermon_distant" style="background-image: linear-gradient(to bottom,rgba(246, 169, 122) 0%, rgba(192, 54, 157) 100%)"><a href="#{i}-{j}"> </a></span>'
             elif bibel:
-                elem = f'<span class="sermon_distant" style="background-color: rgb(246, 169, 122)"> </span>'
+                elem = f'<span class="sermon_distant" style="background-color: rgb(246, 169, 122)"><a href="#{i}-{j}"> </a></span>'
             elif lied:
-                elem = f'<span class="sermon_distant" style="background-color: rgb(192, 54, 157)"> </span>'
+                elem = f'<span class="sermon_distant" style="background-color: rgb(192, 54, 157)"><a href="#{i}-{j}"> </a></span>'
             else:
-                elem = f'<span class="sermon_distant" style="background-color: LightGray;"> </span>'
+                elem = f'<span class="sermon_distant" style="background-color: LightGray;"><a href="#{i}-{j}"> </a></span>'
             sentences.append(elem)
 
     return sentences
@@ -605,7 +605,7 @@ with tab2:
             if len(csv_list) > 0:
                 prediction_heatmap = prediction_heatmap(sermon, csv_list)
 
-                st.markdown("**Heatmap der maschinellen Annotationen**")
+                st.markdown("**Übersicht der maschinellen Annotationen**")
                 st.html("".join(prediction_heatmap))
             else:
                 if not human:
@@ -701,7 +701,7 @@ with tab2:
                     color: #555;
                 }}
 
-                .sermon_distant {{
+                .sermon_distant a{{
                     height: 1rem;
                     width: 1rem;
                     display: inline-block;
