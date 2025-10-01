@@ -1,22 +1,11 @@
 # %%
-from typing import Iterable, List
-from langchain_community.vectorstores import Chroma
-from langchain_ollama import OllamaEmbeddings
-from langchain_core.documents.base import Document
-from langchain_core.embeddings.embeddings import Embeddings
-from langchain_core.runnables import chain
-from pprint import pprint
 import json
 import core.utils as oa
 import re
 import pandas as pd
 import datetime
 from functools import reduce
-from sentence_transformers import SentenceTransformer
 
-import datetime
-
-import nltk
 from nltk.corpus import stopwords
 from pathlib import Path
 

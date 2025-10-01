@@ -1,8 +1,6 @@
 # %%
 import pandas as pd
 import json
-import plotly
-import streamlit
 
 from pathlib import Path
 

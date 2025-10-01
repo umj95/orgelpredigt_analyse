@@ -21,14 +21,11 @@ from core.utils import Sermon, get_short_info
 
 from collections import Counter
 import plotly.express as px
-import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 import plotly.express as px
 import networkx as nx
 from plotly.subplots import make_subplots
 import pandas as pd
-
-import folium
 import json
 import re
 

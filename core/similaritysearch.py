@@ -6,8 +6,21 @@ import pandas as pd
 import os
 import json
 
-from numpyencoder import NumpyEncoder
 from pathlib import Path
+from nltk.corpus import stopwords
+german_stop_words = set(stopwords.words('german'))
+em_stopwords = []
+for stopword in german_stop_words:
+    if "i" in stopword:
+        em_stopwords.append(stopword)
+        em_stopwords.append(stopword.replace("i", "j"))
+    elif "u" in stopword:
+        em_stopwords.append(stopword)
+        em_stopwords.append(stopword.replace("u", "v"))
+    else:
+        em_stopwords.append(stopword)
+
+em_stopwords = set(em_stopwords)
 
 # root directory path
 ROOT = Path(os.getcwd()).resolve().parents[0]
@@ -238,7 +251,7 @@ def remove_duplicates(df: pd.DataFrame) -> pd.DataFrame:
     return new_df
 
 
-def find_similarities(task: str, id: str, relevant_texts: list, fuzziness: int, test=False) -> pd.DataFrame:
+def find_similarities(task: str, id: str, relevant_texts: list, fuzziness: int, test=False, remove_stopwords=False) -> pd.DataFrame:
     """Find passages from a list of texts in a list of sermons  
 
     Args:
@@ -264,12 +277,21 @@ def find_similarities(task: str, id: str, relevant_texts: list, fuzziness: int, 
                     continue
                 else:
                     all_sents += 1
-                    query = " ".join(sermon.chunked[i][j]["words"])
+                    if remove_stopwords:
+                        words = [word for word in sermon.chunked[i][j]["words"] if word not in em_stopwords]
+                        query = " ".join(words)
+                    else:
+                        query = " ".join(sermon.chunked[i][j]["words"])
                     query = re.sub(r'[/.,;:?!]', '', query)
                     for page in relevant_texts:
                         for pagenr, verses in page.items():
                             for verse in verses:
-                                sim_score = fuzz.ratio(query, verse.lower())
+                                if remove_stopwords:
+                                    verse_words = [word.lower() for word in verse.split() if word not in em_stopwords]
+                                    verse_words = " ".join(verse_words)
+                                else:
+                                    verse_words = verse.lower()
+                                sim_score = fuzz.ratio(query, verse_words)
                                 if sim_score >= fuzziness:
                                     hits.append([query, i, j, pagenr, verse.lower(), float(f"{sim_score:.2f}")])
 

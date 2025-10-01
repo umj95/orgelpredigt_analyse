@@ -1,5 +1,5 @@
 	Korpus	Methode	Unschärfefaktor	Dopplungen entfernt	Treffer inferiert	Treffer korrigiert	F1-Score	Precision	Recall	Matthews-Coefficient	Sicherheit
-0	5 Predigten mit längsten Liedzitaten	Ähnlichkeitssuche	75	Ja	Nein	Nein	0,4294	0,354	0,675	0,4489	84,2762
-1	5 Predigten mit längsten Liedzitaten	Ähnlichkeitssuche	80	Ja	Nein	Nein	0,5381	0,546	0,5744	0,5385	89,5274
-2	5 Predigten mit längsten Liedzitaten	Ähnlichkeitssuche	83	Ja	Nein	Nein	0,5768	0,6757	0,52	0,5792	92,2557
-3	5 Predigten mit längsten Liedzitaten	Ähnlichkeitssuche	90	Ja	Nein	Nein	0,511	0,8269	0,3766	0,5474	96,1567
+0	5 Predigten mit längsten Liedzitaten	Ähnlichkeitssuche	75	Ja	Nein	Nein	0,187	0,1183	0,6037	0,2166	83,2645
+1	5 Predigten mit längsten Liedzitaten	Ähnlichkeitssuche	80	Ja	Nein	Nein	0,2535	0,1866	0,4992	0,2631	88,1418
+2	5 Predigten mit längsten Liedzitaten	Ähnlichkeitssuche	83	Ja	Nein	Nein	0,284	0,2414	0,4285	0,2836	91,9074
+3	5 Predigten mit längsten Liedzitaten	Ähnlichkeitssuche	90	Ja	Nein	Nein	0,2638	0,3128	0,2676	0,259	96,9847

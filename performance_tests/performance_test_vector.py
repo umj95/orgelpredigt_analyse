@@ -2,7 +2,6 @@
 import json
 import re
 import core.utils as oa
-from rapidfuzz import fuzz
 import pandas as pd
 import statistics
 import os
@@ -12,7 +11,6 @@ import pprint
 from numpyencoder import NumpyEncoder
 
 from langchain_community.vectorstores import Chroma
-from langchain_ollama import OllamaEmbeddings
 from langchain_core.documents.base import Document
 from langchain_core.runnables import chain
 from typing import List

@@ -13,8 +13,7 @@ sys.path.append(str(root))
 #sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import streamlit as st
-from core.utils import Sermon, Person, get_short_info
-from collections import Counter
+from core.utils import Sermon, get_short_info
 
 import plotly.express as px
 from plotly.subplots import make_subplots

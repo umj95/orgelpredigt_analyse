@@ -8,17 +8,12 @@ if repo_root not in sys.path:
 
 
 import streamlit as st
-from core.utils import Sermon, Person, get_short_info
-from collections import Counter
+from core.utils import Sermon, get_short_info
 
-import plotly.express as px
 import networkx as nx
 
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-import pandas as pd
-
-import folium
 import json
 import re
 

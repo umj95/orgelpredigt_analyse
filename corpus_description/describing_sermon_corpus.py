@@ -1,6 +1,5 @@
 # %%
 import pandas as pd
-import os
 import core.utils as oa
 import json
 from collections import Counter

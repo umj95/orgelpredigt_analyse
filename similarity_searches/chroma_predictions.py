@@ -1,10 +1,8 @@
 # %%
-from typing import Iterable, List
+from typing import List
 from langchain_community.vectorstores import Chroma
-from langchain_ollama import OllamaEmbeddings
 from langchain_core.documents.base import Document
 from langchain_core.runnables import chain
-from pprint import pprint
 import json
 import core.utils as oa
 import re
