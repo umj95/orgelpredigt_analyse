@@ -1,7 +1,7 @@
 # Prototypische Analyse Intertextueller Netzwerke anhand des Korpus deutscher Orgelpredigtdrucke
 Dieses Repositorium enthält Code der im Rahmen meiner Masterarbeit geschrieben wurde. Der Code ist explorativ und dient lediglich den für die Arbeit durchgeführten Tests und ihren Visualisierungen 
 
-## Projektabstract
+## Abstract
 Die Untersuchung von Text-Text-Beziehungen, eine klassische Domäne der Geisteswissenschaften, ist seit Beginn der Disziplin auch fester Bestandteil der _Digital Humanities_. Diese Arbeit behandelt anhand der Zitate protestantischer Kirchenlieder in frühneuzeitlichen deutschen Orgelpredigtdrucken die Frage, wie ein an Julia Kristevas _Intertextualitätsbegriff_ angelehnter Analyse- und Visualisierungsansatz helfen kann, Anknüpfungspunkte für die Analyse intertextueller Systeme in homogenen, historischen, nur bedingt kanonisierten Textkorpora zu schaffen.
 
 ---
@@ -35,7 +35,7 @@ Diese Umfassen:
 - Das Neue Testament in der Übersetzung von Martin Luther, basierend auf der digitalen Edition des [Deutschen Textarchivs](https://www.deutschestextarchiv.de/book/show/luther_septembertestament_1522)
 - Der automatisch erkannte Text aus Johann Crügers _Praxis Pietatis Melica_, basierend auf den vom MDZ München bereitgestellten OCR-Daten (https://www.digitale-sammlungen.de/en/view/bsb10589853)
 
-Die Datensätze werden im Rahmen dieser Projekt unter einer Creative Commons 4.0 BY-NC-SA (Orgelpredigt-Datensätze, Altes Testament, Crüger)[https://creativecommons.org/licenses/by-nc-sa/4.0/], bzw. [Creative Commons 3.0 BY-SA](https://creativecommons.org/licenses/by-sa/3.0/) (Neues Testament) Lizenz bereitgestellt.
+Die Datensätze werden im Rahmen dieser Projekt unter einer [Creative Commons 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) (Orgelpredigt-Datensätze, Altes Testament, Crüger), bzw. [Creative Commons 3.0 BY-SA](https://creativecommons.org/licenses/by-sa/3.0/) (Neues Testament) Lizenz bereitgestellt.
 
 ## Repositoriumsstruktur
 Die Daten dieses Repositoriums sind wie folgt organisiert:
