@@ -33,7 +33,7 @@ Diese Umfassen:
 - Die Datensätze des DFG-Projekts [_Deutsche Orgelpredigtdrucke zwischen 1600 und 1800 – Katalogisierung, Texterfassung, Auswertung_](https://orgelpredigt.ur.de) 
 - Das Alte Testament in der Übersetzung von Martin Luther, basierend auf der digitalen Edition des [Zefania XML Projektes](https://sourceforge.net/projects/zefania-sharp/files/Bibles/GER/Lutherbibel/Luther%201545%20%28Letzte%20Hand%29/)
 - Das Neue Testament in der Übersetzung von Martin Luther, basierend auf der digitalen Edition des [Deutschen Textarchivs](https://www.deutschestextarchiv.de/book/show/luther_septembertestament_1522)
-- Der automatisch erkannte Text aus Johann Crügers _Praxis Pietatis Melica_, basierend auf den vom MDZ München bereitgestellten OCR-Daten (https://www.digitale-sammlungen.de/en/view/bsb10589853)
+- Der automatisch erkannte Text aus Johann Crügers _Praxis Pietatis Melica_, basierend auf den vom Münchner Digitalisierungszentrum bereitgestellten OCR-Daten (https://www.digitale-sammlungen.de/en/view/bsb10589853)
 
 Die Datensätze werden im Rahmen dieser Projekt unter einer [Creative Commons 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) (Orgelpredigt-Datensätze, Altes Testament, Crüger), bzw. [Creative Commons 3.0 BY-SA](https://creativecommons.org/licenses/by-sa/3.0/) (Neues Testament) Lizenz bereitgestellt.
 
